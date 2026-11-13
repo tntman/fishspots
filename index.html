@@ -19,6 +19,7 @@
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
   <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
   <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-mappin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
 </svg>
 
 <header class="top">
@@ -145,7 +146,10 @@
       <a class="back" href="#/"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg>Alla ställen</a>
       <img id="d-img" alt="" hidden loading="lazy" referrerpolicy="no-referrer">
       <h1 id="d-name" tabindex="-1"></h1>
-      <p id="d-where" class="where"></p>
+      <p class="where">
+        <span id="d-where"></span>
+        <a id="d-gmaps" class="map-link" target="_blank" rel="noopener" title="Öppna i Google Maps" aria-label="Öppna i Google Maps (ny flik)"><svg class="icon" aria-hidden="true"><use href="#i-mappin"/></svg></a>
+      </p>
       <p id="d-badge" class="badge"></p>
       <p id="d-desc" class="desc"></p>
 

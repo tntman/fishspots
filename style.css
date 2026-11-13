@@ -215,6 +215,12 @@ label.empty { opacity: .45; }
 #d-img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-top: 1rem; border-radius: var(--radius); background: var(--tint); }
 .detail h1 { margin-top: 1.25rem; font-size: 1.75rem; line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; outline: none; }
 .where { margin-top: .35rem; color: var(--ink-2); font-size: 1rem; }
+.map-link {
+  display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem; margin-left: .2rem; vertical-align: -.45rem;
+  border-radius: 999px; color: var(--lake); transition: background-color .2s var(--ease);
+}
+.map-link:hover { background: var(--tint); }
+.map-link .icon { width: 1.2em; height: 1.2em; }
 .detail .badge { display: inline-block; margin-top: .75rem; }
 .desc { margin-top: 1rem; max-width: 68ch; white-space: pre-line; overflow-wrap: anywhere; }
 .desc:empty { display: none; }

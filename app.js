@@ -379,6 +379,10 @@ function route() {
 
   $('#d-name').textContent = s.name;
   $('#d-where').textContent = whereText(s);
+  // Googles officiella webbadress för att visa en plats; inget skickas förrän man klickar.
+  const hasPos = Number.isFinite(s.lat) && Number.isFinite(s.lng);
+  $('#d-gmaps').hidden = !hasPos;
+  if (hasPos) $('#d-gmaps').href = `https://www.google.com/maps/search/?api=1&query=${s.lat},${s.lng}`;
   setBadge($('#d-badge'), s, true);
   $('#d-desc').textContent = s.description || '';
   showImage(s);
