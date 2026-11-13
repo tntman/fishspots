@@ -1,4 +1,4 @@
-import { firebaseConfig, COUNTIES, SPECIES, slug } from './config.js';
+import { firebaseConfig, COUNTIES, SPECIES, slug } from './config.js?v=773da992';
 
 const FB = 'https://www.gstatic.com/firebasejs/13.3.0';
 const $ = (sel, root = document) => root.querySelector(sel);
