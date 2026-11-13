@@ -12,7 +12,9 @@ const spots = JSON.parse(readFileSync(file, 'utf8'));
 
 const TEXT = ['place', 'description', 'accommodationInfo', 'boatInfo', 'price',
   'fishingLicense', 'website', 'phone', 'email', 'imageUrl'];
-const isLink = (v) => v === '' || /^https:\/\/.+/.test(v);
+// Engelsk översättning av texterna. Sidan visar den svenska texten när översättningen saknas.
+const EN = ['descriptionEn', 'accommodationInfoEn', 'boatInfoEn', 'priceEn', 'fishingLicenseEn'];
+const isLink =(v) => v === '' || /^https:\/\/.+/.test(v);
 
 function check(s) {
   const bad = [];
@@ -31,6 +33,10 @@ function check(s) {
   if (s.boatCountEstimate && !s.boatCount) bad.push('boatCountEstimate utan boatCount');
   if (s.fishingLicenseUrl && !/^https:\/\/.+/.test(s.fishingLicenseUrl)) bad.push('fishingLicenseUrl är inte https');
   if (s.address != null && !(typeof s.address === 'string' && s.address.length <= 200)) bad.push('address är inte text på högst 200 tecken');
+  for (const k of EN) {
+    const max = k === 'descriptionEn' ? 3000 : 1000;
+    if (s[k] != null && !(typeof s[k] === 'string' && s[k].length <= max)) bad.push(`${k} är inte text på högst ${max} tecken`);
+  }
   return bad;
 }
 
@@ -71,7 +77,7 @@ for (const [i, s] of spots.entries()) {
     species: s.species ?? [],
     ...Object.fromEntries(TEXT.map((k) => [k, (s[k] ?? '').trim()])),
     // Valfria fält skrivs bara när källan anger dem.
-    ...Object.fromEntries(['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl']
+    ...Object.fromEntries(['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl', ...EN]
       .filter((k) => s[k] != null && s[k] !== '').map((k) => [k, typeof s[k] === 'string' ? s[k].trim() : s[k]])),
     ownerUid: null,
     source: 'ai',

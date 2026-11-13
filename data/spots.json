@@ -27,7 +27,12 @@
     "email": "info@langasjonas.com",
     "boatCount": 8,
     "electricMotor": true,
-    "fishingLicenseUrl": "https://www.ifiske.se/fiske-sodra-mieans-fvof.htm"
+    "fishingLicenseUrl": "https://www.ifiske.se/fiske-sodra-mieans-fvof.htm",
+    "descriptionEn": "Large campsite and cabin village at lake Långasjön with cabins ranging from basic sleeping cabins to fully equipped ones. Rowing boats can be rented at the campsite and at Nytorpet, and you can fish for rainbow trout, pike and perch, among others.",
+    "accommodationInfoEn": "About 55 cabins, from 9 to 157 sq m, ranging from basic sleeping cabins without a toilet to fully equipped premium cabins with their own shower. The private cabins F01–F07 and F10 have their own boat available. Camping is also available.",
+    "boatInfoEn": "Rowing boats can be rented at the campsite and in Nytorpet; kayaks and canoes too. 8 boats in total on Långasjön, and an electric motor can be rented for some of them. Petrol and diesel engines are prohibited because the lake is a drinking water source. On Kroksjöarna, boats with electric motors are rented out and you may not use your own boat.",
+    "priceEn": "Cabins 2025: Basic SEK 594–810/night, Standard SEK 756–1,215/night, Premium SEK 972–2,808/night depending on type and season. Boat without motor SEK 500/day (2026), motor SEK 340/day.",
+    "fishingLicenseEn": "Fishing licenses are bought via iFiske.se for both Långasjön (blue fishing license, Södra Mieåns FVOF) and Kroksjöarna (red fishing license). A depth map is available at reception."
   },
   {
     "name": "Bengts och Tyttbo fiskecamp",
@@ -57,7 +62,12 @@
     "fishingLicenseUrl": "https://www.ifiske.se/fiske-by-fvof.htm",
     "boatCount": 3,
     "boatCountEstimate": true,
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Fishing accommodation in south-eastern Dalarna at Bysjön, part of the lower Dalälven. You stay in an old farmhouse with a lake view or in a modern house and fish for pike and zander from rented Linder boats with quiet four-stroke motors. Catch and release applies at Tyttbo.",
+    "accommodationInfoEn": "Bengts farm of about 100 sq m, two floors, for up to 8 guests, and Tyttbogård for 6 guests. Backstugan has four double rooms with shower and toilet in the corridor.",
+    "boatInfoEn": "Linder 440 with a four-stroke motor is available for rent. Tyttbo: Linder Sportsman 400 (9.9 hp) SEK 3,500/week, Linder Fisherman 400 (4 hp) SEK 2,750/week; Bengts: 4.5 hp boat with fuel SEK 3,000/week (2024). Deposit SEK 1,000.",
+    "priceEn": "Tyttbo farm SEK 1,175/night (minimum 4 nights) or SEK 8,225/week; Bengts SEK 1,175/day (minimum 4 days, up to 6 guests). Linen, towels and final cleaning SEK 200/person (2024). Boat with petrol motor SEK 4,000/week.",
+    "fishingLicenseEn": "A fishing license is required during your stay. Tyttbo is catch and release for all species. Fishing license Tyttbo SEK 300/person (discounted) and Bengts SEK 200/person (2024); at Tyttbo also SEK 130/day or SEK 780/week."
   },
   {
     "name": "Särna Camping",
@@ -88,7 +98,11 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-sarna-idre.htm",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite with cabins a few steps from lake Särnasjön in northern Dalarna. Both boats and canoes are rented out here, and the fishing gives Arctic char, brown trout, grayling, perch and pike. The reception also serves as a tourist information office.",
+    "accommodationInfoEn": "Camping cabins with 2 beds (regular beds) or 4 beds (two bunk beds, small porch), with table, chairs, fridge, hob, kitchen equipment, blankets and pillows; dogs allowed. Caravan and tent pitches are also available.",
+    "boatInfoEn": "Boats and canoes are available for rent",
+    "priceEn": "Cabin 2 beds SEK 680, cabin 4 beds SEK 1,100 (price list 2026-06-01 to 2027-05-31)."
   },
   {
     "name": "Norra Dellen Familjecamping",
@@ -121,7 +135,12 @@
     "petrolMotor": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-dellensjoarna-svagan-mfl.htm",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Family campsite on the south side of Norra Dellen, about 30 km from Hudiksvall. Small wooden cabins are available for rent, and at the reception you can rent a motorboat or rowing boat as well as a canoe and SUP. Fishing licenses can be arranged via ifiske.",
+    "accommodationInfoEn": "Seven basic cabins with bunk bed and pull-out lower bed, for up to 2 adults and 1 child up to 6 years. Cabins 1–2 are 12 sq m and cabins 3–7 are 9 sq m; all cabins can be heated. Free shower at cabins 3–7. Toilets and washing facilities in a service building.",
+    "boatInfoEn": "Motorboat and rowing boat are rented out at the reception, as well as canoes, kayaks and SUPs. Prices 2025: motorboat SEK 340/hour, rowing boat SEK 220/hour, double kayak/canoe SEK 220/hour. Paddle, canopy and life jacket are included; a 5-litre petrol can comes with the motorboat.",
+    "priceEn": "Cabin 1–2 (12 sq m) SEK 640/night incl. bed linen and towels; cabin 3–7 (9 sq m) SEK 450/night, bed linen SEK 50/person (2025). 10% discount from 7 nights. Motorboat SEK 340/hour, rowing boat SEK 220/hour.",
+    "fishingLicenseEn": "Fishing license via ifiske.se"
   },
   {
     "name": "Alvhaga Vildmark",
@@ -150,7 +169,11 @@
     "email": "info@fegen.nu",
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-fegen.htm",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Cabins close to nature, most of them by the water, in the Fegen area where Halland, Småland and Västergötland meet. Canoes, kayaks and boats are rented out here, and fishing licenses for the area are sold on site.",
+    "accommodationInfoEn": "Seven cabins of 26–110 sq m, most by the water, from a small lakeside plot to a log house with a lake view for up to 12 people; dog friendly.",
+    "boatInfoEn": "Canoes, kayaks, boats and outboard motors (weekly only) are rented out; help with transporting a boat or canoe can be arranged.",
+    "fishingLicenseEn": "Fishing licenses for the area are sold on site"
   },
   {
     "name": "Ätrans Fritidsanläggning",
@@ -178,7 +201,12 @@
     "phone": "0346-604 95",
     "boatCount": 3,
     "licenseRequired": true,
-    "email": "info@atransturist.se"
+    "email": "info@atransturist.se",
+    "descriptionEn": "Cabin village at lake Eseredssjön in Ätran with seven cabins suitable for families and groups. Rowing boats and canoes are rented out. The lake holds perch and pike, among others, and rainbow trout are stocked every year.",
+    "accommodationInfoEn": "7 cabins of about 60 sq m, 6 beds each (42 beds in total), with kitchen with stove and fridge, bathroom with shower and garden furniture. Sheets can be rented for SEK 80 per bed and cleaning can be purchased for SEK 500 per cabin.",
+    "boatInfoEn": "3 boats and 6 canoes are rented out for SEK 300/day or SEK 100/hour. Motors are not available for rent. Life jackets are included.",
+    "priceEn": "Cabin from SEK 1,250/night (varies with season), cleaning SEK 500/cabin, bed linen SEK 80/bed. Boat or canoe SEK 300/day or SEK 100/hour. Fishing license SEK 100/day, week SEK 250, month SEK 500, year SEK 1,000.",
+    "fishingLicenseEn": "Fishing license for Eseredssjön: SEK 100/day (opening day SEK 150), week SEK 250, month SEK 500, year SEK 1,000. Fishing is permitted from Ascension Day to 30 April. Licenses are sold by Handlarn i Ätran and Ätrans Turist & Fritid AB, among others."
   },
   {
     "name": "Jormvattnets Fiskecamp",
@@ -205,7 +233,11 @@
     "phone": "+46 672-20100",
     "email": "info@jormvattnetsfiskecamp.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Fishing camp on the shore of lake Jormsjön in Frostviken, far up in the mountains. Here you can stay in one of the camp's own cabins, eat at the restaurant and head out on the lake by boat. The fishing is dominated by brown trout and Arctic char, and the camp can also arrange guiding to other waters.",
+    "accommodationInfoEn": "Storstugan with 6 beds, 2 bedrooms, own bathroom and kitchen; Mellanstugan (four cabins) for up to 4 people with own kitchen, shower and toilet; Lillstugan, a log cabin for 4 people with fridge and microwave and a service kitchen, shower and sauna nearby; Sviten with double bed, sofa bed and large deck. Motorhome pitches and camping are also available.",
+    "boatInfoEn": "Boats can be rented for fishing on Jormsjön",
+    "fishingLicenseEn": "Fishing license and rules are provided by the camp before your stay"
   },
   {
     "name": "Sjougdas Jakt & Fiskecamp",
@@ -232,7 +264,12 @@
     "email": "info@storsjougden.se",
     "licenseRequired": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Hunting and fishing camp at the mountain-ringed lake Storsjougden in north-eastern Jämtland. Guests stay in a large shared cabin and can rent a boat for summer fishing. The target species are brown trout and Arctic char.",
+    "accommodationInfoEn": "Rooms in the main cabin, beds in Inviken or a cabin in Nyhem; multi-bed rooms can be rented on request. Caravan and motorhome pitches are available (electricity can be rented).",
+    "boatInfoEn": "Boats are rented out for summer fishing",
+    "priceEn": "Bed in Inviken or cabin in Nyhem SEK 300/day (low season, single bed). Caravan/motorhome SEK 200/day. Fishing license SEK 80/day, SEK 200/3 days, SEK 400/week.",
+    "fishingLicenseEn": "Fishing license: 1 day SEK 80, 3 days SEK 200, 1 week SEK 400. Rent a boat to reach all the fishing spots on the lake."
   },
   {
     "name": "Getingaryds Camping & Stugor",
@@ -255,7 +292,11 @@
     "phone": "+46 390 210 15",
     "boatCount": 1,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Quiet campsite on the shore of lake Vättern about 9 km north of Gränna with cabins for rent. The site offers swimming, sauna and fishing, and boat rental is among the activities. Suits anyone who wants simple accommodation near Vättern.",
+    "accommodationInfoEn": "Cabins 1–9 with 3–4 beds (bunk beds), about 12 sq m, with porch; cabin C 3 beds, about 10 sq m; cabin D 5 beds, about 20 sq m; cabin E 6 beds, about 20 sq m; cabin A 6 beds with shower, toilet, kitchen and TV (no pets); residential caravan 45 sq m with 4 beds. Duvets, pillows, kitchen equipment, fridge, microwave and coffee maker are provided in all. Camping is also available.",
+    "boatInfoEn": "Boat rental, rowing boat",
+    "priceEn": "Cabins SEK 600–1,200/night depending on type and season (low season 30/4–11/6 and 17/8–30/9, high season 12/6–16/8). Residential caravan SEK 1,100–1,500/night."
   },
   {
     "name": "Hotell Ullinge",
@@ -283,7 +324,12 @@
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-sodra-wixen.htm",
     "address": "Orrarp Ullinge 1, 575 96 Eksjö",
     "phone": "0381 – 810 60",
-    "email": "info@ullinge.se"
+    "email": "info@ullinge.se",
+    "descriptionEn": "Hotel with an inn at Södra Vixen outside Eksjö. The hotel rents out two Linder 440 boats for fishing on the lake, making it a convenient base for anyone who wants hotel standard instead of a cabin.",
+    "accommodationInfoEn": "Hotel rooms",
+    "boatInfoEn": "Two Linder 440 boats, for rent; life jackets included",
+    "priceEn": "Boat SEK 400 per 4 hours according to Naturkartan",
+    "fishingLicenseEn": "Fishing license for Södra Wixens fiskevårdsområde (iFiske)"
   },
   {
     "name": "Hyltena Stugby",
@@ -306,7 +352,12 @@
     "licenseRequired": true,
     "address": "Hyltena 49, 555 92 Jönköping",
     "phone": "036-250 80",
-    "email": "info@hyltenastugby.se"
+    "email": "info@hyltenastugby.se",
+    "descriptionEn": "Basic cabins at lake Lovsjön about 10 km south of Jönköping. Two rowing boats can be rented and booked online by the hour. Shower and toilet are in a shared service building.",
+    "accommodationInfoEn": "Cabins with 2 or 4 beds, fridge with a small freezer compartment, shared kitchen and a service building with shower (unlimited hot water) and toilet. No water in the cabin. Bring your own bedding or rent it. Wifi is included and smoking is prohibited.",
+    "boatInfoEn": "Two rowing boats (4 m, max 4 people), oars included, no motor",
+    "priceEn": "Boat SEK 50/hour, minimum 2 hours",
+    "fishingLicenseEn": "Fishing license for Lovsjön is bought in the iFiske app"
   },
   {
     "name": "Paradis Fiskecamp",
@@ -335,7 +386,11 @@
     "email": "lennart@paradisfiskecamp.se",
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-sodra-wixen.htm",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Fishing camp at Södra Vixen in the Emån watercourse, with its own boat ramp at the lake. Cabins are available for rent and boats are rented out to those staying at the camp. The lake is known for pike, zander and perch, and crayfishing is also possible in season.",
+    "accommodationInfoEn": "Six cabins of different sizes, from two to six beds. Shower, sauna and toilets are in the main building. The camp is rented to only one party at a time.",
+    "boatInfoEn": "Boats are rented only in connection with staying at the camp",
+    "fishingLicenseEn": "Fishing license for Södra Wixens fiskevårdsområde (iFiske)"
   },
   {
     "name": "Långsjön Stugor & Camping",
@@ -361,7 +416,11 @@
     "email": "info@langsjon.se",
     "address": "Fagersand, 593 71 Ankarsrum",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Family-run campsite with cabins at lake Långsjön, which is 17 km long. You can rent a motorboat, rowing boat and canoe here, as well as bicycles. The site also has a restaurant and opens the season at the end of March.",
+    "accommodationInfoEn": "8 cabins and camping pitches",
+    "boatInfoEn": "Motorboat, rowing boat and canoe can be rented",
+    "fishingLicenseEn": "Fishing licenses for Långsjön are sold via the campsite, and licenses for waters with premium game fish can also be bought there."
   },
   {
     "name": "Ödevata Gårdshotell & Fiskecamp",
@@ -393,7 +452,12 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-odevaten-norrsjon.htm",
     "boatCount": 5,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Farm hotel and fishing camp in forest country outside Emmaboda with accommodation near the lake. You can rent a boat (also with electric motor) or canoe and fish for pike, perch, bream and tench. The accommodation ranges from B&B rooms to self-catering cabins.",
+    "accommodationInfoEn": "Farm hotel with 12 hotel rooms (4 family rooms, 6 double rooms, 2 single rooms) with private bathroom, self-catering cabins (Sjövillan 240 sq m with 9 beds and wood stove, Karlssons 90 sq m and Nilsson for 6 people) and RV pitches/camping.",
+    "boatInfoEn": "Boats are rented on five of the lakes, only for overnight guests, SEK 600/day. An electric motor is always included. Canoes can also be rented.",
+    "priceEn": "Cabin per week (2025): Sjövillan SEK 11,000–25,500, Karlssons SEK 9,350–21,000, Nilsson SEK 8,250–15,500. Hotel room per night incl. breakfast: single room from SEK 1,190, double room from SEK 1,390, family room SEK 1,690. Boat SEK 600/day, fishing license SEK 50–170/day per adult.",
+    "fishingLicenseEn": "Fishing license SEK 50–170 per day per adult; children under 18 fish free in Ödevaten. Svartegöl (stocked rainbow trout and Arctic char) SEK 170/day per person."
   },
   {
     "name": "Getnö Gård – Lake Åsnen Resort",
@@ -424,7 +488,11 @@
     "email": "info@getnogard.se",
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-asnen.htm",
     "address": "Getnö Gård, 362 96 Ryd",
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Farm and resort at Åsnen, one of Småland's large lakes with over a thousand islands. Here you stay in detached cabins or at the campsite and can rent everything from rowing boats to motorboats and canoes. The resort also arranges guided fishing trips with pike safari and zander trolling.",
+    "accommodationInfoEn": "12 holiday cabins and 4 summer cottages for 2–12 people, plus nature camping. The cabins are open all year round.",
+    "boatInfoEn": "About 20 boats in plastic and aluminium are rented out, with a 4 hp four-stroke motor or electric motor, plus canoes and kayaks; resort guests are given priority. Deposit SEK 1,500 for motorboats. Larger specialist boats are available for trolling fishing with a guide.",
+    "fishingLicenseEn": "A fishing license for Åsnen is required and is sold by approved retailers, at the reception or on iFiske. Day license SEK 150, weekly license SEK 500, monthly license SEK 750, annual license SEK 1,500 (whole lake, year not stated)."
   },
   {
     "name": "Hallsjö Vildmarkscamping",
@@ -453,7 +521,12 @@
     "address": "Hallsjö Norregård, 341 52 Lagan",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Small wilderness campsite at lake Vidöstern and the waters of Lagan with plenty of outdoor space. You can stay in four-bed cabins or camp, and rent a rowing boat or canoe. The water is rich in zander, pike and perch.",
+    "accommodationInfoEn": "Cabins with four beds (some with toilet, others without) and camping",
+    "boatInfoEn": "Rowing boats and canoes are rented for one or several days. Life jackets are included.",
+    "priceEn": "Cabin (4 beds) SEK 2,600/week. Caravan and tent pitch SEK 160/night or SEK 960/week, electricity SEK 30/day.",
+    "fishingLicenseEn": "Fishing licenses are sold for Vidöstern and the river Lagan."
   },
   {
     "name": "Tingsryd Resort",
@@ -482,7 +555,11 @@
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-tiken-braknean-del-av.htm",
     "address": "Tingsryd Resort, 362 91 Tingsryd",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Family campsite with cabins on the shore of lake Tiken. Here you can swim, fish and rent boats and canoes, and children can attend fishing school. There is also a restaurant and a small spa.",
+    "accommodationInfoEn": "Cabins in the camping area (4), Stuga Kurorten (50 sq m) and Stuga Deluxe in a cabin village above the lake, camping cabins, 11 residential caravans and Studio Kurorten for up to three people.",
+    "boatInfoEn": "Boats and canoes can be rented",
+    "fishingLicenseEn": "Fishing license for Tiken is sold at the resort"
   },
   {
     "name": "Urshult Camping",
@@ -508,7 +585,12 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-asnen.htm",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Quiet campsite on the shore of Åsnen among apple orchards and strawberry fields, with twelve detached camping cabins with lake views. You can fish, swim and paddle from the site, and the campsite rents out boats.",
+    "accommodationInfoEn": "12 detached camping cabins with lake view plus camping and motorhome pitches",
+    "boatInfoEn": "Rowing boat (SEK 350/day) and motorboat (SEK 800/day) are rented out for one or several days, with or without motor. Canoe SEK 350/day, life jacket included.",
+    "priceEn": "Cabins SEK 700–1,175/night depending on cabin and season. Rowing boat SEK 350/day, motorboat SEK 800/day.",
+    "fishingLicenseEn": "Fishing licenses are sold at the reception."
   },
   {
     "name": "Adolfström Fjällgård",
@@ -536,7 +618,11 @@
     "address": "Adolfström 168, 938 93 Laisvall",
     "boatCount": 1,
     "boatCountEstimate": true,
-    "beds": 50
+    "beds": 50,
+    "descriptionEn": "Ten self-catering cabins in Laisdalen with mountain lakes within a few hundred metres. At Yraft you can rent a boat and row out to fish for wild brown trout and Arctic char. Mountain lakes further away are reached on foot.",
+    "accommodationInfoEn": "10 self-catering cabins with 2–6 beds: Grindstugan, Tallstugan, Gillestugan, Björkstugan, Loftet and Ängsstugan (4 beds), Willan, Backstugan and Skogsstugan (6 beds) and Lillebo (2 beds). Guests bring their own bed linen.",
+    "boatInfoEn": "Boats can be rented at Yraft",
+    "fishingLicenseEn": "The village license (byakort) is valid for Yraft, Laddve, Mittisjön and Lomtjärn; the state fishing license for other waters"
   },
   {
     "name": "Allsåklubbens Camping",
@@ -563,7 +649,11 @@
     "phone": "+46 706577991",
     "boatCount": 1,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Quiet campsite on the shore of the fish-rich lake Allsjärv outside Överkalix. There are four cabins and the chance to rent a boat to explore the lake. The site is also known for its dance-hall evenings and has a wood-fired sauna.",
+    "accommodationInfoEn": "4 cabins/bungalows and camping pitches; season 1 June–30 September",
+    "boatInfoEn": "Boats can be rented",
+    "priceEn": "Motorhome pitch SEK 300/night (2025)"
   },
   {
     "name": "Sörbyn Lodge",
@@ -591,7 +681,11 @@
     "phone": "+46 924-220 36",
     "email": "fishing@sorbyn.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Lodge with villas and hotel rooms at Vitträsket, about an hour from Luleå, near the river Råneälven. Fishing packages with guide, boat and equipment are offered via Sörbyn Fishing, with salmon, brown trout, grayling and pike in the river and the lakes.",
+    "accommodationInfoEn": "Villas with their own fireplace and eight double/twin rooms with TV and bathroom; the cabins have a kitchenette and bathroom.",
+    "boatInfoEn": "Boat is included in the guided fishing packages via Sörbyn Fishing",
+    "fishingLicenseEn": "Permits are arranged in the fishing packages"
   },
   {
     "name": "Årrenjarka Fjällby",
@@ -618,7 +712,11 @@
     "phone": "0971-230 18",
     "email": "info@arrenjarka.com",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Mountain village on a peninsula in lake Saggat near Kvikkjokk, with cabins, hotel rooms and camping. They rent out rowing boats, canoes and paddleboards as well as a sauna raft. The fishing in Saggat and the mountain lakes gives Arctic char and perch, summer and winter.",
+    "accommodationInfoEn": "Cabins with 6 and 8 beds, the largest with sauna and wood stove, camping cabins, hotel rooms and camping.",
+    "boatInfoEn": "Rowing boats can be rented",
+    "fishingLicenseEn": "Fishing licenses are bought online via natureIT"
   },
   {
     "name": "Ivö Camping",
@@ -641,7 +739,10 @@
     "boatCountEstimate": true,
     "email": "reception@ivo-camping.nu",
     "phone": "044-521 88",
-    "address": "Ärkebiskopens väg 4, 291 68 Fjälkinge"
+    "address": "Ärkebiskopens väg 4, 291 68 Fjälkinge",
+    "descriptionEn": "Campsite on the island of Ivö in lake Ivösjön, Skåne's largest lake, next to the ferry landing. The site rents out basic cabins and is described as a campsite for sport anglers, with boat rental.",
+    "accommodationInfoEn": "15 cabins for rent all year round, all with electric heating (one 3-bed cabin is wheelchair accessible), plus camping.",
+    "boatInfoEn": "Boat rental is available"
   },
   {
     "name": "Jägersbo Camping",
@@ -664,7 +765,11 @@
     "phone": "0413-55 44 90",
     "email": "camping@jagersbo.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Year-round campsite on the shore of lake Ringsjön with well-equipped residential caravans for rent. At the reception you can rent a rowing boat, pedal boat or canoe with life jacket. You may also use your own boat.",
+    "accommodationInfoEn": "9 residential caravans for 3–6 people plus camping pitches",
+    "boatInfoEn": "Rowing boat, pedal boat and canoe are rented at the reception, life jackets included; no motorboats. Rowing boat/canoe 2 hours SEK 300, half day SEK 400, full day SEK 500, 24 hours SEK 600; pedal boat 1 hour SEK 200, half day SEK 650, 24 hours SEK 1,300 (2024).",
+    "priceEn": "Rowing boat/canoe SEK 500 per full day (8 hours), SEK 600/24 hours; pedal boat SEK 200/hour, SEK 1,300/24 hours (2024). Residential caravan from SEK 1,300/night."
   },
   {
     "name": "Herrfallet",
@@ -691,7 +796,11 @@
     "phone": "0589-401 10",
     "email": "reception@herrfallet.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Facility on a point in lake Hjälmaren with camping and rooms in the log cabin. You can rent a canoe or boat and fish all year round, including ice fishing in winter. Located in a nature reserve about 15 km from Arboga.",
+    "accommodationInfoEn": "8 hotel rooms in the log hotel (single and double rooms and double rooms with sofa bed for up to four), large cabins of 62 sq m with 3 bedrooms and 2 beds in each, small camping cabins for 2 people and camping with 170 pitches.",
+    "boatInfoEn": "Canoe and boat are rented at the reception.",
+    "fishingLicenseEn": "Rod fishing is free in Hjälmaren. A crayfish fishing package with boat and traps can be booked in August–September."
   },
   {
     "name": "Fjällnora friluftsområde",
@@ -720,7 +829,12 @@
     "beds": 32,
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiske-sportfiskekortet-uppsala.htm",
-    "boatCount": 10
+    "boatCount": 10,
+    "descriptionEn": "Municipal outdoor recreation area about 15 km east of Uppsala by the lakes Trehörningen and Ramsen. Cabins can be rented at the entrance, along with rowing boats, canoes, SUPs and pedal boats. Fishing is one of the activities in the area.",
+    "accommodationInfoEn": "Eight rental cabins at the entrance, each with four beds and a simple kitchen; toilet and shower in a nearby service building",
+    "boatInfoEn": "10 rowing boats, 18 canoes, 10 pedal boats and SUPs are available for rent",
+    "priceEn": "Cabin SEK 700/night or SEK 4,200/week. Rowing boat and canoe SEK 100/hour, SEK 400 for 4-6 hours, SEK 600/day, SEK 800/weekend. Pedal boat SEK 150/hour.",
+    "fishingLicenseEn": "The Uppsalakortet fishing license is required for fishing in Trehörningen and Ramsen. The license only applies to waters on Uppsala municipality land; on other waters the landowner's permission is required."
   },
   {
     "name": "Hälle Fishing Camp",
@@ -750,7 +864,11 @@
     "petrolMotor": true,
     "electricMotor": true,
     "boatCount": 7,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Fishing camp by lake Ränken, a bit northwest of Arvika, with fully equipped wooden houses close to the water. You can rent a boat, motor and fishing equipment, and the camp also organizes fishing trips and moose safaris. The lake offers pike, zander and perch.",
+    "accommodationInfoEn": "Houses with a fully equipped kitchen and electric heating, plus caravan pitches",
+    "boatInfoEn": "Each house comes with a boat with a 4 hp petrol outboard. Boats can also be rented: aluminium boats (Linder) and plastic boats (HR Boat) with fuel-efficient Yamaha four-stroke motors. Electric motor, echo sounder and downrigger can be rented.",
+    "fishingLicenseEn": "A fishing license for Ränkens FVOF is required"
   },
   {
     "name": "Ingestrands Camping",
@@ -780,7 +898,11 @@
     "boatCount": 1,
     "boatCountEstimate": true,
     "email": "ingestrand@arvika.se",
-    "address": "671 91 Arvika"
+    "address": "671 91 Arvika",
+    "descriptionEn": "Family campsite by Glafsfjorden about four kilometres south of Arvika, open all year round. There are both fully equipped cabins and simpler camping cabins. A cabin package includes a rowing boat with a motor moored at the campsite's jetty.",
+    "accommodationInfoEn": "Cabins ranging from simple camping cabins to self-catering cabins with a kitchen, 2-6 beds; several cabins are adapted for winter stays",
+    "boatInfoEn": "A rowing boat with a motor and petrol is included in the boat package (May-September); boat rental is also available separately",
+    "fishingLicenseEn": "A fishing license is required and is sold at the campsite reception: annual license, family annual license, weekly license and two-day license. Under 16s fish for free. Trolling requires a separate trolling fishing license."
   },
   {
     "name": "Lake Foxen Fishing & Cottages",
@@ -808,7 +930,12 @@
     "electricMotor": true,
     "boatCount": 6,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Five fishing cabins at the edge of the forest with a view over Stora Le, near the Norwegian border. Each cabin comes with a motorboat and a canoe, so you can get straight out on the water after check-in. The lake is known for big pike and perch.",
+    "accommodationInfoEn": "5 cabins",
+    "boatInfoEn": "A Linder 440 with motor and a canoe are included with each cabin; an extra boat with motor can be rented (250-390 EUR/week, 2025)",
+    "priceEn": "Extra boat 250–390 EUR/week (2025)",
+    "fishingLicenseEn": "Fishing licenses are bought online via lakefoxen.se or fiskekort.se (50 EUR/week, 2024)."
   },
   {
     "name": "Scandifishing, Långban",
@@ -836,7 +963,12 @@
     "address": "Långban, 682 94 Filipstad",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Sport fishing company with its own base in Långban where you can rent a four-bedroom house by the lake. A boat is included with the accommodation, and you can also book a guide or a simpler package with a small boat and electric motor. The company is aimed at anglers who want to fish for pike and perch in the area around Filipstad.",
+    "accommodationInfoEn": "Lakeside house with 4 bedrooms, open fireplace and veranda",
+    "boatInfoEn": "A boat is included with the accommodation; a smaller PVC boat with an electric motor is available as a budget option",
+    "priceEn": "House from 90 EUR/day, minimum 3 days (SEK 2,390/night for up to 4 guests, +SEK 200 per extra guest). Boat SEK 450/day without a guide, fuel included. Inflatable boat SEK 300 with electric motor or SEK 350 with petrol motor.",
+    "fishingLicenseEn": "A fishing license for Långbansjön is included in the accommodation price."
   },
   {
     "name": "Kolgårdens Stugby & Camping",
@@ -866,7 +998,11 @@
     "email": "kolgarden@vilhelmina.ac",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "beds": 43
+    "beds": 43,
+    "descriptionEn": "Cabin village and campsite about 5 km from Vilhelmina, right next to Volgsjön. The lake is known for big pike, and the area also has Arctic char, brown trout and grayling. Guests can borrow boats at the campsite and prepare their catch on site.",
+    "accommodationInfoEn": "Cabins with 2-6 beds, a log cabin and a villa",
+    "boatInfoEn": "Several boats can be borrowed by guests",
+    "priceEn": "Cabins SEK 925–1,200 per day."
   },
   {
     "name": "Saiva Camping & Stugby",
@@ -895,7 +1031,11 @@
     "address": "Ryttarvägen 1, 912 31 Vilhelmina",
     "phone": "0940-107 60",
     "email": "info@saiva.se",
-    "boatCount": 4
+    "boatCount": 4,
+    "descriptionEn": "Campsite and cabin village by Baksjön, about one kilometre from Vilhelmina centre. Here you can rent a motorboat for fishing in the area, and there are several fishing conservation areas nearby with pike, perch, whitefish, grayling, brown trout and Arctic char. The cabins range from simple two-bed cabins to a larger cabin for seven people.",
+    "accommodationInfoEn": "23 camping cabins with 2-7 beds",
+    "boatInfoEn": "Motorboats for rent: 2 Kimple 440 Adventure with 15 hp Suzuki four-stroke and 2 Persson 520 DL with 30 hp Tohatsu four-stroke. Minimum 3 days; life jackets and boat insurance included.",
+    "priceEn": "Cabins from SEK 390. Kimple 440 boat with 15 hp from SEK 990/day, Persson 520 DL with 30 hp SEK 1,300/day, minimum 3 days."
   },
   {
     "name": "Virisen Lappland",
@@ -924,7 +1064,12 @@
     "email": "info@virisen.se",
     "fishingLicenseUrl": "https://www.natureit.se/sv/Buy/fishing",
     "petrolMotor": true,
-    "beds": 18
+    "beds": 18,
+    "descriptionEn": "Farm with log cabins by the roughly 20 km long mountain lake Virisen, about 50 km southeast of Tärnaby. Guests can rent a boat for fishing for Arctic char and brown trout in the lake. The farm also has a restaurant and snowmobile rental in winter.",
+    "accommodationInfoEn": "Four cabins with wood stove, shower, toilet and kitchen: Betty Blå, Kristina Röd and Svarta Johanna with 4 beds, and Jenny Loft with 6 beds",
+    "boatInfoEn": "In summer, 10 boats with four-stroke motors: 3 larger wooden boats and 7 plastic boats of 4.5 m. Rented with or without a motor; life jackets included; lower price for cabin guests.",
+    "priceEn": "Price list 2027: boat with motor SEK 390/day for cabin guests (SEK 600 for others), boat without motor SEK 300/day for cabin guests, large wooden boat with motor SEK 600/day for cabin guests (SEK 850 for others). Cabin with 4 beds SEK 4,800/week or SEK 3,100 for 3 nights, Jenny Loft (6 beds) SEK 7,500/week.",
+    "fishingLicenseEn": "A fishing license is required; information on how to buy one is on the website"
   },
   {
     "name": "Dalslands Stugbåt",
@@ -948,7 +1093,10 @@
     "email": "booking@stugbaat.se",
     "address": "Strandvägen 25B, 666 30 Bengtsfors",
     "phone": "+46 738 331 383",
-    "beds": 4
+    "beds": 4,
+    "descriptionEn": "Here you rent a floating cabin boat of about 13 sq m that travels across Lelång, one of the larger lakes of the Dalsland Canal. A motorboat is included for towing and excursions.",
+    "accommodationInfoEn": "Floating cabin boat, about 13 sq m, with kitchen, grill, toilet, sofa bed and a large deck",
+    "boatInfoEn": "A motorboat is included, for towing the cabin boat and for excursions. Petrol is extra."
   },
   {
     "name": "Laxsjöns Camping & Friluftsgård",
@@ -973,7 +1121,11 @@
     "beds": 75,
     "petrolMotor": true,
     "boatCount": 4,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite and outdoor centre on a peninsula in Laxsjön in the Dalsland Canal system. Besides cabins and hostel rooms, you can rent a canoe or boat for paddling and fishing.",
+    "accommodationInfoEn": "13 cabins with 2, 3, 4 or 6 beds and 8 hostel rooms with 2 or 4 beds, plus camping and tent pitches",
+    "boatInfoEn": "Rowing boat and motorboats with 2.2 hp, 9.9 hp and 50 hp for rent. A boating license is required for the 50 hp boat. Canoes are also available.",
+    "priceEn": "Rowing boat SEK 250 half day, SEK 450 day. Motorboat 2.2 hp SEK 500/800, 9.9 hp SEK 700/1,200 (half day/day), 50 hp SEK 2,000."
   },
   {
     "name": "Lillesjö Stuguthyrning",
@@ -997,7 +1149,12 @@
     "address": "Lillesjö 1, 668 94 Bäckefors",
     "phone": "+46 70 766 40 89",
     "boatCount": 2,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Three cabins and a few RV pitches by Lillsjön about 30 km south of Bengtsfors. Rowing boats are available at the water for guests. A fishing license is required in the lake.",
+    "accommodationInfoEn": "Villan (10 beds), Toppstugan (10), Lillstugan (4) and 8 RV pitches",
+    "boatInfoEn": "Two dugout-style boats (ekor) and four Canadian canoes can be borrowed free of charge by renters; life jackets are available.",
+    "priceEn": "Lillstugan SEK 1,000, Toppstugan SEK 2,000, Villan SEK 3,000 per day",
+    "fishingLicenseEn": "A fishing license is required in Lillsjön"
   },
   {
     "name": "Rolfskärrs Stugby",
@@ -1024,7 +1181,11 @@
     "phone": "0532-210 55",
     "email": "info@rolfskarr.com",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Cabin village on a small point in the Tösse archipelago on lake Vänern, with 16 self-catering cabins. You can rent a motorboat, kayak and canoe and get out on the lake. Rod fishing is free within the facility's lake area.",
+    "accommodationInfoEn": "16 cabins with 2, 4 or 6 beds, basic kitchen equipment, hotplate and open fireplace",
+    "boatInfoEn": "Motorboats, kayaks, canoes and SUPs for rent; life jackets to borrow",
+    "fishingLicenseEn": "Rod fishing is free within the Rolfskärr lake area"
   },
   {
     "name": "Torsö Camping",
@@ -1047,7 +1208,10 @@
     "phone": "070-927 77 00",
     "email": "info@tbif.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite and cabins on Torsö, the largest island in lake Vänern, by Fågelviken. You can rent a boat and kayak to explore the archipelago and fish.",
+    "accommodationInfoEn": "Four camping cabins (Brommö, Dillö, Kalvö and Onsö) plus pitches for caravan, motorhome and tent",
+    "boatInfoEn": "Boat and kayak can be rented"
   },
   {
     "name": "Vänerfiske Båtcharter & Boende",
@@ -1071,7 +1235,10 @@
     "phone": "+46 70 333 22 00",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Small facility at Vänersnäs near Vänersborg with accommodation close to the shore of lake Vänern. Guests who rent accommodation can also rent a rowing boat and bring their own motor. Canoes can also be rented by visitors.",
+    "accommodationInfoEn": "Three cabins: Vänerloftet (2 beds), Lillstugan (4) and Storstugan (6)",
+    "boatInfoEn": "Rowing boats in various sizes are rented only to guests staying here; you can bring your own motor; canoes are available"
   },
   {
     "name": "Nordic Discovery",
@@ -1100,7 +1267,12 @@
     "address": "Handelsbobacken 2, 714 91 Kopparberg",
     "phone": "+46 73 035 00 75",
     "email": "info@nordicdiscovery.se",
-    "fishingLicenseUrl": "https://www.ifiske.se/en/fishing-permit-naturvatten-malingsbo-kloten.htm"
+    "fishingLicenseUrl": "https://www.ifiske.se/en/fishing-permit-naturvatten-malingsbo-kloten.htm",
+    "descriptionEn": "Nordic Discovery is located in the village of Kloten in the middle of the Malingsbo-Kloten nature reserve. Here you can stay in a room, a holiday house or an apartment and rent an aluminium boat with oars to fish in Långvattnet and Klotensjön. The boats are driven out to the fishing water for you, and life jackets and a map are included. Bigger pike are one of the great attractions of the fishing.",
+    "accommodationInfoEn": "Rooms, a holiday house for up to 8 people and a holiday apartment",
+    "boatInfoEn": "Rowing boat (Linder 410 Fishing, aluminium) for fishing in Långvattnet and Klotensjön. Life jackets, oars, map and boat transport included. The boats cannot reach the lakes northwest of Kloten.",
+    "priceEn": "Rowing boat SEK 900 per day or SEK 5,400 per week. Holiday house SEK 3,000 per night",
+    "fishingLicenseEn": "Fishing licenses via iFiske. Natural waters: SEK 80/day, SEK 180/3 days, SEK 500/year (family SEK 700/year); free for children and young people under 20. Put & take waters with rainbow trout and brown trout: SEK 240/day (family SEK 480/day)."
   },
   {
     "name": "Malexander Camping",
@@ -1125,7 +1297,12 @@
     "email": "info@malexandercamping.se",
     "boatCount": 1,
     "boatCountEstimate": true,
-    "beds": 8
+    "beds": 8,
+    "descriptionEn": "Small, nature-close campsite on a plateau in Malexander by the clear-water lake Sommen. Two camping cabins are rented out all year round, and at the campsite you can rent a boat and buy fishing licenses. Suits those who want to combine fishing with peace and quiet and swimming.",
+    "accommodationInfoEn": "2 camping cabins with beds for at most two adults and two children each, plus camping",
+    "boatInfoEn": "Boat rental, also canoe, kayak and SUP",
+    "priceEn": "Cabin SEK 800/night or SEK 5,000/week (2026). Final cleaning SEK 500 per cabin.",
+    "fishingLicenseEn": "Fishing licenses are sold at the campsite"
   },
   {
     "name": "Ryda Gård",
@@ -1155,7 +1332,11 @@
     "address": "Ryda, 590 46 Rimforsa",
     "phone": "+46 70 626 69 92",
     "email": "info@ryda.se",
-    "fishingLicenseUrl": "https://www.ifiske.se/fiske-asunden.htm"
+    "fishingLicenseUrl": "https://www.ifiske.se/fiske-asunden.htm",
+    "descriptionEn": "Farm by Åsunden in Kinda with five self-catering houses and RV pitches for motorhomes. The farm rents out aluminium boats with motors adapted for sport fishing, and the lake has plenty of pike and zander. Echo sounder and fishing equipment can be added when renting.",
+    "accommodationInfoEn": "Five to six self-catering houses: Sörgården, Mellangården and Storstugan (5-7 beds each), Gäststugan (4 beds), Loftstugan (log house from the 1700s, 45 sq m), Lillstugan (2 small bedrooms, sauna); plus RV pitches",
+    "boatInfoEn": "12 aluminium boats (Linder 400 Sportsman) with 9.9 hp Yamaha four-stroke, rented per day or week; life jackets and echo sounder may be included/available as extras",
+    "fishingLicenseEn": "Fishing license for Åsunden, see iFiske"
   },
   {
     "name": "Lögdö Wild",
@@ -1185,7 +1366,12 @@
     "boatCount": 2,
     "boatCountEstimate": true,
     "email": "info.logdowild@sca.com",
-    "phone": "060-19 30 00"
+    "phone": "060-19 30 00",
+    "descriptionEn": "Forest area with simple rental cabins by lakes and tarns in Timrå and Härnösand. The cabins come with a jetty and boat, and fishing takes place both in Skälsjön and in several put and take tarns.",
+    "accommodationInfoEn": "Three simple cabins with outhouse by the water, plus camping",
+    "boatInfoEn": "A boat is included with the cabins (Hällsjöstugan and Ropnässtugan have a jetty and boat)",
+    "priceEn": "Cabins from SEK 400 per night",
+    "fishingLicenseEn": "Fishing licenses are bought via the web shop; day license SEK 40 (other lakes), SEK 200 (put and take) and SEK 230 (float tube fishing)."
   },
   {
     "name": "Stöde Camping",
@@ -1208,7 +1394,11 @@
     "phone": "076-881 82 83",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campsite with fourteen cabins of varying standard, all with a lake view over Stödesjön and Ljungan. At the campsite you can rent a boat and canoe, and there is a sauna and a heated outdoor pool in summer.",
+    "accommodationInfoEn": "Fourteen self-catering cabins of varying standard, plus caravan pitches",
+    "boatInfoEn": "Boats and canoes are rented out at the campsite",
+    "priceEn": "Cabin with 2 beds SEK 600/night, 4 beds with toilet SEK 850/night, 4 beds with shower SEK 950/night."
   },
   {
     "name": "Storsjö Fjällturism och Fiskecamp",
@@ -1238,7 +1428,12 @@
     "petrolMotor": true,
     "boatCount": 4,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Fishing camp in northwestern Härjedalen with cabins, semi-detached houses and camping cabins right next to Storsjön. Both motorboats and rowing boats are rented out, and the fishing conservation area includes many lakes and streams.",
+    "accommodationInfoEn": "Cabins of 36 and 70 sq m, camping cabins with 4 beds, two apartments with 5 beds and an annex with 12 beds",
+    "boatInfoEn": "Motorboats and rowing boats are rented out, also canoes and electric motor. Motorboat SEK 300/day or SEK 1,500/week (petrol not included). Rowing boat, canoe and electric motor SEK 300/day or SEK 1,500/week.",
+    "priceEn": "Motorboat (excl. petrol) SEK 300/day or SEK 1,500/week; rowing boat, canoe, float tube and electric motor SEK 300/day or SEK 1,500/week. Cabin of 36 sq m with 4 beds SEK 1,400/night, cabin of 70 sq m for 4 people SEK 2,000/night (+SEK 280 per extra person), camping cabin 4 beds SEK 715/night, apartment with 5 beds SEK 1,940/night, whole annex SEK 2,450/night.",
+    "fishingLicenseEn": "Fishing licenses are sold at the fishing camp"
   },
   {
     "name": "Sandvikens Camping & Stugby",
@@ -1260,7 +1455,10 @@
     "phone": "063-370 08",
     "email": "info@sandvikenscamping-stugby.com",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite by Storsjön just over 10 km from central Östersund with both self-catering cabins and camping cabins. Boats can be rented on site.",
+    "accommodationInfoEn": "13 cabins, of which 4 self-catering cabins with toilet, shower, kitchen and 5 beds, plus a hostel with 33 beds in 7 rooms and caravan pitches",
+    "boatInfoEn": "Boats are rented out"
   },
   {
     "name": "Valsjöbyns Fiskecamp",
@@ -1287,7 +1485,11 @@
     "licenseRequired": true,
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Fishing camp on a point in Valsjöbyn with Valsjön on both sides. There are cabins for four people, motorhome and camping pitches, and boat rental.",
+    "accommodationInfoEn": "Cabins for four people plus electric pitches for motorhomes and caravans",
+    "boatInfoEn": "Boats are rented out",
+    "fishingLicenseEn": "The Hotagenkortet gives access to over 100 brown trout and Arctic char waters"
   },
   {
     "name": "Fahlströms Fiskecenter",
@@ -1310,7 +1512,11 @@
     "boatCount": 2,
     "boatCountEstimate": true,
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Fishing centre in Valsjöbyn with cabins and rental of boats and fishing equipment. The boats are moored at Valsjön, and the shop sells the Hotagenkortet, which is valid on over a hundred waters.",
+    "accommodationInfoEn": "Cabins for four people, one in the village and a simpler one on Vinklumpsvägen",
+    "boatInfoEn": "Boats are rented out on Valsjön and several tarns",
+    "fishingLicenseEn": "The Hotagenkortet is sold in the shop"
   },
   {
     "name": "Albackens Jakt- & Fiskecamp",
@@ -1341,7 +1547,12 @@
     "licenseRequired": true,
     "boatCount": 3,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Hunting and fishing camp some tens of kilometres outside Bräcke with log cabins in the cabin village by lake Alan and fishing cabins by the rapids of Gimån. A motorboat is rented out at Alan, and one of the cabins includes a boat.",
+    "accommodationInfoEn": "Cabin village with nine log cabins with 4 or 6 beds, a hunting cabin with open fireplace for up to 14, and Båthällstugan and Skravelforsstugan (4 beds each, wood stove) by the rapids",
+    "boatInfoEn": "Motorboat and rowing boat are rented out at Alan; a boat is included with Skravelforsstugan",
+    "priceEn": "Day license SEK 200, weekly license SEK 1,000. Boat SEK 200 per day, boat with motor SEK 500 per day. Cabins: 4 beds SEK 500–1,000/night, 6 beds SEK 1,500/night.",
+    "fishingLicenseEn": "Fishing license via the camp"
   },
   {
     "name": "Anariset",
@@ -1368,7 +1579,12 @@
     "phone": "070-676 93 90",
     "email": "info@anariset.se",
     "boatCount": 3,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Fishing and hunting facility in the mountains with accommodation by Östra Vattensjön. A boat with motor is included in the fishing packages, and the fishing is for brown trout, Arctic char and grayling.",
+    "accommodationInfoEn": "Anasjölägret: three cabins with 4 beds, the boathouse 'slottet' (the castle) with 2 beds and a log cabin on the shore with 5 beds; Ajvin Sijte: cabins with 4-5 beds. Self-catering and sauna (shared sauna by the lake at Anasjölägret, large sauna on the shore at Ajvin Sijte)",
+    "boatInfoEn": "A boat with motor is included in the packages; boats and motors can also be rented at Ajvin Sijte",
+    "priceEn": "Packages from SEK 1,160 per person per day (7 days, summer)",
+    "fishingLicenseEn": "The fishing license is included in the package"
   },
   {
     "name": "Camp Tre Sjöar",
@@ -1396,7 +1612,12 @@
     "boatCount": 1,
     "boatCountEstimate": true,
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Fishing camp with its own fishing rights in three lakes: Åsjön, Raitasjön and Harrsjön. You stay in a newly renovated four-bed cabin by the lake or in a tipi tent, and a boat or canoe is included in the packages.",
+    "accommodationInfoEn": "Newly renovated four-bed cabin by the lake and a tipi tent on the shore",
+    "boatInfoEn": "Boat (Linder 400) or canoe included; boat motor with fuel can be rented for SEK 500 per day",
+    "priceEn": "Packages from SEK 900 per person (3 days); cabin SEK 1,150 per night",
+    "fishingLicenseEn": "Fishing rights in the three lakes are included in the package"
   },
   {
     "name": "Nynäs Jakt & Fiskecamp",
@@ -1422,7 +1643,11 @@
     "phone": "+46 70-581 42 73",
     "email": "info@jaktforlivet.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Hunting and fishing camp in the mountain village of Storbäck on the shore of Stora Arksjön. Several cabins are available for rent, with a sauna by the lake, and boats can be rented on several of the lakes.",
+    "accommodationInfoEn": "9 cabins with 2 to 10 beds, including some by Stora Arksjön, with a sauna near the lake",
+    "boatInfoEn": "Boats are available for rent on several of the lakes",
+    "priceEn": "Cabins from SEK 250/night; the price varies with season and cabin size."
   },
   {
     "name": "Storsands Camping",
@@ -1445,7 +1670,10 @@
     "address": "Rotnäs 115, 841 93 Östavall",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": "storsand@storsandscamping.se"
+    "email": "storsand@storsandscamping.se",
+    "descriptionEn": "Campsite on lake Holmsjön about 26 km south of Ånge with seven cabins. Pedal boats, canoes and rowing boats with a motor can be rented.",
+    "accommodationInfoEn": "Seven cabins and camping pitches",
+    "boatInfoEn": "Rowing boats, pedal boats and canoes for rent"
   },
   {
     "name": "Jockfall Fishing & Activities",
@@ -1473,7 +1701,11 @@
     "email": "info@jockfall.com",
     "licenseRequired": true,
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Tourist facility on the Kalix River (Kalixälven) with cabins, lodges and camping. The facility rents out a boat with a motor and oars for fishing on Vallsjärv, a lake a few kilometres away that is known for big pike and perch.",
+    "accommodationInfoEn": "Modern lodges with a fully equipped kitchen and bathroom, basic wilderness cabins with 4 beds in two bunk beds, and camping by the Kalix River (Kalixälven)",
+    "boatInfoEn": "Boat with a motor and oars for rent for fishing on Vallsjärv (petrol and life jackets included)",
+    "fishingLicenseEn": "Fishing license for Vallsjärv: SEK 100/day, SEK 300/week, SEK 500/season (membership of SEK 50 required). Sold at the restaurant/shop at Jockfall and through Vallsjärv village association (Vallsjärvs byaförening)."
   },
   {
     "name": "Vuonatjviken Stugby",
@@ -1501,7 +1733,11 @@
     "phone": "+46 72-221 19 11",
     "email": "vuonatj@vuonatjviken.com",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Cabin village on lake Riebnes in a mountain setting near the Kungsleden trail. There are several cabins, and boats can be rented both on Riebnes and on the mountain lake Misjka, which is known for Arctic char, brown trout and pike.",
+    "accommodationInfoEn": "Cabin village with cabins for 3–10 people, including cabins close to the lake",
+    "boatInfoEn": "Boat rental on Riebnes and Misjka",
+    "priceEn": "Cabins per day (2023): Björnen SEK 1,900 summer/SEK 2,600 winter, Vargen SEK 1,800/2,400, Elin SEK 1,600, Jörnstugorna SEK 1,400, Sjöstugorna SEK 1,200."
   },
   {
     "name": "Trehörningsjö Camping & Stugor",
@@ -1530,7 +1766,11 @@
     "email": "info@trehorningsjocamping.se",
     "boatCount": 1,
     "boatCountEstimate": true,
-    "licenseRequired": true
+    "licenseRequired": true,
+    "descriptionEn": "Family campsite with cabins by lake Inre Lemesjö in Trehörningsjö. Guests can use their own boat or rent one to get out on the lake.",
+    "accommodationInfoEn": "21 cabins in three sizes: 9 m², 35 m² (max 6 people) and 55 m² (max 10 people), plus camping",
+    "boatInfoEn": "Boat can be rented for use on the lake",
+    "fishingLicenseEn": "A fishing license is required to fish on or along the lake and is sold at Tresjömacken in Trehörningsjö. Fishing rods and tackle can be rented at the reception."
   },
   {
     "name": "Treens Camping",
@@ -1558,7 +1798,12 @@
     "email": "info@treenscamping.se",
     "petrolMotor": true,
     "boatCount": 6,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Eight cabins right by lake Treen in the northern part of Arvika municipality. Rowing boats and aluminium boats with a small motor are rented out by the day, and the larger log cabins include a rowing boat. The lake has pike and perch.",
+    "accommodationInfoEn": "Eight cabins by the lake and camping. The log cabins and cabin 8 have a wood stove. A rowing boat is included with the log cabins and with cabins 4, 6 and 8 in high season.",
+    "boatInfoEn": "Aluminium boats (Linder) are rented out without a motor or with a Yamaha 2.5 hp 4-stroke; canoes are also rented out. A rowing boat is included with the log cabins.",
+    "priceEn": "Prices 2027: rowing boat SEK 300/day, boat with motor SEK 650/day, canoe SEK 300/day. Camping cabin SEK 790/night, Treen cabin 5 and 7 SEK 920/night (excl. final cleaning), log cabin SEK 1,520/night in low season and SEK 1,980/night in high season (1 May–31 Sep, rowing boat included).",
+    "fishingLicenseEn": "Fishing licenses are sold by the campsite"
   },
   {
     "name": "Revelbadets Camping",
@@ -1580,7 +1825,12 @@
     "phone": "0760-10 73 00",
     "email": "info@revelbadetscamping.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite with rental cabins by lake Reveln, halfway between Laxå and Askersund. Rowing boats and canoes are available for rent, and the lake attracts anglers.",
+    "accommodationInfoEn": "Cabins for rent and camping",
+    "boatInfoEn": "Rowing boat and canoe for rent, SEK 60 per hour or SEK 200 for 4 hours.",
+    "priceEn": "Rowing boat or canoe SEK 60/hour or SEK 200/4 hours; cabin SEK 450/day.",
+    "fishingLicenseEn": "Fishing licenses are sold by the campsite"
   },
   {
     "name": "Värmlands Sjö och Fjäll Camping",
@@ -1603,7 +1853,11 @@
     "email": "camping@varmlandssjoochfjallcamping.se",
     "address": "Nötön 1, 685 94 Torsby",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite with many cabins by lake Övre Brocken outside Torsby. Guests can rent a rowing boat and canoe right at the campsite.",
+    "accommodationInfoEn": "Camping cabins with 2 or 4 beds (shared service building), 4–6-bed cabins and large cabins with 6 beds, sauna and wood stove, plus camping",
+    "boatInfoEn": "Rowing boats and canoes for rent",
+    "priceEn": "Per night 2026: 2-bed camping cabin from SEK 670, 4-bed camping cabin from SEK 770, 4-bed cabin from SEK 850, 4–6-bed cabin from SEK 1,050, 6-bed cabin from SEK 1,570. Final cleaning is extra."
   },
   {
     "name": "Camping 45",
@@ -1627,7 +1881,10 @@
     "email": "kontakt@camping45.com",
     "petrolMotor": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Family campsite with cabins north of Torsby. Fishing boats are rented out with or without a small motor; life jackets and an introduction are included.",
+    "accommodationInfoEn": "Cabins for max 4–6 people, including wheelchair-accessible cabins, a cabin for max 4 with shower/toilet and camping cabins for max 4 people, plus camping",
+    "boatInfoEn": "Fishing boats for rent as a rowing boat or with a 2.5 hp motor"
   },
   {
     "name": "Caravan Club Silvköparen",
@@ -1651,7 +1908,11 @@
     "beds": 32,
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campsite with eight cabins overlooking lake Silvköparen just outside Sala. Boats and canoes can be rented on site.",
+    "accommodationInfoEn": "Eight basic cabins with 4 beds each (two bunk beds), without water, drainage, toilet and shower, plus camping",
+    "boatInfoEn": "Boats and canoes for rent",
+    "priceEn": "Cabin SEK 650/night for members and SEK 720/night for non-members (2026)."
   },
   {
     "name": "Gårdhammar",
@@ -1673,7 +1934,11 @@
     "phone": "076-771 45 45",
     "email": "info@gardhammar.se",
     "address": "Gålhammar 725, Arboga",
-    "boatCount": 2
+    "boatCount": 2,
+    "descriptionEn": "Family farm on the shore of lake Hjälmaren with two rental cabins, Linus hus and Sjöstugan. A rowing boat is included with both cabins and life jackets can be borrowed.",
+    "accommodationInfoEn": "Two waterfront cabins: Linus hus with six beds in two bedrooms, and Sjöstugan with two bedrooms and a sofa bed for two extra guests",
+    "boatInfoEn": "Rowing boat included with the cabins",
+    "fishingLicenseEn": "Free rod fishing in the public waters of Hjälmaren"
   },
   {
     "name": "Hampetorps Restaurang och Camping",
@@ -1696,7 +1961,10 @@
     "phone": "019-45 30 15",
     "boatCount": 1,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campsite on the southern shore of lake Hjälmaren next to the lake's largest marina. Three small cabins are for rent, and a rowing boat can be rented.",
+    "accommodationInfoEn": "Three cabins for 2–3 people plus camping",
+    "boatInfoEn": "Rowing boat for rent"
   },
   {
     "name": "Camping Tiveden",
@@ -1719,7 +1987,11 @@
     "phone": "+46 70 094 47 18",
     "email": "info@campingtiveden.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Family campsite right by lake Unden in Tiveden with cabins and glamping. Rowing boats, motorboats, canoes, kayaks, SUPs and sailing boats are rented out, and you can fish on Unden.",
+    "accommodationInfoEn": "Cabins from 10 to 49 m² (Basic A and B, Comfort, Luxe Standard, Luxe Plus+), glamping in safari tents and camping pitches",
+    "boatInfoEn": "Rowing boat and motorboat for rent, also canoes, kayaks, SUPs and sailing boats",
+    "fishingLicenseEn": "Fishing licenses can be bought online at iFiske.se"
   },
   {
     "name": "Smednäset",
@@ -1742,7 +2014,11 @@
     "phone": "070-626 64 43",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campsite on a point in lake Svärdsjön with six cabins. Boats are rented out for a small fee per hour or day; a life jacket is included.",
+    "accommodationInfoEn": "Six cabins, including lakeside cabins, plus camping",
+    "boatInfoEn": "Boats for rent by the hour or day",
+    "priceEn": "Cabins 2026 (member/non-member): 6-bed cabin SEK 950/1,050, 4-bed cabin SEK 900/1,000, lakeside cabins SEK 550/650. Boat rental SEK 10/hour or SEK 50/day, life jacket included."
   },
   {
     "name": "Järvsö FVO:s fiskestuga",
@@ -1769,7 +2045,12 @@
     "phone": "070-630 80 99",
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.fiskekort.se/app/index.php?page=cards&shop=428",
-    "email": ""
+    "email": "",
+    "descriptionEn": "Basic fishing cabin for up to six people at Stora Kölsjön, a short walk from the parking area. A plastic boat with oars is kept at the lake and is included in the rental. The cabin has a wood stove but no running water.",
+    "accommodationInfoEn": "Cabin at Stora Kölsjön with wood stove and firewood, two bunk beds and a sofa bed, room for a maximum of 6 people. Outhouse nearby. Bring water or fetch it from the lake. About a five-minute walk from the parking area.",
+    "boatInfoEn": "A larger plastic boat with oars is kept at the lake and is included in the cabin rental.",
+    "priceEn": "SEK 200 basic fee plus SEK 100 per person and day",
+    "fishingLicenseEn": "Annual license SEK 350 and day license SEK 60. Licenses are personal and are bought via iFiske or from local retailers. Children under 16 fish for free."
   },
   {
     "name": "Linderyds stugor",
@@ -1796,7 +2077,11 @@
     "email": "info@linderyd.com",
     "electricMotor": true,
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Three cabins at Linderyds farm in Tidersrum, about a hundred metres from lake Narven, with its own jetty and a child-friendly swimming spot. A rowing boat is available and a boat motor can be added. The lake offers plenty of pike and perch.",
+    "accommodationInfoEn": "Three cabins (53–79 sqm), two with a hot tub",
+    "boatInfoEn": "Access to a rowing boat; boat motor can be rented as an option",
+    "priceEn": "Cabins from SEK 2,995/week or SEK 550/night (low season 27 Aug–16 Jun); high season from SEK 3,995/week. Boat motor SEK 500/week. Booking fee SEK 1,000 per booking and cabin."
   },
   {
     "name": "Föllingen Hotell",
@@ -1819,7 +2104,10 @@
     "phone": "+46 70 560 04 33",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Hotel with a range of activities by lake Föllingen near Kisa. Guests can rent a rowing boat, canoe and kayak on site. There is also a cabin among the accommodation options.",
+    "accommodationInfoEn": "Hotel with rooms and a cabin",
+    "boatInfoEn": "Rowing boats for rent"
   },
   {
     "name": "Vårdnäs Stiftsgård",
@@ -1841,7 +2129,11 @@
     "lng": 15.69032,
     "address": "590 45 Brokind",
     "phone": "+46 13 36 85 00",
-    "email": "info@vardnas.se"
+    "email": "info@vardnas.se",
+    "descriptionEn": "Diocesan retreat centre with hotel rooms, guest rooms and whole houses for rent south of Linköping. Two rowing boats are available for rent for fishing or a trip on Stora and Lilla Rängen in the Kinda Canal lake system.",
+    "accommodationInfoEn": "Hotel rooms, guest rooms and whole houses for rent",
+    "boatInfoEn": "Two rowing boats for rent, life jackets and a nautical chart included",
+    "priceEn": "Rowing boat SEK 450 per day (2025)."
   },
   {
     "name": "Yxnerum Hotell",
@@ -1869,7 +2161,12 @@
     "lng": 16.21381,
     "address": "597 95 Åtvidaberg",
     "phone": "0120-610 22",
-    "email": "info@yxnerum.se"
+    "email": "info@yxnerum.se",
+    "descriptionEn": "Hotel and conference facility by lake Yxningen outside Åtvidaberg. You rent a rowing boat or a motorboat to fish in the lake, which has big pike and perch as well as Arctic char and salmon. A fishing permit is required and is bought online.",
+    "accommodationInfoEn": "Hotel rooms and conference facility",
+    "boatInfoEn": "One rowing boat and one motorboat for rent, life jackets included",
+    "priceEn": "Motorboat SEK 500 per day",
+    "fishingLicenseEn": "A fishing permit is required and is bought online"
   },
   {
     "name": "Fiskarps stugby",
@@ -1893,7 +2190,12 @@
     "phone": "076 1047930",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Seven cabins on the shore of lake Sommen, run by Boxholms Fritidsstiftelse. Each cabin comes with its own rowing boat, and fishing licenses are bought via iFiske.",
+    "accommodationInfoEn": "Seven cabins, rented by the week or by the day",
+    "boatInfoEn": "Own rowing boat included with the cabins",
+    "priceEn": "Cabin from SEK 800/night or SEK 4,500/week (2026).",
+    "fishingLicenseEn": "Fishing license via iFiske.se"
   },
   {
     "name": "Rudagård",
@@ -1916,7 +2218,12 @@
     "phone": "+46 70-362 02 08",
     "email": "bokning@rudagard.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Farm stay on a small point by lake Tisnaren where Sjöstugan sleeps up to eight guests. A rowing boat is included in the rental, and the farm also rents out a separate guest house.",
+    "accommodationInfoEn": "Sjöstugan with four beds (bunk bed and double bed) and a wood-burning masonry fireplace, max 8 guests including the adjacent guest house with four beds. Also Uddastugan, Flytande Huset (the floating house) and the camping cabin Sjöglimten",
+    "boatInfoEn": "One rowing boat is included in the rental of Sjöstugan. Extra rowing boat SEK 500/day, motor (5 hp) SEK 500/day, boat with motor SEK 950/day.",
+    "priceEn": "Sjöstugan SEK 1,890/day or SEK 11,350/week, Uddastugan SEK 950/day or SEK 5,700/week, camping cabin Sjöglimten SEK 400/day. Flytande Huset 2026: SEK 1,400/day low season, SEK 1,850/day high season.",
+    "fishingLicenseEn": "Fishing license via iFiske.se"
   },
   {
     "name": "Österby Camping",
@@ -1940,7 +2247,11 @@
     "phone": "+46 76 113 16 61",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Association-run summer campsite by lake Näshultasjön south of Eskilstuna with three cabins for rent. On site you can rent a rowing boat, pedal boat or canoe for a trip on the lake.",
+    "accommodationInfoEn": "Three cabins (two with 5 beds, one with 3) plus camping",
+    "boatInfoEn": "Rowing boats, pedal boats and canoes for rent",
+    "priceEn": "Cabin 1: SEK 500/day (3 beds), cabins 2 and 3: SEK 700/day (5 beds), week SEK 3,000 and SEK 4,000 respectively. Canoe/rowing boat SEK 40/hour or SEK 200/day."
   },
   {
     "name": "Big Fish Sweden",
@@ -1968,7 +2279,12 @@
     "electricMotor": true,
     "petrolMotor": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Sport fishing facility by lake Sibbo between Trosa and Nyköping with accommodation in Sibbo House in the castle park, about twenty metres from the lake. Guests rent aluminium boats with a motor and trolling motor, and guided trips are offered for pike, zander and perch.",
+    "accommodationInfoEn": "Sibbo House with four apartments (for 3 and 4 beds) totalling 250 sqm, with shower and toilet, about 20 metres from the lake",
+    "boatInfoEn": "Aluminium boats (Nakhoda 450 Pro) with a 20 hp Honda motor and a front-mounted electric trolling motor (Minnkota Terrova) for rent",
+    "priceEn": "Price available on request by email.",
+    "fishingLicenseEn": "The lake is private and Big Fish Sweden has exclusive fishing rights. All fishing is catch and release."
   },
   {
     "name": "Fyrväpplingen Sportfiske",
@@ -1997,7 +2313,12 @@
     "email": "info@fyrvapplingen.se",
     "boatCount": 93,
     "phone": "0174-130 00",
-    "licenseRequired": true
+    "licenseRequired": true,
+    "descriptionEn": "Sport fishing facility in the Knutby area with three cabins and camping by fishing lakes where you rent a boat. The lakes hold both stocked rainbow trout and a natural stock of pike, perch and zander.",
+    "accommodationInfoEn": "Three cabins: Siggehusen with 4 beds, Lillstugan with 8 beds in two rooms and Rangelbol. Lillstugan and Rangelbol have a wood stove in the kitchen. Also camping",
+    "boatInfoEn": "Boats for rent on several of the lakes: 52 on Skysjön, 31 on Rörsjön and 10 on Edsjön. Private boats and combustion engines are not allowed on Skysjön and Rörsjön.",
+    "priceEn": "Cabins per night: Siggehusen SEK 500 (4 beds), Lillstugan SEK 1,000 (8 beds), Rangelbol SEK 1,700; first night SEK 950/1,950/3,000 incl. cleaning.",
+    "fishingLicenseEn": "Fishing license Skysjön/Rörsjön: full-day license SEK 300, evening license (after 14.00) SEK 250, family license SEK 450, night fishing license Skysjön SEK 400. Boat rental SEK 100."
   },
   {
     "name": "Jälluntofta Camping och Stugby",
@@ -2026,7 +2347,12 @@
     "beds": 120,
     "licenseRequired": true,
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground and cabin village on the shore of lake Jällunden in Unnaryd, with cabins in three sizes. Rowing boats, canoes and pedal boats can be rented by the hour or day, and guests can also bring their own boat and rent a jetty berth.",
+    "accommodationInfoEn": "Cabins in three sizes: A cabin 10 sqm (6 cabins, 2 beds, very basic, no running water), B cabin 16 sqm (12 cabins, 4 beds with bunk bed and double bed, cold water) and C cabin 75 sqm (10 cabins, 6 beds, sleeping loft, underfloor heating, open fireplace, kitchen, shower and toilet). Camping is also available. Pets are welcome in some cabins.",
+    "boatInfoEn": "Rowing boats, canoes and pedal boats can be rented, life jackets included",
+    "priceEn": "Rowing boat or canoe SEK 90 per hour, SEK 450 per 6 hours, SEK 650 per day. Pedal boat SEK 100 per hour, SEK 500 per 6 hours, SEK 700 per day. Jetty berth for your own boat SEK 150 per day and night, beach berth SEK 80 per day and night. Cabin price per night 2026: A cabin SEK 400–500, B cabin SEK 640–880, C cabin SEK 1,500–1,740 depending on season.",
+    "fishingLicenseEn": "A fishing license is required for Jällunden (fishing conservation area, 870 ha) and is bought at Jälluntofta Camping or via Swish. Annual license SEK 400 (card at the reception SEK 450), weekly license SEK 200 (SEK 250), day license SEK 100 (SEK 150). Max 2 rods per person, minimum size for zander 45 cm. Children under 15 fish for free with a guardian who holds a license."
   },
   {
     "name": "Medskogssjöns Camping",
@@ -2053,7 +2379,12 @@
     "licenseRequired": true,
     "boatCount": 1,
     "boatCountEstimate": true,
-    "email": "lotta@medskogssjon.se"
+    "email": "lotta@medskogssjon.se",
+    "descriptionEn": "Campground right next to lake Medskogssjön outside Ockelbo where you can rent a cabin. At the reception you can rent a rowing boat for quiet trips on the lake.",
+    "accommodationInfoEn": "Cabins 1a, 1b, 2a, 2b and 3 as well as the log cabin Timmerstugan 4, including a double cabin with two beds in each section. Hotplates, fridge, crockery and TV are included; guests bring their own bed linen. Toilet and shower are in a service building at most about 75 m away. Camping is also available.",
+    "boatInfoEn": "Rowing boat, pedal boat, canoe and SUP board for rent, as well as a motorized barbecue raft. Life jackets are available.",
+    "priceEn": "Fishing license SEK 150. Cabin per night (2–4 nights): 2 beds SEK 500, 4 beds SEK 600, large 4-bed cabin SEK 800.",
+    "fishingLicenseEn": "A fishing license costs SEK 150 and is bought via iFiske or at the reception. The lake is regularly stocked with rainbow trout and Arctic char. Fishing is not allowed at the campground's swimming area."
   },
   {
     "name": "Stjärnholms Gård",
@@ -2079,7 +2410,11 @@
     "boatCount": 2,
     "boatCountEstimate": true,
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Farm on lake Erken that rents out Sjöstugan on Smedjeudden for five to six people. Rod fishing is included in the rent, and those with experience can rent a sport rowing boat or a larger motorboat with echo sounder. Erken has perch, pike and zander.",
+    "accommodationInfoEn": "Sjöstugan for 5–6 people, weekly rental. Four beds in bunk beds and a pull-out sofa with a double bed, soapstone stove, simple kitchen with fridge, freezer, stove and oven with microwave, wood-fired sauna, outdoor shower with hot water and a composting toilet. Self-catering only.",
+    "boatInfoEn": "Sport rowing boat and larger motorboat with echo sounder can be rented by experienced anglers, kayak also available",
+    "fishingLicenseEn": "The right to rod fishing and access to a boat and fishing equipment are included in the rent, in the farm's waters of 228 hectares."
   },
   {
     "name": "Idrottsgården Flen",
@@ -2103,7 +2438,12 @@
     "email": "info@idrottsgarden.se",
     "beds": 35,
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Facility on lake Orrhammaren near Flen with accommodation in Sjöstugan, Sjövillan, an apartment and small cabins. Boats and canoes are rented out also to non-guests, and guests may sport fish with a rod in the lake.",
+    "accommodationInfoEn": "Sjöstugan (6 beds), apartment (7 beds), Sjövillan (16 beds in 8 rooms) and three small cabins with two beds each (can only be booked together with Sjövillan or Sjöstugan).",
+    "boatInfoEn": "Boat, canoe and SUP board for rent, also to non-guests. Life jacket and oars included. Guests use the boat and canoe for free. Sport fishing with a rod is allowed for guests, net fishing is not allowed.",
+    "priceEn": "Boat and canoe are free for guests. For non-guests SEK 100 per person and two hours or by agreement.",
+    "fishingLicenseEn": "Guests may sport fish at Idrottsgården and in some parts of the lake fishing is free. Net fishing is not allowed and fishing gear cannot be lent out."
   },
   {
     "name": "Lovsjöbadens Camping",
@@ -2132,7 +2472,12 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-granarpssjon-vastersjon-lovsjon.htm",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Quiet campground right by lake Lovsjön just south of Jönköping. Besides camping pitches there are twelve cabins that can be rented all year round. You can fish in the lake and rent a rowing boat, canoe or kayak on site.",
+    "accommodationInfoEn": "Twelve cabins: Retrostugan 20 sqm (double bed), Torpet S9 36+12 sqm (4+2 beds), three cabins close to the lake S10–S12 16–18 sqm (4 beds, no shower/toilet) and the cabin village S2–S8 20 sqm (7 cabins, 4 beds, shower/toilet). Duvets and pillows are provided, bed linen can be rented for SEK 150 per person. Pets allowed for an extra fee. Camping pitches are also available.",
+    "boatInfoEn": "Rowing boat, canoe and kayak for rent",
+    "priceEn": "Rental of rowing boat, canoe or kayak 2026: SEK 80/hour, SEK 175/3 hours, SEK 225 half day or overnight, SEK 390 day, SEK 550 24 hours. Cabin per night 2026 (low/high season): cabins 2–8 with toilet/shower SEK 990/1,190, cabins 10–12 without toilet/shower SEK 790/990, Torpet SEK 1,490/1,590, Retrostugan SEK 1,390/1,490.",
+    "fishingLicenseEn": "Fishing licenses for Väster-Lovsjöns fiskevårdsområde are sold online only via iFiske. Day license SEK 60, weekly license SEK 150, annual license SEK 500. Children and young people up to 11 years fish for free."
   },
   {
     "name": "Skotteksgården Camping & Stugby",
@@ -2155,7 +2500,10 @@
     "phone": "+46 321 131 84",
     "email": "info@skottek.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground and cabin village on the shore of lake Åsunden on the outskirts of Ulricehamn, open from the end of April to mid-September. There are cabins, apartments and sleeping barrels, and guests can rent a rowing boat, canoe and pedal boat to get out on the lake.",
+    "accommodationInfoEn": "28 cabins, apartments and sleeping barrels: camping barrel (1–2 guests), apartments Service (2–5), apartments Rosen (2–5), Sjöbungalow (2–5), Himmelbungalow (up to 7) and Villa Paradis (up to 12, four bedrooms). Camping in summer.",
+    "boatInfoEn": "Rowing boats, canoes and pedal boats for rent"
   },
   {
     "name": "Gnosjö Strand Camping",
@@ -2182,7 +2530,12 @@
     "phone": "072-225 28 05",
     "email": "info@gnosjostrand.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground on the northern shore of lake Hären south of Gnosjö with simple cabins for two to five people. On site you can rent a rowing boat, canoe, pedal boat or SUP, and you can launch your own boat from a ramp. The lake has a good stock of zander and pike.",
+    "accommodationInfoEn": "Cabins for 4 people (10–12 sqm, bunk bed), the family cabin Lyckebo with 5 beds and the couple's cabin Bliss with a double bed and lake view, as well as camping.",
+    "boatInfoEn": "Rowing boat can be rented for a full or half day, also canoe, pedal boat and SUP",
+    "priceEn": "Cabins from SEK 695 (low season) and SEK 795 (high season).",
+    "fishingLicenseEn": "Fishing license via iFiske.se"
   },
   {
     "name": "Sommens Camping",
@@ -2205,7 +2558,10 @@
     "phone": "0140-77 31 31",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campground with over a hundred pitches and four cabins, located on lake Sommen with a swimming area and playground. Guests can rent a rowing boat and fish from the lake. The steamboat Boxholm II also departs from the area.",
+    "accommodationInfoEn": "Four cabins and camping",
+    "boatInfoEn": "Rowing boats for rent"
   },
   {
     "name": "Fårgården Åsebol",
@@ -2228,7 +2584,10 @@
     "boatCount": 2,
     "boatCountEstimate": true,
     "phone": "076-830 32 27",
-    "email": ""
+    "email": "",
+    "descriptionEn": "Farm in Tiveden with log cabins and simpler rooms. Here you can rent a motorboat for Unden and a rowing boat for Gårdsjön, as well as Canadian canoes. There is fishing in several lakes in the area.",
+    "accommodationInfoEn": "Two log houses (Alberts and Olersa) with well-equipped kitchens, for up to eight people, and two simpler rooms (Maja and Greta) with four beds each, fully equipped kitchens and a shared bathroom.",
+    "boatInfoEn": "Motorboat for Unden and rowing boat for Gårdsjön for rent"
   },
   {
     "name": "Camping Vättersmålen",
@@ -2251,7 +2610,11 @@
     "phone": "+46 36 52167",
     "email": "info@campingvattersmalen.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Small campground on lake Vättern between Huskvarna and Gränna with cabins and camping pitches. You can rent a boat to fish on the lake. Open from mid-May to mid-August.",
+    "accommodationInfoEn": "Cabin 1 (10 sqm, 4 beds), cabin 2 (15 sqm, 4 beds) and cabin 8 (6 beds, sleeping loft, bedroom and living room with sofa bed, kitchenette, shower and toilet) as well as camping. Service building with showers, toilets, kitchen and dining room about 50 m from the cabins. Cabin rental is limited this year.",
+    "boatInfoEn": "Boat for fishing can be rented",
+    "priceEn": "Cabin 1 (10 sqm) SEK 550, cabin 2 (15 sqm) SEK 600, cabin 8 (6 beds) SEK 900 per night. Camping pitch SEK 240."
   },
   {
     "name": "Vegby Camping",
@@ -2273,7 +2636,12 @@
     "phone": "070-267 59 92",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Family campground on lake Södra Sämsjön with eight cabins that all have a lake view, plus 55 camping pitches. During the season you can rent a rowing boat, canoe and bicycle on site. There is also a pool, mini golf and a restaurant.",
+    "accommodationInfoEn": "Eight cabins, including an overnight cabin of 10 sqm (up to 4 guests, kitchenette, fridge and patio) and several self-catering cabins of 26 sqm (up to 6 guests, kitchen and patio, sleeping loft only in cabin 4), as well as 55 camping pitches.",
+    "boatInfoEn": "Rowing boat, canoe and motorboat can be rented at the reception during the summer season, life jackets can be borrowed",
+    "priceEn": "2026: rowing boat or canoe SEK 100/hour, motorboat SEK 600/4 hours or SEK 900/8 hours. Overnight cabin 10 m² SEK 500–700/night (2 adults + 2 children), self-catering cabin 26 m² SEK 1,000–1,200/night (4 people included, max 6) depending on season.",
+    "fishingLicenseEn": "Fishing licenses for Södra Sämsjön or Åsunden are arranged at the reception."
   },
   {
     "name": "Brokamåla Gård",
@@ -2302,7 +2670,12 @@
     "phone": "+46 709 149 394",
     "email": "info@brokamala.se",
     "boatCount": 7,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Farm with over 25 lakes and a focus on premium fishing, where several of the waters have their own rules and fishing licenses. Guests stay in the farm's cabins, and rowing boats are rented out at several of the lakes.",
+    "accommodationInfoEn": "Several cabins of 55–95 sqm, including Skogsstugan, Gårdstugan and Sjöstugan",
+    "boatInfoEn": "Rowing boats are rented out at Vitavatten and Gatgylet; at Rudensjön a rowing boat is included when booking a cabin",
+    "priceEn": "Day license Vitavatten SEK 400, Rudensjön SEK 500, Gatgylet SEK 750 (SEK 600 when renting a cabin) per person. Rowing boat SEK 350 (Vitavatten), SEK 300 (Gatgylet). Cabins in high season 19/6–22/8 2026 are rented by the week only.",
+    "fishingLicenseEn": "A fishing license is required and fishing without a license is not allowed. One rod per angler, spinning or fly fishing only, at most two salmonids per day license. Catch and release is allowed."
   },
   {
     "name": "Mjölknabbens Camping",
@@ -2328,7 +2701,12 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-asnen.htm",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground on Sirkön in the middle of lake Åsnen with both smaller cabins and whole houses for longer stays. Here you can rent a rowing boat, with or without a motor, and get out on the lake to fish.",
+    "accommodationInfoEn": "Camping cabins for two people with a double bed, electric heating and a simple kitchen (shower and toilet in a service building 20–40 m away), Annexet 72 sqm with a fully modern kitchen, bathroom and washing machine (renovated 2020), and Lyckan 1 and 2 with two bedrooms and four beds each. Camping is also available.",
+    "boatInfoEn": "Rowing boats (Linder Fishing 440 in aluminium) for rent, with or without a motor (Mercury 4 hp 4-stroke).",
+    "priceEn": "Motorboat SEK 4,000 per week including petrol. Annexet SEK 5,000 per week in low season and SEK 6,500 in high season, including electricity and water.",
+    "fishingLicenseEn": "Fishing license for Åsnen FVO via iFiske.se"
   },
   {
     "name": "First Camp Sjöstugan Älmhult",
@@ -2355,7 +2733,11 @@
     "phone": "+46 476-716 00",
     "email": "sjostugan@firstcamp.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "The campground and cabin village are by the lake in Älmhult, with ten different cabin types for two to six people. Here you can rent a rowing boat or pedal boat and fish for perch, pike and zander, among others, in Möckeln.",
+    "accommodationInfoEn": "Ten cabin types for 2–6 people and camping",
+    "boatInfoEn": "Rowing boats (4–5 people) and pedal boats (up to 5 people) for rent. A price list is available as a PDF from First Camp.",
+    "fishingLicenseEn": "Fishing licenses are not sold on site, buy via iFiske"
   },
   {
     "name": "Evedals Camping",
@@ -2383,7 +2765,11 @@
     "phone": "+46 470 630 34",
     "email": "info@evedalscamping.com",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Large campground on lake Helgasjön just outside Växjö with self-catering cabins, a hostel and camping pitches. Rowing boats and canoes can be rented at the reception for trips on the lake.",
+    "accommodationInfoEn": "Self-catering cabins of 32 sqm with a 10 sqm loft, four single beds in two bedrooms and a fully equipped kitchen. Hostel and camping are also available.",
+    "boatInfoEn": "Rowing boats and canoes for rent, per half day, day or week",
+    "priceEn": "2026: rowing boat or canoe SEK 425 per half day (4 hours), SEK 655 per full day (8 hours), SEK 2,500 per week."
   },
   {
     "name": "Bromölla Camping & Vandrarhem",
@@ -2406,7 +2792,10 @@
     "boatCount": 2,
     "boatCountEstimate": true,
     "phone": "+46 70 777 65 15",
-    "email": "info@bromollacamping.se"
+    "email": "info@bromollacamping.se",
+    "descriptionEn": "Campground and hostel on the shore of lake Ivösjön with four camping cabins and rooms in the main building. Boats and canoes can be rented, and the lake is used for swimming and fishing.",
+    "accommodationInfoEn": "Four camping cabins (2–4 beds) and a hostel with nine rooms, camping",
+    "boatInfoEn": "Boats and canoes for rent"
   },
   {
     "name": "Linneryds Camping",
@@ -2430,7 +2819,11 @@
     "boatCount": 2,
     "boatCountEstimate": true,
     "address": "360 24 Linneryd",
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campground on a point in lake Linnerydsjön with five cabins for four to eight people. In summer boats and canoes are rented out, and fishing licenses for the lake are sold on site.",
+    "accommodationInfoEn": "Five cabins for 4–8 people and camping",
+    "boatInfoEn": "Boats and canoes for rent in summer",
+    "fishingLicenseEn": "Fishing licenses for Linnerydsjön and Rolsmosjön are sold at the campground"
   },
   {
     "name": "E4:ans Camping",
@@ -2458,7 +2851,12 @@
     "phone": "(+46)0370-440 35",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campground on lake Vidöstern in Toftaholm with twelve cabins. Rowing boats are rented out at a cheap daily rate and fishing licenses for Vidöstern and Flåren are bought at the reception.",
+    "accommodationInfoEn": "Cabins A and B (15 sqm, 4 beds), cabin C (40 sqm, 6 beds, toilet and shower), cabin E and the beach cabin (12 sqm, 2–3 beds) and cabins G and H (25 sqm, 2 beds, toilet and shower). Camping is also available.",
+    "boatInfoEn": "Rowing boats for rent",
+    "priceEn": "Rowing boat SEK 100/24 hours. Cabins per night/week: cabins A and B SEK 550/3,100, beach cabin and cabin E SEK 350/2,000, cabin C SEK 4,000/week, cabins G and H SEK 3,500/week.",
+    "fishingLicenseEn": "A fishing license is required for Vidöstern and Flåren and is sold at the reception."
   },
   {
     "name": "MOMOS Camping Orrefors",
@@ -2485,7 +2883,11 @@
     "boatCountEstimate": true,
     "licenseRequired": true,
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Small campground on a point in lake Orranässjön in Glasriket. There are six cabins and camping pitches close to the water. Fishing licenses for Orranäsasjön and Vapnebäcksån (rainbow trout) are sold at the reception, and you can rent a rowing boat, canoe and SUP board.",
+    "accommodationInfoEn": "Six cabins: four for two people with a double bed (160 cm), one for three people and one for four people with two bunk beds. Kitchenette with fridge in every cabin, bed linen for a fee. Camping pitches are also available.",
+    "boatInfoEn": "Rowing boat, canoe and SUP board for rent",
+    "fishingLicenseEn": "Fishing licenses for Orranäsasjön and Vapnebäcksån (rainbow trout) are sold at the reception."
   },
   {
     "name": "Ringsjöstrand Camping & Stugby",
@@ -2508,7 +2910,11 @@
     "phone": "0415-105 67",
     "email": "info@ringsjostrand.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground, cabin village and hotel right by lake Ringsjön in central Skåne. At the reception you can rent rowing boats, kayaks and SUP, and nearby there are motorboats for rent from a local smokehouse and fish shop. Suits days by the lake with fishing from a boat.",
+    "accommodationInfoEn": "Cabins (about 40 sqm) with two bedrooms, one with a double bed and one with a bunk bed, a fully equipped kitchen with living room, TV, bathroom with shower and toilet, and their own patio. Camping pitches and hotel rooms are also available.",
+    "boatInfoEn": "Rowing boats, kayaks and SUP for rent at the reception",
+    "priceEn": "Cabin (about 40 m², for 4 people) per night: SEK 1,400 (Oct–May), SEK 1,950 (1 Jun–3 Jul, 16–31 Aug), SEK 2,420 (4 Jul–15 Aug). Linen and cleaning are extra."
   },
   {
     "name": "Eksjö Camping",
@@ -2532,7 +2938,12 @@
     "email": "info@eksjocamping.se",
     "licenseRequired": true,
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground with cabins on lake Hunsnäsen right next to Eksjö. There are four-bed cabins and larger cabins with lake view, and at the reception you can rent a fishing boat, canoe and pedal boat by the hour. Fishing licenses for Hunsnäsen are sold on site.",
+    "accommodationInfoEn": "Cabins with 4 or 4+2 beds, camping pitches and hostel",
+    "boatInfoEn": "Fishing boat, canoe and pedal boat (four people) for rent at the reception, life jackets included",
+    "priceEn": "Boat rental SEK 100 per hour. Cabin per night 2026: 4 beds SEK 645 (Jan–May, Sep–Dec) and SEK 895 (Jun–Aug), 4+2 beds SEK 1,240 and SEK 1,565.",
+    "fishingLicenseEn": "A fishing license is required for Hunsnäsen for anyone over 15 years. Day, weekly and season licenses are bought at the reception."
   },
   {
     "name": "Fiskevik Camping",
@@ -2556,7 +2967,12 @@
     "licenseRequired": true,
     "address": "Björkenäs brook 1, 671 92 Arvika",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground on the shore of lake Nysockensjön just outside Arvika with four-bed cabins, rooms and space for caravans and tents. The lake is known for its fishing and at the reception you can buy fishing licenses and rent a boat.",
+    "accommodationInfoEn": "Four-bed cabins, rooms and caravan and tent pitches",
+    "boatInfoEn": "Boat for rent at the reception",
+    "priceEn": "Cabin (4 beds) per night: SEK 500 (1 May–12 July, 29 Aug–30 Sep), SEK 550 (13 July–28 Aug), cleaning SEK 300. Rowing boat SEK 200 per 4 hours.",
+    "fishingLicenseEn": "Fishing licenses are sold at the reception"
   },
   {
     "name": "Siljansnäs Camping",
@@ -2579,7 +2995,11 @@
     "phone": "073 022 70 78",
     "boatCount": 1,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Family campground on lake Siljan in Siljansnäs with cabins for six to seven people. Guests can rent both a boat and a canoe to explore the lake from the water.",
+    "accommodationInfoEn": "Cabins for 6-7 people and camping",
+    "boatInfoEn": "Boat and canoe can be rented",
+    "priceEn": "Cabin (6–7 people) 2026: SEK 1,495/night before and after the season, SEK 1,695/night in high season (18 June–8 August). Bed linen and final cleaning can be ordered."
   },
   {
     "name": "Sweranda",
@@ -2611,7 +3031,11 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-filipstad-turistfiskekort.htm",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Family business that rents out its own cabins and cottages near the lake in the Filipstad area, including at Yngen and Vintersjön. A fishing boat, your own jetty and a canoe are always included in the rent.",
+    "accommodationInfoEn": "Self-catering cabins and cottages by the lake, including Hammaren (5 beds), Lövudden (2 beds) and Yngslandet at Yngen, Östra Vintersjön (4 beds) and Vintersjön with two cabins (8 beds). Several have a wood-fired sauna.",
+    "boatInfoEn": "Fishing boat, your own jetty and canoe are always included in the cabin rent. You may bring your own electric motor or 4-stroke of max 5 hp, motors are not rented out.",
+    "fishingLicenseEn": "Fishing license via iFiske.se"
   },
   {
     "name": "Sollerö Camping",
@@ -2634,7 +3058,10 @@
     "phone": "0250-222 30",
     "email": "info@sollerocamping.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campground on Sollerön with a view over lake Siljan and fifteen newly renovated, insulated cabins. Rowing boats and canoes can be rented on site.",
+    "accommodationInfoEn": "Fifteen insulated cabins and camping",
+    "boatInfoEn": "Rowing boats and canoes for rent"
   },
   {
     "name": "Rådastrands Camping",
@@ -2657,7 +3084,10 @@
     "phone": "0708-166213",
     "email": "info@radastrand.com",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite with camping cabins on the sandy beach of lake Rådasjön, just outside Råda. Rowing boats and kayaks are available for rent, and the area is rich in fishing waters.",
+    "accommodationInfoEn": "Camping cabins for 2, 4 and 5 people (4-person cabin with 1 bedroom, 5-person cabin with 2 bedrooms) as well as camping",
+    "boatInfoEn": "Rowing boats and kayaks can be rented"
   },
   {
     "name": "First Camp Mörudden",
@@ -2680,7 +3110,10 @@
     "phone": "+46 54 51 77 11",
     "email": "morudden@firstcamp.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite on Hammarö with cabins on the shore of lake Vänern, with swimming beaches and jetties. A rowing boat can be rented for a quiet trip out on the lake.",
+    "accommodationInfoEn": "Cabins: Möruddenstuga (25 sqm, 2+2 beds), Möruddenstuga Plus (25 sqm, 4+2 beds), Skagenestuga (10 sqm, 2 beds), Ekebostuga (16 sqm, 4 beds) as well as camping. Cleaning and linen can be booked.",
+    "boatInfoEn": "Rowing boats for rent"
   },
   {
     "name": "Hjälmargården och Läppe Camping",
@@ -2701,7 +3134,11 @@
     "lng": 15.80572,
     "address": "Hjälmargårdsvägen 1, 643 95 Vingåker",
     "phone": "0151-73 09 80",
-    "email": "reception@hjalmargarden.se"
+    "email": "reception@hjalmargarden.se",
+    "descriptionEn": "Hjälmargården is located on the shore of lake Hjälmaren with a swimming beach and café. You can stay in a cabin, a small guest cabin (friggebod) or a hostel room, and rent a canoe and an Optimist dinghy to get out on the lake. Fishing is free in the whole lake. Canoes and Optimist dinghies can be rented at Kaffestugan.",
+    "accommodationInfoEn": "Rooms in the Längan hostel (single, double and four-bed rooms with toilet and shower, underfloor heating), Cabins 37–42, large cabins, Sjöstugan, friggebodar (small guest cabins) and camping cabins as well as tent pitches and caravan pitches",
+    "priceEn": "Rooms in Längan from SEK 275/person, camping cabin from SEK 650/night, friggebod from SEK 495/night, cabin from SEK 1,095/night. Tent pitch from SEK 200/night, caravan pitch from SEK 300/night.",
+    "fishingLicenseEn": "Free fishing in the whole lake"
   },
   {
     "name": "Camp Viking",
@@ -2722,7 +3159,9 @@
     "lng": 15.2534,
     "address": "Hannåsen 107, 843 95 Gällö",
     "phone": "+46 72 700 40 03",
-    "email": "info@campviking.se"
+    "email": "info@campviking.se",
+    "descriptionEn": "Campsite on lake Revsund with cabins at several price levels and a small Viking village on a point. Canoes and SUP boards are available for rent, and the fishing waters Gimån and Herrevadsströmmen are nearby.",
+    "accommodationInfoEn": "Cabins for 2–8 people: cabins with private bathroom, lakeside cabins 5–10 meters from the lake and simpler small cabins. All cabins have an equipped kitchen, refrigerator and TV. Camping is also available"
   },
   {
     "name": "Vivstavarvstjärns Camping",
@@ -2745,7 +3184,11 @@
     "phone": "060-58 05 40",
     "email": "info@vivstavarvscamping.se",
     "licenseRequired": true,
-    "fishingLicenseUrl": "https://www.stororingen.se/butik/"
+    "fishingLicenseUrl": "https://www.stororingen.se/butik/",
+    "descriptionEn": "Small family campsite by its own tarn with swimming and fishing, close to central Timrå. There are cabins with kitchenettes and a hostel. Quality fish (trout and char) are stocked by the fishing club.",
+    "accommodationInfoEn": "Camping cabins for 1, 2, 4 and 6 people with kitchenette (the 6-bed cabin has a full kitchen and its own toilet), a hostel with single and double rooms, and camping pitches",
+    "priceEn": "Cabin 1 bed from SEK 410/night, 2 beds from SEK 475, 4 beds from SEK 625, 6 beds from SEK 950 (2027, high season 11/6–14/8 slightly higher). Hostel single room from SEK 395/night, double room from SEK 525/night. Sheet set SEK 100.",
+    "fishingLicenseEn": "Fishing licenses are sold in the Storöringens Fiskeklubb shop"
   },
   {
     "name": "Sörälgens Camping",
@@ -2768,7 +3211,12 @@
     "phone": "076 671 14 84",
     "email": "info@soralgenscamping.se",
     "licenseRequired": true,
-    "boatCount": 3
+    "boatCount": 3,
+    "descriptionEn": "Campsite on lake Sörälgen in the Hökhöjden nature reserve near Hällefors. Camping cabins, cabins and a lodge are available to rent, and the lake invites paddling and fishing.",
+    "accommodationInfoEn": "8 camping cabins with two beds (8 sqm, two hotplates and a small refrigerator), cabins with 4 beds (13 sqm), as well as holiday houses, glamping tents and a lodge. Shower and toilet in a service building. Camping is also available",
+    "boatInfoEn": "Rental of 3 Canadian canoes, 2 kayaks, 3 rowing boats and 2 pedal boats. Life jacket included: SEK 99/hour or SEK 499/day.",
+    "priceEn": "2-bed cabin SEK 640/night (2 people), 4-bed cabin SEK 876/night (3–4 people). Boat SEK 99/hour or SEK 499/day. Fishing license SEK 50/day or SEK 200/week.",
+    "fishingLicenseEn": "Fishing licenses can be bought at the campsite: SEK 50/day or SEK 200/week."
   },
   {
     "name": "Ljusdals Camping",
@@ -2789,7 +3237,10 @@
     "lng": 16.04082,
     "address": "Ramsjövägen 56, 827 30 Ljusdal",
     "phone": "0651-129 58",
-    "email": "info@ljusdalscamping.se"
+    "email": "info@ljusdalscamping.se",
+    "descriptionEn": "Campsite on lake Växnan in Ljusdal with cabins, canoeing and fishing. Close to the river Ljusnan, whose rapids attract anglers after quality fish.",
+    "accommodationInfoEn": "Cabins with 2, 4 and 6 beds: 2-bed cabins (6 and 12 sqm), 4-bed cabins (12, 15 and 26 sqm, of which the 2+2 ones have shower and toilet) and a 6-bed cabin (50 sqm, heated and insulated, open in winter too) as well as camping. Heaters are available in the simpler cabins",
+    "priceEn": "Cabin 2 beds from SEK 450/night, 4 beds from SEK 650/night (2+2 with shower and toilet from SEK 990), 6 beds from SEK 1,250/night. Low season 2027; high season 15/6–16/8 from SEK 500/night. Bed linen SEK 120, cleaning from SEK 275."
   },
   {
     "name": "Rödvattnet Stugby & Camping",
@@ -2813,7 +3264,11 @@
     "electricMotor": true,
     "boatCount": 1,
     "boatCountEstimate": true,
-    "phone": "+46 702 78 64 17"
+    "phone": "+46 702 78 64 17",
+    "descriptionEn": "Cabin village and campsite with a view over lake Rödvattnet. Six cabins and two holiday houses, with canoes, an electric boat and an electric raft for rent, as well as a sauna and fishing.",
+    "accommodationInfoEn": "Six cabins for 3–5 people with lake view and two large holiday houses for 8 people, as well as camping. Equipped kitchen, bathroom with shower and toilet; bed linen and towels included, electricity and final cleaning are extra",
+    "boatInfoEn": "Electric boat for rent at SEK 500/day. Also an electric raft (15 sqm) at SEK 1,000/day and canoes",
+    "priceEn": "Cabin SEK 1,000–1,350/night, holiday house SEK 2,300/night. Motorhome/caravan pitch SEK 320/night, tent pitch SEK 150/night. Electricity and cleaning are extra."
   },
   {
     "name": "Rötvikens Camping",
@@ -2838,7 +3293,10 @@
     "lng": 14.16009,
     "address": "Rötviken, 835 63 Föllinge",
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Campsite on lake Hotagen in Hotagsbygden with simple four-bed cabins. Right in the middle of the Hotagen fishing license area with over a hundred lakes and watercourses.",
+    "accommodationInfoEn": "Simple four-bed cabins with a basic kitchen and refrigerator as well as camping. Bed linen can be rented",
+    "fishingLicenseEn": "Hotagenkortet; fishing licenses are sold nearby. Children and young people under 18 fish for free within the Hotagenkortet area."
   },
   {
     "name": "First Camp Sommarvik",
@@ -2859,7 +3317,10 @@
     "lng": 12.14094,
     "address": "Sommarvik Strand, 672 91 Årjäng",
     "phone": "+46 573 120 60",
-    "email": "sommarvik@firstcamp.se"
+    "email": "sommarvik@firstcamp.se",
+    "descriptionEn": "Campsite on Västra Silen with cabins ranging from simple ones near the shore to large ones for up to 18 people. The lake is popular for paddling and fishing. Canoes, kayaks and SUP boards can be rented.",
+    "accommodationInfoEn": "13 cabins of 10–120 sqm, from simple cabins near the shore (e.g. Fiskartorp, 4 beds) to the large cabin Storstuga Älgen with 18 beds, as well as a park model caravan and camping. Cleaning, sheets and towels can be booked",
+    "fishingLicenseEn": "Free fishing from land and jetty within the Sommarvik area. For the rest of the lake a fishing license is required, sold at the campsite together with the nature conservation card (naturvårdskort)."
   },
   {
     "name": "First Camp Orsa",
@@ -2880,7 +3341,9 @@
     "lng": 14.59921,
     "address": "Bowlingvägen 1, 794 31 Orsa",
     "phone": "+46 250 67 03 00",
-    "email": "orsa@firstcamp.se"
+    "email": "orsa@firstcamp.se",
+    "descriptionEn": "Campsite on the long, shallow sandy beach of lake Orsasjön just outside Orsa. There are cabins in several sizes, and canoes and pedal boats can be rented for trips on the lake. Good opportunities for sport fishing nearby.",
+    "accommodationInfoEn": "13 cabins of about 12–48 sqm with 3–6 beds (Dalastuga has 20 beds), a park model caravan and camping. Cleaning, sheets and towels can be booked"
   },
   {
     "name": "Delsbo Camping",
@@ -2902,7 +3365,10 @@
     "address": "Hammarsvall, 824 73 Delsbo",
     "phone": "072-216 07 93",
     "beds": 40,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campsite on lake Stömnesjön in Delsbo with cabins for rent. The area has its own swimming spot at the lake.",
+    "accommodationInfoEn": "11 cabins (A–K): A–D 2 beds (SEK 475/day), E 4 beds (SEK 650), F 2 beds (SEK 475), G 4 beds (SEK 590), H–J 6 beds (SEK 895), K 4 beds (SEK 785). Bed linen SEK 110/bed, cleaning SEK 500.",
+    "priceEn": "Cabin from SEK 475/day (2 beds) to SEK 895/day (6 beds). Bed linen SEK 110/bed, cleaning SEK 500."
   },
   {
     "name": "Torsby Camping",
@@ -2930,7 +3396,10 @@
     "address": "Svenneby, 685 91 Torsby",
     "phone": "076-677 33 20",
     "email": "info@torsbycamping.se",
-    "licenseRequired": true
+    "licenseRequired": true,
+    "descriptionEn": "Campsite on lake Fryken with cabins that have a view over the lake. Canoes, kayaks and SUP boards are available for rent, and Fryken holds zander, perch, pike, salmon and brown trout, among others.",
+    "accommodationInfoEn": "20 cabins built from the campsite's own forest, as well as camping",
+    "fishingLicenseEn": "Fishing licenses are bought at the reception or on fiske.se"
   },
   {
     "name": "First Camp Skutberget",
@@ -2951,7 +3420,9 @@
     "lng": 13.39093,
     "address": "Skutbergsvägen 315, 653 46 Karlstad",
     "phone": "+46 54 53 51 30",
-    "email": "karlstad@firstcamp.se"
+    "email": "karlstad@firstcamp.se",
+    "descriptionEn": "Campsite on the shore of lake Vänern near Karlstad with cabins, the option to book cleaning and linen, and fishing as an activity.",
+    "accommodationInfoEn": "7 cabins of 12–40 sqm with 2–6 beds (e.g. Vänerstuga 4 beds, Skutbergsstuga 4+2, Kattvikstuga Plus 6 beds, Fintatorp 4 beds) as well as camping. Cleaning, sheets and towels can be booked"
   },
   {
     "name": "Hennans Camping",
@@ -2972,7 +3443,9 @@
     "lng": 15.9055,
     "address": "Telegrafvägen 1, 827 75 Ramsjö",
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Personal family campsite on lake Hennan with four-bed cabins. The lake is good for swimming and paddling.",
+    "accommodationInfoEn": "Cabins with four beds as well as camping"
   },
   {
     "name": "Skokloster Camping",
@@ -2995,7 +3468,11 @@
     "boatCount": 1,
     "boatCountEstimate": true,
     "address": "Skoklostervägen 47, 749 96 Skokloster",
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campsite with cabins on the Skohalvön peninsula on lake Mälaren, with its own shallow sandy beach. Guests can rent a rowing boat for a trip on the lake, and there is also a sauna raft and a restaurant on site.",
+    "accommodationInfoEn": "Four cabins as well as space for motorhomes, caravans and tents",
+    "boatInfoEn": "Rowing boat for rent",
+    "priceEn": "Cabin SEK 395–1,395 per day (2026)"
   },
   {
     "name": "Upplands Ekeby bygdegård",
@@ -3023,7 +3500,11 @@
     "phone": "070-319 57 76",
     "fishingLicenseUrl": "https://www.ifiske.se/fiske-vallen.htm",
     "licenseRequired": true,
-    "address": "Rörby 110, 747 92 Alunda"
+    "address": "Rörby 110, 747 92 Alunda",
+    "descriptionEn": "The community hall association rents out rowing boats for fishing on the long, narrow lake Vällen. The boats are kept at Snarlund next to Vällenbadet. Fishing licenses are bought via iFiske.",
+    "boatInfoEn": "Two rowing boats for rent, to be booked in advance",
+    "priceEn": "Rowing boat SEK 300 per day. Fishing license Vällen: weekly license SEK 100, annual license SEK 200.",
+    "fishingLicenseEn": "Fishing license via iFiske"
   },
   {
     "name": "Flottsbro Camping & Stugby",
@@ -3048,7 +3529,11 @@
     "lng": 17.88282,
     "address": "Häggstavägen 20, 141 32 Huddinge",
     "phone": "08-535 327 00",
-    "email": "info@flottsbro.se"
+    "email": "info@flottsbro.se",
+    "descriptionEn": "Outdoor recreation facility and campsite in Huddinge just south of Stockholm with many self-catering cabins. The facility is located on lake Albysjön, where it is good to fish from the jetty and shore. Canoes are rented out at Flottsbro värdshus.",
+    "accommodationInfoEn": "44 cabins with 2–6 beds as well as camping",
+    "priceEn": "Cabin from SEK 725/night, camping from SEK 260/night. Canoe from SEK 200.",
+    "fishingLicenseEn": "Fishing with hand tackle is free, no fishing license needed"
   },
   {
     "name": "Lida Friluftsgård",
@@ -3070,7 +3555,11 @@
     "phone": "08-778 40 35",
     "email": "vardshuset@lida.se",
     "beds": 36,
-    "address": "Lidavägen 1, 146 33 Tullinge"
+    "address": "Lidavägen 1, 146 33 Tullinge",
+    "descriptionEn": "Outdoor recreation center on lake Getaren with camping cabins, a hostel and an inn. Free fishing with a rod from the shore.",
+    "accommodationInfoEn": "Five camping cabins with four beds (bunk beds), electricity, heating, microwave and refrigerator (shower, toilet and sauna in a changing room building opposite; cabin 5 is pet-friendly with a ramp) as well as a hostel with 16 beds in two dormitories",
+    "priceEn": "Cabin from SEK 795/day. Hostel from SEK 3,000/day.",
+    "fishingLicenseEn": "Fishing from land with a rod, no fishing license needed"
   },
   {
     "name": "Rösjöbaden Camping & Stugby",
@@ -3091,7 +3580,9 @@
     "lng": 17.99197,
     "address": "Lomvägen 104, 192 56 Sollentuna",
     "phone": "08-96 21 84",
-    "email": "rosjon@uniquehotels.se"
+    "email": "rosjon@uniquehotels.se",
+    "descriptionEn": "Campsite and cabin village on lake Rösjön in Sollentuna, near Stockholm. Cabins for four to six people, camping and canoe rental.",
+    "accommodationInfoEn": "Cabins with 4–6 beds as well as camping"
   },
   {
     "name": "Djulö Camping",
@@ -3112,7 +3603,10 @@
     "lng": 16.2107,
     "address": "Djulöbadet, 641 92 Katrineholm",
     "phone": "0150-572 42",
-    "email": "info@djulocamping.se"
+    "email": "info@djulocamping.se",
+    "descriptionEn": "Campsite with cabins at the Djulöbadet swimming spot on lake Djulösjön just outside Katrineholm. There are camping pitches, seasonal pitches and rental of canoes, kayaks and SUP boards.",
+    "accommodationInfoEn": "15 cabins for 2–8 people (about 14–23 sqm) with kitchen or kitchenette, refrigerator and cold water, as well as camping pitches. Bring your own bed linen",
+    "priceEn": "Canoe or kayak 2 hours SEK 300, full day SEK 450. SUP 2 hours SEK 250. Paddles and life jackets included."
   },
   {
     "name": "Mälarbadens Camping",
@@ -3133,7 +3627,10 @@
     "lng": 16.43842,
     "address": "Mälarbadsvägen 76, 644 36 Torshälla",
     "phone": "016-34 31 87",
-    "email": "info@malarbadenscamping.se"
+    "email": "info@malarbadenscamping.se",
+    "descriptionEn": "Campsite at the Mälarbadens swimming spot in Torshälla, a few minutes from Eskilstuna. Six cabins with pantry and patio as well as camping pitches and a glamping caravan.",
+    "accommodationInfoEn": "Six cabins for 2–5 people with pantry, refrigerator and a patio with grill, a glamping caravan (Adria, 5 beds) as well as camping pitches. Shared service building with showers",
+    "priceEn": "Cabin from SEK 495/night, glamping caravan from SEK 1,100/night, camping pitch from SEK 280/night."
   },
   {
     "name": "Villa Baro",
@@ -3154,7 +3651,9 @@
     "lng": 15.97668,
     "address": "Västantorpsvägen, 597 31 Åtvidaberg",
     "phone": "0120-844 40",
-    "email": "info@villabaro.se"
+    "email": "info@villabaro.se",
+    "descriptionEn": "Hotel on the shore of lake Bysjön in the oak landscape of Åtvidaberg with rooms and suites. Guests can paddle out on the lake.",
+    "accommodationInfoEn": "Hotel rooms and suites in Nya Flygeln (built 2018–2020), Gamla Flygeln and Adelswärdska Villan on the shore of lake Bysjön"
   },
   {
     "name": "Hätte Camping",
@@ -3176,7 +3675,11 @@
     "address": "Badvägen 2, 573 93 Tranås",
     "phone": "0140-17 482",
     "email": "info@hattecamping.se",
-    "licenseRequired": true
+    "licenseRequired": true,
+    "descriptionEn": "Quiet family campsite right on lake Sommen just outside Tranås. There are cabins of different standards and a municipal swimming spot at the lake.",
+    "accommodationInfoEn": "Cabins in three standards: Normal (4 beds, heating and electricity included, water fetched at the service building), Comfort (4 beds, own shower and toilet) and Lyx (bedroom with bunk bed and two sofa beds), as well as camping pitches",
+    "priceEn": "Cabin Normal 1–2 people from SEK 465/night, Comfort from SEK 655, Lyx from SEK 770 (2026). Dog SEK 165, sheet package SEK 255.",
+    "fishingLicenseEn": "Fishing permits and basic fishing equipment are sold at the campsite reception"
   },
   {
     "name": "Ursand Resort & Camping",
@@ -3197,7 +3700,9 @@
     "lng": 12.3234,
     "address": "Djupedalen 520, 462 60 Vänersborg",
     "phone": "0521-186 66",
-    "email": "info@ursand.se"
+    "email": "info@ursand.se",
+    "descriptionEn": "Large campsite and resort at the southern tip of lake Vänern outside Vänersborg, with a long sandy beach. There are cabins in several sizes, park model caravans and camping pitches.",
+    "accommodationInfoEn": "Cabins of 9–40 sqm with 2–6 beds (including A-Storstuga, Campingstuga, Familjestuga, Schlagerstuga and Attefallsstuga), park model caravans and camping"
   },
   {
     "name": "Askeviks Camping & Stugor",
@@ -3218,7 +3723,9 @@
     "lng": 14.01351,
     "address": "Sjötorp Askevik 62, 540 66 Sjötorp",
     "phone": "+46 768 14 14 09",
-    "email": "info@askevik.nu"
+    "email": "info@askevik.nu",
+    "descriptionEn": "Campsite and cabin village on the sandy beach of lake Vänern near Sjötorp, with a guest harbour and boat launch ramp nearby. Boat fishing on Vänern is a popular activity.",
+    "accommodationInfoEn": "18 cabins of 10–22 sq m with two to five beds, electric heating, plus camping"
   },
   {
     "name": "Hjo Camping",
@@ -3240,7 +3747,9 @@
     "address": "Karlsborgsvägen 40, 544 36 Hjo",
     "phone": "+46 503 310 52",
     "email": "kontakt@hjocamping.se",
-    "beds": 40
+    "beds": 40,
+    "descriptionEn": "Campsite on the shore of lake Vättern in Hjo. There are ten camping cabins for up to four people, as well as pitches for caravans and tents.",
+    "accommodationInfoEn": "Ten camping cabins for up to four people, plus camping"
   },
   {
     "name": "Breviks Strand Camping",
@@ -3262,7 +3771,9 @@
     "address": "Vättersvallen, 546 91 Karlsborg",
     "phone": "+46 505 311 10",
     "email": "info@brevikscamping.se",
-    "beds": 8
+    "beds": 8,
+    "descriptionEn": "Campsite with a wide sandy beach right on lake Vättern between Hjo and Karlsborg. There are simple cabins and camping pitches close to the water.",
+    "accommodationInfoEn": "Two two-person cabins and one four-person cabin, plus camping"
   },
   {
     "name": "Ragnerudssjöns Camping & Stugby",
@@ -3283,7 +3794,9 @@
     "lng": 12.10369,
     "address": "Jolsäter 15, 458 97 Högsäter",
     "phone": "0528-400 64",
-    "email": "info@ragnerud.com"
+    "email": "info@ragnerud.com",
+    "descriptionEn": "Campsite and cabin village at Ragnerudsjön on Kroppefjäll with a restaurant and café. Cabins are located both by a small stream and in a more secluded spot, and canoes and kayaks are available for rent.",
+    "accommodationInfoEn": "Cabins, several with a fireplace, plus camping pitches"
   },
   {
     "name": "Kalvs Familjecamping",
@@ -3312,7 +3825,12 @@
     "address": "Kalvs Camping 1, 512 61 Kalv",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Small campsite at lake Kalvsjön in Sweden's southernmost wilderness with eight log cabins and a houseboat. Guests can rent a boat to reach the fishing waters in the lake system and buy a fishing license on site.",
+    "accommodationInfoEn": "Eight log cabins (four with two beds, four with four beds), houseboat, plus camping",
+    "boatInfoEn": "Rowing boats and motorboats for rent (one tank of petrol is included in the motorboat rental). A houseboat can also be rented.",
+    "priceEn": "Cabin with two beds SEK 560–610 and with four beds SEK 790–920 per night depending on season (2026). Rowing boat SEK 450/day, motorboat SEK 850/day (one tank of petrol included). Houseboat SEK 950/day (overnight stay only).",
+    "fishingLicenseEn": "Fishing licenses are sold at the campsite"
   },
   {
     "name": "Dalslands Camping & Kanotcentral",
@@ -3333,7 +3851,10 @@
     "lng": 12.19293,
     "address": "Greans campingplats, 666 91 Bengtsfors",
     "phone": "0531-100 60",
-    "email": "info@dalslandscamping.se"
+    "email": "info@dalslandscamping.se",
+    "descriptionEn": "Campsite and canoe centre between the lakes Lelången and Ärtingen on the Dalsland Canal. Cabins, rooms and a houseboat are available for rent, as well as canoes and kayaks.",
+    "accommodationInfoEn": "Cabins and rooms, including a 4-bed cabin with toilet, and a houseboat with 5 beds, plus camping",
+    "priceEn": "Cabin with two beds SEK 600/night, four beds SEK 700/night, six beds from SEK 800/night. Room with four beds SEK 450/night. Houseboat SEK 850/night."
   },
   {
     "name": "Bengtsfors Stugby",
@@ -3354,7 +3875,9 @@
     "lng": 12.19116,
     "address": "Norra Grean 5, 666 91 Bengtsfors",
     "phone": "070 204 50 26",
-    "email": ""
+    "email": "",
+    "descriptionEn": "Lakeside cabins with toilet, shower and kitchenette in a private area by lake Ärtingen just north of Bengtsfors. The cabins have a balcony with a lake view and are rented out by the week or for shorter stays.",
+    "accommodationInfoEn": "Lakeside cabins with kitchenette, shower and toilet"
   },
   {
     "name": "Kroksjöns Fiskecamp",
@@ -3382,7 +3905,11 @@
     "phone": "0325-769 44",
     "beds": 31,
     "licenseRequired": true,
-    "email": "info@kroksjon.com"
+    "email": "info@kroksjon.com",
+    "descriptionEn": "Fishing camp at Kroksjön south of Tranemo with two fishing lakes. The cabins are on a forested hill with a view over the nearest lake, and there is also space for caravans and motorhomes.",
+    "accommodationInfoEn": "Cabins and pitches for caravans and motorhomes",
+    "priceEn": "Cabins per night: Cabin 1 (2 beds) SEK 500, Cabin 2–4 (4 beds) SEK 650, Cabin 6–7 (4 beds) SEK 750, Cabin 5 (5 beds) SEK 950–1000, Cabin 8 (4 beds) SEK 800–850. Day ticket B-lake SEK 260 (max 3 fish). Day ticket A-lake SEK 50, annual ticket SEK 200.",
+    "fishingLicenseEn": "Fishing license required. B-lake (put & take, rainbow trout): day ticket SEK 260, one rod per ticket, fishing 05–23. A-lake: day ticket SEK 50, annual ticket SEK 200, fishing year-round."
   },
   {
     "name": "Säms Camping",
@@ -3407,7 +3934,10 @@
     "lng": 13.16051,
     "address": "Norra Säm, Annelund/Ljung, 524 93 Herrljunga",
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Small campsite beside Norra Sämsjön with a swimming beach, a cabin or tent for rent and space for about fifteen caravans and tents. Sämsjön is a fishing lake with zander, pike and perch.",
+    "accommodationInfoEn": "Cabin and tent for rent, plus camping",
+    "fishingLicenseEn": "Fishing licenses are sold at the campsite."
   },
   {
     "name": "Vallsnäs Camping",
@@ -3430,7 +3960,10 @@
     "beds": 43,
     "email": "info@vallsnascamping.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Family campsite at lake Unnen about two kilometres from Unnaryd, with ten cabins and a restaurant. Canoes, boats, motorboats and SUP boards are available for rent.",
+    "accommodationInfoEn": "Ten cabins for 2–6 people, plus camping",
+    "boatInfoEn": "Boats and motorboats for rent"
   },
   {
     "name": "Harasjömåla Fiskecamp",
@@ -3461,7 +3994,12 @@
     "beds": 142,
     "boatCount": 3,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Fishing camp with about twenty waters, from put-and-take lakes to natural waters. Guests stay in the camp's own cabins and can rent a rowing boat at Tuesjön and Raslången, among others.",
+    "accommodationInfoEn": "29 cabins of 12–135 sq m, from simple two-bed cabins to ten-bed cabins",
+    "boatInfoEn": "Rowing boats for rent at Tuesjön, Raslången and several of the put-and-take lakes",
+    "priceEn": "Rowing boat SEK 220 per day (SEK 170 from 1 pm). Fishing licenses (2025): put-and-take adult SEK 310/day, youth 12–17 years SEK 225; natural waters day ticket SEK 65, weekly ticket SEK 230, annual ticket SEK 565 (family ticket).",
+    "fishingLicenseEn": "Fishing license required; fishing without a license is not allowed. Bought at the reception, via the booking calendar or, for put-and-take, with Swish outside opening hours. Children up to 11 years fish for free on a parent's license."
   },
   {
     "name": "Halens Camping och Stugby",
@@ -3482,7 +4020,9 @@
     "lng": 14.50923,
     "phone": "+46 454-402 30",
     "email": "halen@mycamping.se",
-    "address": "Halenvägen 321, 293 39 Olofström"
+    "address": "Halenvägen 321, 293 39 Olofström",
+    "descriptionEn": "Campsite close to nature on the shore of Halen in north-western Blekinge, surrounded by forest. There are modern cabins and the option to rent a canoe to explore the lake.",
+    "accommodationInfoEn": "Modern cabins plus camping"
   },
   {
     "name": "Stensjö Camping & Vandrarhem",
@@ -3503,7 +4043,9 @@
     "lng": 15.51533,
     "address": "Västra Stensjö, 370 34 Holmsjö",
     "phone": "+46 455-921 14",
-    "email": ""
+    "email": "",
+    "descriptionEn": "Campsite with cabins and a hostel by lake Alljungen. You can swim and fish in the lake, and canoes and paddle boards are available for rent.",
+    "accommodationInfoEn": "Cabins and hostel, plus camping"
   },
   {
     "name": "Breanäs Hotell",
@@ -3524,7 +4066,9 @@
     "lng": 14.30478,
     "address": "Breanäs 3060, 289 73 Immeln",
     "email": "info@breanashotell.se",
-    "phone": "044-911 41"
+    "phone": "044-911 41",
+    "descriptionEn": "Family hotel at the northern tip of lake Immeln, with a swimming spot less than a kilometre away. Guests can rent a canoe to get out on the lake.",
+    "accommodationInfoEn": "Hotel rooms, including family rooms, with breakfast"
   },
   {
     "name": "Camp Immeln",
@@ -3545,7 +4089,9 @@
     "lng": 14.24661,
     "address": "Immelnvägen 2, 289 73 Immeln",
     "email": "info@immeln.camp",
-    "phone": "044-961 00"
+    "phone": "044-961 00",
+    "descriptionEn": "Campsite at lake Immeln in north-eastern Skåne with a camping cabin and a larger cabin for rent. Canoe rental is offered with paddles, life jackets and a map.",
+    "accommodationInfoEn": "Camping cabin and the Storstugan cabin, plus camping"
   },
   {
     "name": "Kalvshult Gård",
@@ -3570,7 +4116,10 @@
     "lng": 13.96947,
     "address": "Kalvshults Mellangård 44, 343 96 Hallaryd",
     "phone": "+4670-243 70 51",
-    "email": "haraldsson@kalvshult.se"
+    "email": "haraldsson@kalvshult.se",
+    "descriptionEn": "Farm renting out cabins at Örsjön. Fishing licenses for the lake are sold at the farm.",
+    "accommodationInfoEn": "Four cabins for rent: Bikupan, Fridhem, Sjöstugan and Skogstorpet",
+    "fishingLicenseEn": "Fishing licenses are sold by the farm"
   },
   {
     "name": "Sjötorpets Camping",
@@ -3594,7 +4143,10 @@
     "phone": "0433-10316",
     "email": "info@markarydscamping.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite at Getesjön right next to central Markaryd, with a swimming beach. Boats can be rented for fishing and relaxation.",
+    "boatInfoEn": "Rowing boats and kayaks are rented out by the hour (SEK 100) or half day, 5 hours (SEK 300).",
+    "priceEn": "Cabin: low season 1–2 people SEK 550/day, 3–4 people SEK 750/day; high season (16 Jun–24 Aug) 1–4 people SEK 750/day. Rowing boat SEK 100/hour or SEK 300/half day (5 hours)."
   },
   {
     "name": "Löckna Camping",
@@ -3622,7 +4174,12 @@
     "phone": "+46 70 239 20 26",
     "email": "kontakt@loknacamping.com",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Campsite on the shore of Bolmen in Lidhult. Here you can rent a boat and head out fishing on one of Småland's largest lakes.",
+    "accommodationInfoEn": "Cabins for 4–6 people with two bedrooms, private bathroom and fully equipped kitchen, plus camping",
+    "boatInfoEn": "Boats for rent",
+    "priceEn": "Cabin: low season SEK 1 250/night or SEK 4 950/week (+ electricity), high season SEK 1 395/night or SEK 7 150/week (+ electricity, cleaning not included).",
+    "fishingLicenseEn": "One fishing license is valid for all of Bolmen."
   },
   {
     "name": "Bolmen Marin & Fritid",
@@ -3643,7 +4200,9 @@
     "lng": 13.70034,
     "address": "Strandsjövägen 4, 341 94 Ljungby",
     "phone": "+46 76 027 42 80",
-    "email": ""
+    "email": "",
+    "descriptionEn": "Cosy campsite at Bolmen with electric hook-up pitches and five cabins. About thirty canoes and kayaks are rented out with life jackets.",
+    "accommodationInfoEn": "Five cabins and 40 electric hook-up pitches"
   },
   {
     "name": "Hultsfred Strandcamping",
@@ -3664,7 +4223,9 @@
     "lng": 15.86286,
     "address": "Folkparksvägen 10, 577 36 Hultsfred",
     "email": "",
-    "phone": ""
+    "phone": "",
+    "descriptionEn": "Campsite and cabins with a view over lake Hulingen. Canoes, kayaks and SUP boards are available for rent to explore the lake.",
+    "accommodationInfoEn": "Cabins and camping pitches for caravans, motorhomes and tents"
   },
   {
     "name": "Mycklaflons Camping",
@@ -3689,7 +4250,11 @@
     "beds": 12,
     "petrolMotor": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "descriptionEn": "Small campsite near Mycklaflon in the Småland highlands, 70 metres from the lake. There are four cabins, safari tents and bell tents, and you can rent a rowing boat, motorboat, canoe and SUP.",
+    "accommodationInfoEn": "Four cabins (two for four people and two for two people) plus safari tents and bell tents",
+    "boatInfoEn": "Rowing boats (including oars and life jackets) and motorboats (including 10 litres of petrol) are rented out by the hour, half day or full day.",
+    "priceEn": "Rowing boat SEK 150/hour, SEK 300/half day (max 4 hours), SEK 500/day. Motorboat SEK 350/hour, SEK 850/half day (max 4 hours), SEK 1 500/day."
   },
   {
     "name": "Liljenäs Natur & Fritid",
@@ -3719,7 +4284,11 @@
     "licenseRequired": true,
     "boatCount": 2,
     "boatCountEstimate": true,
-    "email": ""
+    "email": "",
+    "descriptionEn": "Farm on northern Bolmen focused on fishing. Guests stay in the farm's houses near the lake and can rent a boat and equipment.",
+    "accommodationInfoEn": "Three houses: Jaktvillan (5 beds), Östra Flygeln (16 beds) and Sjöstugan (4 beds), 25 beds in total.",
+    "boatInfoEn": "Aluminium boats and motors are available right at the accommodation. Boat and equipment for rent.",
+    "fishingLicenseEn": "Fishing license required. Liljenäs arranges fishing licenses for guests."
   },
   {
     "name": "Värnamo Camping Prostsjön",
@@ -3740,6 +4309,8 @@
     "lng": 14.04416,
     "address": "Prostgårdsvägen, 331 31 Värnamo",
     "phone": "+46 370 166 60",
-    "email": "info@varnamocamping.se"
+    "email": "info@varnamocamping.se",
+    "descriptionEn": "Campsite close to nature at Prostsjön yet right in the town. There are cabins for four to five people and modern apartments, as well as the chance to go canoeing.",
+    "accommodationInfoEn": "24 cabins with four or five beds, apartments for two to four people, plus camping"
   }
 ]

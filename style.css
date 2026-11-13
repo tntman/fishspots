@@ -61,6 +61,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .brand { display: flex; align-items: center; gap: .5rem; color: inherit; text-decoration: none; font-size: 1.1875rem; font-weight: 700; letter-spacing: -.01em; }
 .brand img { display: block; height: 40px; width: auto; }
 .account { margin-left: auto; display: flex; align-items: center; gap: .5rem; }
+.lang-switch { display: inline-flex; padding: 2px; border: 1px solid rgb(255 255 255 / .28); border-radius: 8px; }
+.lang-switch button {
+  min-width: 2.25rem; min-height: 2rem; padding: 0 .4rem; border: 0; border-radius: 6px;
+  background: transparent; color: #b9d3d6; font-size: .8125rem; font-weight: 700; letter-spacing: .04em; cursor: pointer;
+  transition: background-color .2s var(--ease), color .2s var(--ease);
+}
+.lang-switch button:hover { color: #fff; }
+.lang-switch [aria-pressed=true] { background: #fff; color: var(--lake-deep); }
 #user-name { color: #b9d3d6; font-size: .875rem; max-width: 16ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* ---------- Knappar ---------- */
@@ -245,10 +253,18 @@ label.empty { opacity: .45; }
 .address { margin-top: .2rem; font-weight: 600; color: var(--ink); overflow-wrap: anywhere; }
 .map-link .icon { width: 1.2em; height: 1.2em; }
 .detail .badge { display: inline-block; margin-top: .75rem; }
+/* Märkning av maskinöversatt text, på engelska. */
+.mt-note { display: flex; align-items: center; gap: .35rem; margin-top: .75rem; color: var(--ink-2); font-size: .8125rem; font-style: italic; }
+.mt-note::before {
+  content: ""; width: 1.1em; height: 1.1em; flex: none; background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 5h9M8.5 3v2M6 5c.6 3.2 2.6 5.6 5.5 7M11 5c-.6 3.6-3 6.4-6.5 8M12.5 21l4-9 4 9M14 18h5'/%3E%3C/svg%3E") center / contain no-repeat;
+}
 .desc { margin-top: 1rem; max-width: 68ch; white-space: pre-line; overflow-wrap: anywhere; }
 .desc:empty { display: none; }
 .facts { margin-top: 1.5rem; border-top: 1px solid var(--line); }
 .facts > div { display: grid; grid-template-columns: 7.5rem 1fr; gap: .75rem; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+/* "Accommodation" är längre än "Boende". */
+html[lang=en] .facts > div { grid-template-columns: 9rem 1fr; }
 .facts dt { display: flex; align-items: center; gap: .4rem; align-self: start; font-weight: 600; }
 .facts dd { white-space: pre-line; overflow-wrap: anywhere; }
 /* Saknas: grått, med ett kryss före texten. */
@@ -371,6 +387,15 @@ input[type=file]::file-selector-button:hover { border-color: var(--lake); backgr
   }
   .pair { grid-template-columns: 1fr; }
   .facts > div { grid-template-columns: 6.25rem 1fr; }
+  html[lang=en] .facts > div { grid-template-columns: 8.5rem 1fr; }
+}
+#add-btn { gap: .27em; } /* "din spot" är ett eget element; avståndet ska se ut som ett mellanslag */
+/* Telefon: sidhuvudet ska rymmas på en rad även med språkknappen. */
+@media (max-width: 480px) {
+  .add-more { display: none; }
+  .brand img { height: 22px; }
+  .account { gap: .375rem; }
+  .lang-switch button { min-width: 1.85rem; padding: 0 .2rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

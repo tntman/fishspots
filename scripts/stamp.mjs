@@ -15,6 +15,7 @@ function stamp(file, asset) {
 
 // Ordningen spelar roll: app.js innehåll (och därmed hash) ändras när config.js stämplas.
 stamp('app.js', 'config.js');
+stamp('app.js', 'i18n.js');
 stamp('index.html', 'app.js');
 stamp('index.html', 'style.css');
 stamp('index.html', 'img/logo.png');

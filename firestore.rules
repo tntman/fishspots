@@ -30,7 +30,8 @@ service cloud.firestore {
     // Valfria fält: finns bara när de är ifyllda.
     function optionalKeys() {
       return ['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor',
-        'licenseRequired', 'fishingLicenseUrl'];
+        'licenseRequired', 'fishingLicenseUrl',
+        'descriptionEn', 'accommodationInfoEn', 'boatInfoEn', 'priceEn', 'fishingLicenseEn'];
     }
 
     function validOptional(d) {
@@ -41,7 +42,13 @@ service cloud.firestore {
         && (!('petrolMotor' in d) || d.petrolMotor is bool)
         && (!('electricMotor' in d) || d.electricMotor is bool)
         && (!('licenseRequired' in d) || d.licenseRequired is bool)
-        && (!('fishingLicenseUrl' in d) || link(d.fishingLicenseUrl));
+        && (!('fishingLicenseUrl' in d) || link(d.fishingLicenseUrl))
+        // Engelsk översättning av texterna.
+        && (!('descriptionEn' in d) || text(d.descriptionEn, 3000))
+        && (!('accommodationInfoEn' in d) || text(d.accommodationInfoEn, 1000))
+        && (!('boatInfoEn' in d) || text(d.boatInfoEn, 1000))
+        && (!('priceEn' in d) || text(d.priceEn, 1000))
+        && (!('fishingLicenseEn' in d) || text(d.fishingLicenseEn, 1000));
     }
 
     // Samma listor som i config.js.
