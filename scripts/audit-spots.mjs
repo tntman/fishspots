@@ -155,6 +155,8 @@ async function lakeNear(lakeName, p, county) {
 
 // Bara exakta adressträffar med rätt postnummer används för att flytta en nål.
 async function addressCoords(address, county) {
+  // Bara postnummer och ort ("666 94 Dals Långed") ger ett slumpvis hus i postnummerområdet.
+  if (/^\s*\d{3}\s?\d{2}\s+[^\d,]+$/.test(address)) return null;
   const postcode = address.match(/\b(\d{3})\s?(\d{2})\b/);
   const hits = await photon({ q: address });
   // Photon kallar både adresser och namngivna platser (camping, gård) för "house".
