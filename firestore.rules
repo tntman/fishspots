@@ -30,7 +30,7 @@ service cloud.firestore {
     // Valfria fält: finns bara när de är ifyllda.
     function optionalKeys() {
       return ['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor',
-        'licenseRequired', 'fishingLicenseUrl',
+        'licenseRequired', 'fishingLicenseUrl', 'units', 'unitsEstimate', 'bedsEstimate',
         'descriptionEn', 'accommodationInfoEn', 'boatInfoEn', 'priceEn', 'fishingLicenseEn'];
     }
 
@@ -39,6 +39,10 @@ service cloud.firestore {
         && (!('beds' in d) || (d.beds is int && d.beds >= 1 && d.beds <= 2000))
         && (!('boatCount' in d) || (d.boatCount is int && d.boatCount >= 1 && d.boatCount <= 500))
         && (!('boatCountEstimate' in d) || d.boatCountEstimate is bool)
+        // Bostäder: stugor, torp, hus, lägenheter och rum. Uppskattning = "minst".
+        && (!('units' in d) || (d.units is int && d.units >= 1 && d.units <= 1000))
+        && (!('unitsEstimate' in d) || d.unitsEstimate is bool)
+        && (!('bedsEstimate' in d) || d.bedsEstimate is bool)
         && (!('petrolMotor' in d) || d.petrolMotor is bool)
         && (!('electricMotor' in d) || d.electricMotor is bool)
         && (!('licenseRequired' in d) || d.licenseRequired is bool)

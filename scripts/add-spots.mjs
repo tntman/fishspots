@@ -29,8 +29,11 @@ function check(s) {
   // Valfria fält, samma gränser som i firestore.rules.
   if (s.beds != null && !(Number.isInteger(s.beds) && s.beds >= 1 && s.beds <= 2000)) bad.push(`beds ogiltigt: ${s.beds}`);
   if (s.boatCount != null && !(Number.isInteger(s.boatCount) && s.boatCount >= 1 && s.boatCount <= 500)) bad.push(`boatCount ogiltigt: ${s.boatCount}`);
-  for (const k of ['petrolMotor', 'electricMotor', 'licenseRequired', 'boatCountEstimate']) if (s[k] != null && typeof s[k] !== 'boolean') bad.push(`${k} är inte true/false`);
+  if (s.units != null && !(Number.isInteger(s.units) && s.units >= 1 && s.units <= 1000)) bad.push(`units ogiltigt: ${s.units}`);
+  for (const k of ['petrolMotor', 'electricMotor', 'licenseRequired', 'boatCountEstimate', 'unitsEstimate', 'bedsEstimate']) if (s[k] != null && typeof s[k] !== 'boolean') bad.push(`${k} är inte true/false`);
   if (s.boatCountEstimate && !s.boatCount) bad.push('boatCountEstimate utan boatCount');
+  if (s.unitsEstimate && !s.units) bad.push('unitsEstimate utan units');
+  if (s.bedsEstimate && !s.beds) bad.push('bedsEstimate utan beds');
   if (s.fishingLicenseUrl && !/^https:\/\/.+/.test(s.fishingLicenseUrl)) bad.push('fishingLicenseUrl är inte https');
   if (s.address != null && !(typeof s.address === 'string' && s.address.length <= 200)) bad.push('address är inte text på högst 200 tecken');
   for (const k of EN) {
@@ -77,7 +80,7 @@ for (const [i, s] of spots.entries()) {
     species: s.species ?? [],
     ...Object.fromEntries(TEXT.map((k) => [k, (s[k] ?? '').trim()])),
     // Valfria fält skrivs bara när källan anger dem.
-    ...Object.fromEntries(['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl', ...EN]
+    ...Object.fromEntries(['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl', 'units', 'unitsEstimate', 'bedsEstimate', ...EN]
       .filter((k) => s[k] != null && s[k] !== '').map((k) => [k, typeof s[k] === 'string' ? s[k].trim() : s[k]])),
     ownerUid: null,
     source: 'ai',

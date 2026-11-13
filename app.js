@@ -1,5 +1,5 @@
 import { firebaseConfig, COUNTIES, SPECIES, slug } from './config.js?v=773da992';
-import { t, lang, setLang, countyName, speciesName } from './i18n.js?v=804d4570';
+import { t, lang, setLang, countyName, speciesName } from './i18n.js?v=99802423';
 
 const FB = 'https://www.gstatic.com/firebasejs/13.3.0';
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -161,6 +161,7 @@ function readFilters(fd = new FormData(filters)) {
     species: fd.getAll('species'),
     acc: fd.has('acc'),
     beds: Number(fd.get('beds')) || 0,
+    units: Number(fd.get('units')) || 0,
     boats: Number(fd.get('boats')) || 0,
     boat: fd.has('boat'),
     petrol: fd.has('petrol'),
@@ -184,6 +185,7 @@ function matches(s, v) {
     && v.species.every((x) => (s.species || []).includes(x))
     && (!v.acc || s.hasAccommodation)
     && (!v.beds || (s.hasAccommodation && s.beds >= v.beds))
+    && (!v.units || (s.hasAccommodation && s.units >= v.units))
     && (!v.boat || s.hasBoats)
     && (!v.boats || (s.hasBoats && s.boatCount >= v.boats))
     && (!v.petrol || (s.hasBoats && s.petrolMotor))
@@ -215,6 +217,8 @@ function visible(v = readFilters()) {
 
 // Uppskattat antal (räknat ur uppräknade båtar i texten) visas som ett minimum.
 const boatsText = (s) => t(`${s.boatCountEstimate ? 'minst ' : ''}{n} ${s.boatCount === 1 ? 'båt' : 'båtar'}`, { n: s.boatCount });
+const bedsText = (s) => t(`${s.bedsEstimate ? 'minst ' : ''}{n} ${s.beds === 1 ? 'sängplats' : 'sängplatser'}`, { n: s.beds });
+const unitsText = (s) => t(`${s.unitsEstimate ? 'minst ' : ''}{n} ${s.units === 1 ? 'bostad' : 'bostäder'}`, { n: s.units });
 const countText = (n) => `${n} ${n === 1 ? 'spot' : 'spots'}`;
 
 // Antal i varje alternativ: vad listan skulle visa om just det alternativet valdes.
@@ -240,6 +244,7 @@ function renderActive(v) {
     ...v.counties.map((c) => [countyName(c), () => uncheck('county', c)]),
     ...(v.acc ? [[t('Har boende'), () => uncheck('acc')]] : []),
     ...(v.beds ? [[t('Minst {n} sängplatser', { n: v.beds }), () => { filters.elements.beds.value = 0; }]] : []),
+    ...(v.units ? [[t(v.units === 1 ? 'Minst {n} bostad' : 'Minst {n} bostäder', { n: v.units }), () => { filters.elements.units.value = 0; }]] : []),
     ...(v.boat ? [[t('Har båt'), () => uncheck('boat')]] : []),
     ...(v.boats ? [[t(v.boats === 1 ? 'Minst {n} båt' : 'Minst {n} båtar', { n: v.boats }), () => { filters.elements.boats.value = 0; }]] : []),
     ...(v.petrol ? [[t('Bensinmotor'), () => uncheck('petrol')]] : []),
@@ -277,6 +282,7 @@ function uncheck(name, value) {
 function clearFilters() {
   for (const el of filters.querySelectorAll('.drawer input[type=checkbox]')) el.checked = false;
   filters.elements.beds.value = 0;
+  filters.elements.units.value = 0;
   filters.elements.boats.value = 0;
   filters.elements.q.value = '';
   render();
@@ -328,7 +334,8 @@ function row(s) {
   $('.row-where', li).textContent = whereText(s) + away;
   $('.row-acc', li).hidden = !s.hasAccommodation;
   $('.row-boat', li).hidden = !s.hasBoats;
-  if (s.beds) $('.row-acc .t', li).textContent = t('{n} sängplatser', { n: s.beds });
+  const acc = [s.units && unitsText(s), s.beds && bedsText(s)].filter(Boolean).join(' · ');
+  if (acc) $('.row-acc .t', li).textContent = acc;
   if (s.boatCount) $('.row-boat .t', li).textContent = boatsText(s);
   $('.row-species', li).textContent = (s.species || []).map(speciesName).join(', ');
   setBadge($('.badge', li), s);
@@ -447,7 +454,7 @@ function route() {
   const motors = [s.petrolMotor && t('bensinmotor'), s.electricMotor && t('elmotor')].filter(Boolean).join(t(' och '));
   // Boende och båtar visas alltid, så att det syns tydligt när de saknas.
   fact('acc', s.hasAccommodation
-    ? join(s.beds && t('{n} sängplatser', { n: s.beds }), tx(s, 'accommodationInfo')) || t('Ja')
+    ? join([s.units && unitsText(s), s.beds && bedsText(s)].filter(Boolean).join(' · '), tx(s, 'accommodationInfo')) || t('Ja')
     : t('Erbjuds inte'));
   fact('boat', s.hasBoats
     ? join(s.boatCount && boatsText(s), motors && cap(motors), tx(s, 'boatInfo')) || t('Ja')
@@ -710,6 +717,10 @@ form.addEventListener('submit', async (e) => {
     lng: Number(f.get('lng')),
     hasAccommodation: f.has('hasAccommodation'),
     beds: opt(int('beds')),
+    units: opt(int('units')),
+    // Ägarens antal är exakta; tidigare uppskattningar ("minst") tas bort.
+    bedsEstimate: editing ? fb.deleteField() : undefined,
+    unitsEstimate: editing ? fb.deleteField() : undefined,
     hasBoats: f.has('hasBoats'),
     boatCount: opt(int('boatCount')),
     // Ägarens antal är exakt; en tidigare uppskattning tas bort.

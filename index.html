@@ -95,6 +95,13 @@
                 <input name="beds" type="number" min="0" max="2000" step="1" value="0" inputmode="numeric" aria-labelledby="beds-label">
                 <button class="icon-btn line" type="button" data-step="1" aria-label="Fler sängplatser">+</button>
               </div>
+              <div class="stepper" role="group" aria-labelledby="units-label">
+                <span id="units-label">Minst antal bostäder</span>
+                <button class="icon-btn line" type="button" data-step="-1" aria-label="Färre bostäder">−</button>
+                <input name="units" type="number" min="0" max="1000" step="1" value="0" inputmode="numeric" aria-labelledby="units-label">
+                <button class="icon-btn line" type="button" data-step="1" aria-label="Fler bostäder">+</button>
+              </div>
+              <p class="hint">Bostäder är stugor, torp, hus, lägenheter och rum.</p>
             </fieldset>
 
             <fieldset class="fgroup">
@@ -236,7 +243,11 @@
       <legend>Boende</legend>
       <label class="check"><input type="checkbox" name="hasAccommodation" data-toggles="sub-acc"><span>Vi erbjuder boende</span></label>
       <fieldset class="sub" id="sub-acc" disabled>
-        <label class="field short"><span>Antal sängplatser</span><input name="beds" type="number" min="1" max="2000" step="1" inputmode="numeric"></label>
+        <div class="pair">
+          <label class="field short"><span>Antal bostäder</span><input name="units" type="number" min="1" max="1000" step="1" inputmode="numeric" aria-describedby="units-hint"></label>
+          <label class="field short"><span>Antal sängplatser</span><input name="beds" type="number" min="1" max="2000" step="1" inputmode="numeric"></label>
+        </div>
+        <small id="units-hint" class="hint">Bostäder är stugor, torp, hus, lägenheter och rum.</small>
         <label class="field"><span>Boendeinformation</span><textarea name="accommodationInfo" rows="3" maxlength="1000"></textarea></label>
       </fieldset>
     </fieldset>
@@ -341,6 +352,6 @@
 </template>
 
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script type="module" src="app.js?v=5464a7b9"></script>
+<script type="module" src="app.js?v=dcf7e33a"></script>
 </body>
 </html>
