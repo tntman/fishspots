@@ -205,7 +205,9 @@ await Promise.all(Array.from({ length: 12 }, async () => {
     if (pinAtLake === false && !best) flags.push(`nålen ligger inte inom 3 km från ${s.lake}`);
     if (pinAtLake == null && !noGeo) flags.push('sjön finns inte i kartdatabasen, kontrollera för hand');
     // Utan sjökontroll flyttas inget automatiskt; förslagen granskas i rapporten.
-    const move = !noGeo && Boolean(best) && moveKm > 0.3 && moveKm <= 40 && candidateAtLake !== false;
+    // Bara spotens egen kartlänk flyttar en nål automatiskt. Adressuppslag hittade ofta ett annat ställe med
+    // samma namn (kontrollerat mot Google Maps 2026-11-13), så de blir bara förslag att granska.
+    const move = !noGeo && Boolean(found.map) && Boolean(best) && moveKm > 0.3 && moveKm <= 40 && candidateAtLake !== false;
     const suggest = Boolean(best) && moveKm > 0.3;
     report[i] = {
       name: s.name, website: site, pages: pages.length,
