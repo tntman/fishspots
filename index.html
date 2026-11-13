@@ -7,7 +7,7 @@
   <meta name="description" content="Hitta fiskespots vid svenska sjöar där du kan bo och hyra båt. Jämför spots på kartan och planera nästa fiskeresa.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3d47'/%3E%3Cpath d='M16 4v6M16 25v4' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M8 17a8 8 0 0 1 16 0z' fill='%23dd3b1f'/%3E%3Cpath d='M8 17a8 8 0 0 0 16 0z' fill='%23fff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-  <link rel="stylesheet" href="style.css?v=b51d8c71">
+  <link rel="stylesheet" href="style.css?v=91cad0ed">
 </head>
 <body>
 
@@ -19,6 +19,7 @@
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
   <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
   <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></symbol>
   <symbol id="i-mappin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
 </svg>
 
@@ -43,6 +44,7 @@
         <fieldset id="views" class="views" hidden>
           <legend class="sr">Visa</legend>
           <label><input type="radio" name="view" value="all" checked><span>Alla spots</span></label>
+          <label><input type="radio" name="view" value="saved"><span>Sparade <b id="saved-count"></b></span></label>
           <label><input type="radio" name="view" value="mine"><span>Mina spots</span></label>
           <label id="view-review" hidden><input type="radio" name="view" value="review"><span>Granska <b id="review-count"></b></span></label>
         </fieldset>
@@ -145,7 +147,10 @@
     <article id="detail" class="detail" hidden>
       <a class="back" href="#/"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg>Alla spots</a>
       <img id="d-img" alt="" hidden loading="lazy" referrerpolicy="no-referrer">
-      <h1 id="d-name" tabindex="-1"></h1>
+      <div class="title-row">
+        <h1 id="d-name" tabindex="-1"></h1>
+        <button id="d-star" class="star-btn labelled" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><span>Spara</span></button>
+      </div>
       <p class="where">
         <span id="d-where"></span>
         <a id="d-gmaps" class="map-link" target="_blank" rel="noopener" title="Öppna i Google Maps" aria-label="Öppna i Google Maps (ny flik)"><svg class="icon" aria-hidden="true"><use href="#i-mappin"/></svg></a>
@@ -311,6 +316,7 @@
         <span class="row-species"></span>
       </span>
     </a>
+    <button class="star-btn row-star" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></button>
   </li>
 </template>
 
@@ -326,6 +332,6 @@
 </template>
 
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script type="module" src="app.js?v=ed1fd4af"></script>
+<script type="module" src="app.js?v=9747309c"></script>
 </body>
 </html>

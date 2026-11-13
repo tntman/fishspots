@@ -131,6 +131,16 @@ service cloud.firestore {
         && request.resource.data.updatedAt == request.time;
     }
 
+    // Sparade spots (stjärnan): en lista per konto, som bara kontots ägare kan läsa och ändra.
+    match /favorites/{uid} {
+      allow read, delete: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['ids', 'updatedAt'])
+        && request.resource.data.ids is list
+        && request.resource.data.ids.size() <= 500
+        && request.resource.data.updatedAt == request.time;
+    }
+
     // Admins läggs in med scripts/make-admin.mjs, aldrig från webbläsaren.
     match /admins/{uid} {
       allow read: if signedIn() && request.auth.uid == uid;

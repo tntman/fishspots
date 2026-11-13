@@ -22,6 +22,8 @@ const checks = [
   ['skapa ställe utan inloggning', 403, () => post('/spots', { fields: { name: { stringValue: 'x' }, status } })],
   ['läsa anspråk', 403, () => fetch(`${base}/claims?pageSize=1`)],
   ['läsa adminlistan', 403, () => fetch(`${base}/admins?pageSize=1`)],
+  ['läsa andras sparade spots', 403, () => fetch(`${base}/favorites?pageSize=1`)],
+  ['skapa sparade spots utan inloggning', 403, () => post('/favorites', { fields: { ids: { arrayValue: {} } } })],
   ['göra sig själv till admin', 403, () => post('/admins', { fields: { email: { stringValue: 'x' } } })],
 ];
 

@@ -3,7 +3,7 @@ import { firebaseConfig, COUNTIES, SPECIES, slug } from './config.js?v=773da992'
 const FB = 'https://www.gstatic.com/firebasejs/13.3.0';
 const $ = (sel, root = document) => root.querySelector(sel);
 const live = Boolean(firebaseConfig.apiKey);
-const state = { spots: new Map(), claims: [], user: null, admin: false, status: 'Laddar spots…' };
+const state = { spots: new Map(), claims: [], user: null, admin: false, favorites: new Set(), status: 'Laddar spots…' };
 
 // Firebase laddas bara när config.js är ifylld. Utan den visas data/spots.json skrivskyddat.
 let fb = null;
@@ -166,7 +166,10 @@ function readFilters(fd = new FormData(filters)) {
 }
 
 function inView(s, v) {
-  return v.view === 'mine' ? mine(s) : v.view === 'review' ? s.status === 'pending' : s.status === 'published';
+  if (v.view === 'mine') return mine(s);
+  if (v.view === 'review') return s.status === 'pending';
+  if (v.view === 'saved') return state.favorites.has(s.id) && (s.status === 'published' || mine(s) || state.admin);
+  return s.status === 'published';
 }
 
 function matches(s, v) {
@@ -279,6 +282,33 @@ function setBadge(el, s, always = false) {
   el.className = `badge ${kind}`;
 }
 
+// ---------- Sparade spots (stjärnan) ----------
+// Sparas per konto i favorites/<uid>, så att listan följer med mellan enheter.
+function setStar(btn, s) {
+  const on = state.favorites.has(s.id);
+  btn.setAttribute('aria-pressed', on);
+  btn.setAttribute('aria-label', on ? `Ta bort ${s.name} från sparade` : `Spara ${s.name}`);
+  btn.title = on ? 'Sparad. Klicka för att ta bort.' : 'Spara spoten';
+  const label = $('span', btn);
+  if (label) label.textContent = on ? 'Sparad' : 'Spara';
+  btn.onclick = (e) => { e.preventDefault(); e.stopPropagation(); toggleFavorite(s.id); };
+}
+
+async function toggleFavorite(id) {
+  if (!live || !(await login())) return;
+  const had = state.favorites.has(id);
+  if (had) state.favorites.delete(id); else state.favorites.add(id);
+  render();
+  try {
+    await fb.setDoc(fb.doc(fb.db, 'favorites', state.user.uid), { ids: [...state.favorites], updatedAt: fb.serverTimestamp() });
+  } catch (err) {
+    console.error(err);
+    if (had) state.favorites.add(id); else state.favorites.delete(id);
+    render();
+    toast('Det gick inte att spara. Försök igen.', true);
+  }
+}
+
 function row(s) {
   const li = $('#row-tpl').content.firstElementChild.cloneNode(true);
   const a = $('a', li);
@@ -293,6 +323,7 @@ function row(s) {
   if (s.boatCount) $('.row-boat .t', li).textContent = boatsText(s);
   $('.row-species', li).textContent = (s.species || []).map(cap).join(', ');
   setBadge($('.badge', li), s);
+  setStar($('.row-star', li), s);
   a.addEventListener('pointerenter', () => highlight(s.id));
   a.addEventListener('focus', () => highlight(s.id));
   a.addEventListener('pointerleave', () => highlight(openId));
@@ -333,11 +364,13 @@ function render() {
   $('#user-name').textContent = state.user?.displayName || state.user?.email || '';
   $('#views').hidden = !state.user;
   $('#view-review').hidden = !state.admin;
+  $('#saved-count').textContent = state.favorites.size || '';
   $('#review-count').textContent = pending || '';
 
   $('#count').textContent = countText(list.length);
   $('#list').replaceChildren(...list.map(row));
   $('#list-status').textContent = state.status || (list.length ? ''
+    : view === 'saved' ? 'Du har inte sparat några spots än. Tryck på stjärnan vid en spot för att spara den.'
     : view === 'mine' ? 'Du har inte lagt till någon spot än.'
     : view === 'review' ? 'Inga spots väntar på granskning.'
     : state.spots.size ? 'Inga spots matchar. Ta bort ett filter eller rensa alla.'
@@ -433,6 +466,8 @@ function route() {
   $('#d-approve').hidden = !(live && state.admin && s.status === 'pending');
   $('#d-edit').hidden = $('#d-delete').hidden = !editable;
   $('#d-claim').hidden = !(live && !s.ownerUid && s.status === 'published' && !state.admin);
+  setStar($('#d-star'), s);
+  $('#d-star').hidden = !live;
 
   if (changed) {
     appEl.dataset.pane = 'list';
@@ -831,8 +866,12 @@ if (live) {
     state.admin = false;
     if (user) {
       try { state.admin = (await fb.getDoc(fb.doc(fb.db, 'admins', user.uid))).exists(); } catch { /* inte admin */ }
+      try {
+        state.favorites = new Set((await fb.getDoc(fb.doc(fb.db, 'favorites', user.uid))).data()?.ids || []);
+      } catch { state.favorites = new Set(); }
     } else {
       filters.elements.view.value = 'all';
+      state.favorites = new Set();
     }
     refresh();
   });
