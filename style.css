@@ -285,6 +285,8 @@ label.empty { opacity: .45; }
 .leaflet-container a { color: var(--lake); }
 .leaflet-tooltip { border: 0; border-radius: 6px; padding: .25rem .55rem; background: var(--lake-deep); color: #fff; font-weight: 600; box-shadow: var(--shadow); }
 .leaflet-tooltip::before { display: none; }
+/* Namnet på det öppna stället står kvar ovanför den förstorade nålen. */
+.leaflet-tooltip.is-fixed { background: var(--bob-ink); z-index: 1; }
 
 /* ---------- Dialoger ---------- */
 dialog { width: min(40rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); scrollbar-gutter: stable; padding: 0; border: 0; border-radius: 14px; background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }

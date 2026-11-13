@@ -59,8 +59,25 @@ scalePins();
 const markers = new Map();
 let pinned = '';
 
+// Namnet visas när man pekar på en nål, och står kvar på nålen för det öppna stället.
+function bindLabel(m, fixed) {
+  // Namnet sätts som textnod: Leaflet tolkar strängar som HTML.
+  const label = Object.assign(document.createElement('span'), { textContent: m.options.title });
+  m.unbindTooltip().bindTooltip(label, {
+    direction: 'top',
+    permanent: fixed,
+    className: fixed ? 'is-fixed' : '',
+    offset: fixed ? [0, -50] : [0, -34],
+  });
+  m.fixedLabel = fixed;
+  if (fixed) m.openTooltip();
+}
+
 function highlight(id) {
-  for (const [key, m] of markers) m.getElement()?.classList.toggle('is-active', key === id);
+  for (const [key, m] of markers) {
+    m.getElement()?.classList.toggle('is-active', key === id);
+    if (m.fixedLabel !== (key === openId)) bindLabel(m, key === openId);
+  }
   map.getContainer().classList.toggle('has-open', Boolean(openId));
 }
 
@@ -70,12 +87,10 @@ function renderPins(list) {
   markers.clear();
   for (const s of list) {
     if (!Number.isFinite(s.lat) || !Number.isFinite(s.lng)) continue;
-    // Namnet sätts som textnod: Leaflet tolkar strängar som HTML.
-    const label = Object.assign(document.createElement('span'), { textContent: s.name });
     const m = L.marker([s.lat, s.lng], { icon: pinIcon, title: s.name, alt: s.name })
-      .bindTooltip(label, { direction: 'top', offset: [0, -34] })
       .on('click', () => { location.hash = `#/${s.id}`; })
       .addTo(pins);
+    bindLabel(m, s.id === openId);
     markers.set(s.id, m);
   }
   const key = [...markers.keys()].join();
