@@ -146,10 +146,22 @@ function matches(s, v) {
     && (!v.owner || Boolean(s.ownerUid));
 }
 
+// Avstånd i km mellan två punkter (haversine).
+function km(a, b) {
+  const rad = Math.PI / 180;
+  const h = Math.sin(((b.lat - a.lat) * rad) / 2) ** 2
+    + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(((b.lng - a.lng) * rad) / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+const distance = (s) => (state.here && Number.isFinite(s.lat) ? km(state.here, s) : Infinity);
+
+// Ställen som saknar uppgiften hamnar sist, i namnordning.
 const SORTS = {
   name: (a, b) => a.name.localeCompare(b.name, 'sv'),
+  near: (a, b) => distance(a) - distance(b) || SORTS.name(a, b),
+  north: (a, b) => (b.lat ?? -Infinity) - (a.lat ?? -Infinity) || SORTS.name(a, b),
   beds: (a, b) => (b.beds || 0) - (a.beds || 0) || SORTS.name(a, b),
-  updated: (a, b) => (b.updatedAt?.seconds || 0) - (a.updatedAt?.seconds || 0) || SORTS.name(a, b),
+  boats: (a, b) => (b.boatCount || 0) - (a.boatCount || 0) || SORTS.name(a, b),
 };
 
 function visible(v = readFilters()) {
@@ -234,7 +246,9 @@ function row(s) {
   const a = $('a', li);
   a.href = `#/${s.id}`;
   $('.row-name', li).textContent = s.name;
-  $('.row-where', li).textContent = whereText(s);
+  const d = filters.elements.sort.value === 'near' ? distance(s) : Infinity;
+  const away = d < Infinity ? ` · ${d < 10 ? d.toFixed(1).replace('.', ',') : Math.round(d)} km bort` : '';
+  $('.row-where', li).textContent = whereText(s) + away;
   $('.row-acc', li).hidden = !s.hasAccommodation;
   $('.row-boat', li).hidden = !s.hasBoats;
   $('.row-species', li).textContent = (s.species || []).map(cap).join(', ');
@@ -647,6 +661,28 @@ claimForm.addEventListener('submit', async (e) => {
 
 // ---------- Händelser ----------
 filters.addEventListener('input', render);
+
+// Positionen frågas bara när man väljer "Närmast mig", och används bara här i webbläsaren.
+filters.elements.sort.addEventListener('change', (e) => {
+  if (e.target.value !== 'near' || state.here) return;
+  if (!navigator.geolocation) {
+    toast('Webbläsaren kan inte ta reda på din position.', true);
+    e.target.value = 'name';
+    render();
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(
+    (pos) => { state.here = { lat: pos.coords.latitude, lng: pos.coords.longitude }; render(); },
+    (err) => {
+      toast(err.code === err.PERMISSION_DENIED
+        ? 'Du har inte gett sidan tillgång till din position. Tillåt det i webbläsaren och försök igen.'
+        : 'Det gick inte att ta reda på din position. Försök igen.', true);
+      e.target.value = 'name';
+      render();
+    },
+    { maximumAge: 600000, timeout: 15000 },
+  );
+});
 filters.addEventListener('submit', (e) => e.preventDefault());
 $('#filter-open').onclick = () => $('#filter-panel').showModal();
 $('#filter-clear').onclick = clearFilters;
