@@ -168,6 +168,24 @@
     "sourceUrl": "https://storsjougden.se"
   },
   {
+    "name": "Getingaryds Camping & Stugor",
+    "lake": "Vättern",
+    "county": "Jönköpings län",
+    "place": "Gränna",
+    "lat": 58.09868,
+    "lng": 14.53829,
+    "description": "Lugn camping på Vätterns strand cirka 9 km norr om Gränna med stugor att hyra. På anläggningen finns bad, bastu och fiske, och båtuthyrning ingår bland aktiviteterna. Passar den som vill ha enkelt boende nära Vättern.",
+    "hasAccommodation": true,
+    "accommodationInfo": "9 stugor med 3-4 bäddar samt 4 större stugor, villavagn och camping",
+    "hasBoats": true,
+    "boatInfo": "Båtuthyrning, roddbåt",
+    "species": [],
+    "price": "",
+    "fishingLicense": "",
+    "website": "https://getingarydscamping.se",
+    "sourceUrl": "https://getingarydscamping.se/aktiviteter/"
+  },
+  {
     "name": "Hotell Ullinge",
     "lake": "Södra Vixen",
     "county": "Jönköpings län",
@@ -190,6 +208,24 @@
     "sourceUrl": "https://www.naturkartan.se/en/jonkopings-lan/batuthyrning-sodra-wixen"
   },
   {
+    "name": "Hyltena Stugby",
+    "lake": "Lovsjön",
+    "county": "Jönköpings län",
+    "place": "Jönköping",
+    "lat": 57.66753,
+    "lng": 14.18197,
+    "description": "Enkla stugor vid Lovsjön cirka 10 km söder om Jönköping. Två roddbåtar kan hyras och bokas online per timme. Dusch och toalett finns i gemensam servicebyggnad.",
+    "hasAccommodation": true,
+    "accommodationInfo": "Stugor med 2 eller 4 bäddar, gemensamt kök och servicebyggnad",
+    "hasBoats": true,
+    "boatInfo": "Två roddbåtar (4 m, max 4 personer), åror ingår, ingen motor",
+    "species": [],
+    "price": "Båt 50 kr/timme, minst 2 timmar",
+    "fishingLicense": "Fiskekort för Lovsjön köps i appen iFiske",
+    "website": "https://hyltenastugby.se",
+    "sourceUrl": "https://hyltenastugby.se/boka-bat/"
+  },
+  {
     "name": "Paradis Fiskecamp",
     "lake": "Södra Vixen",
     "county": "Jönköpings län",
@@ -210,6 +246,24 @@
     "fishingLicense": "Fiskekort för Södra Wixens fiskevårdsområde (iFiske)",
     "website": "https://paradisfiskecamp.se",
     "sourceUrl": "https://www.naturkartan.se/en/jonkopings-lan/batuthyrning-sodra-wixen"
+  },
+  {
+    "name": "Långsjön Stugor & Camping",
+    "lake": "Långsjön",
+    "county": "Kalmar län",
+    "place": "Ankarsrum",
+    "lat": 57.66678,
+    "lng": 16.31332,
+    "description": "Familjedriven camping med stugor vid sjön Långsjön, som är 17 km lång. Här kan man hyra både motorbåt, roddbåt och kanot samt cyklar. Anläggningen har också restaurang och öppnar säsongen i slutet av mars.",
+    "hasAccommodation": true,
+    "accommodationInfo": "8 stugor samt campingplatser",
+    "hasBoats": true,
+    "boatInfo": "Motorbåt, roddbåt och kanot kan hyras",
+    "species": [],
+    "price": "",
+    "fishingLicense": "",
+    "website": "https://langsjon.se",
+    "sourceUrl": "https://langsjon.se/bootebikes-2/"
   },
   {
     "name": "Ödevata Gårdshotell & Fiskecamp",
@@ -277,6 +331,28 @@
     "sourceUrl": "https://www.visitsmaland.se/en/to-do/hallsjo-wilderness-camping/"
   },
   {
+    "name": "Tingsryd Resort",
+    "lake": "Tiken",
+    "county": "Kronobergs län",
+    "place": "Tingsryd",
+    "lat": 56.52823,
+    "lng": 14.9609,
+    "description": "Familjecamping med stugor på stranden vid sjön Tiken. Här kan man bada, fiska och hyra båtar och kanoter, och barn kan gå fiskeskola. Det finns även restaurang och mindre spa.",
+    "hasAccommodation": true,
+    "accommodationInfo": "Stugor, campingstugor och villavagnar",
+    "hasBoats": true,
+    "boatInfo": "Båtar och kanoter kan hyras",
+    "species": [
+      "gös",
+      "abborre",
+      "gädda"
+    ],
+    "price": "",
+    "fishingLicense": "Fiskekort för Tiken säljs på resorten",
+    "website": "https://www.tingsrydresort.se",
+    "sourceUrl": "https://www.tingsrydresort.se/aktiviteter"
+  },
+  {
     "name": "Urshult Camping",
     "lake": "Åsnen",
     "county": "Kronobergs län",
@@ -293,6 +369,27 @@
     "fishingLicense": "",
     "website": "https://www.urshult-camping.se",
     "sourceUrl": "https://www.urshult-camping.se/"
+  },
+  {
+    "name": "Adolfström Fjällgård",
+    "lake": "Yraft",
+    "county": "Norrbottens län",
+    "place": "Adolfström",
+    "lat": 66.27862,
+    "lng": 16.65636,
+    "description": "Tio självhushållsstugor i Laisdalen med fjällsjöar inom några hundra meter. Vid Yraft kan du hyra båt och ro ut för att fiska vild öring och röding. Fjällsjöar längre bort nås till fots.",
+    "hasAccommodation": true,
+    "accommodationInfo": "10 stugor med 2-6 bäddar",
+    "hasBoats": true,
+    "boatInfo": "Båt kan hyras vid Yraft",
+    "species": [
+      "öring",
+      "röding"
+    ],
+    "price": "",
+    "fishingLicense": "Byakort gäller Yraft, Laddve, Mittisjön och Lomtjärn; statens fiskekort för övriga vatten",
+    "website": "https://www.adolfstrom.com",
+    "sourceUrl": "https://www.adolfstrom.com/fiske-i-laisdalen"
   },
   {
     "name": "Allsåklubbens Camping",
@@ -317,6 +414,50 @@
     "sourceUrl": "https://norcamp.de/en/sweden/allsaklubben.7321.1.html"
   },
   {
+    "name": "Sörbyn Lodge",
+    "lake": "Vitträsket",
+    "county": "Norrbottens län",
+    "place": "Sörbyn",
+    "lat": 66.05425,
+    "lng": 21.78629,
+    "description": "Lodge med villor och hotellrum vid Vitträsket, ungefär en timme från Luleå, nära Råneälven. Fiskepaket med guide, båt och utrustning erbjuds via Sörbyn Fishing, med lax, öring, harr och gädda i älven och sjöarna.",
+    "hasAccommodation": true,
+    "accommodationInfo": "Villor och hotellrum",
+    "hasBoats": true,
+    "boatInfo": "Båt ingår i guidade fiskepaket via Sörbyn Fishing",
+    "species": [
+      "lax",
+      "öring",
+      "harr",
+      "gädda"
+    ],
+    "price": "",
+    "fishingLicense": "Tillstånd ordnas i fiskepaketen",
+    "website": "https://sorbyn.se",
+    "sourceUrl": "https://www.sorbynfishing.com"
+  },
+  {
+    "name": "Årrenjarka Fjällby",
+    "lake": "Saggat",
+    "county": "Norrbottens län",
+    "place": "Kvikkjokk",
+    "lat": 66.88302,
+    "lng": 18.02097,
+    "description": "Fjällby på en halvö i sjön Saggat nära Kvikkjokk, med stugor, hotellrum och camping. De hyr ut roddbåtar, kanoter och paddleboards samt en bastuflotte. Fisket i Saggat och fjällsjöarna ger röding och abborre, sommar som vinter.",
+    "hasAccommodation": true,
+    "accommodationInfo": "Stugor med 6 och 8 bäddar, campingstugor, hotellrum och camping",
+    "hasBoats": true,
+    "boatInfo": "Roddbåtar kan hyras",
+    "species": [
+      "röding",
+      "abborre"
+    ],
+    "price": "",
+    "fishingLicense": "Fiskekort köps online via natureIT",
+    "website": "https://arrenjarka.se",
+    "sourceUrl": "https://arrenjarka.se/aktiviteter/"
+  },
+  {
     "name": "Ivö Camping",
     "lake": "Ivösjön",
     "county": "Skåne län",
@@ -333,6 +474,42 @@
     "fishingLicense": "",
     "website": "",
     "sourceUrl": "https://www.pincamp.com/campings/ivoe-camping"
+  },
+  {
+    "name": "Jägersbo Camping",
+    "lake": "Ringsjön",
+    "county": "Skåne län",
+    "place": "Höör",
+    "lat": 55.90217,
+    "lng": 13.5645,
+    "description": "Året runt-camping på Ringsjöns strand med välutrustade villavagnar att hyra. I receptionen hyr man roddbåt, trampbåt eller kanot med flytväst. Egen båt får också användas.",
+    "hasAccommodation": true,
+    "accommodationInfo": "9 villavagnar för 3-6 personer samt campingplatser",
+    "hasBoats": true,
+    "boatInfo": "Roddbåt och trampbåt kan hyras, ingen motorbåt",
+    "species": [],
+    "price": "Roddbåt 500 kr per dag, villavagn från 1 300 kr/natt",
+    "fishingLicense": "",
+    "website": "https://www.jagersbocamping.se",
+    "sourceUrl": "https://www.jagersbocamping.se/minigolf-båtar"
+  },
+  {
+    "name": "Herrfallet",
+    "lake": "Hjälmaren",
+    "county": "Södermanlands län",
+    "place": "Arboga",
+    "lat": 59.2729,
+    "lng": 15.90281,
+    "description": "Anläggning på en udde i Hjälmaren med camping och rum i timmerstugan. Man kan hyra kanot eller båt och fiska hela året, även isfiske vintertid. Ligger i ett naturreservat ungefär 15 km från Arboga.",
+    "hasAccommodation": true,
+    "accommodationInfo": "Hotellrum i timmerstugan samt camping",
+    "hasBoats": true,
+    "boatInfo": "Kanot eller båt kan hyras",
+    "species": [],
+    "price": "",
+    "fishingLicense": "Handredskapsfiske är fritt i Hjälmaren",
+    "website": "https://www.herrfallet.se",
+    "sourceUrl": "https://www.herrfallet.se"
   },
   {
     "name": "Fjällnora friluftsområde",
@@ -435,6 +612,54 @@
     "sourceUrl": "https://scandifishing.com/"
   },
   {
+    "name": "Kolgårdens Stugby & Camping",
+    "lake": "Volgsjön",
+    "county": "Västerbottens län",
+    "place": "Vilhelmina",
+    "lat": 64.6493,
+    "lng": 16.59074,
+    "description": "Stugby och camping cirka 5 km från Vilhelmina, alldeles intill Volgsjön. Sjön är känd för stor gädda och i området finns även röding, öring och harr. Gäster kan låna båtar på campingen och tillreda sin fångst på plats.",
+    "hasAccommodation": true,
+    "accommodationInfo": "Stugor med 2-6 bäddar, timmerstuga och villa",
+    "hasBoats": true,
+    "boatInfo": "Flera båtar kan lånas av gäster",
+    "species": [
+      "gädda",
+      "abborre",
+      "röding",
+      "öring",
+      "harr"
+    ],
+    "price": "",
+    "fishingLicense": "",
+    "website": "https://www.kolgarden.se",
+    "sourceUrl": "https://www.kolgarden.se/fiske-fiskeaventyr-i-norrland/"
+  },
+  {
+    "name": "Saiva Camping & Stugby",
+    "lake": "Baksjön",
+    "county": "Västerbottens län",
+    "place": "Vilhelmina",
+    "lat": 64.62206,
+    "lng": 16.67727,
+    "description": "Camping och stugby vid Baksjön, ungefär en kilometer från Vilhelmina centrum. Här hyr du motorbåt för fiske i trakten, och i området finns flera fiskevårdsområden med gädda, abborre, sik, harr, öring och röding. Stugorna varierar från enkla tvåbäddsstugor till en större stuga för sju personer.",
+    "hasAccommodation": true,
+    "accommodationInfo": "23 campingstugor med 2-7 bäddar",
+    "hasBoats": true,
+    "boatInfo": "Motorbåtar med 15 eller 30 hk kan hyras, minst 3 dygn",
+    "species": [
+      "gädda",
+      "abborre",
+      "röding",
+      "öring",
+      "harr"
+    ],
+    "price": "Stugor från 390 kr, båt från 990 kr per dygn",
+    "fishingLicense": "",
+    "website": "https://saiva.se",
+    "sourceUrl": "https://saiva.se/batuthyrning/"
+  },
+  {
     "name": "Virisen Lappland",
     "lake": "Virisen",
     "county": "Västerbottens län",
@@ -454,24 +679,6 @@
     "fishingLicense": "Fiskekort krävs, information om hur man köper finns på webbplatsen",
     "website": "https://www.virisen.se",
     "sourceUrl": "https://boka.hemavan.nu/en/virisen-0"
-  },
-  {
-    "name": "Herrfallet",
-    "lake": "Hjälmaren",
-    "county": "Södermanlands län",
-    "place": "Arboga",
-    "lat": 59.2729,
-    "lng": 15.90281,
-    "description": "Anläggning på en udde i Hjälmaren med camping och rum i timmerstugan. Man kan hyra kanot eller båt och fiska hela året, även isfiske vintertid. Ligger i ett naturreservat ungefär 15 km från Arboga.",
-    "hasAccommodation": true,
-    "accommodationInfo": "Hotellrum i timmerstugan samt camping",
-    "hasBoats": true,
-    "boatInfo": "Kanot eller båt kan hyras",
-    "species": [],
-    "price": "",
-    "fishingLicense": "Handredskapsfiske är fritt i Hjälmaren",
-    "website": "https://www.herrfallet.se",
-    "sourceUrl": "https://www.herrfallet.se"
   },
   {
     "name": "Dalslands Stugbåt",
@@ -580,6 +787,47 @@
     "fishingLicense": "",
     "website": "https://vanerfiske.com",
     "sourceUrl": "https://vastsverige.com/en/trollhattan-vanersborg/produkter/vanerfiske-fishing-boat-charter-and-accommodation"
+  },
+  {
+    "name": "Nordic Discovery",
+    "lake": "Långvattnet",
+    "county": "Örebro län",
+    "place": "Kloten",
+    "lat": 59.89524,
+    "lng": 15.28828,
+    "description": "Nordic Discovery ligger i byn Kloten mitt i naturreservatet Malingsbo-Kloten. Här kan du bo på rum, i ett semesterhus eller i en lägenhet och hyra aluminiumbåt med åror för att fiska i Långvattnet och Klotensjön. Båtarna körs ut till fiskevattnet åt dig, och livvästar och karta ingår. Större gäddor är en av fiskets stora lockelser.",
+    "hasAccommodation": true,
+    "accommodationInfo": "Rum, semesterhus för upp till 8 personer och semesterlägenhet",
+    "hasBoats": true,
+    "boatInfo": "Roddbåt (Linder 410, aluminium) för fiske i Långvattnet och Klotensjön, livväst och karta ingår",
+    "species": [
+      "gädda",
+      "abborre",
+      "öring",
+      "regnbåge"
+    ],
+    "price": "Roddbåt 900 kr per dygn eller 5 400 kr per vecka. Semesterhus 3 000 kr per natt",
+    "fishingLicense": "Fiskekort via iFiske, 80 kr per dag eller 500 kr per år",
+    "website": "https://nordicdiscovery.se",
+    "sourceUrl": "https://nordicdiscovery.se/rowboat-rental/"
+  },
+  {
+    "name": "Malexander Camping",
+    "lake": "Sommen",
+    "county": "Östergötlands län",
+    "place": "Malexander",
+    "lat": 58.03147,
+    "lng": 15.27934,
+    "description": "Liten, naturnära camping på en platå i Malexander vid sjön Sommen med klart vatten. Två campingstugor hyrs ut året runt, och på campingen kan man hyra båt samt köpa fiskekort. Passar den som vill kombinera fiske med lugn och bad.",
+    "hasAccommodation": true,
+    "accommodationInfo": "2 campingstugor för upp till 4 personer, plus camping",
+    "hasBoats": true,
+    "boatInfo": "Båtuthyrning, även kanot, kajak och SUP",
+    "species": [],
+    "price": "Stuga 800 kr/natt, 5 000 kr/vecka (2026)",
+    "fishingLicense": "Fiskekort säljs på campingen",
+    "website": "https://malexandercamping.se",
+    "sourceUrl": "https://www.malexandercamping.se"
   },
   {
     "name": "Ryda Gård",
