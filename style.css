@@ -229,7 +229,7 @@ label.empty { opacity: .45; }
 
 /* ---------- Kartnål: ett flöte ---------- */
 .pin { background: none; border: 0; }
-.pin svg { display: block; overflow: visible; }
+.pin svg { display: block; overflow: visible; transform: scale(var(--pin-scale, 1)); transform-origin: 14px 35px; transition: transform .3s var(--ease); }
 .pin .ring { fill: none; stroke: var(--lake-deep); stroke-width: 1.5; opacity: .5; transform-origin: 14px 35px; }
 .pin .stem { stroke: var(--lake-deep); stroke-width: 2; stroke-linecap: round; }
 .pin .cap { fill: var(--bob); stroke: var(--lake-deep); stroke-width: 1.5; stroke-linejoin: round; }

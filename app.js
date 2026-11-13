@@ -47,6 +47,15 @@ const SWEDEN = [62.6, 16.5];
 const map = L.map('map').setView(SWEDEN, 5);
 tiles().addTo(map);
 const pins = L.layerGroup().addTo(map);
+
+// Mindre nålar när man zoomar ut, så att Sverigekartan inte blir grötig.
+function scalePins() {
+  const z = map.getZoom();
+  const scale = z <= 4 ? 0.4 : z === 5 ? 0.5 : z === 6 ? 0.65 : z === 7 ? 0.82 : 1;
+  map.getContainer().style.setProperty('--pin-scale', scale);
+}
+map.on('zoomend', scalePins);
+scalePins();
 const markers = new Map();
 let pinned = '';
 
