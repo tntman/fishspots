@@ -3,7 +3,7 @@ import { firebaseConfig, COUNTIES, SPECIES, slug } from './config.js?v=773da992'
 const FB = 'https://www.gstatic.com/firebasejs/13.3.0';
 const $ = (sel, root = document) => root.querySelector(sel);
 const live = Boolean(firebaseConfig.apiKey);
-const state = { spots: new Map(), claims: [], user: null, admin: false, status: 'Laddar ställen…' };
+const state = { spots: new Map(), claims: [], user: null, admin: false, status: 'Laddar spots…' };
 
 // Firebase laddas bara när config.js är ifylld. Utan den visas data/spots.json skrivskyddat.
 let fb = null;
@@ -142,7 +142,7 @@ async function refresh() {
     state.status = '';
   } catch (err) {
     console.error(err);
-    state.status = 'Kunde inte hämta ställen. Ladda om sidan för att försöka igen.';
+    state.status = 'Kunde inte hämta spots. Ladda om sidan för att försöka igen.';
   }
   render();
 }
@@ -204,7 +204,7 @@ function visible(v = readFilters()) {
   return [...state.spots.values()].filter((s) => matches(s, v)).sort(SORTS[v.sort] || SORTS.name);
 }
 
-const countText = (n) => `${n} ${n === 1 ? 'ställe' : 'ställen'}`;
+const countText = (n) => `${n} ${n === 1 ? 'spot' : 'spots'}`;
 
 // Antal i varje alternativ: vad listan skulle visa om just det alternativet valdes.
 function renderFacets(v) {
@@ -311,7 +311,7 @@ function renderClaims(show) {
       batch.update(fb.doc(fb.db, 'spots', c.spotId), { ownerUid: c.uid, updatedAt: fb.serverTimestamp() });
       batch.delete(fb.doc(fb.db, 'claims', c.id));
       await batch.commit();
-    }, 'Stället har fått en ägare.');
+    }, 'Spoten har fått en ägare.');
     $('.claim-no', li).onclick = () => act(() => fb.deleteDoc(fb.doc(fb.db, 'claims', c.id)), 'Förfrågan avslogs.');
     return li;
   }));
@@ -323,7 +323,7 @@ function render() {
   const { view } = v;
   renderFacets(v);
   renderActive(v);
-  $('#filter-show').textContent = list.length ? `Visa ${countText(list.length)}` : 'Inga ställen matchar';
+  $('#filter-show').textContent = list.length ? `Visa ${countText(list.length)}` : 'Inga spots matchar';
   const pending = [...state.spots.values()].filter((s) => s.status === 'pending').length + state.claims.length;
 
   $('#auth-btn').textContent = state.user ? 'Logga ut' : 'Logga in';
@@ -336,10 +336,10 @@ function render() {
   $('#count').textContent = countText(list.length);
   $('#list').replaceChildren(...list.map(row));
   $('#list-status').textContent = state.status || (list.length ? ''
-    : view === 'mine' ? 'Du har inte lagt till något ställe än.'
-    : view === 'review' ? 'Inga ställen väntar på granskning.'
-    : state.spots.size ? 'Inga ställen matchar. Ta bort ett filter eller rensa alla.'
-    : live ? 'Här finns inga ställen än.' : 'Förhandsvisning utan databas. Inga ställen är inlästa än.');
+    : view === 'mine' ? 'Du har inte lagt till någon spot än.'
+    : view === 'review' ? 'Inga spots väntar på granskning.'
+    : state.spots.size ? 'Inga spots matchar. Ta bort ett filter eller rensa alla.'
+    : live ? 'Här finns inga spots än.' : 'Förhandsvisning utan databas. Inga spots är inlästa än.');
   renderClaims(view === 'review');
   renderPins(list);
   route();
@@ -605,7 +605,7 @@ function openForm(s) {
   form.reset();
   pendingImage = undefined;
   setPreview('');
-  $('#form-title').textContent = s ? 'Ändra ställe' : 'Lägg till ditt ställe';
+  $('#form-title').textContent = s ? 'Ändra spot' : 'Lägg till din spot';
   $('#form-note').hidden = Boolean(s);
   if (s) {
     for (const el of form.elements) {
@@ -680,7 +680,7 @@ form.addEventListener('submit', async (e) => {
     images.delete(id);
     if (pendingImage) await fb.setDoc(fb.doc(fb.db, 'images', id), { data: pendingImage, updatedAt: fb.serverTimestamp() });
     else if (pendingImage === null) await fb.deleteDoc(fb.doc(fb.db, 'images', id));
-  }, editing ? 'Ändringarna är sparade.' : 'Tack! Stället visas publikt när det har granskats.');
+  }, editing ? 'Ändringarna är sparade.' : 'Tack! Spoten visas publikt när den har granskats.');
   e.submitter.disabled = false;
   if (ok) $('#edit').close();
 });
@@ -697,7 +697,7 @@ claimForm.addEventListener('submit', async (e) => {
     email: state.user.email,
     message: new FormData(claimForm).get('message').trim(),
     createdAt: fb.serverTimestamp(),
-  }), 'Tack! Vi hör av oss när förfrågan är granskad.', 'Du har redan skickat en förfrågan för det här stället.');
+  }), 'Tack! Vi hör av oss när förfrågan är granskad.', 'Du har redan skickat en förfrågan för den här spoten.');
   e.submitter.disabled = false;
   $('#claim').close();
   if (ok) claimForm.reset();
@@ -768,7 +768,7 @@ $('#add-btn').onclick = async () => { if (await login()) openForm(); };
 $('#d-edit').onclick = () => openForm(state.spots.get(openId));
 $('#d-approve').onclick = () => act(
   () => fb.updateDoc(fb.doc(fb.db, 'spots', openId), { status: 'published', updatedAt: fb.serverTimestamp() }),
-  'Stället är publicerat.',
+  'Spoten är publicerad.',
 );
 $('#d-delete').onclick = () => {
   const s = state.spots.get(openId);
@@ -780,7 +780,7 @@ $('#d-delete').onclick = () => {
     batch.delete(fb.doc(fb.db, 'spots', s.id));
     await batch.commit();
     location.hash = '#/';
-  }, 'Stället är borttaget.');
+  }, 'Spoten är borttagen.');
 };
 $('#d-claim').onclick = async () => {
   if (!(await login())) return;

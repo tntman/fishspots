@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fiskespots: sjöar med boende och båt i Sverige</title>
-  <meta name="description" content="Hitta fiskeställen vid svenska sjöar där du kan bo och hyra båt. Jämför ställen på kartan och planera nästa fiskeresa.">
+  <meta name="description" content="Hitta fiskespots vid svenska sjöar där du kan bo och hyra båt. Jämför spots på kartan och planera nästa fiskeresa.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3d47'/%3E%3Cpath d='M16 4v6M16 25v4' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M8 17a8 8 0 0 1 16 0z' fill='%23dd3b1f'/%3E%3Cpath d='M8 17a8 8 0 0 0 16 0z' fill='%23fff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="style.css?v=b51d8c71">
@@ -30,7 +30,7 @@
   <p class="tagline">Sjöar med boende och båt i Sverige</p>
   <nav class="account" aria-label="Konto">
     <span id="user-name"></span>
-    <button id="add-btn" class="btn solid" type="button">Lägg till ditt ställe</button>
+    <button id="add-btn" class="btn solid" type="button">Lägg till din spot</button>
     <button id="auth-btn" class="btn quiet" type="button">Logga in</button>
   </nav>
 </header>
@@ -42,8 +42,8 @@
       <form id="filters" autocomplete="off">
         <fieldset id="views" class="views" hidden>
           <legend class="sr">Visa</legend>
-          <label><input type="radio" name="view" value="all" checked><span>Alla ställen</span></label>
-          <label><input type="radio" name="view" value="mine"><span>Mina ställen</span></label>
+          <label><input type="radio" name="view" value="all" checked><span>Alla spots</span></label>
+          <label><input type="radio" name="view" value="mine"><span>Mina spots</span></label>
           <label id="view-review" hidden><input type="radio" name="view" value="review"><span>Granska <b id="review-count"></b></span></label>
         </fieldset>
 
@@ -104,7 +104,7 @@
 
             <fieldset class="fgroup">
               <legend>Fiskarter</legend>
-              <p class="hint">Visar ställen där alla valda arter finns.</p>
+              <p class="hint">Visar spots där alla valda arter finns.</p>
               <div id="f-species" class="opts chips"></div>
             </fieldset>
 
@@ -129,7 +129,7 @@
       </form>
 
       <section id="claims" class="claims" hidden>
-        <h2>Vill ta över ett ställe</h2>
+        <h2>Vill ta över en spot</h2>
         <ul id="claims-list"></ul>
       </section>
 
@@ -138,12 +138,12 @@
 
       <footer class="foot">
         <p>Uppgifterna kan vara inaktuella. Kontrollera alltid pris och tillgång med anläggningen.</p>
-        <p>När du loggar in sparas ditt Google-konto-id och din e-postadress, så att dina ställen kan kopplas till dig. Kartan kommer från OpenStreetMap. Adressförslag i formuläret hämtas från Photon (komoot), som då får se det du skriver i adressfältet.</p>
+        <p>När du loggar in sparas ditt Google-konto-id och din e-postadress, så att dina spots kan kopplas till dig. Kartan kommer från OpenStreetMap. Adressförslag i formuläret hämtas från Photon (komoot), som då får se det du skriver i adressfältet.</p>
       </footer>
     </div>
 
     <article id="detail" class="detail" hidden>
-      <a class="back" href="#/"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg>Alla ställen</a>
+      <a class="back" href="#/"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg>Alla spots</a>
       <img id="d-img" alt="" hidden loading="lazy" referrerpolicy="no-referrer">
       <h1 id="d-name" tabindex="-1"></h1>
       <p class="where">
@@ -180,24 +180,24 @@
         <button id="d-approve" class="btn solid" type="button">Godkänn och publicera</button>
         <button id="d-edit" class="btn line" type="button">Ändra</button>
         <button id="d-delete" class="btn line danger" type="button">Ta bort</button>
-        <button id="d-claim" class="btn line" type="button">Är det här ditt ställe?</button>
+        <button id="d-claim" class="btn line" type="button">Är det här din spot?</button>
       </div>
     </article>
 
   </section>
 
-  <div id="map" role="region" aria-label="Karta över fiskeställen"></div>
+  <div id="map" role="region" aria-label="Karta över fiskespots"></div>
   <button id="pane-toggle" class="pane-toggle" type="button">Visa karta</button>
 </main>
 
 <dialog id="edit" aria-labelledby="form-title">
   <form id="spot-form">
-    <h2 id="form-title">Lägg till ditt ställe</h2>
-    <p id="form-note" class="note">Stället visas publikt när det har granskats.</p>
+    <h2 id="form-title">Lägg till din spot</h2>
+    <p id="form-note" class="note">Spoten visas publikt när den har granskats.</p>
 
     <fieldset class="group">
-      <legend>Om stället</legend>
-      <label class="field"><span>Adress</span><input name="address" maxlength="200" list="address-list" autocomplete="off" aria-describedby="address-hint"><small id="address-hint">Börja skriva så kommer förslag. Väljer du ett förslag placeras stället på kartan.</small></label>
+      <legend>Om spoten</legend>
+      <label class="field"><span>Adress</span><input name="address" maxlength="200" list="address-list" autocomplete="off" aria-describedby="address-hint"><small id="address-hint">Börja skriva så kommer förslag. Väljer du ett förslag placeras spoten på kartan.</small></label>
       <datalist id="address-list"></datalist>
       <label class="field"><span>Anläggningens namn</span><input name="name" required maxlength="100"></label>
       <div class="pair">
@@ -205,12 +205,12 @@
         <label class="field"><span>Närmaste ort</span><input name="place" maxlength="100"></label>
       </div>
       <label class="field"><span>Län</span><select name="county" required><option value="">Välj län</option></select></label>
-      <label class="field"><span>Information om stället</span><textarea name="description" rows="4" maxlength="3000"></textarea></label>
+      <label class="field"><span>Information om spoten</span><textarea name="description" rows="4" maxlength="3000"></textarea></label>
     </fieldset>
 
     <fieldset class="group">
       <legend>Läge</legend>
-      <p class="hint">Klicka på kartan där stället ligger, eller skriv in koordinaterna.</p>
+      <p class="hint">Klicka på kartan där spoten ligger, eller skriv in koordinaterna.</p>
       <div id="form-map"></div>
       <div class="pair">
         <label class="field"><span>Latitud</span><input name="lat" type="number" step="any" min="55" max="69.5" required inputmode="decimal"></label>
@@ -287,7 +287,7 @@
 
 <dialog id="claim" aria-labelledby="claim-title">
   <form id="claim-form">
-    <h2 id="claim-title">Är det här ditt ställe?</h2>
+    <h2 id="claim-title">Är det här din spot?</h2>
     <p class="note">Berätta hur du hör ihop med <b id="claim-name"></b>. När vi har godkänt kan du uppdatera uppgifterna själv.</p>
     <label class="field"><span>Meddelande</span><textarea name="message" rows="4" required maxlength="1000" placeholder="Till exempel din roll och en e-postadress eller ett telefonnummer som står på er webbplats."></textarea></label>
     <div class="dialog-actions">
@@ -326,6 +326,6 @@
 </template>
 
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script type="module" src="app.js?v=c1f9aab9"></script>
+<script type="module" src="app.js?v=18ffdaf8"></script>
 </body>
 </html>
