@@ -157,6 +157,7 @@ function readFilters(fd = new FormData(filters)) {
     species: fd.getAll('species'),
     acc: fd.has('acc'),
     beds: Number(fd.get('beds')) || 0,
+    boats: Number(fd.get('boats')) || 0,
     boat: fd.has('boat'),
     petrol: fd.has('petrol'),
     electric: fd.has('electric'),
@@ -180,6 +181,7 @@ function matches(s, v) {
     && (!v.acc || s.hasAccommodation)
     && (!v.beds || (s.hasAccommodation && s.beds >= v.beds))
     && (!v.boat || s.hasBoats)
+    && (!v.boats || (s.hasBoats && s.boatCount >= v.boats))
     && (!v.petrol || (s.hasBoats && s.petrolMotor))
     && (!v.electric || (s.hasBoats && s.electricMotor))
     && (!v.owner || Boolean(s.ownerUid));
@@ -235,6 +237,7 @@ function renderActive(v) {
     ...(v.acc ? [['Har boende', () => uncheck('acc')]] : []),
     ...(v.beds ? [[`Minst ${v.beds} sängplatser`, () => { filters.elements.beds.value = 0; }]] : []),
     ...(v.boat ? [['Har båt', () => uncheck('boat')]] : []),
+    ...(v.boats ? [[`Minst ${v.boats} ${v.boats === 1 ? 'båt' : 'båtar'}`, () => { filters.elements.boats.value = 0; }]] : []),
     ...(v.petrol ? [['Bensinmotor', () => uncheck('petrol')]] : []),
     ...(v.electric ? [['Elmotor', () => uncheck('electric')]] : []),
     ...(v.owner ? [['Bekräftat av ägaren', () => uncheck('owner')]] : []),
@@ -270,6 +273,7 @@ function uncheck(name, value) {
 function clearFilters() {
   for (const el of filters.querySelectorAll('.drawer input[type=checkbox]')) el.checked = false;
   filters.elements.beds.value = 0;
+  filters.elements.boats.value = 0;
   filters.elements.q.value = '';
   render();
 }
@@ -793,7 +797,7 @@ $('#filter-open').onclick = () => $('#filter-panel').showModal();
 $('#filter-clear').onclick = clearFilters;
 for (const btn of filters.querySelectorAll('[data-step]')) {
   btn.onclick = () => {
-    const input = filters.elements.beds;
+    const input = btn.closest('.stepper').querySelector('input');
     input.value = Math.max(0, (Number(input.value) || 0) + Number(btn.dataset.step) * (Number(input.value) >= 10 ? 2 : 1));
     render();
   };

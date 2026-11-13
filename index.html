@@ -102,6 +102,12 @@
                 <label class="chip"><input type="checkbox" name="petrol"><span>Bensinmotor</span><span class="n"></span></label>
                 <label class="chip"><input type="checkbox" name="electric"><span>Elmotor</span><span class="n"></span></label>
               </div>
+              <div class="stepper" role="group" aria-labelledby="boats-label">
+                <span id="boats-label">Minst antal båtar</span>
+                <button class="icon-btn line" type="button" data-step="-1" aria-label="Färre båtar">−</button>
+                <input name="boats" type="number" min="0" max="500" step="1" value="0" inputmode="numeric" aria-labelledby="boats-label">
+                <button class="icon-btn line" type="button" data-step="1" aria-label="Fler båtar">+</button>
+              </div>
             </fieldset>
 
             <fieldset class="fgroup">
@@ -332,6 +338,6 @@
 </template>
 
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script type="module" src="app.js?v=9747309c"></script>
+<script type="module" src="app.js?v=0276aaae"></script>
 </body>
 </html>

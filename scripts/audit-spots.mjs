@@ -27,7 +27,8 @@ async function get(url) {
   try {
     const res = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(12000) });
     const type = res.headers.get('content-type') || '';
-    return res.ok && type.includes('html') ? { html: await res.text(), url: res.url } : null;
+    // Bara de första 1,5 MB: en sida på 9 MB (inbäddade bilder) fick svepet att stå still.
+    return res.ok && type.includes('html') ? { html: (await res.text()).slice(0, 1_500_000), url: res.url } : null;
   } catch {
     return null;
   }
@@ -73,7 +74,8 @@ const phones = (html, t) => [...new Set([
   ...[...t.matchAll(/(?:\+46|\b0)[\s-]?\(?0?\)?\d{1,3}[\s–-]?\d{2,3}[\s–-]?\d{2}[\s–-]?\d{2,3}\b/g)].map((m) => m[0]),
 ].map((p) => p.replace(/[^\d+]/g, '').replace(/^0/, '+46').replace(/^\+460/, '+46')).filter((p) => p.length >= 10 && p.length <= 13))];
 
-const emails = (html) => [...new Set([...html.matchAll(/[\w.+-]+@[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}\b/gi)].map((m) => m[0].toLowerCase()))]
+// Begränsade längder: utan dem tog mönstret minuter på långa teckenrader utan @.
+const emails = (html) => [...new Set([...html.matchAll(/[\w.+-]{1,64}@[\w-]{1,63}(?:\.[\w-]{1,63}){0,4}\.[a-z]{2,24}\b/gi)].map((m) => m[0].toLowerCase()))]
   .filter((e) => !/\.(png|jpe?g|gif|webp|svg)$/.test(e) && !/sentry|wixpress|example|domain\.|@2x/.test(e));
 
 const USEFUL = /kontakt|contact|hitta|find|karta|map|vagbeskriv|vägbeskriv|adress|om-oss|om_oss|about|boende|stug|cabin|logi|accommodation|pris|price|fiske|fishing|bat|båt|boat|uthyr|rental|camping/i;
