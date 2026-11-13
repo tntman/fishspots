@@ -470,8 +470,26 @@ function openForm(s) {
   syncFormMap(true);
 }
 
+// Länkar får skrivas utan https:// (t.ex. "fiske.se"). Sidan lägger till det och kräver bara en domän.
+function normalizeLink(el) {
+  let v = el.value.trim();
+  if (v && !/^https?:\/\//i.test(v)) v = `https://${v}`;
+  v = v.replace(/^http:\/\//i, 'https://');
+  el.value = v;
+  let ok = !v;
+  try { ok ||= new URL(v).hostname.includes('.'); } catch { /* ogiltig adress */ }
+  el.setCustomValidity(ok ? '' : 'Skriv en webbadress, till exempel fiske.se');
+  return ok;
+}
+for (const el of form.querySelectorAll('[data-link]')) {
+  el.addEventListener('change', () => normalizeLink(el));
+  el.addEventListener('input', () => el.setCustomValidity(''));
+}
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  const links = [...form.querySelectorAll('[data-link]:enabled')];
+  if (!links.map(normalizeLink).every(Boolean)) return form.reportValidity();
   const f = new FormData(form);
   const get = (k) => (f.get(k) ?? '').trim(); // fält i en gråad del saknas i FormData
   const int = (k) => Number.parseInt(get(k), 10) || 0;

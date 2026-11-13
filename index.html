@@ -140,7 +140,7 @@
         <label class="field"><span>Närmaste ort</span><input name="place" maxlength="100"></label>
       </div>
       <label class="field"><span>Län</span><select name="county" required><option value="">Välj län</option></select></label>
-      <label class="field"><span>Information</span><textarea name="description" rows="4" maxlength="3000"></textarea></label>
+      <label class="field"><span>Information om stället</span><textarea name="description" rows="4" maxlength="3000"></textarea></label>
     </fieldset>
 
     <fieldset class="group">
@@ -158,7 +158,7 @@
       <label class="check"><input type="checkbox" name="hasAccommodation" data-toggles="sub-acc"><span>Vi erbjuder boende</span></label>
       <fieldset class="sub" id="sub-acc" disabled>
         <label class="field short"><span>Antal sängplatser</span><input name="beds" type="number" min="1" max="2000" step="1" inputmode="numeric"></label>
-        <label class="field"><span>Information</span><textarea name="accommodationInfo" rows="3" maxlength="1000"></textarea></label>
+        <label class="field"><span>Boendeinformation</span><textarea name="accommodationInfo" rows="3" maxlength="1000"></textarea></label>
       </fieldset>
     </fieldset>
 
@@ -171,7 +171,7 @@
           <label><input type="checkbox" name="petrolMotor">Bensinmotor</label>
           <label><input type="checkbox" name="electricMotor">Elmotor</label>
         </div>
-        <label class="field"><span>Information</span><textarea name="boatInfo" rows="3" maxlength="1000"></textarea></label>
+        <label class="field"><span>Båtinformation</span><textarea name="boatInfo" rows="3" maxlength="1000"></textarea></label>
       </fieldset>
     </fieldset>
 
@@ -179,8 +179,8 @@
       <legend>Fiskekort</legend>
       <label class="check"><input type="checkbox" name="licenseRequired" data-toggles="sub-license"><span>Fiskekort krävs</span></label>
       <fieldset class="sub" id="sub-license" disabled>
-        <label class="field"><span>Länk där man köper fiskekort</span><input name="fishingLicenseUrl" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>Adressen måste börja med https://</small></label>
-        <label class="field"><span>Information</span><textarea name="fishingLicense" rows="3" maxlength="1000"></textarea></label>
+        <label class="field"><span>Länk där man köper fiskekort</span><input name="fishingLicenseUrl" data-link maxlength="300" inputmode="url" autocomplete="off" placeholder="t.ex. ifiske.se"></label>
+        <label class="field"><span>Fiskekortsinformation</span><textarea name="fishingLicense" rows="3" maxlength="1000"></textarea></label>
       </fieldset>
     </fieldset>
 
@@ -191,12 +191,12 @@
 
     <fieldset class="group">
       <legend>Pris</legend>
-      <label class="field"><span>Information</span><textarea name="price" rows="4" maxlength="1000"></textarea></label>
+      <label class="field"><span>Prisinformation</span><textarea name="price" rows="4" maxlength="1000"></textarea></label>
     </fieldset>
 
     <fieldset class="group">
       <legend>Kontakt</legend>
-      <label class="field"><span>Webbplats</span><input name="website" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>Adressen måste börja med https://</small></label>
+      <label class="field"><span>Webbplats</span><input name="website" data-link maxlength="300" inputmode="url" autocomplete="off" placeholder="t.ex. dittstalle.se"></label>
       <div class="pair">
         <label class="field"><span>Telefon</span><input name="phone" type="tel" maxlength="30"></label>
         <label class="field"><span>E-post</span><input name="email" type="email" maxlength="100"></label>
