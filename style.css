@@ -108,7 +108,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: non
 .filter-btn { min-height: 2.5rem; }
 .count-badge { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: 999px; background: var(--lake); color: #fff; font-size: .75rem; font-variant-numeric: tabular-nums; }
 .count-badge:empty { display: none; }
-.quick { display: flex; flex-wrap: wrap; gap: .5rem; }
 .active-filters { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
 .active-filters:empty { display: none; }
 .active-chip {

@@ -218,7 +218,7 @@ function uncheck(name, value) {
 }
 
 function clearFilters() {
-  for (const el of filters.querySelectorAll('.drawer input[type=checkbox], .quick input')) el.checked = false;
+  for (const el of filters.querySelectorAll('.drawer input[type=checkbox]')) el.checked = false;
   filters.elements.beds.value = 0;
   filters.elements.q.value = '';
   render();
@@ -649,13 +649,7 @@ claimForm.addEventListener('submit', async (e) => {
 });
 
 // ---------- Händelser ----------
-filters.addEventListener('input', (e) => {
-  // Boende och Båt finns både som snabbfilter och i panelen: håll dem lika.
-  if (e.target.name === 'acc' || e.target.name === 'boat') {
-    for (const el of filters.querySelectorAll(`input[name=${e.target.name}]`)) el.checked = e.target.checked;
-  }
-  render();
-});
+filters.addEventListener('input', render);
 filters.addEventListener('submit', (e) => e.preventDefault());
 $('#filter-open').onclick = () => $('#filter-panel').showModal();
 $('#filter-clear').onclick = clearFilters;
