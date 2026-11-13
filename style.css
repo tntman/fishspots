@@ -125,12 +125,13 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: non
 .drawer {
   width: min(28.5rem, 100%); max-width: 100%; height: 100dvh; max-height: 100dvh; margin: 0; padding: 0;
   border-radius: 0; display: none; flex-direction: column;
+  overflow: hidden; scrollbar-gutter: auto; /* bara listan med val rullar, inte hela panelen */
 }
 .drawer[open] { display: flex; animation: slide .35s var(--ease); }
 @keyframes slide { from { transform: translateX(-24px); opacity: 0; } }
 .drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
 .drawer-head h2 { font-size: 1.25rem; }
-.drawer-body { flex: 1; overflow-y: auto; scrollbar-width: thin; scrollbar-gutter: stable; padding: 0 1.25rem; }
+.drawer-body { flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-gutter: stable; padding: 0 1.25rem; }
 .drawer-foot { display: flex; justify-content: space-between; gap: .75rem; padding: .875rem 1.25rem; border-top: 1px solid var(--line); background: var(--surface); }
 .drawer-foot .solid { flex: 1; }
 .fgroup { display: grid; gap: .75rem; padding: 1.25rem 0; }
@@ -159,7 +160,8 @@ label.empty { opacity: .45; }
 .icon-btn:hover { background: var(--tint); }
 .icon-btn.line { border-color: #a9bcba; border-radius: 999px; }
 .icon-btn.line:hover { border-color: var(--lake); }
-.chip { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.25rem; padding: 0 .8rem; border: 1px solid #a9bcba; border-radius: 999px; cursor: pointer; user-select: none; transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease); }
+/* position: relative håller den dolda kryssrutan inne i sitt chip; annars hamnar den utanför listan och gör panelen rullbar. */
+.chip { position: relative; display: inline-flex; align-items: center; gap: .4rem; min-height: 2.25rem; padding: 0 .8rem; border: 1px solid #a9bcba; border-radius: 999px; cursor: pointer; user-select: none; transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease); }
 .chip input { position: absolute; opacity: 0; pointer-events: none; }
 .chip:hover { border-color: var(--lake); }
 .chip:has(:checked) { background: var(--lake); border-color: var(--lake); color: #fff; }
@@ -168,7 +170,7 @@ label.empty { opacity: .45; }
 #count { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
 
 .views { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; padding: 3px; background: var(--tint); border-radius: 9px; }
-.views label { cursor: pointer; }
+.views label { position: relative; cursor: pointer; }
 .views input { position: absolute; opacity: 0; pointer-events: none; }
 .views span { display: block; padding: .35rem .5rem; border-radius: 7px; text-align: center; font-weight: 600; font-size: .875rem; color: var(--ink-2); transition: background-color .2s var(--ease), color .2s var(--ease); }
 .views :checked + span { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgb(11 61 71 / .18); }
