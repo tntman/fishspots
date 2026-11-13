@@ -60,6 +60,7 @@
         <div class="toggles">
           <label class="chip"><input type="checkbox" name="acc"><svg class="icon" aria-hidden="true"><use href="#i-cabin"/></svg><span>Har boende</span></label>
           <label class="chip"><input type="checkbox" name="boat"><svg class="icon" aria-hidden="true"><use href="#i-boat"/></svg><span>Har båt</span></label>
+          <label class="beds-filter"><span>Minst</span><input type="number" name="beds" min="1" max="2000" step="1" inputmode="numeric" aria-label="Minsta antal sängplatser"><span>sängplatser</span></label>
         </div>
 
         <p class="summary"><span id="count" aria-live="polite"></span> <button type="reset" class="link">Rensa filter</button></p>
@@ -75,7 +76,7 @@
 
       <footer class="foot">
         <p>Uppgifterna kan vara inaktuella. Kontrollera alltid pris och tillgång med anläggningen.</p>
-        <p>När du loggar in sparas ditt Google-konto-id och din e-postadress, så att dina ställen kan kopplas till dig. Kartan kommer från OpenStreetMap.</p>
+        <p>När du loggar in sparas ditt Google-konto-id och din e-postadress, så att dina ställen kan kopplas till dig. Kartan kommer från OpenStreetMap. Adressförslag i formuläret hämtas från Photon (komoot), som då får se det du skriver i adressfältet.</p>
       </footer>
     </div>
 
@@ -92,9 +93,15 @@
         <div data-row="boat"><dt><svg class="icon" aria-hidden="true"><use href="#i-boat"/></svg>Båtar</dt><dd></dd></div>
         <div data-row="species"><dt>Arter</dt><dd></dd></div>
         <div data-row="price"><dt>Pris</dt><dd></dd></div>
-        <div data-row="license"><dt>Fiskekort</dt><dd></dd></div>
+        <div data-row="license"><dt>Fiskekort</dt>
+          <dd class="contact">
+            <span class="t"></span>
+            <a id="d-license-link" target="_blank" rel="noopener nofollow"><span></span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+          </dd>
+        </div>
         <div data-row="contact"><dt>Kontakt</dt>
           <dd class="contact">
+            <span id="d-address"></span>
             <a id="d-web" target="_blank" rel="noopener nofollow"><span></span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
             <a id="d-phone"></a>
             <a id="d-mail"></a>
@@ -123,12 +130,18 @@
     <h2 id="form-title">Lägg till ditt ställe</h2>
     <p id="form-note" class="note">Stället visas publikt när det har granskats.</p>
 
-    <label class="field"><span>Anläggningens namn</span><input name="name" required maxlength="100"></label>
-    <div class="pair">
-      <label class="field"><span>Sjö</span><input name="lake" required maxlength="100"></label>
-      <label class="field"><span>Närmaste ort</span><input name="place" maxlength="100"></label>
-    </div>
-    <label class="field"><span>Län</span><select name="county" required><option value="">Välj län</option></select></label>
+    <fieldset class="group">
+      <legend>Om stället</legend>
+      <label class="field"><span>Adress</span><input name="address" maxlength="200" list="address-list" autocomplete="off" aria-describedby="address-hint"><small id="address-hint">Börja skriva så kommer förslag. Väljer du ett förslag placeras stället på kartan.</small></label>
+      <datalist id="address-list"></datalist>
+      <label class="field"><span>Anläggningens namn</span><input name="name" required maxlength="100"></label>
+      <div class="pair">
+        <label class="field"><span>Sjö</span><input name="lake" required maxlength="100"></label>
+        <label class="field"><span>Närmaste ort</span><input name="place" maxlength="100"></label>
+      </div>
+      <label class="field"><span>Län</span><select name="county" required><option value="">Välj län</option></select></label>
+      <label class="field"><span>Information</span><textarea name="description" rows="4" maxlength="3000"></textarea></label>
+    </fieldset>
 
     <fieldset class="group">
       <legend>Läge</legend>
@@ -140,18 +153,35 @@
       </div>
     </fieldset>
 
-    <label class="field"><span>Beskrivning</span><textarea name="description" rows="4" maxlength="3000"></textarea></label>
-
     <fieldset class="group">
       <legend>Boende</legend>
-      <label class="check"><input type="checkbox" name="hasAccommodation"><span>Vi erbjuder boende</span></label>
-      <label class="field"><span>Typ av boende, antal stugor och bäddar</span><textarea name="accommodationInfo" rows="2" maxlength="1000"></textarea></label>
+      <label class="check"><input type="checkbox" name="hasAccommodation" data-toggles="sub-acc"><span>Vi erbjuder boende</span></label>
+      <fieldset class="sub" id="sub-acc" disabled>
+        <label class="field short"><span>Antal sängplatser</span><input name="beds" type="number" min="1" max="2000" step="1" inputmode="numeric"></label>
+        <label class="field"><span>Information</span><textarea name="accommodationInfo" rows="3" maxlength="1000"></textarea></label>
+      </fieldset>
     </fieldset>
 
     <fieldset class="group">
       <legend>Båtar</legend>
-      <label class="check"><input type="checkbox" name="hasBoats"><span>Vi hyr ut båt eller båt ingår</span></label>
-      <label class="field"><span>Antal båtar, motor eller roddbåt</span><textarea name="boatInfo" rows="2" maxlength="1000"></textarea></label>
+      <label class="check"><input type="checkbox" name="hasBoats" data-toggles="sub-boat"><span>Vi hyr ut båt eller båt ingår</span></label>
+      <fieldset class="sub" id="sub-boat" disabled>
+        <label class="field short"><span>Antal båtar</span><input name="boatCount" type="number" min="1" max="500" step="1" inputmode="numeric"></label>
+        <div class="checks">
+          <label><input type="checkbox" name="petrolMotor">Bensinmotor</label>
+          <label><input type="checkbox" name="electricMotor">Elmotor</label>
+        </div>
+        <label class="field"><span>Information</span><textarea name="boatInfo" rows="3" maxlength="1000"></textarea></label>
+      </fieldset>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>Fiskekort</legend>
+      <label class="check"><input type="checkbox" name="licenseRequired" data-toggles="sub-license"><span>Fiskekort krävs</span></label>
+      <fieldset class="sub" id="sub-license" disabled>
+        <label class="field"><span>Länk där man köper fiskekort</span><input name="fishingLicenseUrl" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>Adressen måste börja med https://</small></label>
+        <label class="field"><span>Information</span><textarea name="fishingLicense" rows="3" maxlength="1000"></textarea></label>
+      </fieldset>
     </fieldset>
 
     <fieldset class="group">
@@ -159,16 +189,29 @@
       <div id="form-species" class="checks"></div>
     </fieldset>
 
-    <div class="pair">
-      <label class="field"><span>Pris</span><input name="price" maxlength="300" placeholder="Stuga från 5 500 kr/vecka"></label>
-      <label class="field"><span>Fiskekort</span><input name="fishingLicense" maxlength="300"></label>
-    </div>
-    <label class="field"><span>Webbplats</span><input name="website" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>Adressen måste börja med https://</small></label>
-    <div class="pair">
-      <label class="field"><span>Telefon</span><input name="phone" type="tel" maxlength="30"></label>
-      <label class="field"><span>E-post</span><input name="email" type="email" maxlength="100"></label>
-    </div>
-    <label class="field"><span>Länk till en bild</span><input name="imageUrl" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>En bild som redan ligger på er egen webbplats.</small></label>
+    <fieldset class="group">
+      <legend>Pris</legend>
+      <label class="field"><span>Information</span><textarea name="price" rows="4" maxlength="1000"></textarea></label>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>Kontakt</legend>
+      <label class="field"><span>Webbplats</span><input name="website" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>Adressen måste börja med https://</small></label>
+      <div class="pair">
+        <label class="field"><span>Telefon</span><input name="phone" type="tel" maxlength="30"></label>
+        <label class="field"><span>E-post</span><input name="email" type="email" maxlength="100"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>Bild</legend>
+      <div class="image-pick">
+        <img id="form-img-preview" alt="Förhandsvisning av bilden" hidden>
+        <input id="form-image" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="form-img-hint">
+        <small id="form-img-hint" class="hint">JPG, PNG eller WebP, högst 15 MB och minst 800 × 500 pixlar. Bilden förminskas automatiskt.</small>
+        <button id="form-img-remove" class="link" type="button" hidden>Ta bort bilden</button>
+      </div>
+    </fieldset>
 
     <div class="dialog-actions">
       <button class="btn line" type="button" data-close>Avbryt</button>

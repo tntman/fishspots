@@ -27,9 +27,26 @@ service cloud.firestore {
         'ownerUid', 'source', 'sourceUrl', 'status', 'updatedAt'];
     }
 
+    // Valfria fält: finns bara när de är ifyllda.
+    function optionalKeys() {
+      return ['address', 'beds', 'boatCount', 'petrolMotor', 'electricMotor',
+        'licenseRequired', 'fishingLicenseUrl'];
+    }
+
+    function validOptional(d) {
+      return (!('address' in d) || text(d.address, 200))
+        && (!('beds' in d) || (d.beds is int && d.beds >= 1 && d.beds <= 2000))
+        && (!('boatCount' in d) || (d.boatCount is int && d.boatCount >= 1 && d.boatCount <= 500))
+        && (!('petrolMotor' in d) || d.petrolMotor is bool)
+        && (!('electricMotor' in d) || d.electricMotor is bool)
+        && (!('licenseRequired' in d) || d.licenseRequired is bool)
+        && (!('fishingLicenseUrl' in d) || link(d.fishingLicenseUrl));
+    }
+
     // Samma listor som i config.js.
     function validSpot(d) {
-      return d.keys().hasOnly(spotKeys()) && d.keys().hasAll(spotKeys())
+      return d.keys().hasOnly(spotKeys().concat(optionalKeys())) && d.keys().hasAll(spotKeys())
+        && validOptional(d)
         && text(d.name, 100) && d.name.size() > 0
         && text(d.lake, 100) && d.lake.size() > 0
         && d.county in ['Blekinge län', 'Dalarnas län', 'Gotlands län', 'Gävleborgs län',
@@ -46,7 +63,7 @@ service cloud.firestore {
         && d.hasBoats is bool && text(d.boatInfo, 1000)
         && d.species is list && d.species.size() <= 8
         && d.species.hasOnly(['gädda', 'abborre', 'gös', 'öring', 'röding', 'harr', 'lax', 'regnbåge'])
-        && text(d.price, 300) && text(d.fishingLicense, 300)
+        && text(d.price, 1000) && text(d.fishingLicense, 1000)
         && link(d.website) && link(d.imageUrl)
         && text(d.phone, 30) && text(d.email, 100)
         && d.updatedAt == request.time;
@@ -93,6 +110,24 @@ service cloud.firestore {
         && text(request.resource.data.message, 1000) && request.resource.data.message.size() > 0
         && request.resource.data.createdAt == request.time
         && get(/databases/$(database)/documents/spots/$(request.resource.data.spotId)).data.ownerUid == null;
+    }
+
+    // Uppladdad bild per ställe (JPEG som data-URL). Samma behörighet som stället självt.
+    match /images/{spotId} {
+      function spotData() {
+        return get(/databases/$(database)/documents/spots/$(spotId)).data;
+      }
+      function canEdit() {
+        return isAdmin() || (signedIn() && spotData().ownerUid == request.auth.uid);
+      }
+
+      allow read: if spotData().status == 'published' || canEdit();
+      allow delete: if canEdit();
+      allow create, update: if canEdit()
+        && request.resource.data.keys().hasOnly(['data', 'updatedAt'])
+        && request.resource.data.data is string
+        && request.resource.data.data.size() <= 700000
+        && request.resource.data.updatedAt == request.time;
     }
 
     // Admins läggs in med scripts/make-admin.mjs, aldrig från webbläsaren.

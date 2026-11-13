@@ -13,8 +13,12 @@ if (live) {
   fb = { ...auth, ...store, auth: auth.getAuth(instance), db: store.getFirestore(instance) };
 }
 
+// Textfält i formuläret som alltid sparas (tomma om de inte fylls i).
 const TEXT = ['name', 'lake', 'county', 'place', 'description', 'accommodationInfo', 'boatInfo',
-  'price', 'fishingLicense', 'website', 'phone', 'email', 'imageUrl'];
+  'price', 'fishingLicense', 'website', 'phone', 'email'];
+const images = new Map(); // spot-id -> uppladdad bild (data-URL) eller '' om ingen finns
+const isJpeg = (v) => typeof v === 'string' && v.startsWith('data:image/jpeg;base64,');
+const join = (...parts) => parts.filter(Boolean).join('\n');
 const filters = $('#filters');
 const form = $('#spot-form');
 const claimForm = $('#claim-form');
@@ -119,6 +123,7 @@ function visible() {
     .filter((s) => !f.get('species') || (s.species || []).includes(f.get('species')))
     .filter((s) => !f.has('acc') || s.hasAccommodation)
     .filter((s) => !f.has('boat') || s.hasBoats)
+    .filter((s) => !Number(f.get('beds')) || (s.hasAccommodation && s.beds >= Number(f.get('beds'))))
     .sort((a, b) => a.name.localeCompare(b.name, 'sv'));
 }
 
@@ -194,7 +199,26 @@ function render() {
 function fact(key, text) {
   const div = $(`[data-row=${key}]`);
   div.hidden = !text;
-  if (key !== 'contact') $('dd', div).textContent = text || '';
+  const target = $('.t', div) || (key !== 'contact' && $('dd', div));
+  if (target) target.textContent = text || '';
+}
+
+// Uppladdade bilder ligger i en egen samling så att listan inte hämtar dem.
+async function showImage(s) {
+  const show = (src) => {
+    if (openId !== s.id) return;
+    $('#d-img').hidden = !src;
+    if (src) $('#d-img').src = src;
+  };
+  show(images.get(s.id) || https(s.imageUrl));
+  if (!live || images.has(s.id)) return;
+  try {
+    const data = (await fb.getDoc(fb.doc(fb.db, 'images', s.id))).data()?.data;
+    images.set(s.id, isJpeg(data) ? data : '');
+  } catch {
+    images.set(s.id, '');
+  }
+  show(images.get(s.id) || https(s.imageUrl));
 }
 
 function link(el, href, text) {
@@ -218,16 +242,23 @@ function route() {
   $('#d-where').textContent = whereText(s);
   setBadge($('#d-badge'), s, true);
   $('#d-desc').textContent = s.description || '';
-  $('#d-img').hidden = !https(s.imageUrl);
-  if (https(s.imageUrl)) $('#d-img').src = s.imageUrl;
+  showImage(s);
 
-  fact('acc', s.hasAccommodation ? s.accommodationInfo || 'Ja' : '');
-  fact('boat', s.hasBoats ? s.boatInfo || 'Ja' : '');
+  const motors = [s.petrolMotor && 'bensinmotor', s.electricMotor && 'elmotor'].filter(Boolean).join(' och ');
+  fact('acc', s.hasAccommodation ? join(s.beds && `${s.beds} sängplatser`, s.accommodationInfo) || 'Ja' : '');
+  fact('boat', s.hasBoats
+    ? join(s.boatCount && `${s.boatCount} ${s.boatCount === 1 ? 'båt' : 'båtar'}`, motors && cap(motors), s.boatInfo) || 'Ja'
+    : '');
   fact('species', (s.species || []).map(cap).join(', '));
   fact('price', s.price);
-  fact('license', s.fishingLicense);
+  const licenseUrl = https(s.fishingLicenseUrl);
+  fact('license', join(s.licenseRequired && 'Fiskekort krävs', s.fishingLicense) || (licenseUrl ? 'Fiskekort' : ''));
+  link($('#d-license-link'), licenseUrl, 'Köp fiskekort');
   const web = https(s.website);
+  $('#d-address').textContent = s.address || '';
+  $('#d-address').hidden = !s.address;
   const any = [
+    Boolean(s.address),
     link($('#d-web'), web, web && new URL(web).hostname.replace(/^www\./, '')),
     link($('#d-phone'), s.phone && `tel:${s.phone.replace(/[^\d+]/g, '')}`, s.phone),
     link($('#d-mail'), s.email && `mailto:${s.email}`, s.email),
@@ -258,6 +289,8 @@ function route() {
 let toastTimer;
 function toast(text, bad = false) {
   const el = $('#toast');
+  // En öppen dialog ligger överst och skulle annars dölja meddelandet.
+  ($('dialog[open]') || document.body).append(el);
   el.textContent = text;
   el.classList.toggle('bad', bad);
   clearTimeout(toastTimer);
@@ -314,19 +347,125 @@ function syncFormMap(recenter = false) {
   if (recenter) formMap.setView(set ? at : SWEDEN, set ? 10 : 4);
 }
 
+// En sektions underdel är gråad och skickas inte med när dess kryssruta är av.
+function syncToggles() {
+  for (const box of form.querySelectorAll('[data-toggles]')) document.getElementById(box.dataset.toggles).disabled = !box.checked;
+}
+form.addEventListener('change', (e) => { if (e.target.dataset.toggles) syncToggles(); });
+
+// ---------- Bild ----------
+// ponytail: bilden sparas som JPEG-text i Firestore (högst ~500 kB), eftersom Firebase Storage kräver betalplan.
+// Byt till Storage om bilderna ska bli fler eller större.
+const IMG = { maxFile: 15 * 1024 * 1024, minLong: 800, minShort: 500, maxSide: 1600, maxChars: 700_000 };
+let pendingImage; // undefined = oförändrad, null = ta bort, sträng = ny bild
+
+function setPreview(src) {
+  $('#form-img-preview').hidden = !src;
+  $('#form-img-remove').hidden = !src;
+  if (src) $('#form-img-preview').src = src;
+}
+
+async function encodeImage(file) {
+  if (!/^image\/(jpeg|png|webp)$/.test(file.type)) throw new Error('Välj en bild i formatet JPG, PNG eller WebP.');
+  if (file.size > IMG.maxFile) throw new Error('Bilden är större än 15 MB. Välj en mindre bild.');
+  const bmp = await createImageBitmap(file).catch(() => { throw new Error('Bilden gick inte att läsa. Prova en annan bild.'); });
+  const [long, short] = [Math.max(bmp.width, bmp.height), Math.min(bmp.width, bmp.height)];
+  if (long < IMG.minLong || short < IMG.minShort) {
+    throw new Error(`Bilden är ${bmp.width} × ${bmp.height} pixlar. Den behöver vara minst 800 × 500.`);
+  }
+  const scale = Math.min(1, IMG.maxSide / long);
+  const canvas = Object.assign(document.createElement('canvas'), {
+    width: Math.round(bmp.width * scale),
+    height: Math.round(bmp.height * scale),
+  });
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#fff'; // genomskinliga PNG-bilder blir annars svarta som JPEG
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(bmp, 0, 0, canvas.width, canvas.height);
+  for (const quality of [0.85, 0.75, 0.65, 0.55, 0.45]) {
+    const url = canvas.toDataURL('image/jpeg', quality);
+    if (url.length <= IMG.maxChars) return url;
+  }
+  throw new Error('Bilden gick inte att göra tillräckligt liten. Prova en annan bild.');
+}
+
+$('#form-image').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  try {
+    pendingImage = await encodeImage(file);
+    setPreview(pendingImage);
+  } catch (err) {
+    toast(err.message, true);
+  }
+  e.target.value = '';
+});
+$('#form-img-remove').onclick = () => { pendingImage = null; setPreview(''); };
+
+// ---------- Adressförslag ----------
+// Photon (OpenStreetMap-data) tillåter förslag medan man skriver, till skillnad från Nominatim.
+// lang=default ger svenska namn (t.ex. "Värmlands län") oavsett webbläsarens språk.
+const PHOTON = 'https://photon.komoot.io/api/?limit=6&lang=default&bbox=10.5,55,24.5,69.5&q=';
+const addressInput = form.elements.address;
+let suggestions = [];
+let suggestTimer;
+
+const addressLabel = ({ properties: p }) => {
+  const street = [p.street, p.housenumber].filter(Boolean).join(' ');
+  return [p.name !== p.street && p.name, street, [p.postcode, p.city || p.town || p.village || p.district].filter(Boolean).join(' ')]
+    .filter(Boolean).join(', ');
+};
+
+addressInput.addEventListener('input', () => {
+  const picked = suggestions.find((s) => addressLabel(s) === addressInput.value);
+  if (picked) {
+    const [lng, lat] = picked.geometry.coordinates;
+    const p = picked.properties;
+    form.elements.lat.value = lat.toFixed(5);
+    form.elements.lng.value = lng.toFixed(5);
+    if (!form.elements.place.value) form.elements.place.value = p.city || p.town || p.village || p.district || '';
+    const county = [p.county, p.state].find((c) => COUNTIES.includes(c));
+    if (county) form.elements.county.value = county;
+    syncFormMap(true);
+    return;
+  }
+  clearTimeout(suggestTimer);
+  const q = addressInput.value.trim();
+  if (q.length < 3) return;
+  suggestTimer = setTimeout(async () => {
+    try {
+      const res = await fetch(PHOTON + encodeURIComponent(q));
+      const seen = new Set();
+      suggestions = (await res.json()).features
+        .filter((f) => f.properties.countrycode === 'SE')
+        .filter((f) => !seen.has(addressLabel(f)) && seen.add(addressLabel(f)));
+      $('#address-list').replaceChildren(...suggestions.map((s) => new Option(addressLabel(s))));
+    } catch { /* inga förslag, fältet går att fylla i ändå */ }
+  }, 300);
+});
+
 function openForm(s) {
   editing = s?.id ?? null;
   form.reset();
+  pendingImage = undefined;
+  setPreview('');
   $('#form-title').textContent = s ? 'Ändra ställe' : 'Lägg till ditt ställe';
   $('#form-note').hidden = Boolean(s);
   if (s) {
     for (const el of form.elements) {
-      if (!el.name) continue;
+      if (!el.name || el.type === 'file') continue;
       if (el.name === 'species') el.checked = (s.species || []).includes(el.value);
       else if (el.type === 'checkbox') el.checked = Boolean(s[el.name]);
       else el.value = s[el.name] ?? '';
     }
+    if (live) {
+      fb.getDoc(fb.doc(fb.db, 'images', s.id)).then((d) => {
+        const data = d.data()?.data;
+        if (editing === s.id && pendingImage === undefined && isJpeg(data)) setPreview(data);
+      }).catch(() => {});
+    }
   }
+  syncToggles();
   $('#edit').showModal();
   syncFormMap(true);
 }
@@ -334,20 +473,39 @@ function openForm(s) {
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const f = new FormData(form);
-  const data = {
-    ...Object.fromEntries(TEXT.map((k) => [k, f.get(k).trim()])),
+  const get = (k) => (f.get(k) ?? '').trim(); // fält i en gråad del saknas i FormData
+  const int = (k) => Number.parseInt(get(k), 10) || 0;
+  // Tomma valfria fält tas bort vid ändring och utelämnas när stället skapas.
+  const opt = (v) => v || (editing ? fb.deleteField() : undefined);
+  const data = Object.fromEntries(Object.entries({
+    ...Object.fromEntries(TEXT.map((k) => [k, get(k)])),
+    address: opt(get('address')),
     lat: Number(f.get('lat')),
     lng: Number(f.get('lng')),
     hasAccommodation: f.has('hasAccommodation'),
+    beds: opt(int('beds')),
     hasBoats: f.has('hasBoats'),
+    boatCount: opt(int('boatCount')),
+    petrolMotor: f.has('petrolMotor'),
+    electricMotor: f.has('electricMotor'),
+    licenseRequired: f.has('licenseRequired'),
+    fishingLicenseUrl: opt(get('fishingLicenseUrl')),
     species: f.getAll('species'),
     updatedAt: fb.serverTimestamp(),
-  };
+  }).filter(([, v]) => v !== undefined));
   e.submitter.disabled = true;
   const ok = await act(async () => {
-    if (editing) return fb.updateDoc(fb.doc(fb.db, 'spots', editing), data);
-    await fb.addDoc(fb.collection(fb.db, 'spots'), { ...data, ownerUid: state.user.uid, status: 'pending', source: 'owner', sourceUrl: '' });
-    filters.elements.view.value = 'mine';
+    let id = editing;
+    if (editing) {
+      await fb.updateDoc(fb.doc(fb.db, 'spots', editing), data);
+    } else {
+      const fields = { ...data, imageUrl: '', ownerUid: state.user.uid, status: 'pending', source: 'owner', sourceUrl: '' };
+      id = (await fb.addDoc(fb.collection(fb.db, 'spots'), fields)).id;
+      filters.elements.view.value = 'mine';
+    }
+    images.delete(id);
+    if (pendingImage) await fb.setDoc(fb.doc(fb.db, 'images', id), { data: pendingImage, updatedAt: fb.serverTimestamp() });
+    else if (pendingImage === null) await fb.deleteDoc(fb.doc(fb.db, 'images', id));
   }, editing ? 'Ändringarna är sparade.' : 'Tack! Stället visas publikt när det har granskats.');
   e.submitter.disabled = false;
   if (ok) $('#edit').close();
@@ -390,7 +548,14 @@ $('#d-approve').onclick = () => act(
 $('#d-delete').onclick = () => {
   const s = state.spots.get(openId);
   if (!confirm(`Ta bort ${s.name}? Det går inte att ångra.`)) return;
-  act(async () => { await fb.deleteDoc(fb.doc(fb.db, 'spots', s.id)); location.hash = '#/'; }, 'Stället är borttaget.');
+  act(async () => {
+    // I samma batch, så att reglerna för bilden fortfarande ser stället och dess ägare.
+    const batch = fb.writeBatch(fb.db);
+    batch.delete(fb.doc(fb.db, 'images', s.id));
+    batch.delete(fb.doc(fb.db, 'spots', s.id));
+    await batch.commit();
+    location.hash = '#/';
+  }, 'Stället är borttaget.');
 };
 $('#d-claim').onclick = async () => {
   if (!(await login())) return;
