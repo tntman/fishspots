@@ -283,7 +283,11 @@ async function login() {
     await fb.signInWithPopup(fb.auth, new fb.GoogleAuthProvider());
     return true;
   } catch (err) {
-    if (!/popup-closed|cancelled-popup/.test(err.code)) toast('Inloggningen misslyckades. Försök igen.', true);
+    console.error(err);
+    if (/popup-closed|cancelled-popup/.test(err.code)) return false;
+    toast(err.code === 'auth/popup-blocked'
+      ? 'Webbläsaren blockerade inloggningsfönstret. Tillåt popup-fönster för sidan och försök igen.'
+      : `Inloggningen misslyckades (${err.code || 'okänt fel'}). Försök igen.`, true);
     return false;
   }
 }
