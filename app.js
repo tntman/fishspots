@@ -59,38 +59,49 @@ scalePins();
 const markers = new Map();
 let pinned = '';
 
-// Namnet visas när man pekar på en nål, och står kvar på nålen för det öppna stället.
-function bindLabel(m, fixed) {
-  // Namnet sätts som textnod: Leaflet tolkar strängar som HTML.
-  const label = Object.assign(document.createElement('span'), { textContent: m.options.title });
-  m.unbindTooltip().bindTooltip(label, {
-    direction: 'top',
-    permanent: fixed,
-    className: fixed ? 'is-fixed' : '',
-    offset: fixed ? [0, -50] : [0, -34],
-  });
-  m.fixedLabel = fixed;
-  if (fixed) m.openTooltip();
+// Namnet sätts som textnod: Leaflet tolkar strängar som HTML.
+const labelFor = (m) => Object.assign(document.createElement('span'), { textContent: m.options.title });
+const bindHover = (m) => m.bindTooltip(labelFor(m), { direction: 'top', offset: [0, -34] });
+
+// Namnet på det öppna stället är en egen etikett på kartan, inte nålens tooltip:
+// Leaflet stänger nålens tooltip när nålen tappar fokus, vilket den gör när detaljvyn tar fokus.
+let fixedTip = null;
+let fixedFor;
+function showFixedLabel() {
+  if (fixedFor === openId) return;
+  fixedFor = openId;
+  fixedTip?.remove();
+  fixedTip = null;
+  for (const [key, m] of markers) {
+    // Det öppna stället får ingen pek-etikett, så att namnet inte visas två gånger.
+    if (key === openId) m.unbindTooltip();
+    else if (!m.getTooltip()) bindHover(m);
+  }
+  const m = markers.get(openId);
+  if (!m) return;
+  fixedTip = L.tooltip({ permanent: true, direction: 'top', offset: [0, -50], className: 'is-fixed', interactive: false })
+    .setLatLng(m.getLatLng())
+    .setContent(labelFor(m))
+    .addTo(map);
 }
 
 function highlight(id) {
-  for (const [key, m] of markers) {
-    m.getElement()?.classList.toggle('is-active', key === id);
-    if (m.fixedLabel !== (key === openId)) bindLabel(m, key === openId);
-  }
+  for (const [key, m] of markers) m.getElement()?.classList.toggle('is-active', key === id);
   map.getContainer().classList.toggle('has-open', Boolean(openId));
+  showFixedLabel();
 }
 
 // ponytail: alla nålar ritas var för sig. Lägg till klustring om det blir fler än några hundra.
 function renderPins(list) {
   pins.clearLayers();
   markers.clear();
+  fixedFor = undefined; // nya nålar: etiketten för det öppna stället sätts om
   for (const s of list) {
     if (!Number.isFinite(s.lat) || !Number.isFinite(s.lng)) continue;
     const m = L.marker([s.lat, s.lng], { icon: pinIcon, title: s.name, alt: s.name })
       .on('click', () => { location.hash = `#/${s.id}`; })
       .addTo(pins);
-    bindLabel(m, s.id === openId);
+    bindHover(m);
     markers.set(s.id, m);
   }
   const key = [...markers.keys()].join();
