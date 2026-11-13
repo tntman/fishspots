@@ -3,10 +3,10 @@
 // Publik web-config från Firebase-konsolen. Den är ingen hemlighet: åtkomsten
 // styrs av firestore.rules. Tom apiKey = sidan visar data/spots.json skrivskyddat.
 export const firebaseConfig = {
-  apiKey: '',
-  authDomain: '',
-  projectId: '',
-  appId: '',
+  apiKey: 'AIzaSyBvgkasUCfYxh2ZRFc_RRRUuxUoMmNcXu4',
+  authDomain: 'fishspots-9b871.firebaseapp.com',
+  projectId: 'fishspots-9b871',
+  appId: '1:693891068530:web:b7ed363da68d6819cac8eb',
 };
 
 export const COUNTIES = [
