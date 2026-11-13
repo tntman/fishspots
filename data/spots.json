@@ -8,7 +8,7 @@
     "lng": 14.85266,
     "description": "Stor camping och stugby vid Långasjön med stugor från enkla sovstugor till fullt utrustade. Roddbåtar hyrs på campingen och vid Nytorpet, och man kan fiska bland annat regnbåge, gädda och abborre.",
     "hasAccommodation": true,
-    "accommodationInfo": "Cirka 55 stugor, 9 till 50 kvm, från enkla till fullt utrustade, samt camping",
+    "accommodationInfo": "Cirka 55 stugor, från 9 till 157 kvm, från enkla sovstugor utan toalett till fullt utrustade premiumstugor med egen dusch. De privata stugorna F01–F07 och F10 har egen båt tillgänglig. Dessutom camping.",
     "hasBoats": true,
     "boatInfo": "Roddbåtar hyrs på campingen och i Nytorpet; även kajak och kanot. Totalt 8 båtar i Långasjön, elmotor kan hyras till vissa. Bensin- och dieselmotorer är förbjudna eftersom sjön är dricksvattentäkt. I Kroksjöarna hyrs båtar med elmotor och egen båt får inte användas.",
     "species": [
@@ -38,7 +38,7 @@
     "lng": 16.50385,
     "description": "Fiskeboende i sydöstra Dalarna vid Bysjön, en del av nedre Dalälven. Man bor i en gammal gård med sjöutsikt eller i ett modernt hus och fiskar gädda och gös från hyrda Linder-båtar med tystgående fyrtaktsmotorer. Vid Tyttbo gäller catch and release.",
     "hasAccommodation": true,
-    "accommodationInfo": "Gård på cirka 100 kvm för upp till 8 gäster samt Tyttbogård för 6 gäster",
+    "accommodationInfo": "Bengts gård på cirka 100 kvm, två våningar, för upp till 8 gäster, samt Tyttbogård för 6 gäster. Backstugan har fyra dubbelrum med dusch och toalett i korridoren.",
     "hasBoats": true,
     "boatInfo": "Linder 440 med fyrtaktsmotor hyrs ut. Tyttbo: Linder Sportsman 400 (9,9 hk) 3 500 kr/vecka, Linder Fisherman 400 (4 hk) 2 750 kr/vecka; Bengts: 4,5 hk-båt med bränsle 3 000 kr/vecka (2024). Depositionsavgift 1 000 kr.",
     "species": [
@@ -47,7 +47,7 @@
       "abborre"
     ],
     "price": "Tyttbo gård 1 175 kr/natt (minst 4 nätter) eller 8 225 kr/vecka; Bengts 1 175 kr/dygn (minst 4 dygn, upp till 6 gäster). Linne, handdukar och slutstädning 200 kr/person (2024). Båt med bensinmotor 4 000 kr/vecka.",
-    "fishingLicense": "Fiskekort krävs under vistelsen. Tyttbo är catch and release. Fiskekort Tyttbo 300 kr/person (rabatterat), Bengts 200 kr/person (2024).",
+    "fishingLicense": "Fiskekort krävs under vistelsen. Tyttbo är catch and release för alla arter. Fiskekort Tyttbo 300 kr/person (rabatterat) och Bengts 200 kr/person (2024); vid Tyttbo även 130 kr/dygn eller 780 kr/vecka.",
     "website": "https://www.bengtsgard.com",
     "sourceUrl": "https://www.bengtsgard.com",
     "beds": 14,
@@ -56,7 +56,8 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiske-by-fvof.htm",
     "boatCount": 3,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "phone": ""
   },
   {
     "name": "Särna Camping",
@@ -86,7 +87,7 @@
     "address": "Särnavägen 106, 797 31 Särna",
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-sarna-idre.htm",
-    "boatCount": 1,
+    "boatCount": 2,
     "boatCountEstimate": true
   },
   {
@@ -98,7 +99,7 @@
     "lng": 16.60761,
     "description": "Familjecamping på sydsidan av Norra Dellen, cirka 30 km från Hudiksvall. Små trästugor hyrs ut, och vid receptionen kan man hyra motorbåt eller roddbåt samt kanot och SUP. Fiskekort kan ordnas via ifiske.",
     "hasAccommodation": true,
-    "accommodationInfo": "Sju enkla stugor med bäddsoffa och våningssäng, för upp till 3 personer; sanitet i servicehus",
+    "accommodationInfo": "Sju enkla stugor med våningssäng och utdragbar underbädd, för upp till 2 vuxna och 1 barn upp till 6 år. Stuga 1–2 är 12 kvm och stuga 3–7 är 9 kvm; alla stugor kan värmas. Dusch utan kostnad vid stuga 3–7. Sanitet i servicehus.",
     "hasBoats": true,
     "boatInfo": "Motorbåt och roddbåt hyrs ut vid receptionen, även kanoter, kajaker och SUP. Priser 2025: motorbåt 340 kr/timme, roddbåt 220 kr/timme, dubbelkajak/kanot 220 kr/timme. Paddel, kapell och flytväst ingår; en 5-liters bensindunk följer med motorbåten.",
     "species": [
@@ -160,7 +161,7 @@
     "lng": 12.94823,
     "description": "Stugby vid Eseredssjön i Ätran med sju stugor som passar familjer och grupper. Roddbåtar och kanoter hyrs ut. I sjön finns bland annat abborre och gädda, och regnbåge sätts ut varje år.",
     "hasAccommodation": true,
-    "accommodationInfo": "7 stugor om cirka 60 kvm, 6 bäddar vardera (42 bäddar totalt), med kök",
+    "accommodationInfo": "7 stugor om cirka 60 kvm, 6 bäddar vardera (42 bäddar totalt), med kök med spis och kylskåp, badrum med dusch samt trädgårdsmöbler. Lakan hyrs för 80 kr per bädd och städning kan köpas för 500 kr per stuga.",
     "hasBoats": true,
     "boatInfo": "3 båtar och 6 kanoter hyrs ut för 300 kr/dygn eller 100 kr/timme. Motor finns inte att hyra. Flytvästar ingår.",
     "species": [
@@ -188,7 +189,7 @@
     "lng": 14.02876,
     "description": "Fiskecamp vid stranden av Jormsjön i Frostviken, långt upp i fjällvärlden. Här kan man bo i någon av de egna stugorna, äta på restaurangen och ta sig ut på sjön med båt. Fisket domineras av öring och röding, och lägret kan också ordna guidning till andra vatten.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor i flera storlekar (Storstugan, Mellanstugan, Lillstugan, Sviten) samt husbilsplatser och camping",
+    "accommodationInfo": "Storstugan med 6 bäddar, 2 sovrum, eget badrum och kök; Mellanstugan (fyra stugor) för upp till 4 personer med eget kök, dusch och toalett; Lillstugan, en timmerkoja för 4 personer med kyl och mikro samt servicekök, dusch och bastu i närheten; Sviten med dubbelsäng, bäddsoffa och stor altan. Även husbilsplatser och camping.",
     "hasBoats": true,
     "boatInfo": "Båt kan hyras för fiske på Jormsjön",
     "species": [
@@ -215,7 +216,7 @@
     "lng": 15.06493,
     "description": "Jakt- och fiskecamp vid den fjällomgärdade sjön Storsjougden i nordöstra Jämtland. Gästerna bor i en stor gemensam stuga och kan hyra båt för sommarfiske. Målarterna är öring och röding.",
     "hasAccommodation": true,
-    "accommodationInfo": "Rum i storstuga",
+    "accommodationInfo": "Rum i storstugan, bäddar i Inviken eller stuga i Nyhem; flerbäddsrum kan hyras efter önskemål. Husvagns- och husbilsplatser finns (el kan hyras).",
     "hasBoats": true,
     "boatInfo": "Båtar hyrs ut för sommarfiske",
     "species": [
@@ -242,7 +243,7 @@
     "lng": 14.53114,
     "description": "Lugn camping på Vätterns strand cirka 9 km norr om Gränna med stugor att hyra. På anläggningen finns bad, bastu och fiske, och båtuthyrning ingår bland aktiviteterna. Passar den som vill ha enkelt boende nära Vättern.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor 1–9 med 3–4 bäddar (våningssängar), stuga C 3 bäddar, stuga D 5 bäddar, stuga E 6 bäddar, stuga A 6 bäddar samt villavagn med 4 bäddar. Även camping.",
+    "accommodationInfo": "Stugor 1–9 med 3–4 bäddar (våningssängar), cirka 12 kvm, med veranda; stuga C 3 bäddar, cirka 10 kvm; stuga D 5 bäddar, cirka 20 kvm; stuga E 6 bäddar, cirka 20 kvm; stuga A 6 bäddar med dusch, wc, kök och TV (inga husdjur); villavagn 45 kvm med 4 bäddar. Täcken, kuddar, köksutrustning, kylskåp, mikro och kaffebryggare finns i alla. Även camping.",
     "hasBoats": true,
     "boatInfo": "Båtuthyrning, roddbåt",
     "species": [],
@@ -253,7 +254,8 @@
     "address": "Getingaryd, 563 91 Gränna",
     "phone": "+46 390 210 15",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Hotell Ullinge",
@@ -292,7 +294,7 @@
     "lng": 14.18197,
     "description": "Enkla stugor vid Lovsjön cirka 10 km söder om Jönköping. Två roddbåtar kan hyras och bokas online per timme. Dusch och toalett finns i gemensam servicebyggnad.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor med 2 eller 4 bäddar, gemensamt kök och servicebyggnad",
+    "accommodationInfo": "Stugor med 2 eller 4 bäddar, kylskåp med litet frysfack, gemensamt kök och servicehus med dusch (obegränsat varmvatten) och toalett. Inget vatten i stugan. Ta med egna sängkläder eller hyr. Wifi ingår och rökning är förbjuden.",
     "hasBoats": true,
     "boatInfo": "Två roddbåtar (4 m, max 4 personer), åror ingår, ingen motor",
     "species": [],
@@ -347,9 +349,12 @@
     "accommodationInfo": "8 stugor samt campingplatser",
     "hasBoats": true,
     "boatInfo": "Motorbåt, roddbåt och kanot kan hyras",
-    "species": [],
+    "species": [
+      "gädda",
+      "abborre"
+    ],
     "price": "",
-    "fishingLicense": "",
+    "fishingLicense": "Fiskekort för Långsjön säljs via campingen, och kort för vatten med ädelfisk kan också köpas där.",
     "website": "https://langsjon.se",
     "sourceUrl": "https://langsjon.se/bootebikes-2/",
     "phone": "+46 490 52 140",
@@ -367,7 +372,7 @@
     "lng": 15.67018,
     "description": "Gårdshotell och fiskecamp i skogsbygd utanför Emmaboda med boende nära sjön. Man kan hyra båt (även med elmotor) eller kanot och fiska efter gädda, abborre, braxen och sutare. Boendet varierar från B&B-rum till självhushållsstugor.",
     "hasAccommodation": true,
-    "accommodationInfo": "B&B-rum, självhushållsstugor för 5-8 personer (t.ex. Sjöstugan vid strandkanten) samt ställplats/camping",
+    "accommodationInfo": "Gårdshotell med 12 hotellrum (4 familjerum, 6 dubbelrum, 2 enkelrum) med eget badrum, självhushållsstugor (Sjövillan 240 kvm med 9 bäddar och braskamin, Karlssons 90 kvm och Nilsson för 6 personer) samt ställplats/camping.",
     "hasBoats": true,
     "boatInfo": "Båt hyrs på fem av sjöarna, endast för övernattande gäster, 600 kr/dag. Elmotor ingår alltid. Kanot kan också hyras.",
     "species": [
@@ -377,9 +382,9 @@
       "röding",
       "regnbåge"
     ],
-    "price": "Stuga per vecka (2025): Sjövillan 11 000–25 500 kr, Karlssons 9 350–21 000 kr, Nilsson 8 250–15 500 kr. Båt 600 kr/dag, fiskekort 50–170 kr/dag och vuxen.",
+    "price": "Stuga per vecka (2025): Sjövillan 11 000–25 500 kr, Karlssons 9 350–21 000 kr, Nilsson 8 250–15 500 kr. Hotellrum per natt inkl. frukost: enkelrum från 1 190 kr, dubbelrum från 1 390 kr, familjerum 1 690 kr. Båt 600 kr/dag, fiskekort 50–170 kr/dag och vuxen.",
     "fishingLicense": "Fiskekort 50–170 kr per dag och vuxen; barn under 18 fiskar gratis i Ödevaten. Svartegöl (utsatt regnbåge och röding) 170 kr/dag och person.",
-    "website": "https://www.odevata.se",
+    "website": "https://www.odevatagardshotell.se",
     "sourceUrl": "https://www.visitsmaland.se/en/to-do/odevata-gardshotell/",
     "electricMotor": true,
     "address": "Ödevata 104, 361 92 Emmaboda",
@@ -401,13 +406,14 @@
     "hasAccommodation": true,
     "accommodationInfo": "12 fritidsstugor och 4 sommartorp för 2–12 personer, samt naturcamping. Stugorna är öppna året runt.",
     "hasBoats": true,
-    "boatInfo": "20 roddbåtar/motorbåtar (bensin- och elmotor), plus kanoter och kajaker; hyrs, gäster på resorten prioriteras",
+    "boatInfo": "Cirka 20 båtar i plast och aluminium hyrs ut, med 4 hk fyrtaktsmotor eller elmotor, plus kanoter och kajaker; gäster på resorten prioriteras. Deposition 1 500 kr för motorbåtar. Större specialbåtar finns för trollingfiske med guide.",
     "species": [
       "gädda",
+      "abborre",
       "gös"
     ],
     "price": "",
-    "fishingLicense": "Fiskekort för Åsnen krävs",
+    "fishingLicense": "Fiskekort för Åsnen krävs och säljs hos godkända återförsäljare, i receptionen eller på iFiske. Dagkort 150 kr, veckokort 500 kr, månadskort 750 kr, årskort 1 500 kr (hela sjön, årtal anges inte).",
     "website": "https://www.getnogard.se",
     "sourceUrl": "https://www.visittingsryd.se/en/canoe-rental-getno-lake-asnen-resort",
     "boatCount": 20,
@@ -417,7 +423,8 @@
     "phone": "+46 477 240 11",
     "email": "info@getnogard.se",
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-asnen.htm",
-    "address": "Getnö Gård, 362 96 Ryd"
+    "address": "Getnö Gård, 362 96 Ryd",
+    "boatCountEstimate": true
   },
   {
     "name": "Hallsjö Vildmarkscamping",
@@ -445,7 +452,8 @@
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-vidostern.htm",
     "address": "Hallsjö Norregård, 341 52 Lagan",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Tingsryd Resort",
@@ -487,10 +495,10 @@
     "hasAccommodation": true,
     "accommodationInfo": "12 fristående campingstugor med sjöutsikt samt camping- och husbilsplatser",
     "hasBoats": true,
-    "boatInfo": "Båtuthyrning finns",
+    "boatInfo": "Roddbåt (350 kr/dygn) och motorbåt (800 kr/dygn) hyrs ut för en eller flera dagar, med eller utan motor. Kanot 350 kr/dag, flytväst ingår.",
     "species": [],
     "price": "Stugor 700–1 175 kr/natt beroende på stuga och säsong. Roddbåt 350 kr/dygn, motorbåt 800 kr/dygn.",
-    "fishingLicense": "",
+    "fishingLicense": "Fiskekort säljs i receptionen.",
     "website": "https://www.urshult-camping.se",
     "sourceUrl": "https://www.urshult-camping.se/",
     "beds": 46,
@@ -499,7 +507,7 @@
     "email": "info@urshult-camping.se",
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-asnen.htm",
-    "boatCount": 1,
+    "boatCount": 2,
     "boatCountEstimate": true
   },
   {
@@ -527,7 +535,8 @@
     "email": "info@adolfstrom.com",
     "address": "Adolfström 168, 938 93 Laisvall",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "beds": 50
   },
   {
     "name": "Allsåklubbens Camping",
@@ -553,7 +562,8 @@
     "address": "Allsåklubben 7, 956 92 Överkalix",
     "phone": "+46 706577991",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Sörbyn Lodge",
@@ -564,7 +574,7 @@
     "lng": 21.78629,
     "description": "Lodge med villor och hotellrum vid Vitträsket, ungefär en timme från Luleå, nära Råneälven. Fiskepaket med guide, båt och utrustning erbjuds via Sörbyn Fishing, med lax, öring, harr och gädda i älven och sjöarna.",
     "hasAccommodation": true,
-    "accommodationInfo": "Villor och hotellrum",
+    "accommodationInfo": "Villor med egen eldstad och åtta dubbel-/tvåbäddsrum med TV och badrum; stugorna har pentry och badrum.",
     "hasBoats": true,
     "boatInfo": "Båt ingår i guidade fiskepaket via Sörbyn Fishing",
     "species": [
@@ -592,7 +602,7 @@
     "lng": 18.02097,
     "description": "Fjällby på en halvö i sjön Saggat nära Kvikkjokk, med stugor, hotellrum och camping. De hyr ut roddbåtar, kanoter och paddleboards samt en bastuflotte. Fisket i Saggat och fjällsjöarna ger röding och abborre, sommar som vinter.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor med 6 och 8 bäddar, campingstugor, hotellrum och camping",
+    "accommodationInfo": "Stugor med 6 och 8 bäddar, de största med bastu och braskamin, campingstugor, hotellrum och camping.",
     "hasBoats": true,
     "boatInfo": "Roddbåtar kan hyras",
     "species": [
@@ -619,19 +629,19 @@
     "lng": 14.38392,
     "description": "Camping på ön Ivö i Ivösjön, Skånes största sjö, intill färjeläget. Anläggningen hyr ut enkla stugor och beskrivs som camping för sportfiskare, med båthyrning.",
     "hasAccommodation": true,
-    "accommodationInfo": "20 uthyrningsenheter (2 med sanitet, 18 utan), samt camping",
+    "accommodationInfo": "15 stugor för uthyrning året runt, alla med elvärme (en 3-bäddsstuga är handikappanpassad), samt camping.",
     "hasBoats": true,
     "boatInfo": "Båtuthyrning finns",
     "species": [],
     "price": "",
     "fishingLicense": "",
-    "website": "",
+    "website": "https://ivo-camping.nu/",
     "sourceUrl": "https://www.pincamp.com/campings/ivoe-camping",
     "boatCount": 1,
     "boatCountEstimate": true,
     "email": "reception@ivo-camping.nu",
     "phone": "044-521 88",
-    "address": "290 34 Ivö"
+    "address": "Ärkebiskopens väg 4, 291 68 Fjälkinge"
   },
   {
     "name": "Jägersbo Camping",
@@ -653,7 +663,7 @@
     "address": "Fiskaregränd 1, 243 35 Höör",
     "phone": "0413-55 44 90",
     "email": "camping@jagersbo.se",
-    "boatCount": 1,
+    "boatCount": 2,
     "boatCountEstimate": true
   },
   {
@@ -665,7 +675,7 @@
     "lng": 15.90281,
     "description": "Anläggning på en udde i Hjälmaren med camping och rum i timmerstugan. Man kan hyra kanot eller båt och fiska hela året, även isfiske vintertid. Ligger i ett naturreservat ungefär 15 km från Arboga.",
     "hasAccommodation": true,
-    "accommodationInfo": "Hotellrum i timmerstugan samt camping",
+    "accommodationInfo": "8 hotellrum i timmerhotellet (enkel-, dubbelrum och dubbelrum med bäddsoffa för upp till fyra), stora stugor på 62 kvm med 3 sovrum och 2 sängar i varje, små campingstugor för 2 personer samt camping med 170 platser.",
     "hasBoats": true,
     "boatInfo": "Kanot och båt hyrs i receptionen.",
     "species": [
@@ -674,13 +684,13 @@
       "gös"
     ],
     "price": "",
-    "fishingLicense": "Handredskapsfiske är fritt i Hjälmaren",
+    "fishingLicense": "Spöfiske är fritt i Hjälmaren. Kräftfiskepaket med båt och burar kan bokas i augusti–september.",
     "website": "https://www.herrfallet.se",
     "sourceUrl": "https://www.herrfallet.se",
     "address": "Herrfallet, 732 93 Arboga",
     "phone": "0589-401 10",
     "email": "reception@herrfallet.se",
-    "boatCount": 1,
+    "boatCount": 2,
     "boatCountEstimate": true
   },
   {
@@ -692,7 +702,7 @@
     "lng": 17.9125,
     "description": "Kommunalt friluftsområde cirka 15 km öster om Uppsala vid sjöarna Trehörningen och Ramsen. Här kan man hyra stugor vid entrén samt roddbåt, kanot, SUP och trampbåt. Fiske är en av aktiviteterna i området.",
     "hasAccommodation": true,
-    "accommodationInfo": "Uthyrningsstugor vid entrén",
+    "accommodationInfo": "Åtta uthyrningsstugor vid entrén med fyra bäddar vardera och enkelt kök; toalett och dusch i närliggande servicebyggnad",
     "hasBoats": true,
     "boatInfo": "10 roddbåtar, 18 kanoter, 10 trampbåtar samt SUP hyrs ut",
     "species": [
@@ -700,7 +710,7 @@
       "abborre",
       "gös"
     ],
-    "price": "Roddbåt och kanot 100 kr/timme, 400 kr för 4-6 timmar, 600 kr/dag, 800 kr/helg. Trampbåt 150 kr/timme.",
+    "price": "Stuga 700 kr/natt eller 4 200 kr/vecka. Roddbåt och kanot 100 kr/timme, 400 kr för 4-6 timmar, 600 kr/dygn, 800 kr/helg. Trampbåt 150 kr/timme.",
     "fishingLicense": "Uppsalakortet krävs för fiske i Trehörningen och Ramsen. Kortet gäller bara vatten inom Uppsala kommuns mark; på övriga vatten krävs markägarens tillstånd.",
     "website": "https://www.uppsala.se/fjallnora",
     "sourceUrl": "https://destinationuppsala.se/en/activities/fjallnora-recreation-area/",
@@ -721,9 +731,9 @@
     "lng": 12.31322,
     "description": "Fiskecamp vid sjön Ränken en bit nordväst om Arvika med utrustade trähus nära vattnet. Här kan man hyra båt, motor och fiskeutrustning, och lägret ordnar även fisketurer och älgsafari. Sjön ger gädda, gös och abborre.",
     "hasAccommodation": true,
-    "accommodationInfo": "Trähus nära vattnet samt ställplatser",
+    "accommodationInfo": "Hus med fullt utrustat kök och elvärme samt husvagnsplatser",
     "hasBoats": true,
-    "boatInfo": "Båt och motor hyrs på plats. Aluminiumbåtar (Linder) och plastbåtar (HR Boat) med moderna bränslesnåla fyrtaktsmotorer från Yamaha.",
+    "boatInfo": "Till varje hus hör en båt med 4 hk utombordare. Båtar kan även hyras: aluminiumbåtar (Linder) och plastbåtar (HR Boat) med bränslesnåla fyrtaktsmotorer från Yamaha. Elmotor, ekolod och djuprigg kan hyras.",
     "species": [
       "gädda",
       "gös",
@@ -739,7 +749,7 @@
     "email": "info@hallefishingcamp.com",
     "petrolMotor": true,
     "electricMotor": true,
-    "boatCount": 4,
+    "boatCount": 7,
     "boatCountEstimate": true
   },
   {
@@ -751,15 +761,17 @@
     "lng": 12.60718,
     "description": "Familjecamping vid Glafsfjorden ungefär fyra kilometer söder om Arvika, öppen året runt. Det finns både fullt utrustade stugor och enklare campingstugor. I ett paket med stuga ingår en roddbåt med motor som ligger vid campingens brygga.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor från enkla campingstugor till självhushåll med kök och bad",
+    "accommodationInfo": "Stugor från enkla campingstugor till självhushållsstugor med kök, 2-6 bäddar; flera stugor är anpassade för vinterboende",
     "hasBoats": true,
     "boatInfo": "Roddbåt med motor och bensin ingår i båtpaketet (maj-september); båtuthyrning finns även separat",
     "species": [
       "gädda",
-      "gös"
+      "gös",
+      "abborre",
+      "öring"
     ],
     "price": "",
-    "fishingLicense": "Fiskekort krävs för Glafsfjorden",
+    "fishingLicense": "Fiskekort krävs och säljs i campingens reception: årskort, familjeårskort, veckokort och tvådagarskort. Under 16 år fiskar gratis. För trolling krävs ett särskilt trollingfiskekort.",
     "website": "https://www.ingestrandscamping.se",
     "sourceUrl": "https://visitvarmland.com/arvika/en/activities/fishing/fishing-package-ingestrands-camping",
     "petrolMotor": true,
@@ -795,7 +807,8 @@
     "phone": "+46 76 81 988 53",
     "electricMotor": true,
     "boatCount": 6,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Scandifishing, Långban",
@@ -822,7 +835,8 @@
     "petrolMotor": true,
     "address": "Långban, 682 94 Filipstad",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Kolgårdens Stugby & Camping",
@@ -851,7 +865,8 @@
     "phone": "0940-103 04",
     "email": "kolgarden@vilhelmina.ac",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "beds": 43
   },
   {
     "name": "Saiva Camping & Stugby",
@@ -891,14 +906,14 @@
     "lng": 15.23131,
     "description": "Gård med timmerstugor vid den cirka två mil långa fjällsjön Virisen, ungefär fem mil sydost om Tärnaby. Här kan gästerna hyra båt för fiske efter röding och öring i sjön. Gården har även restaurang och uthyrning av skoter på vintern.",
     "hasAccommodation": true,
-    "accommodationInfo": "Timmerstugor med 4 till 6 bäddar",
+    "accommodationInfo": "Fyra stugor med braskamin, dusch, wc och kök: Betty Blå, Kristina Röd och Svarta Johanna med 4 bäddar samt Jenny Loft med 6 bäddar",
     "hasBoats": true,
-    "boatInfo": "10 båtar att hyra på sommaren, med eller utan motor; flytvästar ingår; rabatt för stuggäster",
+    "boatInfo": "Sommartid 10 båtar med fyrtaktsmotorer: 3 större träbåtar och 7 plastbåtar på 4,5 m. Hyrs med eller utan motor; flytvästar ingår; lägre pris för stuggäster.",
     "species": [
       "röding",
       "öring"
     ],
-    "price": "Båt med motor 400 kr/dygn, utan motor 240 kr/dygn; stuga 4-6 bäddar från ca 4 000 kr (säsongspris, 2026)",
+    "price": "Prislista 2027: båt med motor 390 kr/dygn för stuggäster (600 kr för övriga), båt utan motor 300 kr/dygn för stuggäster, stor träbåt med motor 600 kr/dygn för stuggäster (850 kr för övriga). Stuga 4 bäddar 4 800 kr/vecka eller 3 100 kr för 3 nätter, Jenny Loft (6 bäddar) 7 500 kr/vecka.",
     "fishingLicense": "Fiskekort krävs, information om hur man köper finns på webbplatsen",
     "website": "https://www.virisen.se",
     "sourceUrl": "https://boka.hemavan.nu/en/virisen-0",
@@ -908,7 +923,8 @@
     "phone": "070-27 44 188",
     "email": "info@virisen.se",
     "fishingLicenseUrl": "https://www.natureit.se/sv/Buy/fishing",
-    "petrolMotor": true
+    "petrolMotor": true,
+    "beds": 18
   },
   {
     "name": "Dalslands Stugbåt",
@@ -917,11 +933,11 @@
     "place": "Bengtsfors",
     "lat": 59.03819,
     "lng": 12.20165,
-    "description": "Här hyr man en flytande stugbåt på cirka 13 kvm som färdas över Lelång, en av Dalslands kanals större sjöar. En eka med 10 hk motor ingår för utflykter och fiske.",
+    "description": "Här hyr man en flytande stugbåt på cirka 13 kvm som färdas över Lelång, en av Dalslands kanals större sjöar. En motorbåt ingår för bogsering och utflykter.",
     "hasAccommodation": true,
     "accommodationInfo": "Flytande stugbåt, cirka 13 kvm, med kök, grill, toalett, bäddsoffa och stor altan",
     "hasBoats": true,
-    "boatInfo": "Eka med 10 hk motor ingår. Bränsle tillkommer.",
+    "boatInfo": "En motorbåt ingår, för att bogsera stugbåten och för utflykter. Bensin tillkommer.",
     "species": [],
     "price": "",
     "fishingLicense": "",
@@ -931,7 +947,8 @@
     "petrolMotor": true,
     "email": "booking@stugbaat.se",
     "address": "Strandvägen 25B, 666 30 Bengtsfors",
-    "phone": "+46 738 331 383"
+    "phone": "+46 738 331 383",
+    "beds": 4
   },
   {
     "name": "Laxsjöns Camping & Friluftsgård",
@@ -969,7 +986,7 @@
     "hasAccommodation": true,
     "accommodationInfo": "Villan (10 bäddar), Toppstugan (10), Lillstugan (4) samt 8 ställplatser",
     "hasBoats": true,
-    "boatInfo": "Ett par roddbåtar ingår i hyran för alla stugor. Fyra kanoter finns vid stugorna.",
+    "boatInfo": "Två ekor och fyra kanadensare (kanoter) kan lånas gratis av hyresgäster; flytvästar finns.",
     "species": [],
     "price": "Lillstugan 1 000 kr, Toppstugan 2 000 kr, Villan 3 000 kr per dygn",
     "fishingLicense": "Fiskekort krävs i Lillsjön",
@@ -980,7 +997,7 @@
     "address": "Lillesjö 1, 668 94 Bäckefors",
     "phone": "+46 70 766 40 89",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "email": ""
   },
   {
     "name": "Rolfskärrs Stugby",
@@ -991,7 +1008,7 @@
     "lng": 12.65208,
     "description": "Stugby på en liten udde i Tösse skärgård vid Vänern, med 16 självhushållsstugor. Här kan man hyra motorbåt, kajak och kanot och ta sig ut på sjön. Spöfiske är gratis inom anläggningens sjöområde.",
     "hasAccommodation": true,
-    "accommodationInfo": "16 stugor med 2, 4 eller 6 bäddar, helt kök och öppen spis",
+    "accommodationInfo": "16 stugor med 2, 4 eller 6 bäddar, enkel köksutrustning, bänkspis och öppen spis",
     "hasBoats": true,
     "boatInfo": "Motorbåtar, kajaker, kanoter och SUP hyrs ut; flytvästar att låna",
     "species": [
@@ -1016,17 +1033,16 @@
     "place": "Torsö",
     "lat": 58.79987,
     "lng": 13.78843,
-    "description": "Camping och stugor på Vänerns största ö, Torsö, vid Fågelviken. Man kan hyra roddbåt och kajak för att utforska skärgården och fiska.",
+    "description": "Camping och stugor på Vänerns största ö, Torsö, vid Fågelviken. Man kan hyra båt och kajak för att utforska skärgården och fiska.",
     "hasAccommodation": true,
-    "accommodationInfo": "Fem stugor och en lägenhet, totalt 30 bäddar, samt plats för husvagn, husbil och tält",
+    "accommodationInfo": "Fyra campingstugor (Brommö, Dillö, Kalvö och Onsö) samt plats för husvagn, husbil och tält",
     "hasBoats": true,
-    "boatInfo": "Roddbåt och kajaker hyrs ut",
+    "boatInfo": "Båt och kajak kan hyras",
     "species": [],
     "price": "",
     "fishingLicense": "",
     "website": "https://www.tbif.se",
     "sourceUrl": "https://www.vastsverige.com/mariestad/produkter/torso-camping/",
-    "beds": 30,
     "address": "Fågelö Stranden 1, 542 91 Torsö",
     "phone": "070-927 77 00",
     "email": "info@tbif.se",
@@ -1054,7 +1070,8 @@
     "address": "Näs 669, 468 90 Vänersnäs",
     "phone": "+46 70 333 22 00",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Nordic Discovery",
@@ -1067,7 +1084,7 @@
     "hasAccommodation": true,
     "accommodationInfo": "Rum, semesterhus för upp till 8 personer och semesterlägenhet",
     "hasBoats": true,
-    "boatInfo": "Roddbåt (Linder 410, aluminium) för fiske i Långvattnet och Klotensjön, livväst och karta ingår",
+    "boatInfo": "Roddbåt (Linder 410 Fishing, aluminium) för fiske i Långvattnet och Klotensjön. Livvästar, åror, karta och båttransport ingår. Båtarna når inte sjöarna nordväst om Kloten.",
     "species": [
       "gädda",
       "abborre",
@@ -1075,7 +1092,7 @@
       "regnbåge"
     ],
     "price": "Roddbåt 900 kr per dygn eller 5 400 kr per vecka. Semesterhus 3 000 kr per natt",
-    "fishingLicense": "Fiskekort via iFiske, 80 kr per dag eller 500 kr per år",
+    "fishingLicense": "Fiskekort via iFiske. Naturvatten: 80 kr/dag, 180 kr/3 dagar, 500 kr/år (familj 700 kr/år); gratis för barn och ungdomar under 20 år. Put & take-vatten med regnbåge och öring: 240 kr/dag (familj 480 kr/dag).",
     "website": "https://nordicdiscovery.se",
     "sourceUrl": "https://nordicdiscovery.se/rowboat-rental/",
     "boatCount": 3,
@@ -1094,11 +1111,11 @@
     "lng": 15.27934,
     "description": "Liten, naturnära camping på en platå i Malexander vid sjön Sommen med klart vatten. Två campingstugor hyrs ut året runt, och på campingen kan man hyra båt samt köpa fiskekort. Passar den som vill kombinera fiske med lugn och bad.",
     "hasAccommodation": true,
-    "accommodationInfo": "2 campingstugor för upp till 4 personer, plus camping",
+    "accommodationInfo": "2 campingstugor med bäddar för högst två vuxna och två barn vardera, plus camping",
     "hasBoats": true,
     "boatInfo": "Båtuthyrning, även kanot, kajak och SUP",
     "species": [],
-    "price": "Stuga 800 kr/natt, 5 000 kr/vecka (2026)",
+    "price": "Stuga 800 kr/natt eller 5 000 kr/vecka (2026). Slutstädning 500 kr per stuga.",
     "fishingLicense": "Fiskekort säljs på campingen",
     "website": "https://malexandercamping.se",
     "sourceUrl": "https://www.malexandercamping.se",
@@ -1107,7 +1124,8 @@
     "phone": "0766-419 713",
     "email": "info@malexandercamping.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "beds": 8
   },
   {
     "name": "Ryda Gård",
@@ -1118,7 +1136,7 @@
     "lng": 15.88339,
     "description": "Gård vid Åsunden i Kinda med fem självhushållshus och ställplatser för husbil. Gården hyr ut aluminiumbåtar med motor som är anpassade för sportfiske, och sjön har rikligt med gädda och gös. Ekolod och fiskeutrustning kan läggas till vid hyra.",
     "hasAccommodation": true,
-    "accommodationInfo": "Fem hus: Sörgården, Mellangården och Storstugan (5-7 bäddar vardera), Gäststugan (4 bäddar), Lillstugan (2 små sovrum, bastu); dessutom 12 ställplatser",
+    "accommodationInfo": "Fem till sex självhushållshus: Sörgården, Mellangården och Storstugan (5-7 bäddar vardera), Gäststugan (4 bäddar), Loftstugan (stockhus från 1700-talet, 45 kvm), Lillstugan (2 små sovrum, bastu); dessutom ställplatser",
     "hasBoats": true,
     "boatInfo": "12 aluminiumbåtar (Linder 400 Sportsman) med 9,9 hk Yamaha fyrtaktare, hyrs per dag eller vecka; livvästar och ekolod kan ingå/tillkomma",
     "species": [
@@ -1153,10 +1171,11 @@
       "öring",
       "röding",
       "regnbåge",
-      "gädda"
+      "gädda",
+      "harr"
     ],
     "price": "Stugor från 400 kr per natt",
-    "fishingLicense": "Fiskekort köps via webbshopen; dagskort 40 kr (övriga sjöar) och 200 kr (put and take)",
+    "fishingLicense": "Fiskekort köps via webbshopen; dagskort 40 kr (övriga sjöar), 200 kr (put and take) och 230 kr (flytringsfiske).",
     "website": "https://www.logdowild.se/sv/",
     "sourceUrl": "https://www.logdowild.se/sv/stuga/",
     "lat": 62.55828,
@@ -1188,7 +1207,8 @@
     "address": "Kälsta 107, 864 41 Stöde",
     "phone": "076-881 82 83",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Storsjö Fjällturism och Fiskecamp",
@@ -1197,7 +1217,7 @@
     "place": "Storsjö Kapell",
     "description": "Fiskecamp i nordvästra Härjedalen med stugor, parhus och campingstugor strax intill Storsjön. Här hyrs både motorbåtar och roddbåtar ut, och fiskevårdsområdet omfattar många sjöar och strömmar.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor för 4–7 personer, parhus, campingstugor och ett annex med 12 bäddar",
+    "accommodationInfo": "Stugor på 36 och 70 kvm, campingstugor med 4 bäddar, två lägenheter med 5 bäddar och ett annex med 12 bäddar",
     "hasBoats": true,
     "boatInfo": "Motorbåtar och roddbåtar hyrs ut, även kanoter och elmotor. Motorbåt 300 kr/dag eller 1 500 kr/vecka (bensin ingår ej). Roddbåt, kanot och elmotor 300 kr/dag eller 1 500 kr/vecka.",
     "species": [
@@ -1206,7 +1226,7 @@
       "harr",
       "gädda"
     ],
-    "price": "Båt 300 kr per dygn eller 1 500 kr/vecka. Stuga 4 bäddar 1 400 kr/natt, 7-bäddsstuga 2 000 kr/natt för 4 personer, parhus 1 940 kr/natt, annex 390 kr per bädd.",
+    "price": "Motorbåt (exkl. bensin) 300 kr/dygn eller 1 500 kr/vecka; roddbåt, kanot, flytring och elmotor 300 kr/dygn eller 1 500 kr/vecka. Stuga 36 kvm med 4 bäddar 1 400 kr/natt, stuga 70 kvm för 4 personer 2 000 kr/natt (+280 kr per extra person), campingstuga 4 bäddar 715 kr/natt, lägenhet med 5 bäddar 1 940 kr/natt, hela annexet 2 450 kr/natt.",
     "fishingLicense": "Fiskekort säljs på fiskecampen",
     "website": "https://www.storsjo.com/",
     "sourceUrl": "https://www.storsjo.com/priser/",
@@ -1217,7 +1237,8 @@
     "electricMotor": true,
     "petrolMotor": true,
     "boatCount": 4,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Sandvikens Camping & Stugby",
@@ -1226,7 +1247,7 @@
     "place": "Frösön",
     "description": "Camping vid Storsjön en dryg mil från centrala Östersund med både självhushållsstugor och campingstugor. Båtar kan hyras på plats.",
     "hasAccommodation": true,
-    "accommodationInfo": "Cirka 13–15 stugor, självhushåll och campingstugor, samt husvagnsplatser",
+    "accommodationInfo": "13 stugor, varav 4 självhushållsstugor med toalett, dusch, kök och 5 bäddar, samt vandrarhem med 33 bäddar i 7 rum och husvagnsplatser",
     "hasBoats": true,
     "boatInfo": "Båtar hyrs ut",
     "species": [],
@@ -1265,7 +1286,8 @@
     "phone": "070-653 43 73",
     "licenseRequired": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Fahlströms Fiskecenter",
@@ -1286,7 +1308,9 @@
     "lng": 14.14166,
     "licenseRequired": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "",
+    "phone": ""
   },
   {
     "name": "Albackens Jakt- & Fiskecamp",
@@ -1295,7 +1319,7 @@
     "place": "Sörbygden",
     "description": "Jakt- och fiskecamp några mil utanför Bräcke med timrade stugor i stugbyn vid sjön Alan samt fiskestugor vid Gimåns forsar. Motorbåt hyrs vid Alan, och i en av stugorna ingår båt.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugby med stugor för 4–6 personer, jaktstuga för 12 samt fiskestugor vid forsarna",
+    "accommodationInfo": "Stugby med nio timmerstugor med 4 eller 6 bäddar, jaktstuga med öppen spis för upp till 14, samt Båthällstugan och Skravelforsstugan (4 bäddar vardera, vedkamin) vid forsarna",
     "hasBoats": true,
     "boatInfo": "Motorbåt och roddbåt hyrs ut vid Alan; båt ingår i Skravelforsstugan",
     "species": [
@@ -1316,7 +1340,8 @@
     "phone": "070-282 54 79",
     "licenseRequired": true,
     "boatCount": 3,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Anariset",
@@ -1325,7 +1350,7 @@
     "place": "Järpen",
     "description": "Fiske- och jaktanläggning i fjällen med boende vid Östra Vattensjön. Båt med motor ingår i fiskepaketen, och fisket gäller öring, röding och harr.",
     "hasAccommodation": true,
-    "accommodationInfo": "Boende med tillgång till bastu i paketen",
+    "accommodationInfo": "Anasjölägret: tre stugor med 4 bäddar, båthuset 'slottet' med 2 bäddar och en timmerstuga vid stranden med 5 bäddar; Ajvin Sijte: stugor med 4-5 bäddar. Självhushåll och bastu (gemensam bastu vid sjön på Anasjölägret, stor bastu på stranden vid Ajvin Sijte)",
     "hasBoats": true,
     "boatInfo": "Båt med motor ingår i paketen; båtar och motorer kan även hyras vid Ajvin Sijte",
     "species": [
@@ -1369,7 +1394,9 @@
     "lng": 15.43254,
     "petrolMotor": true,
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "",
+    "phone": ""
   },
   {
     "name": "Nynäs Jakt & Fiskecamp",
@@ -1427,7 +1454,7 @@
     "place": "Jockfall",
     "description": "Turistanläggning vid Kalixälven med stugor, lodger och camping. Anläggningen hyr ut en båt med motor och åror för fiske på Vallsjärv, en sjö några kilometer bort som är känd för stor gädda och abborre.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor, lodger, lägenheter samt camping",
+    "accommodationInfo": "Moderna lodger med fullt utrustat kök och badrum, enkla vildmarksstugor med 4 bäddar i två våningssängar samt camping vid Kalixälven",
     "hasBoats": true,
     "boatInfo": "Båt med motor och åror hyrs ut för fiske på Vallsjärv (bensin och flytvästar ingår)",
     "species": [
@@ -1486,9 +1513,14 @@
     "accommodationInfo": "21 stugor i tre storlekar: 9 m², 35 m² (max 6 personer) och 55 m² (max 10 personer), samt camping",
     "hasBoats": true,
     "boatInfo": "Båt kan hyras för användning på sjön",
-    "species": [],
+    "species": [
+      "regnbåge",
+      "öring",
+      "abborre",
+      "gädda"
+    ],
     "price": "",
-    "fishingLicense": "",
+    "fishingLicense": "Fiskekort krävs för att fiska på eller längs sjön och säljs på Tresjömacken i Trehörningsjö. Fiskespön och tillbehör kan hyras i receptionen.",
     "website": "https://trehorningsjocamping.se/",
     "sourceUrl": "https://trehorningsjocamping.se/aktiviteter/",
     "lat": 63.69099,
@@ -1497,7 +1529,8 @@
     "phone": "(+46) 6625 0000",
     "email": "info@trehorningsjocamping.se",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "licenseRequired": true
   },
   {
     "name": "Treens Camping",
@@ -1506,14 +1539,15 @@
     "place": "Gunnarskog",
     "description": "Åtta stugor ligger alldeles vid sjön Treen i norra Arvika kommun. Roddbåt och aluminiumbåt med liten motor hyrs ut per dag, och de större timmerstugorna har roddbåt inkluderad. Sjön har gädda och abborre.",
     "hasAccommodation": true,
-    "accommodationInfo": "Åtta stugor vid sjön samt camping",
+    "accommodationInfo": "Åtta stugor vid sjön samt camping. Timmerstugorna och stuga 8 har braskamin. Roddbåt ingår i timmerstugorna och i stugorna 4, 6 och 8 under högsäsong.",
     "hasBoats": true,
     "boatInfo": "Aluminiumbåtar (Linder) hyrs ut utan motor eller med Yamaha 2,5 hk 4-takt; kanot hyrs också ut. Roddbåt ingår i timmerstugorna.",
     "species": [
       "gädda",
-      "abborre"
+      "abborre",
+      "röding"
     ],
-    "price": "Roddbåt 300 kr/dygn, båt med motor 650 kr/dygn, kanot 300 kr/dygn. Campingstuga 790 kr/natt, Treen stuga 5 och 7 920 kr/natt (exkl. slutstädning), timmerstuga 1 520 kr/natt i lågsäsong och 1 980 kr/natt i högsäsong (1 maj–31 sep, roddbåt ingår).",
+    "price": "Priser 2027: roddbåt 300 kr/dygn, båt med motor 650 kr/dygn, kanot 300 kr/dygn. Campingstuga 790 kr/natt, Treen stuga 5 och 7 920 kr/natt (exkl. slutstädning), timmerstuga 1 520 kr/natt i lågsäsong och 1 980 kr/natt i högsäsong (1 maj–31 sep, roddbåt ingår).",
     "fishingLicense": "Fiskekort säljs av campingen",
     "website": "https://www.treenscamping.se/",
     "sourceUrl": "https://www.treenscamping.se/priser-paket/",
@@ -1523,7 +1557,7 @@
     "phone": "+46 70-791 67 81",
     "email": "info@treenscamping.se",
     "petrolMotor": true,
-    "boatCount": 3,
+    "boatCount": 6,
     "boatCountEstimate": true
   },
   {
@@ -1531,22 +1565,21 @@
     "lake": "Reveln",
     "county": "Örebro län",
     "place": "Laxå",
-    "description": "Camping med uthyrningsstugor vid sjön Reveln mitt emellan Laxå och Askersund. Här hyrs roddbåt, båt med elmotor och kanot ut, och sjön lockar fiskare.",
+    "description": "Camping med uthyrningsstugor vid sjön Reveln mitt emellan Laxå och Askersund. Här hyrs roddbåt och kanot ut, och sjön lockar fiskare.",
     "hasAccommodation": true,
     "accommodationInfo": "Stugor för uthyrning samt camping",
     "hasBoats": true,
-    "boatInfo": "Roddbåtar, båtar med elmotor och kanoter hyrs ut",
+    "boatInfo": "Roddbåt och kanot hyrs ut, 60 kr per timme eller 200 kr för 4 timmar.",
     "species": [],
     "price": "Roddbåt eller kanot 60 kr/tim eller 200 kr/4 tim; stuga 450 kr/dygn.",
     "fishingLicense": "Fiskekort säljs av campingen",
     "website": "https://revelbadetscamping.se",
     "sourceUrl": "https://www.visitaskersund.se/bo/camping/revelbadets-camping",
-    "electricMotor": true,
     "lat": 58.90477,
     "lng": 14.71857,
     "phone": "0760-10 73 00",
     "email": "info@revelbadetscamping.se",
-    "boatCount": 4,
+    "boatCount": 1,
     "boatCountEstimate": true
   },
   {
@@ -1556,7 +1589,7 @@
     "place": "Torsby",
     "description": "Camping med många stugor vid sjön Övre Brocken utanför Torsby. Gäster kan hyra roddbåt och kanot direkt vid campingen.",
     "hasAccommodation": true,
-    "accommodationInfo": "Campingstugor, 4-6-bäddsstugor och storstugor samt camping",
+    "accommodationInfo": "Campingstugor med 2 eller 4 bäddar (delat servicehus), 4-6-bäddsstugor och storstugor med 6 bäddar, bastu och vedkamin, samt camping",
     "hasBoats": true,
     "boatInfo": "Roddbåtar och kanoter hyrs ut",
     "species": [],
@@ -1603,7 +1636,7 @@
     "place": "Sala",
     "description": "Camping med åtta stugor med utsikt över sjön Silvköparen strax utanför Sala. Båtar och kanoter finns att hyra på plats.",
     "hasAccommodation": true,
-    "accommodationInfo": "Åtta stugor samt camping",
+    "accommodationInfo": "Åtta enkla stugor med 4 bäddar vardera (två våningssängar), utan vatten, avlopp, toalett och dusch, samt camping",
     "hasBoats": true,
     "boatInfo": "Båtar och kanoter hyrs ut",
     "species": [],
@@ -1617,7 +1650,8 @@
     "phone": "0224-590 30",
     "beds": 32,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Gårdhammar",
@@ -1626,7 +1660,7 @@
     "place": "Arboga",
     "description": "Familjegård vid Hjälmarens strand med två uthyrningsstugor, Linus hus och Sjöstugan. Roddbåt ingår i båda stugorna och flytvästar kan lånas.",
     "hasAccommodation": true,
-    "accommodationInfo": "Två stugor vid vattnet, Linus hus och Sjöstugan",
+    "accommodationInfo": "Två stugor vid vattnet: Linus hus med sex bäddar i två sovrum, och Sjöstugan med två sovrum och bäddsoffa för två extra gäster",
     "hasBoats": true,
     "boatInfo": "Roddbåt ingår i stugorna",
     "species": [],
@@ -1639,8 +1673,7 @@
     "phone": "076-771 45 45",
     "email": "info@gardhammar.se",
     "address": "Gålhammar 725, Arboga",
-    "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCount": 2
   },
   {
     "name": "Hampetorps Restaurang och Camping",
@@ -1662,21 +1695,22 @@
     "address": "Lännäs 163, 715 93 Odensbacken",
     "phone": "019-45 30 15",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Camping Tiveden",
     "lake": "Unden",
     "county": "Örebro län",
     "place": "Tiveden",
-    "description": "Familjecamping alldeles vid sjön Unden i Tiveden med stugor och glamping. Roddbåt, kanot, kajak och SUP hyrs ut, och man kan fiska direkt från campingen.",
+    "description": "Familjecamping alldeles vid sjön Unden i Tiveden med stugor och glamping. Roddbåt, motorbåt, kanot, kajak, SUP och segelbåt hyrs ut, och man kan fiska på Unden.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor, glamping och campingplatser",
+    "accommodationInfo": "Stugor från 10 till 49 m² (Basic A och B, Comfort, Luxe Standard, Luxe Plus+), glamping i safaritält samt campingplatser",
     "hasBoats": true,
-    "boatInfo": "Roddbåt, kanot, kajak och SUP hyrs ut",
+    "boatInfo": "Roddbåt och motorbåt hyrs ut, även kanot, kajak, SUP och segelbåt",
     "species": [],
     "price": "",
-    "fishingLicense": "",
+    "fishingLicense": "Fiskekort köps online hos iFiske.se",
     "website": "https://www.campingtiveden.se/",
     "sourceUrl": "https://www.visitaskersund.se/bo/camping/camping-tiveden",
     "lat": 58.79888,
@@ -1684,7 +1718,7 @@
     "address": "Baggekärr 2, 695 97 Tived",
     "phone": "+46 70 094 47 18",
     "email": "info@campingtiveden.se",
-    "boatCount": 1,
+    "boatCount": 2,
     "boatCountEstimate": true
   },
   {
@@ -1707,14 +1741,15 @@
     "address": "Smednäsvägen 30, 790 25 Linghed",
     "phone": "070-626 64 43",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Järvsö FVO:s fiskestuga",
     "lake": "Stora Kölsjön",
     "county": "Gävleborgs län",
     "place": "Järvsö",
-    "description": "Enkel fiskestuga för upp till sex personer vid Stora Kölsjön, en kort promenad från parkeringen. Plastbåt med åror ligger vid sjön och ingår i hyran. Stugan har vedspis men inget rinnande vatten.",
+    "description": "Enkel fiskestuga för upp till sex personer vid Stora Kölsjön, en kort promenad från parkeringen. Plastbåt med åror ligger vid sjön och ingår i hyran. Stugan har braskamin men inget rinnande vatten.",
     "hasAccommodation": true,
     "accommodationInfo": "Stuga vid Stora Kölsjön med braskamin och ved, två våningssängar och en bäddsoffa, plats för högst 6 personer. Utedass i närheten. Ta med vatten eller hämta från sjön. Cirka fem minuters promenad från parkeringen.",
     "hasBoats": true,
@@ -1724,7 +1759,7 @@
       "gädda"
     ],
     "price": "200 kr grundavgift plus 100 kr per person och dygn",
-    "fishingLicense": "",
+    "fishingLicense": "Årskort 350 kr och dygnskort 60 kr. Korten är personliga och köps via iFiske eller hos lokala återförsäljare. Barn under 16 år fiskar gratis.",
     "website": "https://jarvsofvo.se/",
     "sourceUrl": "https://jarvsofvo.se/hyr-stuga",
     "beds": 6,
@@ -1733,7 +1768,8 @@
     "lng": 15.77959,
     "phone": "070-630 80 99",
     "licenseRequired": true,
-    "fishingLicenseUrl": "https://www.fiskekort.se/app/index.php?page=cards&shop=428"
+    "fishingLicenseUrl": "https://www.fiskekort.se/app/index.php?page=cards&shop=428",
+    "email": ""
   },
   {
     "name": "Linderyds stugor",
@@ -1782,7 +1818,8 @@
     "address": "Pinnarp, 590 39 Kisa",
     "phone": "+46 70 560 04 33",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Vårdnäs Stiftsgård",
@@ -1855,7 +1892,8 @@
     "address": "Blåvik Fiskarp 4, 595 73 Boxholm",
     "phone": "076 1047930",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Rudagård",
@@ -1864,11 +1902,11 @@
     "place": "Vingåker",
     "description": "Gårdsboende på en liten udde vid sjön Tisnaren där Sjöstugan tar upp till åtta gäster. En roddbåt ingår i hyran, och gården hyr även ut ett separat gästhus.",
     "hasAccommodation": true,
-    "accommodationInfo": "Sjöstugan för upp till 8 gäster samt gästhus för 4",
+    "accommodationInfo": "Sjöstugan med fyra bäddar (våningssäng och dubbelsäng) och eldningsbar murad eldstad, max 8 gäster inklusive intilliggande gästhus med fyra bäddar. Dessutom Uddastugan, Flytande Huset och campingstuga Sjöglimten",
     "hasBoats": true,
-    "boatInfo": "Roddbåt ingår i hyran",
+    "boatInfo": "En roddbåt ingår i hyran av Sjöstugan. Extra roddbåt 500 kr/dygn, motor (5 hk) 500 kr/dygn, båt med motor 950 kr/dygn.",
     "species": [],
-    "price": "",
+    "price": "Sjöstugan 1 890 kr/dygn eller 11 350 kr/vecka, Uddastugan 950 kr/dygn eller 5 700 kr/vecka, campingstuga Sjöglimten 400 kr/dygn. Flytande Huset 2026: 1 400 kr/dygn lågsäsong, 1 850 kr/dygn högsäsong.",
     "fishingLicense": "Fiskekort via iFiske.se",
     "website": "https://rudagard.se/",
     "sourceUrl": "https://rudagard.se/stugor/sjostugan/",
@@ -1877,7 +1915,7 @@
     "address": "Ruda Gård 1, 643 94 Vingåker",
     "phone": "+46 70-362 02 08",
     "email": "bokning@rudagard.se",
-    "boatCount": 1,
+    "boatCount": 2,
     "boatCountEstimate": true
   },
   {
@@ -1901,7 +1939,8 @@
     "address": "Österby Campingförening, 632 17 Näshulta",
     "phone": "+46 76 113 16 61",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Big Fish Sweden",
@@ -1910,16 +1949,16 @@
     "place": "Nyköping",
     "description": "Sportfiskeanläggning vid sjön Sibbo mellan Trosa och Nyköping med boende i Sibbo House i slottsparken, ungefär tjugo meter från sjön. Gäster hyr aluminiumbåtar med motor och trollingmotor, och guidade turer erbjuds efter gädda, gös och abborre.",
     "hasAccommodation": true,
-    "accommodationInfo": "Sibbo House med fyra lägenheter på totalt 250 kvm",
+    "accommodationInfo": "Sibbo House med fyra lägenheter (för 3 och 4 bäddar) på totalt 250 kvm, med dusch och wc, cirka 20 meter från sjön",
     "hasBoats": true,
-    "boatInfo": "Aluminiumbåtar med 15 hk motor och trollingmotor hyrs ut",
+    "boatInfo": "Aluminiumbåtar (Nakhoda 450 Pro) med 20 hk Honda-motor och frontmonterad elektrisk trollingmotor (Minnkota Terrova) hyrs ut",
     "species": [
       "gädda",
       "gös",
       "abborre"
     ],
-    "price": "",
-    "fishingLicense": "",
+    "price": "Pris lämnas på förfrågan via e-post.",
+    "fishingLicense": "Sjön är privat och Big Fish Sweden har exklusiv fiskerätt. Allt fiske är catch and release.",
     "website": "https://bigfishsweden.com/",
     "sourceUrl": "https://reel-north.com/big-fish-sweden-lake-sibbo/",
     "lat": 58.78608,
@@ -1938,9 +1977,9 @@
     "place": "Knutby",
     "description": "Sportfiskeanläggning i Knutbytrakten med tre stugor och camping vid fiskesjöar där man hyr båt. I sjöarna fiskas både inplanterad regnbåge och naturligt bestånd av gädda, abborre och gös.",
     "hasAccommodation": true,
-    "accommodationInfo": "Tre stugor (4–8 bäddar) samt camping",
+    "accommodationInfo": "Tre stugor: Siggehusen med 4 bäddar, Lillstugan med 8 bäddar i två rum och Rangelbol. Lillstugan och Rangelbol har vedkamin i köket. Dessutom camping",
     "hasBoats": true,
-    "boatInfo": "Båtar hyrs ut i samtliga sjöar",
+    "boatInfo": "Båtar hyrs ut i flera av sjöarna: 52 i Skysjön, 31 i Rörsjön och 10 i Edsjön. Egen båt eller förbränningsmotor får inte användas i Skysjön och Rörsjön.",
     "species": [
       "regnbåge",
       "öring",
@@ -1949,16 +1988,16 @@
       "gös"
     ],
     "price": "Stugor per natt: Siggehusen 500 kr (4 bäddar), Lillstugan 1 000 kr (8 bäddar), Rangelbol 1 700 kr; första natten 950/1 950/3 000 kr inkl. städning.",
-    "fishingLicense": "Fiskekort säljs på fiskekontoret",
+    "fishingLicense": "Fiskekort Skysjön/Rörsjön: heldagskort 300 kr, kvällskort (efter 14.00) 250 kr, familjekort 450 kr, nattfiskekort Skysjön 400 kr. Båthyra 100 kr.",
     "website": "https://fyrvapplingen.se/",
     "sourceUrl": "https://www.sportfiskeguide.se/spfguide/vatten/fyrvappl.htm",
     "lat": 59.97965,
     "lng": 18.40262,
     "address": "740 12 Knutby",
     "email": "info@fyrvapplingen.se",
-    "boatCount": 2,
-    "boatCountEstimate": true,
-    "phone": "0174-130 00"
+    "boatCount": 93,
+    "phone": "0174-130 00",
+    "licenseRequired": true
   },
   {
     "name": "Jälluntofta Camping och Stugby",
@@ -1967,7 +2006,7 @@
     "place": "Unnaryd",
     "description": "Camping och stugby vid Jällundens strand i Unnaryd med stugor i tre storlekar. Roddbåt, kanot och trampbåt hyrs ut per timme eller dag, och gäster kan även ta med egen båt och hyra bryggplats.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor i tre storlekar: A-stuga 10 kvm (2 bäddar, mycket enkel), B-stuga 16 kvm (4 bäddar, våningssäng och dubbelsäng) och C-stuga 75 kvm (6 bäddar, med sovloft). Dessutom camping.",
+    "accommodationInfo": "Stugor i tre storlekar: A-stuga 10 kvm (6 stugor, 2 bäddar, mycket enkel, inget rinnande vatten), B-stuga 16 kvm (12 stugor, 4 bäddar med våningssäng och dubbelsäng, kallvatten) och C-stuga 75 kvm (10 stugor, 6 bäddar, sovloft, golvvärme, öppen spis, kök, dusch och wc). Dessutom camping. Husdjur är välkomna i vissa stugor.",
     "hasBoats": true,
     "boatInfo": "Roddbåt, kanot och trampbåt hyrs ut, flytvästar ingår",
     "species": [
@@ -1975,7 +2014,7 @@
       "abborre",
       "gös"
     ],
-    "price": "Roddbåt eller kanot 90 kr per timme, 650 kr per dag. Stugpris per natt 2026: A-stuga 400–500 kr, B-stuga 640–880 kr, C-stuga 1 500–1 740 kr beroende på säsong.",
+    "price": "Roddbåt eller kanot 90 kr per timme, 450 kr per 6 timmar, 650 kr per dag. Trampbåt 100 kr per timme, 500 kr per 6 timmar, 700 kr per dag. Bryggplats för egen båt 150 kr per dygn, strandplats 80 kr per dygn. Stugpris per natt 2026: A-stuga 400–500 kr, B-stuga 640–880 kr, C-stuga 1 500–1 740 kr beroende på säsong.",
     "fishingLicense": "Fiskekort krävs för Jällunden (fiskevårdsområde, 870 ha) och köps på Jälluntofta Camping eller via Swish. Årskort 400 kr (kort i receptionen 450 kr), veckokort 200 kr (250 kr), dagskort 100 kr (150 kr). Max 2 spön per person, minimimått gös 45 cm. Barn under 15 fiskar gratis med målsman som har kort.",
     "website": "https://jalluntofta.se/",
     "sourceUrl": "https://jalluntofta.se/",
@@ -1996,7 +2035,7 @@
     "place": "Ockelbo",
     "description": "Camping alldeles intill Medskogssjön utanför Ockelbo där man kan hyra stuga. I receptionen hyr man roddbåt för stilla turer på sjön.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor att hyra samt camping",
+    "accommodationInfo": "Stugor 1a, 1b, 2a, 2b och 3 samt Timmerstugan 4, bland annat en parstuga med två bäddar i varje bodel. Kokplattor, kylskåp, porslin och TV ingår, sänglinne tar gästen med. Toalett och dusch finns i servicehus högst cirka 75 m bort. Dessutom camping.",
     "hasBoats": true,
     "boatInfo": "Roddbåt, trampbåt, kanot och SUP-bräda hyrs ut, samt en grillflotte med motor. Flytvästar finns.",
     "species": [
@@ -2023,7 +2062,7 @@
     "place": "Norrtälje",
     "description": "Gård vid sjön Erken som hyr ut Sjöstugan på Smedjeudden för fem till sex personer. Spöfiske ingår i hyran, och den som har vana kan hyra sportroddbåt eller en större motorbåt med ekolod. Erken har abborre, gädda och gös.",
     "hasAccommodation": true,
-    "accommodationInfo": "Sjöstugan för 5–6 personer, veckohyra. Storstugan har fyra bäddar i våningssängar och en utdragssoffa med dubbelsäng.",
+    "accommodationInfo": "Sjöstugan för 5–6 personer, veckohyra. Fyra bäddar i våningssängar och en utdragssoffa med dubbelsäng, täljstenskamin, enkelt kök med kyl, frys, spis och ugn med micro, vedeldad bastu, utedusch med varmvatten och separett-toalett. Endast självhushåll.",
     "hasBoats": true,
     "boatInfo": "Sportroddbåt och större motorbåt med ekolod kan hyras av erfarna, kajak finns också",
     "species": [
@@ -2038,7 +2077,9 @@
     "lat": 59.82589,
     "lng": 18.58568,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "",
+    "phone": ""
   },
   {
     "name": "Idrottsgården Flen",
@@ -2049,10 +2090,10 @@
     "hasAccommodation": true,
     "accommodationInfo": "Sjöstugan (6 sovplatser), lägenhet (7 sängplatser), Sjövillan (16 sovplatser i 8 rum) och tre lillstugor med två sovplatser var (kan bara bokas tillsammans med Sjövillan eller Sjöstugan).",
     "hasBoats": true,
-    "boatInfo": "Båt och kanot hyrs ut, även till icke boende. Flytväst och åror ingår. Sportfiske med spö är tillåtet för boende, nätfiske är inte tillåtet.",
+    "boatInfo": "Båt, kanot och SUP-bräda hyrs ut, även till icke boende. Flytväst och åror ingår. Boende använder båt och kanot gratis. Sportfiske med spö är tillåtet för boende, nätfiske är inte tillåtet.",
     "species": [],
-    "price": "Båt eller kanot 100 kr per person och två timmar",
-    "fishingLicense": "",
+    "price": "Båt och kanot är gratis för boende. För icke boende 100 kr per person och två timmar eller enligt överenskommelse.",
+    "fishingLicense": "Boende får sportfiska vid Idrottsgården och i vissa delar av sjön är fisket fritt. Nätfiske är inte tillåtet och fiskeredskap kan inte lånas ut.",
     "website": "https://www.idrottsgarden.se/",
     "sourceUrl": "https://www.idrottsgarden.se/sjon",
     "lat": 59.0694,
@@ -2071,7 +2112,7 @@
     "place": "Hyltena",
     "description": "Lugn camping alldeles vid Lovsjön strax söder om Jönköping. Förutom campingplatser finns tolv stugor som kan hyras året runt. Man kan fiska i sjön och hyra roddbåt, kanot eller kajak på plats.",
     "hasAccommodation": true,
-    "accommodationInfo": "Tolv stugor: Retrostugan 20 kvm (dubbelsäng), Torpet S9 (4+2 bäddar), tre sjönära stugor S10–S12 (4 bäddar, utan dusch/wc), och stugbyn S2–S8 (7 stugor, 4 bäddar, dusch/wc). Dessutom campingplatser.",
+    "accommodationInfo": "Tolv stugor: Retrostugan 20 kvm (dubbelsäng), Torpet S9 36+12 kvm (4+2 bäddar), tre sjönära stugor S10–S12 16–18 kvm (4 bäddar, utan dusch/wc) och stugbyn S2–S8 20 kvm (7 stugor, 4 bäddar, dusch/wc). Täcken och kuddar finns, sängkläder hyrs för 150 kr per person. Husdjur tillåtna mot tillägg. Dessutom campingplatser.",
     "hasBoats": true,
     "boatInfo": "Roddbåt, kanot och kajak hyrs ut",
     "species": [
@@ -2079,7 +2120,7 @@
       "abborre",
       "gös"
     ],
-    "price": "Hyra roddbåt, kanot eller kajak 2026: 80 kr/timme, 175 kr/3 tim, 225 kr halvdag, 390 kr dag. Stuga per natt (låg/hög säsong): stuga 2–8 med wc/dusch 990/1 190 kr, stuga 10–12 utan wc/dusch 790/990 kr, Torpet 1 490/1 590 kr, Retrostugan 1 390/1 490 kr.",
+    "price": "Hyra roddbåt, kanot eller kajak 2026: 80 kr/timme, 175 kr/3 tim, 225 kr halvdag eller över natten, 390 kr dag, 550 kr dygn. Stuga per natt 2026 (låg/hög säsong): stuga 2–8 med wc/dusch 990/1 190 kr, stuga 10–12 utan wc/dusch 790/990 kr, Torpet 1 490/1 590 kr, Retrostugan 1 390/1 490 kr.",
     "fishingLicense": "Fiskekort för Väster-Lovsjöns fiskevårdsområde säljs endast online via iFiske. Dagkort 60 kr, veckokort 150 kr, årskort 500 kr. Barn och ungdomar upp till 11 år fiskar gratis.",
     "website": "https://www.lovsjocamping.se/",
     "sourceUrl": "https://www.lovsjocamping.se/",
@@ -2098,9 +2139,9 @@
     "lake": "Åsunden",
     "county": "Västra Götalands län",
     "place": "Ulricehamn",
-    "description": "Helårscamping och stugby vid Åsundens strand i utkanten av Ulricehamn. Stugorna har vedkamin och det finns även lägenheter och sovtunnor. Gästerna kan hyra roddbåt, kanot och trampbåt för att ta sig ut på sjön.",
+    "description": "Camping och stugby vid Åsundens strand i utkanten av Ulricehamn, öppen från slutet av april till mitten av september. Här finns stugor, lägenheter och sovtunnor, och gästerna kan hyra roddbåt, kanot och trampbåt för att ta sig ut på sjön.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor, lägenheter och sovtunnor samt camping året runt",
+    "accommodationInfo": "28 stugor, lägenheter och sovtunnor: camping-tunna (1–2 gäster), lägenheter Service (2–5), lägenheter Rosen (2–5), Sjöbungalow (2–5), Himmelbungalow (upp till 7) och Villa Paradis (upp till 12, fyra sovrum). Camping sommartid.",
     "hasBoats": true,
     "boatInfo": "Roddbåtar, kanoter och trampbåtar hyrs ut",
     "species": [],
@@ -2163,7 +2204,8 @@
     "address": "Lugnavägen 6, 573 61 Sommen",
     "phone": "0140-77 31 31",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Fårgården Åsebol",
@@ -2172,7 +2214,7 @@
     "place": "Gårdsjö",
     "description": "Gård i Tiveden med timmerstugor och enklare rum. Här hyr man motorbåt för Unden och roddbåt för Gårdsjön, samt kanadensare. Fiske finns i flera sjöar i området.",
     "hasAccommodation": true,
-    "accommodationInfo": "Timmerstugor för upp till åtta personer samt enklare rum",
+    "accommodationInfo": "Två timmerhus (Alberts och Olersa) med välutrustade kök, för upp till åtta personer, samt två enklare rum (Maja och Greta) med fyra bäddar var, fullt utrustade kök och delat badrum.",
     "hasBoats": true,
     "boatInfo": "Motorbåt för Unden och roddbåt för Gårdsjön hyrs ut",
     "species": [],
@@ -2185,7 +2227,8 @@
     "address": "Norra Åsebol, 548 74 Gårdsjö",
     "boatCount": 2,
     "boatCountEstimate": true,
-    "phone": "076-830 32 27"
+    "phone": "076-830 32 27",
+    "email": ""
   },
   {
     "name": "Camping Vättersmålen",
@@ -2194,11 +2237,11 @@
     "place": "Vättersmålen",
     "description": "Liten camping vid Vättern mellan Huskvarna och Gränna med stugor och campingplatser. Man kan hyra en båt för att fiska på sjön. Öppet från mitten av maj till mitten av augusti.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor samt camping",
+    "accommodationInfo": "Stuga 1 (10 kvm, 4 bäddar), stuga 2 (15 kvm, 4 bäddar) och stuga 8 (6 bäddar, sovloft, sovrum och allrum med bäddsoffa, pentry, dusch och wc) samt camping. Servicehus med duschar, toaletter, kök och matrum cirka 50 m från stugorna. Uthyrningen av stugor är begränsad i år.",
     "hasBoats": true,
     "boatInfo": "Båt för fiske kan hyras",
     "species": [],
-    "price": "",
+    "price": "Stuga 1 (10 kvm) 550 kr, stuga 2 (15 kvm) 600 kr, stuga 8 (6 bäddar) 900 kr per natt. Campingplats 240 kr.",
     "fishingLicense": "",
     "website": "https://campingvattersmalen.se/",
     "sourceUrl": "https://jkpg.com/en/experiences/camping-vattersmalen",
@@ -2217,11 +2260,11 @@
     "place": "Vegby",
     "description": "Familjecamping vid Södra Sämsjön med åtta stugor som alla har sjöutsikt, plus 55 campingplatser. Under säsongen hyr man roddbåt, kanot och cykel på plats. Det finns också pool, minigolf och restaurang.",
     "hasAccommodation": true,
-    "accommodationInfo": "Åtta stugor, bland annat övernattningsstuga 10 kvm och självhushållsstuga 26 kvm, samt 55 campingplatser.",
+    "accommodationInfo": "Åtta stugor, bland annat övernattningsstuga 10 kvm (upp till 4 gäster, kokhörna, kyl och altan) och flera självhushållsstugor 26 kvm (upp till 6 gäster, kök och altan, sovloft endast i stuga 4), samt 55 campingplatser.",
     "hasBoats": true,
     "boatInfo": "Roddbåt, kanot och motorbåt hyrs i receptionen under sommarsäsongen, flytvästar kan lånas",
     "species": [],
-    "price": "Roddbåt eller kanot 100 kr/timme, motorbåt 600 kr/4 tim eller 900 kr/8 tim. Övernattningsstuga 10 m² 500–700 kr/natt, självhushållsstuga 26 m² 1 000–1 200 kr/natt beroende på säsong.",
+    "price": "2026: roddbåt eller kanot 100 kr/timme, motorbåt 600 kr/4 tim eller 900 kr/8 tim. Övernattningsstuga 10 m² 500–700 kr/natt (2 vuxna + 2 barn), självhushållsstuga 26 m² 1 000–1 200 kr/natt (4 personer ingår, max 6) beroende på säsong.",
     "fishingLicense": "Fiskekort för Södra Sämsjön eller Åsunden ordnas i receptionen.",
     "website": "https://vegbycamping.com",
     "sourceUrl": "https://www.vastsverige.com/ulricehamn/produkter/vegby-camping/",
@@ -2229,7 +2272,8 @@
     "lng": 13.37462,
     "phone": "070-267 59 92",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Brokamåla Gård",
@@ -2247,8 +2291,8 @@
       "gädda",
       "abborre"
     ],
-    "price": "Roddbåt 350 kr (Vitavatten), 300 kr (Gatgylet); dagkort 400 kr (Vitavatten)",
-    "fishingLicense": "Fiskekort krävs, fiske utan kort är inte tillåtet",
+    "price": "Dagkort Vitavatten 400 kr, Rudensjön 500 kr, Gatgylet 750 kr (600 kr vid stughyra) per person. Roddbåt 350 kr (Vitavatten), 300 kr (Gatgylet). Stugor under högsäsong 19/6–22/8 2026 hyrs bara veckovis.",
+    "fishingLicense": "Fiskekort krävs och fiske utan kort är inte tillåtet. Ett spö per fiskare, endast spinn- eller flugfiske, högst två laxartade fiskar per dagkort. Catch and release är tillåtet.",
     "website": "https://brokamala.se",
     "sourceUrl": "https://brokamala.se/fiskepriser-och-regler/",
     "licenseRequired": true,
@@ -2257,7 +2301,8 @@
     "address": "Nytebodavägen 337, 293 91 Olofström",
     "phone": "+46 709 149 394",
     "email": "info@brokamala.se",
-    "boatCount": 5
+    "boatCount": 7,
+    "boatCountEstimate": true
   },
   {
     "name": "Mjölknabbens Camping",
@@ -2266,7 +2311,7 @@
     "place": "Urshult",
     "description": "Camping på Sirkön mitt i Åsnen med både mindre stugor och hela hus för längre vistelser. Här kan man hyra roddbåt, med eller utan motor, och ta sig ut på sjön för att fiska.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor för en natt eller två samt hela hus för längre vistelser, plus camping",
+    "accommodationInfo": "Campingstugor för två personer med dubbelsäng, elvärme och enkelt kök (dusch och wc i servicehus 20–40 m bort), Annexet 72 kvm med fullt modernt kök, badrum och tvättmaskin (renoverat 2020), samt Lyckan 1 och 2 med två sovrum och fyra bäddar var. Dessutom camping.",
     "hasBoats": true,
     "boatInfo": "Roddbåtar (Linder Fishing 440 i aluminium) hyrs ut, med eller utan motor (Mercury 4 hk 4-taktare).",
     "species": [],
@@ -2294,7 +2339,7 @@
     "hasAccommodation": true,
     "accommodationInfo": "Tio stugtyper för 2–6 personer samt camping",
     "hasBoats": true,
-    "boatInfo": "Roddbåtar (4–5 personer) och trampbåtar hyrs ut",
+    "boatInfo": "Roddbåtar (4–5 personer) och trampbåtar (upp till 5 personer) hyrs ut. Prislista finns som PDF hos First Camp.",
     "species": [
       "abborre",
       "gädda",
@@ -2319,7 +2364,7 @@
     "place": "Växjö",
     "description": "Stor camping vid Helgasjön strax utanför Växjö med självhushållsstugor, vandrarhem och campingplatser. Roddbåtar och kanoter hyrs i receptionen för turer på sjön.",
     "hasAccommodation": true,
-    "accommodationInfo": "Självhushållsstugor (32 kvm med loft, fyra bäddar), vandrarhem och camping",
+    "accommodationInfo": "Självhushållsstugor på 32 kvm med 10 kvm loft, fyra enkelsängar fördelade på två sovrum och fullt utrustat kök. Dessutom vandrarhem och camping.",
     "hasBoats": true,
     "boatInfo": "Roddbåtar och kanoter hyrs ut, per halvdag, dag eller vecka",
     "species": [
@@ -2328,7 +2373,7 @@
       "öring",
       "gädda"
     ],
-    "price": "Roddbåt/kanot: 425 kr halvdag, 655 kr heldag, 2 500 kr vecka",
+    "price": "2026: roddbåt eller kanot 425 kr per halvdag (4 tim), 655 kr per heldag (8 tim), 2 500 kr per vecka.",
     "fishingLicense": "",
     "website": "https://evedalscamping.com/",
     "sourceUrl": "https://evedalscamping.com/aktiviteter/",
@@ -2359,7 +2404,9 @@
     "lng": 14.45576,
     "address": "Scoutvägen 6, 295 38 Bromölla",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "phone": "+46 70 777 65 15",
+    "email": "info@bromollacamping.se"
   },
   {
     "name": "Linneryds Camping",
@@ -2382,7 +2429,8 @@
     "licenseRequired": true,
     "boatCount": 2,
     "boatCountEstimate": true,
-    "address": "360 24 Linneryd"
+    "address": "360 24 Linneryd",
+    "email": ""
   },
   {
     "name": "E4:ans Camping",
@@ -2391,7 +2439,7 @@
     "place": "Toftaholm",
     "description": "Camping vid Vidöstern i Toftaholm med tolv stugor. Roddbåtar hyrs ut för en billig dagshyra och fiskekort för Vidöstern och Flåren köps i receptionen.",
     "hasAccommodation": true,
-    "accommodationInfo": "Tolv stugor samt camping",
+    "accommodationInfo": "Stuga A och B (15 kvm, 4 bäddar), stuga C (40 kvm, 6 bäddar, wc och dusch), stuga E och strandstugan (12 kvm, 2–3 bäddar) samt stuga G och H (25 kvm, 2 bäddar, wc och dusch). Dessutom camping.",
     "hasBoats": true,
     "boatInfo": "Roddbåtar hyrs ut",
     "species": [
@@ -2409,30 +2457,35 @@
     "address": "Toftaholm, 341 55 Vittaryd",
     "phone": "(+46)0370-440 35",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "MOMOS Camping Orrefors",
     "lake": "Orranässjön",
     "county": "Kalmar län",
     "place": "Orrefors",
-    "description": "Liten camping på en udde i Orranässjön i Glasriket. Här finns sex stugor, campingplatser nära vattnet och en stig runt sjön. Campingen hyr ut både roddbåtar och motorbåtar och erbjuder fiske.",
+    "description": "Liten camping på en udde i Orranässjön i Glasriket. Här finns sex stugor och campingplatser nära vattnet. Fiskekort för Orranäsasjön och Vapnebäcksån (regnbåge) säljs i receptionen, och man kan hyra roddbåt, kanot och SUP-bräda.",
     "hasAccommodation": true,
-    "accommodationInfo": "Sex stugor för 2–4 personer samt campingplatser",
+    "accommodationInfo": "Sex stugor: fyra för två personer med dubbelsäng (160 cm), en för tre personer och en för fyra personer med två våningssängar. Pentry med kylskåp i varje stuga, sänglinne mot avgift. Dessutom campingplatser.",
     "hasBoats": true,
-    "boatInfo": "Roddbåtar och motorbåtar hyrs ut",
-    "species": [],
+    "boatInfo": "Roddbåt, kanot och SUP-bräda hyrs ut",
+    "species": [
+      "regnbåge"
+    ],
     "price": "",
-    "fishingLicense": "",
+    "fishingLicense": "Fiskekort för Orranäsasjön och Vapnebäcksån (regnbåge) säljs i receptionen.",
     "website": "https://www.momos-camping-orrefors.com/sv",
     "sourceUrl": "https://www.momos-camping-orrefors.com/sv",
     "lat": 56.84443,
     "lng": 15.70852,
     "address": "Tikaskruv 304, 382 72 Orrefors",
     "beds": 15,
-    "boatCount": 4,
+    "boatCount": 1,
     "boatCountEstimate": true,
-    "email": "info@orrefors-camping.se"
+    "licenseRequired": true,
+    "email": "",
+    "phone": ""
   },
   {
     "name": "Ringsjöstrand Camping & Stugby",
@@ -2441,9 +2494,9 @@
     "place": "Hörby",
     "description": "Camping, stugby och hotell precis vid Ringsjön i mellersta Skåne. I receptionen hyr man roddbåtar, kajaker och SUP, och i närheten finns motorbåtar att hyra hos en lokal rökeri- och fiskbutik. Passar för dagar vid sjön med fiske från båt.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor och stugby, campingplatser samt hotellrum",
+    "accommodationInfo": "Stugor (cirka 40 kvm) med två sovrum, ett med dubbelsäng och ett med våningssäng, fullt utrustat kök med vardagsrum, TV, badrum med dusch och wc samt egen altan. Dessutom campingplatser och hotellrum.",
     "hasBoats": true,
-    "boatInfo": "Roddbåtar hyrs i receptionen",
+    "boatInfo": "Roddbåtar, kajaker och SUP hyrs i receptionen",
     "species": [],
     "price": "Stuga (cirka 40 m², för 4 personer) per natt: 1 400 kr (okt–maj), 1 950 kr (1 jun–3 jul, 16–31 aug), 2 420 kr (4 jul–15 aug). Linne och städning tillkommer.",
     "fishingLicense": "",
@@ -2466,10 +2519,10 @@
     "hasAccommodation": true,
     "accommodationInfo": "Stugor med 4 eller 4+2 bäddar, campingplatser och vandrarhem",
     "hasBoats": true,
-    "boatInfo": "Fiskebåt hyrs ut per timme",
+    "boatInfo": "Fiskebåt, kanot och trampbåt (fyra personer) hyrs i receptionen, flytvästar ingår",
     "species": [],
     "price": "Båthyra 100 kr per timme. Stuga per natt 2026: 4 bäddar 645 kr (jan–maj, sep–dec) och 895 kr (jun–aug), 4+2 bäddar 1 240 kr och 1 565 kr.",
-    "fishingLicense": "Fiskekort för dag, vecka eller säsong säljs i receptionen",
+    "fishingLicense": "Fiskekort krävs för Hunsnäsen för den som är över 15 år. Dagkort, veckokort och säsongskort köps i receptionen.",
     "website": "https://www.eksjocamping.se",
     "sourceUrl": "https://www.eksjocamping.se/att-hyra",
     "lat": 57.66768,
@@ -2516,7 +2569,7 @@
     "hasBoats": true,
     "boatInfo": "Båt och kanot kan hyras",
     "species": [],
-    "price": "Stuga (6–7 personer) 1 495 kr/dygn före och efter säsong, 1 695 kr/dygn i högsäsong.",
+    "price": "Stuga (6–7 personer) 2026: 1 495 kr/dygn före och efter säsong, 1 695 kr/dygn i högsäsong (18 juni–8 augusti). Sänglinne och slutstädning kan beställas.",
     "fishingLicense": "",
     "website": "https://www.siljansnascamping.se",
     "sourceUrl": "https://www.siljansnascamping.se",
@@ -2525,7 +2578,8 @@
     "address": "Fjärdgattu 17, 793 60 Siljansnäs",
     "phone": "073 022 70 78",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Sweranda",
@@ -2534,9 +2588,9 @@
     "place": "Filipstad",
     "description": "Familjeföretag som hyr ut egna sjönära stugor och torp i Filipstadstrakten, bland annat vid Yngen och Vintersjön. Fiskebåt, egen brygga och kanot ingår alltid i hyran.",
     "hasAccommodation": true,
-    "accommodationInfo": "Självhushållsstugor och torp vid sjö, bl.a. Lövudden och Yngslandet vid Yngen",
+    "accommodationInfo": "Självhushållsstugor och torp vid sjö, bland annat Hammaren (5 bäddar), Lövudden (2 bäddar) och Yngslandet vid Yngen, Östra Vintersjön (4 bäddar) samt Vintersjön med två stugor (8 bäddar). Flera har vedeldad bastu.",
     "hasBoats": true,
-    "boatInfo": "Fiskebåt och kanot ingår i stughyran; egen motor får medföras men hyrs inte ut",
+    "boatInfo": "Fiskebåt, egen brygga och kanot ingår alltid i stughyran. Egen elmotor eller 4-taktare på max 5 hk får medföras, motor hyrs inte ut.",
     "species": [
       "gädda",
       "abborre",
@@ -2635,7 +2689,7 @@
     "place": "Läppe",
     "description": "Hjälmargården ligger vid Hjälmarens strand med badstrand och café. Du kan bo i stuga, friggebod eller vandrarrum och hyra kanot och optimistjolle för att ta sig ut på sjön. Fiske är fritt i hela sjön. Kanoter och optimistjollar kan hyras i Kaffestugan.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor, campingstugor, friggebodar och vandrarrum",
+    "accommodationInfo": "Rum i vandrarhemmet Längan (enkel-, dubbel- och fyrabäddsrum med wc och dusch, golvvärme), Stuga 37–42, storstugor, Sjöstugan, friggebodar och campingstugor samt tältplatser och husvagnsplatser",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -2656,7 +2710,7 @@
     "place": "Gällö",
     "description": "Camping vid sjön Revsund med stugor i flera prisnivåer och en liten vikingaby på en udde. Kanot och SUP hyrs ut, och i närheten finns fiskevattnen Gimån och Herrevadsströmmen.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor i olika standard och prisklasser samt camping",
+    "accommodationInfo": "Stugor för 2–8 personer: stugor med eget badrum, sjönära stugor 5–10 meter från sjön och enklare småstugor. Alla stugor har utrustat kök, kylskåp och tv. Dessutom camping",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -2677,11 +2731,11 @@
     "place": "Timrå",
     "description": "Liten familjecamping vid egen tjärn med bad och fiske, nära Timrå centrum. Här finns stugor med minikök samt ett vandrarhem. Ädelfisk planteras in av fiskeklubben.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor med minikök, vandrarhem och campingplatser",
+    "accommodationInfo": "Campingstugor för 1, 2, 4 och 6 personer med minikök (6-bäddsstugan har fullt kök och egen toalett), vandrarhem med enkelrum och dubbelrum samt campingplatser",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
-    "price": "",
+    "price": "Stuga 1 bädd från 410 kr/natt, 2 bäddar från 475 kr, 4 bäddar från 625 kr, 6 bäddar från 950 kr (2027, högsäsong 11/6–14/8 något högre). Vandrarhem enkelrum från 395 kr/natt, dubbelrum från 525 kr/natt. Lakanset 100 kr.",
     "fishingLicense": "Fiskekort köps i Storöringens Fiskeklubbs butik",
     "website": "https://vivstavarvscamping.se/",
     "sourceUrl": "https://vivstavarvscamping.se/",
@@ -2700,7 +2754,7 @@
     "place": "Hällefors",
     "description": "Camping vid sjön Sörälgen i Hökhöjdens naturreservat nära Hällefors. Här finns campingstugor, stugor och en lodge att hyra, och sjön lockar till paddling och fiske.",
     "hasAccommodation": true,
-    "accommodationInfo": "Campingstugor, stuga, glampingtält och lodge samt camping",
+    "accommodationInfo": "8 campingstugor med två sängar (8 kvm, två kokplattor och litet kylskåp), stugor med 4 sängplatser (13 kvm), samt semesterhus, glampingtält och lodge. Dusch och toalett i servicehus. Dessutom camping",
     "hasBoats": true,
     "boatInfo": "Uthyrning av 3 kanadensare, 2 kajaker, 3 roddbåtar och 2 trampbåtar. Flytväst ingår: 99 kr/timme eller 499 kr/dygn.",
     "species": [],
@@ -2723,11 +2777,11 @@
     "place": "Ljusdal",
     "description": "Camping vid sjön Växnan i Ljusdal med stugor, kanotpaddling och fiske. Nära Ljusnan med forsar som lockar ädelfiskare.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor med 2, 4 och 6 bäddar samt camping",
+    "accommodationInfo": "Stugor med 2, 4 och 6 bäddar: 2-bäddsstugor (6 och 12 kvm), 4-bäddsstugor (12, 15 och 26 kvm, varav 2+2 med dusch och toalett) och 6-bäddsstuga (50 kvm, uppvärmd och isolerad, öppen även på vintern) samt camping. Värmare finns i enklare stugor",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
-    "price": "Stuga 2 bäddar från 450 kr/natt, 4 bäddar från 650 kr/natt, 6 bäddar från 1 250 kr/natt (säsong 2027, högsäsong 15/6-16/8 något högre).",
+    "price": "Stuga 2 bäddar från 450 kr/natt, 4 bäddar från 650 kr/natt (2+2 med dusch och toalett från 990 kr), 6 bäddar från 1 250 kr/natt. Lågsäsong 2027; högsäsong 15/6–16/8 från 500 kr/natt. Sänglinne 120 kr, städning från 275 kr.",
     "fishingLicense": "",
     "website": "https://ljusdalscamping.se/",
     "sourceUrl": "https://ljusdalscamping.se/",
@@ -2742,20 +2796,24 @@
     "lake": "Rödvattnet",
     "county": "Västernorrlands län",
     "place": "Bredbyn",
-    "description": "Stugby och camping med utsikt över sjön Rödvattnet. Sex stugor och två fritidshus för 3–7 personer, med kanoter och bastu som aktiviteter.",
+    "description": "Stugby och camping med utsikt över sjön Rödvattnet. Sex stugor och två fritidshus, med kanoter, elbåt och elflotte att hyra samt bastu och fiske.",
     "hasAccommodation": true,
-    "accommodationInfo": "Sex stugor och två fritidshus för 3–7 personer samt camping",
-    "hasBoats": false,
-    "boatInfo": "",
+    "accommodationInfo": "Sex stugor för 3–5 personer med sjöutsikt och två stora fritidshus för 8 personer samt camping. Utrustat kök, badrum med dusch och toalett; sängkläder och handdukar ingår, el och slutstädning tillkommer",
+    "hasBoats": true,
+    "boatInfo": "Elbåt hyrs ut för 500 kr/dygn. Dessutom elflotte (15 kvm) för 1 000 kr/dygn och kanoter",
     "species": [],
-    "price": "",
+    "price": "Stuga 1 000–1 350 kr/natt, fritidshus 2 300 kr/natt. Ställplats husbil/husvagn 320 kr/natt, tältplats 150 kr/natt. El och städning tillkommer.",
     "fishingLicense": "",
     "website": "https://www.rodvattnet.com",
     "sourceUrl": "https://campcation.com/campsite/rodvattnet-stugby-and-camping",
     "lat": 63.78478,
     "lng": 17.90475,
     "address": "Rödvattnet 156, 895 93 Bredbyn",
-    "email": "info@rodvattnet.com"
+    "email": "info@rodvattnet.com",
+    "electricMotor": true,
+    "boatCount": 1,
+    "boatCountEstimate": true,
+    "phone": "+46 702 78 64 17"
   },
   {
     "name": "Rötvikens Camping",
@@ -2764,17 +2822,23 @@
     "place": "Rötviken",
     "description": "Camping vid Hotagen i Hotagsbygden med enkla fyrabäddsstugor. Mitt i Hotagens fiskekortsområde med över hundra sjöar och vattendrag.",
     "hasAccommodation": true,
-    "accommodationInfo": "Enkla fyrabäddsstugor samt camping",
+    "accommodationInfo": "Enkla fyrabäddsstugor med enkelt kök och kylskåp samt camping. Sänglinne kan hyras",
     "hasBoats": false,
     "boatInfo": "",
-    "species": [],
+    "species": [
+      "öring",
+      "röding",
+      "harr"
+    ],
     "price": "",
-    "fishingLicense": "Hotagenkortet, fiskekort säljs i närheten",
+    "fishingLicense": "Hotagenkortet; fiskekort säljs i närheten. Barn och ungdomar under 18 år fiskar gratis inom Hotagenkortets område.",
     "website": "",
     "sourceUrl": "https://www.campcation.com/campsite/rotvikens-camping/",
     "lat": 63.97507,
     "lng": 14.16009,
-    "address": "Rötviken, 835 63 Föllinge"
+    "address": "Rötviken, 835 63 Föllinge",
+    "email": "",
+    "phone": ""
   },
   {
     "name": "First Camp Sommarvik",
@@ -2783,12 +2847,12 @@
     "place": "Årjäng",
     "description": "Camping vid Västra Silen med stugor från enkla strandnära till stora för upp till 18 personer. Sjön är populär för paddling och fiske. Kanot, kajak och SUP kan hyras.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor för upp till 18 personer samt camping",
+    "accommodationInfo": "13 stugor på 10–120 kvm, från enkla strandnära stugor (t.ex. Fiskartorp, 4 bäddar) till Storstuga Älgen med 18 bäddar, samt villavagn och camping. Städning, lakan och handdukar kan bokas",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
     "price": "",
-    "fishingLicense": "",
+    "fishingLicense": "Fritt fiske från land och brygga på Sommarviks område. För resten av sjön gäller fiskekort, som säljs på campingen tillsammans med naturvårdskort.",
     "website": "https://firstcamp.se/destinationer/sommarvik-arjang",
     "sourceUrl": "https://firstcamp.se/destinationer/sommarvik-arjang",
     "lat": 59.36785,
@@ -2802,9 +2866,9 @@
     "lake": "Orsasjön",
     "county": "Dalarnas län",
     "place": "Orsa",
-    "description": "Camping vid Orsasjöns långgrunda sandstrand strax utanför Orsa. Här finns stugor i flera storlekar och kanoter att hyra för turer på sjön. Kanot och trampbåt kan hyras.",
+    "description": "Camping vid Orsasjöns långgrunda sandstrand strax utanför Orsa. Här finns stugor i flera storlekar, och kanot och trampbåt kan hyras för turer på sjön. Goda möjligheter till sportfiske finns i närheten.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor samt camping",
+    "accommodationInfo": "13 stugor på cirka 12–48 kvm med 3–6 bäddar (Dalastuga har 20 bäddar), villavagn samt camping. Städning, lakan och handdukar kan bokas",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -2837,28 +2901,36 @@
     "lng": 16.53765,
     "address": "Hammarsvall, 824 73 Delsbo",
     "phone": "072-216 07 93",
-    "beds": 40
+    "beds": 40,
+    "email": ""
   },
   {
     "name": "Torsby Camping",
     "lake": "Fryken",
     "county": "Värmlands län",
     "place": "Torsby",
-    "description": "Camping vid sjön Fryken med stugor som har utsikt över sjön. Kanoter, kajaker och SUP hyrs ut. Kanoter, kajaker och SUP-brädor hyrs ut.",
+    "description": "Camping vid sjön Fryken med stugor som har utsikt över sjön. Kanoter, kajaker och SUP-brädor hyrs ut, och i Fryken finns bland annat gös, abborre, gädda, lax och öring.",
     "hasAccommodation": true,
     "accommodationInfo": "20 stugor byggda av egen skog samt camping",
     "hasBoats": false,
     "boatInfo": "",
-    "species": [],
+    "species": [
+      "gös",
+      "abborre",
+      "gädda",
+      "lax",
+      "öring"
+    ],
     "price": "",
-    "fishingLicense": "",
+    "fishingLicense": "Fiskekort köps i receptionen eller på fiske.se",
     "website": "https://www.torsbycamping.se",
     "sourceUrl": "https://www.torsbycamping.se",
     "lat": 60.09239,
     "lng": 13.03052,
     "address": "Svenneby, 685 91 Torsby",
     "phone": "076-677 33 20",
-    "email": "info@torsbycamping.se"
+    "email": "info@torsbycamping.se",
+    "licenseRequired": true
   },
   {
     "name": "First Camp Skutberget",
@@ -2867,7 +2939,7 @@
     "place": "Karlstad",
     "description": "Camping vid Vänerns strand nära Karlstad med stugor, möjlighet att boka städning och linne samt fiske som aktivitet.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor samt camping",
+    "accommodationInfo": "7 stugor på 12–40 kvm med 2–6 bäddar (t.ex. Vänerstuga 4 bäddar, Skutbergsstuga 4+2, Kattvikstuga Plus 6 bäddar, Fintatorp 4 bäddar) samt camping. Städning, lakan och handdukar kan bokas",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -2898,7 +2970,9 @@
     "sourceUrl": "https://www.campcation.com/campsite/hennans-camping/",
     "lat": 62.01629,
     "lng": 15.9055,
-    "address": "Telegrafvägen 1, 827 75 Ramsjö"
+    "address": "Telegrafvägen 1, 827 75 Ramsjö",
+    "email": "",
+    "phone": ""
   },
   {
     "name": "Skokloster Camping",
@@ -2911,7 +2985,7 @@
     "hasBoats": true,
     "boatInfo": "Roddbåt hyrs ut",
     "species": [],
-    "price": "Stuga 395–1 395 kr per dygn",
+    "price": "Stuga 395–1 395 kr per dygn (2026)",
     "fishingLicense": "",
     "website": "https://skoklostercamping.com/",
     "sourceUrl": "https://skoklostercamping.com/",
@@ -2919,7 +2993,9 @@
     "lng": 17.53646,
     "phone": "018-386035",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "address": "Skoklostervägen 47, 749 96 Skokloster",
+    "email": ""
   },
   {
     "name": "Upplands Ekeby bygdegård",
@@ -2954,7 +3030,7 @@
     "lake": "Albysjön",
     "county": "Stockholms län",
     "place": "Flottsbro",
-    "description": "Friluftsanläggning och camping i Huddinge strax söder om Stockholm med många självhushållsstugor. Anläggningen ligger vid Albysjön, där det går bra att fiska från brygga och strand. Kanoter hyrs ut. Kanoter hyrs ut vid Flottsbro värdshus.",
+    "description": "Friluftsanläggning och camping i Huddinge strax söder om Stockholm med många självhushållsstugor. Anläggningen ligger vid Albysjön, där det går bra att fiska från brygga och strand. Kanoter hyrs ut vid Flottsbro värdshus.",
     "hasAccommodation": true,
     "accommodationInfo": "44 stugor med 2–6 bäddar samt camping",
     "hasBoats": false,
@@ -2964,7 +3040,7 @@
       "abborre",
       "gös"
     ],
-    "price": "",
+    "price": "Stuga från 725 kr/natt, camping från 260 kr/natt. Kanot från 200 kr.",
     "fishingLicense": "Fiske med handredskap är fritt, inget fiskekort behövs",
     "website": "https://www.flottsbro.se/",
     "sourceUrl": "https://www.flottsbro.se/gora/fiske/",
@@ -2981,7 +3057,7 @@
     "place": "Lida",
     "description": "Friluftsgård vid sjön Getaren med campingstugor, vandrarhem och värdshus. Fritt fiske med spö från strandkanten.",
     "hasAccommodation": true,
-    "accommodationInfo": "Fem campingstugor med fyra bäddar (våningssängar) samt vandrarhem med 16 bäddar i två sovsalar",
+    "accommodationInfo": "Fem campingstugor med fyra bäddar (våningssängar), el, värme, mikro och kylskåp (dusch, toalett och bastu i omklädningsrum mittemot; stuga 5 är husdjursvänlig med ramp) samt vandrarhem med 16 bäddar i två sovsalar",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -3001,7 +3077,7 @@
     "lake": "Rösjön",
     "county": "Stockholms län",
     "place": "Sollentuna",
-    "description": "Camping och stugby vid Rösjön i Sollentuna, nära Stockholm. Stugor för fyra till sex personer, camping och kanotuthyrning. Kanoter kan hyras.",
+    "description": "Camping och stugby vid Rösjön i Sollentuna, nära Stockholm. Stugor för fyra till sex personer, camping och kanotuthyrning.",
     "hasAccommodation": true,
     "accommodationInfo": "Stugor med 4–6 sängplatser samt camping",
     "hasBoats": false,
@@ -3022,13 +3098,13 @@
     "lake": "Djulösjön",
     "county": "Södermanlands län",
     "place": "Katrineholm",
-    "description": "Camping med stugor vid badplatsen Djulöbadet vid Djulösjön strax utanför Katrineholm. Det finns campingplatser, säsongsplatser och kanot- och SUP-uthyrning. Kanoter och SUP-brädor kan hyras.",
+    "description": "Camping med stugor vid badplatsen Djulöbadet vid Djulösjön strax utanför Katrineholm. Det finns campingplatser, säsongsplatser och uthyrning av kanot, kajak och SUP.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor samt campingplatser",
+    "accommodationInfo": "15 stugor för 2–8 personer (cirka 14–23 kvm) med kök eller kokvrå, kylskåp och kallvatten, samt campingplatser. Sänglinne medtas",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
-    "price": "",
+    "price": "Kanot eller kajak 2 timmar 300 kr, heldag 450 kr. SUP 2 timmar 250 kr. Paddlar och flytvästar ingår.",
     "fishingLicense": "",
     "website": "https://djulocamping.se/",
     "sourceUrl": "https://www.naturkartan.se/sv/sodermanlands-lan/djulobadet",
@@ -3045,11 +3121,11 @@
     "place": "Torshälla",
     "description": "Camping vid Mälarbadens badplats i Torshälla, några minuter från Eskilstuna. Sex stugor med pentry och uteplats samt campingplatser och en glampingvagn.",
     "hasAccommodation": true,
-    "accommodationInfo": "Sex stugor för 2–5 personer samt campingplatser",
+    "accommodationInfo": "Sex stugor för 2–5 personer med pentry, kylskåp och uteplats med grill, glampingvagn (Adria, 5 bäddar) samt campingplatser. Gemensamt servicehus med duschar",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
-    "price": "Stuga från 495 kr/natt",
+    "price": "Stuga från 495 kr/natt, glampingvagn från 1 100 kr/natt, campingplats från 280 kr/natt.",
     "fishingLicense": "",
     "website": "https://malarbadenscamping.se/",
     "sourceUrl": "https://malarbadenscamping.se/",
@@ -3066,7 +3142,7 @@
     "place": "Åtvidaberg",
     "description": "Hotell vid Bysjöns strand i Åtvidabergs ekmiljö med rum och sviter. Gäster kan paddla ut på sjön.",
     "hasAccommodation": true,
-    "accommodationInfo": "Hotell med rum och sviter",
+    "accommodationInfo": "Hotellrum och sviter i Nya Flygeln (byggd 2018–2020), Gamla Flygeln och Adelswärdska Villan vid Bysjöns strand",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -3087,19 +3163,20 @@
     "place": "Tranås",
     "description": "Lugn familjecamping precis vid sjön Sommen strax utanför Tranås. Här finns stugor i olika standard och en kommunal badplats vid sjön.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor med eller utan dusch och toalett samt campingplatser",
-    "hasBoats": false,
+    "accommodationInfo": "Stugor i tre standarder: Normal (4 bäddar, värme och el ingår, vatten hämtas i servicehus), Comfort (4 bäddar, egen dusch och toalett) och Lyx (sovrum med våningssäng och två bäddsoffor), samt campingplatser",
+    "hasBoats": true,
     "boatInfo": "",
     "species": [],
-    "price": "",
-    "fishingLicense": "",
+    "price": "Stuga Normal 1–2 pers från 465 kr/natt, Comfort från 655 kr, Lyx från 770 kr (2026). Hund 165 kr, lakanpaket 255 kr.",
+    "fishingLicense": "Fisketillstånd och grundläggande fiskeutrustning säljs i campingens reception",
     "website": "https://hattecamping.se/",
     "sourceUrl": "https://hattecamping.se/",
     "lat": 58.03493,
     "lng": 15.02913,
     "address": "Badvägen 2, 573 93 Tranås",
     "phone": "0140-17 482",
-    "email": "info@hattecamping.se"
+    "email": "info@hattecamping.se",
+    "licenseRequired": true
   },
   {
     "name": "Ursand Resort & Camping",
@@ -3108,7 +3185,7 @@
     "place": "Vänersborg",
     "description": "Stor camping och resort vid Vänerns sydspets utanför Vänersborg, med lång sandstrand. Här finns stugor i flera storlekar, villavagnar och campingplatser.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor i flera storlekar samt villavagnar och camping",
+    "accommodationInfo": "Stugor på 9–40 kvm med 2–6 bäddar (bl.a. A-Storstuga, Campingstuga, Familjestuga, Schlagerstuga och Attefallsstuga), villavagnar och camping",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -3129,7 +3206,7 @@
     "place": "Sjötorp",
     "description": "Camping och stugby vid Vänerns sandstrand nära Sjötorp, med gästhamn och sjösättningsramp i närheten. Fiske på Vänern från båt är en populär aktivitet.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor samt camping",
+    "accommodationInfo": "18 stugor på 10–22 kvm med två till fem bäddar, elvärme, samt camping",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -3162,7 +3239,8 @@
     "lng": 14.30479,
     "address": "Karlsborgsvägen 40, 544 36 Hjo",
     "phone": "+46 503 310 52",
-    "email": "kontakt@hjocamping.se"
+    "email": "kontakt@hjocamping.se",
+    "beds": 40
   },
   {
     "name": "Breviks Strand Camping",
@@ -3193,7 +3271,7 @@
     "place": "Högsäter",
     "description": "Camping och stugby vid Ragnerudsjön på Kroppefjäll med restaurang och café. Stugor finns både vid en liten å och mer avskilt, och kanot och kajak hyrs ut.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor samt campingplatser",
+    "accommodationInfo": "Stugor, flera med öppen spis, samt campingplatser",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
@@ -3233,18 +3311,19 @@
     "beds": 24,
     "address": "Kalvs Camping 1, 512 61 Kalv",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Dalslands Camping & Kanotcentral",
     "lake": "Ärtingen",
     "county": "Västra Götalands län",
     "place": "Bengtsfors",
-    "description": "Camping och kanotcentral mellan sjöarna Lelången och Ärtingen i Dalslands kanal. Rum och stugor finns att hyra, liksom kanot, kajak och båtar.",
+    "description": "Camping och kanotcentral mellan sjöarna Lelången och Ärtingen i Dalslands kanal. Stugor, rum och en husbåt finns att hyra, liksom kanot och kajak.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor och rum samt camping",
-    "hasBoats": true,
-    "boatInfo": "Båtar hyrs ut",
+    "accommodationInfo": "Stugor och rum, bland annat en 4-bäddsstuga med wc, samt en husbåt med 5 bäddar och camping",
+    "hasBoats": false,
+    "boatInfo": "",
     "species": [],
     "price": "Stuga tvåbäddar 600 kr/natt, fyrbäddar 700 kr/natt, sexbäddar från 800 kr/natt. Rum fyrbäddar 450 kr/natt. Husbåt 850 kr/natt.",
     "fishingLicense": "",
@@ -3254,9 +3333,7 @@
     "lng": 12.19293,
     "address": "Greans campingplats, 666 91 Bengtsfors",
     "phone": "0531-100 60",
-    "email": "info@dalslandscamping.se",
-    "boatCount": 2,
-    "boatCountEstimate": true
+    "email": "info@dalslandscamping.se"
   },
   {
     "name": "Bengtsfors Stugby",
@@ -3276,7 +3353,8 @@
     "lat": 59.03504,
     "lng": 12.19116,
     "address": "Norra Grean 5, 666 91 Bengtsfors",
-    "phone": "070 204 50 26"
+    "phone": "070 204 50 26",
+    "email": ""
   },
   {
     "name": "Kroksjöns Fiskecamp",
@@ -3327,7 +3405,9 @@
     "sourceUrl": "https://www.vastsverige.com/herrljunga/produkter/sams-camping/",
     "lat": 57.99273,
     "lng": 13.16051,
-    "address": "Norra Säm, Annelund/Ljung, 524 93 Herrljunga"
+    "address": "Norra Säm, Annelund/Ljung, 524 93 Herrljunga",
+    "email": "",
+    "phone": ""
   },
   {
     "name": "Vallsnäs Camping",
@@ -3380,7 +3460,8 @@
     "electricMotor": true,
     "beds": 142,
     "boatCount": 3,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Halens Camping och Stugby",
@@ -3421,7 +3502,8 @@
     "lat": 56.3735,
     "lng": 15.51533,
     "address": "Västra Stensjö, 370 34 Holmsjö",
-    "phone": "+46 455-921 14"
+    "phone": "+46 455-921 14",
+    "email": ""
   },
   {
     "name": "Breanäs Hotell",
@@ -3472,13 +3554,17 @@
     "place": "Kalvshult",
     "description": "Gård som hyr ut stugor vid Örsjön. Fiskekort till sjön säljs på gården.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor för uthyrning",
+    "accommodationInfo": "Fyra stugor för uthyrning: Bikupan, Fridhem, Sjöstugan och Skogstorpet",
     "hasBoats": false,
     "boatInfo": "",
-    "species": [],
+    "species": [
+      "gös",
+      "gädda",
+      "abborre"
+    ],
     "price": "",
     "fishingLicense": "Fiskekort säljs av gården",
-    "website": "https://kalvshult.se/en/home/",
+    "website": "https://kalvshult.se/",
     "sourceUrl": "https://naturkartan.se/en/kronobergs-lan/kalvshult-gard-stugor",
     "lat": 56.47566,
     "lng": 13.96947,
@@ -3516,13 +3602,18 @@
     "county": "Kronobergs län",
     "place": "Lidhult",
     "description": "Camping vid Bolmens strand i Lidhult. Här kan man hyra båt och ge sig ut och fiska på en av Smålands största sjöar.",
-    "hasAccommodation": false,
-    "accommodationInfo": "",
+    "hasAccommodation": true,
+    "accommodationInfo": "Stugor för 4–6 personer med två sovrum, eget badrum och fullt utrustat kök samt camping",
     "hasBoats": true,
     "boatInfo": "Båt hyrs ut",
-    "species": [],
-    "price": "",
-    "fishingLicense": "",
+    "species": [
+      "gädda",
+      "gös",
+      "abborre",
+      "öring"
+    ],
+    "price": "Stuga: lågsäsong 1 250 kr/natt eller 4 950 kr/vecka (+ el), högsäsong 1 395 kr/natt eller 7 150 kr/vecka (+ el, städning ingår ej).",
+    "fishingLicense": "En fiskelicens gäller för hela Bolmen.",
     "website": "https://www.loknacamping.com",
     "sourceUrl": "https://www.visitsmaland.se/en/discover/what-to-do-in-bolmen/",
     "lat": 56.89703,
@@ -3551,7 +3642,8 @@
     "lat": 56.81672,
     "lng": 13.70034,
     "address": "Strandsjövägen 4, 341 94 Ljungby",
-    "phone": "+46 76 027 42 80"
+    "phone": "+46 76 027 42 80",
+    "email": ""
   },
   {
     "name": "Hultsfred Strandcamping",
@@ -3570,20 +3662,22 @@
     "sourceUrl": "https://www.naturkartan.se/en/kalmar-lan/hultsfred-strandcamping",
     "lat": 57.49201,
     "lng": 15.86286,
-    "address": "Folkparksvägen 10, 577 36 Hultsfred"
+    "address": "Folkparksvägen 10, 577 36 Hultsfred",
+    "email": "",
+    "phone": ""
   },
   {
     "name": "Mycklaflons Camping",
     "lake": "Mycklaflon",
     "county": "Jönköpings län",
     "place": "Gummarp",
-    "description": "Liten camping nära Mycklaflon i Smålandshöglandet, 70 meter från sjön. Här finns stuga, safaritält och klockentält, och man kan bada och paddla.",
+    "description": "Liten camping nära Mycklaflon i Smålandshöglandet, 70 meter från sjön. Här finns fyra stugor, safaritält och klockentält, och man kan hyra roddbåt, motorbåt, kanot och SUP.",
     "hasAccommodation": true,
-    "accommodationInfo": "Traditionell svensk stuga samt safaritält och klockentält",
-    "hasBoats": false,
-    "boatInfo": "",
+    "accommodationInfo": "Fyra stugor (två för fyra personer och två för två personer) samt safaritält och klockentält",
+    "hasBoats": true,
+    "boatInfo": "Roddbåt (inklusive åror och flytvästar) och motorbåt (inklusive 10 liter bensin) hyrs ut per timme, halvdag eller heldag.",
     "species": [],
-    "price": "",
+    "price": "Roddbåt 150 kr/tim, 300 kr/halvdag (max 4 tim), 500 kr/dag. Motorbåt 350 kr/tim, 850 kr/halvdag (max 4 tim), 1 500 kr/dag.",
     "fishingLicense": "",
     "website": "https://mycklaflonscamping.com",
     "sourceUrl": "https://mycklaflonscamping.com",
@@ -3591,7 +3685,11 @@
     "lng": 15.24642,
     "address": "Norrsånna 2, 575 93 Gummarp",
     "phone": "+46 708 857 490",
-    "email": "info@mycklaflonscamping.com"
+    "email": "info@mycklaflonscamping.com",
+    "beds": 12,
+    "petrolMotor": true,
+    "boatCount": 2,
+    "boatCountEstimate": true
   },
   {
     "name": "Liljenäs Natur & Fritid",
@@ -3620,7 +3718,8 @@
     "beds": 25,
     "licenseRequired": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": ""
   },
   {
     "name": "Värnamo Camping Prostsjön",
@@ -3629,13 +3728,13 @@
     "place": "Värnamo",
     "description": "Naturnära camping vid Prostsjön men ändå mitt i stan. Här finns stugor för fyra till fem personer och moderna lägenheter, samt möjlighet att paddla kanot.",
     "hasAccommodation": true,
-    "accommodationInfo": "Stugor för 4–5 personer, lägenheter samt camping",
+    "accommodationInfo": "24 stugor med fyra eller fem bäddar, lägenheter för två till fyra personer samt camping",
     "hasBoats": false,
     "boatInfo": "",
     "species": [],
     "price": "",
     "fishingLicense": "",
-    "website": "https://www.camping.se/sv/campingar/2677/Varnamo-Camping-Prostsjon/",
+    "website": "https://www.varnamocamping.se/",
     "sourceUrl": "https://www.varnamo.se/varnamose/boochleva/overnatta/camping.4.744eaf8a170b013f89d19fc.html",
     "lat": 57.19131,
     "lng": 14.04416,
