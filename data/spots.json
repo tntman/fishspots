@@ -395,8 +395,8 @@
     "lake": "Åsnen",
     "county": "Kronobergs län",
     "place": "Ryd",
-    "lat": 56.58811,
-    "lng": 14.6965,
+    "lat": 56.58461,
+    "lng": 14.69443,
     "description": "Gård och resort vid Åsnen, en av Smålands stora sjöar med över tusen öar. Här bor man i fristående stugor eller på campingen och kan hyra allt från roddbåtar till motorbåtar och kanoter. Anläggningen arrangerar också guidade fisketurer med gäddsafari och göstrolling.",
     "hasAccommodation": true,
     "accommodationInfo": "12 fritidsstugor och 4 sommartorp för 2–12 personer, samt naturcamping. Stugorna är öppna året runt.",
@@ -424,8 +424,8 @@
     "lake": "Vidöstern",
     "county": "Kronobergs län",
     "place": "Vittaryd",
-    "lat": 56.96057,
-    "lng": 13.99512,
+    "lat": 57.03455,
+    "lng": 13.99393,
     "description": "Liten vildmarkscamping vid Vidöstern och Lagans vatten med stor friluftsyta. Man kan bo i fyrbäddsstugor eller campa, och hyra roddbåt eller kanot. Vattnet är rikt på gös, gädda och abborre.",
     "hasAccommodation": true,
     "accommodationInfo": "Stugor med fyra bäddar (några med toalett, andra utan) samt camping",
@@ -628,7 +628,10 @@
     "website": "",
     "sourceUrl": "https://www.pincamp.com/campings/ivoe-camping",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "reception@ivo-camping.nu",
+    "phone": "044-521 88",
+    "address": "290 34 Ivö"
   },
   {
     "name": "Jägersbo Camping",
@@ -685,8 +688,8 @@
     "lake": "Trehörningen",
     "county": "Uppsala län",
     "place": "Uppsala",
-    "lat": 59.84293,
-    "lng": 17.88672,
+    "lat": 59.83311,
+    "lng": 17.9125,
     "description": "Kommunalt friluftsområde cirka 15 km öster om Uppsala vid sjöarna Trehörningen och Ramsen. Här kan man hyra stugor vid entrén samt roddbåt, kanot, SUP och trampbåt. Fiske är en av aktiviteterna i området.",
     "hasAccommodation": true,
     "accommodationInfo": "Uthyrningsstugor vid entrén",
@@ -763,7 +766,9 @@
     "licenseRequired": true,
     "phone": "0570 - 148 40",
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "ingestrand@arvika.se",
+    "address": "671 91 Arvika"
   },
   {
     "name": "Lake Foxen Fishing & Cottages",
@@ -1159,7 +1164,9 @@
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.logdowild.se/sv/fiske/",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "info.logdowild@sca.com",
+    "phone": "060-19 30 00"
   },
   {
     "name": "Stöde Camping",
@@ -1410,7 +1417,8 @@
     "phone": "+46 76 311 22 64",
     "address": "Rotnäs 115, 841 93 Östavall",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "storsand@storsandscamping.se"
   },
   {
     "name": "Jockfall Fishing & Activities",
@@ -1431,8 +1439,8 @@
     "website": "https://www.jockfall.com/",
     "sourceUrl": "https://app.moder.fi/jockfall-equipment/5711?step=1",
     "petrolMotor": true,
-    "lat": 66.65707,
-    "lng": 22.71829,
+    "lat": 66.6525,
+    "lng": 22.71361,
     "address": "Tjärvägen 1, 956 92 Överkalix",
     "phone": "+46 926 621 00",
     "email": "info@jockfall.com",
@@ -1483,8 +1491,8 @@
     "fishingLicense": "",
     "website": "https://trehorningsjocamping.se/",
     "sourceUrl": "https://trehorningsjocamping.se/aktiviteter/",
-    "lat": 63.71193,
-    "lng": 18.84008,
+    "lat": 63.69099,
+    "lng": 18.86518,
     "address": "Strandvägen 18, 897 92 Trehörningsjö",
     "phone": "(+46) 6625 0000",
     "email": "info@trehorningsjocamping.se",
@@ -1626,8 +1634,8 @@
     "fishingLicense": "Fritt spöfiske på allmänt vatten i Hjälmaren",
     "website": "https://gardhammar.se/",
     "sourceUrl": "https://gardhammar.se/vara-stugor",
-    "lat": 59.39419,
-    "lng": 15.83966,
+    "lat": 59.28773,
+    "lng": 15.87214,
     "phone": "076-771 45 45",
     "email": "info@gardhammar.se",
     "address": "Gålhammar 725, Arboga",
@@ -1694,8 +1702,8 @@
     "fishingLicense": "",
     "website": "https://caravanclub.se/camping/smednaset/",
     "sourceUrl": "https://caravanclub.se/camping/smednaset/",
-    "lat": 60.77819,
-    "lng": 15.89844,
+    "lat": 60.78238,
+    "lng": 15.90647,
     "address": "Smednäsvägen 30, 790 25 Linghed",
     "phone": "070-626 64 43",
     "boatCount": 2,
@@ -1745,8 +1753,8 @@
     "fishingLicense": "",
     "website": "https://linderyd.com/",
     "sourceUrl": "https://linderyd.com/stugor/",
-    "lat": 57.9017,
-    "lng": 15.44904,
+    "lat": 57.90238,
+    "lng": 15.42858,
     "address": "Tidersrum Linderyd 1, 590 39 Kisa",
     "phone": "0709-31 33 43",
     "email": "info@linderyd.com",
@@ -1949,7 +1957,8 @@
     "address": "740 12 Knutby",
     "email": "info@fyrvapplingen.se",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "phone": "0174-130 00"
   },
   {
     "name": "Jälluntofta Camping och Stugby",
@@ -2004,7 +2013,8 @@
     "phone": "0290-600 40",
     "licenseRequired": true,
     "boatCount": 1,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "lotta@medskogssjon.se"
   },
   {
     "name": "Stjärnholms Gård",
@@ -2174,7 +2184,8 @@
     "lng": 14.3495,
     "address": "Norra Åsebol, 548 74 Gårdsjö",
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "phone": "076-830 32 27"
   },
   {
     "name": "Camping Vättersmålen",
@@ -2370,7 +2381,8 @@
     "phone": "+46 470 344 64",
     "licenseRequired": true,
     "boatCount": 2,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "address": "360 24 Linneryd"
   },
   {
     "name": "E4:ans Camping",
@@ -2419,7 +2431,8 @@
     "address": "Tikaskruv 304, 382 72 Orrefors",
     "beds": 15,
     "boatCount": 4,
-    "boatCountEstimate": true
+    "boatCountEstimate": true,
+    "email": "info@orrefors-camping.se"
   },
   {
     "name": "Ringsjöstrand Camping & Stugby",
@@ -2561,8 +2574,8 @@
     "fishingLicense": "",
     "website": "https://sollerocamping.se",
     "sourceUrl": "https://visitdalarna.se/en/book/accommodation/1496675/soller%c3%b6-campingcaravan-club/details",
-    "lat": 60.90039,
-    "lng": 14.58401,
+    "lat": 60.89755,
+    "lng": 14.59072,
     "address": "Soldvägen 149, Levsnäs, 792 90 Sollerön",
     "phone": "0250-222 30",
     "email": "info@sollerocamping.se",
@@ -2741,7 +2754,8 @@
     "sourceUrl": "https://campcation.com/campsite/rodvattnet-stugby-and-camping",
     "lat": 63.78478,
     "lng": 17.90475,
-    "address": "Rödvattnet 156, 895 93 Bredbyn"
+    "address": "Rödvattnet 156, 895 93 Bredbyn",
+    "email": "info@rodvattnet.com"
   },
   {
     "name": "Rötvikens Camping",
@@ -2798,8 +2812,8 @@
     "fishingLicense": "",
     "website": "https://firstcamp.se/destinationer/orsa-dalarna",
     "sourceUrl": "https://firstcamp.se/destinationer/orsa-dalarna",
-    "lat": 61.12319,
-    "lng": 14.59442,
+    "lat": 61.12179,
+    "lng": 14.59921,
     "address": "Bowlingvägen 1, 794 31 Orsa",
     "phone": "+46 250 67 03 00",
     "email": "orsa@firstcamp.se"
@@ -2843,7 +2857,8 @@
     "lat": 60.09239,
     "lng": 13.03052,
     "address": "Svenneby, 685 91 Torsby",
-    "phone": "076-677 33 20"
+    "phone": "076-677 33 20",
+    "email": "info@torsbycamping.se"
   },
   {
     "name": "First Camp Skutberget",
@@ -2925,8 +2940,8 @@
     "fishingLicense": "Fiskekort via iFiske",
     "website": "https://bygdegardarna.se/upplands-ekeby/",
     "sourceUrl": "https://bygdegardarna.se/upplands-ekeby/hyra-kanot/",
-    "lat": 60.05943,
-    "lng": 18.31681,
+    "lat": 60.07181,
+    "lng": 18.19132,
     "boatCount": 2,
     "email": "bygdegarden@ekeby.se",
     "phone": "070-319 57 76",
@@ -2999,7 +3014,8 @@
     "lat": 59.44471,
     "lng": 17.99528,
     "address": "Lomvägen 104, 192 56 Sollentuna",
-    "phone": "08-96 21 84"
+    "phone": "08-96 21 84",
+    "email": "rosjon@uniquehotels.se"
   },
   {
     "name": "Djulö Camping",
@@ -3287,7 +3303,8 @@
     "address": "Rv 27, 514 91 Tranemo",
     "phone": "0325-769 44",
     "beds": 31,
-    "licenseRequired": true
+    "licenseRequired": true,
+    "email": "info@kroksjon.com"
   },
   {
     "name": "Säms Camping",
@@ -3424,7 +3441,8 @@
     "lat": 56.28029,
     "lng": 14.30478,
     "address": "Breanäs 3060, 289 73 Immeln",
-    "email": "info@breanashotell.se"
+    "email": "info@breanashotell.se",
+    "phone": "044-911 41"
   },
   {
     "name": "Camp Immeln",
@@ -3444,7 +3462,8 @@
     "lat": 56.20352,
     "lng": 14.24661,
     "address": "Immelnvägen 2, 289 73 Immeln",
-    "email": "info@immeln.camp"
+    "email": "info@immeln.camp",
+    "phone": "044-961 00"
   },
   {
     "name": "Kalvshult Gård",
@@ -3482,8 +3501,8 @@
     "fishingLicense": "",
     "website": "https://www.markarydscamping.se",
     "sourceUrl": "https://www.visitsmaland.se/en/?p=89120",
-    "lat": 56.55,
-    "lng": 13.6,
+    "lat": 56.46449,
+    "lng": 13.60236,
     "address": "Strandvägen 4, 285 31 Markaryd",
     "beds": 12,
     "phone": "0433-10316",
@@ -3549,8 +3568,8 @@
     "fishingLicense": "",
     "website": "https://www.naturkartan.se/en/kalmar-lan/hultsfred-strandcamping",
     "sourceUrl": "https://www.naturkartan.se/en/kalmar-lan/hultsfred-strandcamping",
-    "lat": 57.46631,
-    "lng": 15.86106,
+    "lat": 57.49201,
+    "lng": 15.86286,
     "address": "Folkparksvägen 10, 577 36 Hultsfred"
   },
   {
@@ -3621,6 +3640,7 @@
     "lat": 57.19131,
     "lng": 14.04416,
     "address": "Prostgårdsvägen, 331 31 Värnamo",
-    "phone": "+46 370 166 60"
+    "phone": "+46 370 166 60",
+    "email": "info@varnamocamping.se"
   }
 ]

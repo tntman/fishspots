@@ -115,30 +115,42 @@ function photon(params) {
   return run;
 }
 
-// Finns ett vatten med sjöns namn inom 3 km från punkten? Frågas mot OpenStreetMap via Overpass,
-// som har även de stora sjöarna. true/false, eller null om tjänsten inte svarade.
-let overpassChain = Promise.resolve();
-function lakeNear(lakeName, p, radius = 3000) {
-  const name = lakeName.replace(/\s*\(.*\)$/, '').split(/,| m\.fl\./)[0].trim().replace(/"/g, '');
-  const q = `[out:json][timeout:25];(nwr["natural"="water"]["name"~"^${name}$",i](around:${radius},${p.lat},${p.lng});`
-    + `nwr["water"]["name"~"^${name}$",i](around:${radius},${p.lat},${p.lng}););out ids 1;`;
-  const run = overpassChain.then(async () => {
-    for (let attempt = 0; attempt < 3; attempt += 1) {
-      await new Promise((ok) => setTimeout(ok, 1200 * (attempt + 1)));
-      try {
-        const res = await fetch('https://overpass-api.de/api/interpreter', {
-          method: 'POST',
-          headers: { 'User-Agent': 'spot-audit/1.0', 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: `data=${encodeURIComponent(q)}`,
-          signal: AbortSignal.timeout(40000),
-        });
-        if (res.ok) return (await res.json()).elements.length > 0;
-      } catch { /* försök igen */ }
-    }
-    return null;
-  });
-  overpassChain = run.catch(() => {});
-  return run;
+// Sjöns utbredning (rektanglar runt alla vatten med namnet i länet), från Nominatim.
+// Högst ett anrop per 1,5 sekund, i kö, enligt Nominatims villkor. Sparas per sjö och län.
+let nominatimChain = Promise.resolve();
+const lakeCache = new Map();
+function lakeBoxes(lakeName, county) {
+  const name = lakeName.replace(/\s*\(.*\)$/, '').split(/,| m\.fl\./)[0].trim();
+  const key = `${name}|${county}`;
+  if (!lakeCache.has(key)) {
+    const run = nominatimChain.then(async () => {
+      for (let attempt = 0; attempt < 3; attempt += 1) {
+        await new Promise((ok) => setTimeout(ok, 1500 * (attempt + 1)));
+        try {
+          const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&countrycodes=se&limit=10&q=${encodeURIComponent(`${name}, ${county}`)}`;
+          const res = await fetch(url, { headers: { 'User-Agent': 'spot-geocoder/1.0' }, signal: AbortSignal.timeout(20000) });
+          if (res.ok) {
+            return (await res.json())
+              .filter((h) => ['natural', 'water', 'waterway'].includes(h.category) || ['lake', 'water', 'reservoir', 'bay'].includes(h.type))
+              .map((h) => h.boundingbox.map(Number));
+          }
+        } catch { /* försök igen */ }
+      }
+      return null;
+    });
+    nominatimChain = run.catch(() => {});
+    lakeCache.set(key, run);
+  }
+  return lakeCache.get(key);
+}
+
+// Ligger punkten inom 3 km från sjön? true/false, eller null om det inte gick att kontrollera.
+// Rektangeln är grov: den fångar nålar som hamnat på fel ort, inte en nål som ligger fel på samma sjö.
+async function lakeNear(lakeName, p, county) {
+  const boxes = await lakeBoxes(lakeName, county);
+  if (!boxes?.length) return null;
+  const d = Math.min(...boxes.map(([s1, n1, w1, e1]) => km(p, { lat: Math.min(Math.max(p.lat, s1), n1), lng: Math.min(Math.max(p.lng, w1), e1) })));
+  return d <= 3;
 }
 
 // Bara exakta adressträffar med rätt postnummer används för att flytta en nål.
@@ -173,9 +185,9 @@ await Promise.all(Array.from({ length: 12 }, async () => {
     const pin = { lat: s.lat, lng: s.lng };
     const addrPos = !noGeo && !found.map && s.address ? await addressCoords(s.address, s.county) : null;
     const candidate = found.map || addrPos;
-    const pinAtLake = noGeo ? null : await lakeNear(s.lake, pin);
+    const pinAtLake = noGeo ? null : await lakeNear(s.lake, pin, s.county);
     const candidateAtLake = noGeo ? null
-      : candidate && km(pin, candidate) > 0.3 ? await lakeNear(s.lake, candidate) : pinAtLake;
+      : candidate && km(pin, candidate) > 0.3 ? await lakeNear(s.lake, candidate, s.county) : pinAtLake;
     // En ny position godtas bara om den också ligger vid sjön (eller om sjön inte går att kontrollera alls).
     const best = candidate && (candidateAtLake !== false || (pinAtLake === false && found.map)) ? candidate : null;
     const moveKm = best ? km(pin, best) : null;
@@ -189,7 +201,7 @@ await Promise.all(Array.from({ length: 12 }, async () => {
     if (s.phone && found.phones.size && ![...found.phones].includes(norm(s.phone))) flags.push('telefonen skiljer sig från sidan');
     if (best && moveKm > 40) flags.push(`kartkällan ligger ${moveKm.toFixed(0)} km bort, kontrollera för hand`);
     if (pinAtLake === false && !best) flags.push(`nålen ligger inte inom 3 km från ${s.lake}`);
-    if (pinAtLake == null && !noGeo) flags.push('sjön gick inte att kontrollera');
+    if (pinAtLake == null && !noGeo) flags.push('sjön finns inte i kartdatabasen, kontrollera för hand');
     // Utan sjökontroll flyttas inget automatiskt; förslagen granskas i rapporten.
     const move = !noGeo && Boolean(best) && moveKm > 0.3 && moveKm <= 40 && candidateAtLake !== false;
     const suggest = Boolean(best) && moveKm > 0.3;
