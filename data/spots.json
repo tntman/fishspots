@@ -264,7 +264,10 @@
     "sourceUrl": "https://www.naturkartan.se/en/jonkopings-lan/batuthyrning-sodra-wixen",
     "boatCount": 2,
     "licenseRequired": true,
-    "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-sodra-wixen.htm"
+    "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-sodra-wixen.htm",
+    "address": "Orrarp Ullinge 1, 575 96 Eksjö",
+    "phone": "0381 – 810 60",
+    "email": "info@ullinge.se"
   },
   {
     "name": "Hyltena Stugby",
@@ -393,7 +396,8 @@
     "licenseRequired": true,
     "phone": "+46 477 240 11",
     "email": "info@getnogard.se",
-    "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-asnen.htm"
+    "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-asnen.htm",
+    "address": "Getnö Gård, 362 96 Ryd"
   },
   {
     "name": "Hallsjö Vildmarkscamping",
@@ -445,7 +449,8 @@
     "licenseRequired": true,
     "phone": "0477-105 54",
     "email": "info@tingsrydresort.se",
-    "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-tiken-braknean-del-av.htm"
+    "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-tiken-braknean-del-av.htm",
+    "address": "Tingsryd Resort, 362 91 Tingsryd"
   },
   {
     "name": "Urshult Camping",
@@ -493,7 +498,8 @@
     "sourceUrl": "https://www.adolfstrom.com/fiske-i-laisdalen",
     "licenseRequired": true,
     "phone": "0961-230 41",
-    "email": "info@adolfstrom.com"
+    "email": "info@adolfstrom.com",
+    "address": "Adolfström 168, 938 93 Laisvall"
   },
   {
     "name": "Allsåklubbens Camping",
@@ -708,10 +714,11 @@
     ],
     "price": "",
     "fishingLicense": "Fiskekort krävs för Glafsfjorden",
-    "website": "",
+    "website": "https://www.ingestrandscamping.se",
     "sourceUrl": "https://visitvarmland.com/arvika/en/activities/fishing/fishing-package-ingestrands-camping",
     "petrolMotor": true,
-    "licenseRequired": true
+    "licenseRequired": true,
+    "phone": "0570 - 148 40"
   },
   {
     "name": "Lake Foxen Fishing & Cottages",
@@ -760,7 +767,8 @@
     "sourceUrl": "https://scandifishing.com/",
     "electricMotor": true,
     "phone": "+46 73 596 40 94",
-    "petrolMotor": true
+    "petrolMotor": true,
+    "address": "Långban, 682 94 Filipstad"
   },
   {
     "name": "Kolgårdens Stugby & Camping",
@@ -865,7 +873,9 @@
     "sourceUrl": "https://www.vastsverige.com/bengtsfors/produkter/dalslands-stugbaat/",
     "boatCount": 1,
     "petrolMotor": true,
-    "email": "booking@stugbaat.se"
+    "email": "booking@stugbaat.se",
+    "address": "Strandvägen 25B, 666 30 Bengtsfors",
+    "phone": "+46 738 331 383"
   },
   {
     "name": "Laxsjöns Camping & Friluftsgård",
@@ -1454,7 +1464,8 @@
     "lat": 60.3056,
     "lng": 13.0421,
     "phone": "+46 739 541 575",
-    "email": "camping@varmlandssjoochfjallcamping.se"
+    "email": "camping@varmlandssjoochfjallcamping.se",
+    "address": "Nötön 1, 685 94 Torsby"
   },
   {
     "name": "Camping 45",
@@ -1517,7 +1528,8 @@
     "lat": 59.39419,
     "lng": 15.83966,
     "phone": "076-771 45 45",
-    "email": "info@gardhammar.se"
+    "email": "info@gardhammar.se",
+    "address": "Gålhammar 725, Arboga"
   },
   {
     "name": "Hampetorps Restaurang och Camping",
@@ -1536,7 +1548,7 @@
     "sourceUrl": "https://hampetorpscamping.com",
     "lat": 59.14007,
     "lng": 15.66835,
-    "address": "Lännäs 163, Odensbacken",
+    "address": "Lännäs 163, 715 93 Odensbacken",
     "phone": "019-45 30 15"
   },
   {
@@ -1647,7 +1659,9 @@
     "website": "https://www.follingenhotell.se/",
     "sourceUrl": "https://www.follingenhotell.se/hotell/",
     "lat": 57.98927,
-    "lng": 15.51711
+    "lng": 15.51711,
+    "address": "Pinnarp, 590 39 Kisa",
+    "phone": "+46 70 560 04 33"
   },
   {
     "name": "Vårdnäs Stiftsgård",
@@ -1716,7 +1730,9 @@
     "sourceUrl": "https://www.fiskarp.se/omfiskarp/",
     "lat": 58.03676,
     "lng": 15.07949,
-    "beds": 28
+    "beds": 28,
+    "address": "Blåvik Fiskarp 4, 595 73 Boxholm",
+    "phone": "076 1047930"
   },
   {
     "name": "Rudagård",
@@ -2131,7 +2147,10 @@
     "website": "https://www.firstcamp.se/destinations/sjostugan-almhult",
     "sourceUrl": "https://en.firstcamp.se/destinations/sjostugan-almhult/activities",
     "lat": 56.56875,
-    "lng": 14.13191
+    "lng": 14.13191,
+    "address": "Bökhult 27, 343 38 Älmhult",
+    "phone": "+46 476-716 00",
+    "email": "sjostugan@firstcamp.se"
   },
   {
     "name": "Evedals Camping",
@@ -2219,7 +2238,9 @@
     "sourceUrl": "https://e4anscamping.com/en/engelska/activities/",
     "lat": 57.0429,
     "lng": 14.03188,
-    "licenseRequired": true
+    "licenseRequired": true,
+    "address": "Toftaholm, 341 55 Vittaryd",
+    "phone": "(+46)0370-440 35"
   },
   {
     "name": "MOMOS Camping Orrefors",
@@ -2303,7 +2324,8 @@
     "lng": 12.48674,
     "phone": "+41 79 465 85 01",
     "email": "info@fiskevikcamping.se",
-    "licenseRequired": true
+    "licenseRequired": true,
+    "address": "Björkenäs brook 1, 671 92 Arvika"
   },
   {
     "name": "Siljansnäs Camping",
@@ -2540,10 +2562,11 @@
     "species": [],
     "price": "",
     "fishingLicense": "",
-    "website": "",
+    "website": "https://www.rodvattnet.com",
     "sourceUrl": "https://campcation.com/campsite/rodvattnet-stugby-and-camping",
     "lat": 63.78478,
-    "lng": 17.90475
+    "lng": 17.90475,
+    "address": "Rödvattnet 156, 895 93 Bredbyn"
   },
   {
     "name": "Rötvikens Camping",
@@ -2561,7 +2584,8 @@
     "website": "",
     "sourceUrl": "https://www.campcation.com/campsite/rotvikens-camping/",
     "lat": 63.97507,
-    "lng": 14.16009
+    "lng": 14.16009,
+    "address": "Rötviken, 835 63 Föllinge"
   },
   {
     "name": "First Camp Sommarvik",
@@ -2702,7 +2726,8 @@
     "website": "https://skoklostercamping.com/",
     "sourceUrl": "https://skoklostercamping.com/",
     "lat": 59.70573,
-    "lng": 17.53646
+    "lng": 17.53646,
+    "phone": "018-386035"
   },
   {
     "name": "Upplands Ekeby bygdegård",
@@ -2729,7 +2754,8 @@
     "email": "bygdegarden@ekeby.se",
     "phone": "070-319 57 76",
     "fishingLicenseUrl": "https://www.ifiske.se/fiske-vallen.htm",
-    "licenseRequired": true
+    "licenseRequired": true,
+    "address": "Rörby 110, 747 92 Alunda"
   },
   {
     "name": "Flottsbro Camping & Stugby",
@@ -2751,7 +2777,10 @@
     "website": "https://www.flottsbro.se/",
     "sourceUrl": "https://www.flottsbro.se/gora/fiske/",
     "lat": 59.22992,
-    "lng": 17.88282
+    "lng": 17.88282,
+    "address": "Häggstavägen 20, 141 32 Huddinge",
+    "phone": "08-535 327 00",
+    "email": "info@flottsbro.se"
   },
   {
     "name": "Lida Friluftsgård",
@@ -2772,7 +2801,8 @@
     "lng": 17.88072,
     "phone": "08-778 40 35",
     "email": "vardshuset@lida.se",
-    "beds": 36
+    "beds": 36,
+    "address": "Lidavägen 1, 146 33 Tullinge"
   },
   {
     "name": "Rösjöbaden Camping & Stugby",
@@ -3007,7 +3037,8 @@
     "lng": 13.07011,
     "phone": "072-505 21 51",
     "petrolMotor": true,
-    "beds": 24
+    "beds": 24,
+    "address": "Kalvs Camping 1, 512 61 Kalv"
   },
   {
     "name": "Dalslands Camping & Kanotcentral",
@@ -3068,7 +3099,7 @@
     ],
     "price": "Stugor per natt: Stuga 1 (2 bäddar) 500 kr, Stuga 2–4 (4 bäddar) 650 kr, Stuga 6–7 (4 bäddar) 750 kr, Stuga 5 (5 bäddar) 950–1000 kr, Stuga 8 (4 bäddar) 800–850 kr. Dagkort B-sjön 260 kr (max 3 fisk). Dagkort A-sjön 50 kr, årskort 200 kr.",
     "fishingLicense": "Fiskekort krävs. B-sjön (put & take, regnbåge): dagkort 260 kr, ett spö per kort, fiske 05–23. A-sjön: dagkort 50 kr, årskort 200 kr, fiske året runt.",
-    "website": "https://www.vastsverige.com/svenljunga-tranemo/produkter/kroksjons-fiskecamp/",
+    "website": "https://www.kroksjon.com",
     "sourceUrl": "https://www.vastsverige.com/svenljunga-tranemo/produkter/kroksjons-fiskecamp/",
     "lat": 57.47176,
     "lng": 13.37449,
@@ -3118,7 +3149,8 @@
     "lat": 56.93963,
     "lng": 13.53613,
     "phone": "+46 371 602 33",
-    "beds": 43
+    "beds": 43,
+    "email": "info@vallsnascamping.se"
   },
   {
     "name": "Harasjömåla Fiskecamp",
@@ -3166,7 +3198,8 @@
     "lat": 56.27002,
     "lng": 14.50923,
     "phone": "+46 454-402 30",
-    "email": "halen@mycamping.se"
+    "email": "halen@mycamping.se",
+    "address": "Halenvägen 321, 293 39 Olofström"
   },
   {
     "name": "Stensjö Camping & Vandrarhem",
@@ -3244,7 +3277,10 @@
     "website": "https://kalvshult.se/en/home/",
     "sourceUrl": "https://naturkartan.se/en/kronobergs-lan/kalvshult-gard-stugor",
     "lat": 56.47566,
-    "lng": 13.96947
+    "lng": 13.96947,
+    "address": "Kalvshults Mellangård 44, 343 96 Hallaryd",
+    "phone": "+4670-243 70 51",
+    "email": "haraldsson@kalvshult.se"
   },
   {
     "name": "Sjötorpets Camping",
@@ -3259,7 +3295,7 @@
     "species": [],
     "price": "Stuga: lågsäsong 1–2 personer 550 kr/dygn, 3–4 personer 750 kr/dygn; högsäsong (16 jun–24 aug) 1–4 personer 750 kr/dygn. Roddbåt 100 kr/tim eller 300 kr/halvdag (5 tim).",
     "fishingLicense": "",
-    "website": "https://www.visitsmaland.se/en/?p=89120",
+    "website": "https://www.markarydscamping.se",
     "sourceUrl": "https://www.visitsmaland.se/en/?p=89120",
     "lat": 56.55,
     "lng": 13.6,
@@ -3281,10 +3317,13 @@
     "species": [],
     "price": "",
     "fishingLicense": "",
-    "website": "https://www.visitsmaland.se/en/discover/what-to-do-in-bolmen/",
+    "website": "https://www.loknacamping.com",
     "sourceUrl": "https://www.visitsmaland.se/en/discover/what-to-do-in-bolmen/",
     "lat": 56.89703,
-    "lng": 13.64352
+    "lng": 13.64352,
+    "address": "Norregården 23, 341 72 Lidhult",
+    "phone": "+46 70 239 20 26",
+    "email": "kontakt@loknacamping.com"
   },
   {
     "name": "Bolmen Marin & Fritid",
