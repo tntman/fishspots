@@ -125,7 +125,6 @@ function readFilters(fd = new FormData(filters)) {
     petrol: fd.has('petrol'),
     electric: fd.has('electric'),
     owner: fd.has('owner'),
-    license: fd.has('license'),
     sort: fd.get('sort') || 'name',
   };
 }
@@ -144,8 +143,7 @@ function matches(s, v) {
     && (!v.boat || s.hasBoats)
     && (!v.petrol || (s.hasBoats && s.petrolMotor))
     && (!v.electric || (s.hasBoats && s.electricMotor))
-    && (!v.owner || Boolean(s.ownerUid))
-    && (!v.license || Boolean(https(s.fishingLicenseUrl)));
+    && (!v.owner || Boolean(s.ownerUid));
 }
 
 const SORTS = {
@@ -187,7 +185,6 @@ function renderActive(v) {
     ...(v.petrol ? [['Bensinmotor', () => uncheck('petrol')]] : []),
     ...(v.electric ? [['Elmotor', () => uncheck('electric')]] : []),
     ...(v.owner ? [['Bekräftat av ägaren', () => uncheck('owner')]] : []),
-    ...(v.license ? [['Fiskekort online', () => uncheck('license')]] : []),
   ];
   const items = chips.map(([text, clear]) => {
     const li = document.createElement('li');
