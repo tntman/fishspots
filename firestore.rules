@@ -1,0 +1,103 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    function text(v, max) {
+      return v is string && v.size() <= max;
+    }
+
+    function link(v) {
+      return text(v, 300) && (v == '' || v.matches('https://.+'));
+    }
+
+    function spotKeys() {
+      return ['name', 'lake', 'county', 'place', 'lat', 'lng', 'description',
+        'hasAccommodation', 'accommodationInfo', 'hasBoats', 'boatInfo', 'species',
+        'price', 'fishingLicense', 'website', 'phone', 'email', 'imageUrl',
+        'ownerUid', 'source', 'sourceUrl', 'status', 'updatedAt'];
+    }
+
+    // Samma listor som i config.js.
+    function validSpot(d) {
+      return d.keys().hasOnly(spotKeys()) && d.keys().hasAll(spotKeys())
+        && text(d.name, 100) && d.name.size() > 0
+        && text(d.lake, 100) && d.lake.size() > 0
+        && d.county in ['Blekinge län', 'Dalarnas län', 'Gotlands län', 'Gävleborgs län',
+          'Hallands län', 'Jämtlands län', 'Jönköpings län', 'Kalmar län', 'Kronobergs län',
+          'Norrbottens län', 'Skåne län', 'Stockholms län', 'Södermanlands län', 'Uppsala län',
+          'Värmlands län', 'Västerbottens län', 'Västernorrlands län', 'Västmanlands län',
+          'Västra Götalands län', 'Örebro län', 'Östergötlands län']
+        && text(d.place, 100)
+        // Grov ruta runt Sverige.
+        && d.lat is number && float(d.lat) >= 55.0 && float(d.lat) <= 69.5
+        && d.lng is number && float(d.lng) >= 10.5 && float(d.lng) <= 24.5
+        && text(d.description, 3000)
+        && d.hasAccommodation is bool && text(d.accommodationInfo, 1000)
+        && d.hasBoats is bool && text(d.boatInfo, 1000)
+        && d.species is list && d.species.size() <= 8
+        && d.species.hasOnly(['gädda', 'abborre', 'gös', 'öring', 'röding', 'harr', 'lax', 'regnbåge'])
+        && text(d.price, 300) && text(d.fishingLicense, 300)
+        && link(d.website) && link(d.imageUrl)
+        && text(d.phone, 30) && text(d.email, 100)
+        && d.updatedAt == request.time;
+    }
+
+    match /spots/{id} {
+      allow read: if resource.data.status == 'published'
+        || (signedIn() && resource.data.ownerUid == request.auth.uid)
+        || isAdmin();
+
+      // Nya ställen från användare hamnar alltid i granskningskön, i eget namn.
+      allow create: if signedIn()
+        && validSpot(request.resource.data)
+        && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.source == 'owner'
+        && request.resource.data.sourceUrl == '';
+
+      // Ägaren får ändra innehållet men inte ägarskap, status eller ursprung.
+      allow update: if isAdmin()
+        || (signedIn()
+          && resource.data.ownerUid == request.auth.uid
+          && validSpot(request.resource.data)
+          && request.resource.data.ownerUid == resource.data.ownerUid
+          && request.resource.data.status == resource.data.status
+          && request.resource.data.source == resource.data.source
+          && request.resource.data.sourceUrl == resource.data.sourceUrl);
+
+      allow delete: if isAdmin()
+        || (signedIn() && resource.data.ownerUid == request.auth.uid);
+    }
+
+    // Anspråk på ett ställe utan ägare. Bara admin kan godkänna (sätter ownerUid på stället).
+    match /claims/{id} {
+      allow read, delete: if isAdmin()
+        || (signedIn() && resource.data.uid == request.auth.uid);
+
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(['spotId', 'uid', 'email', 'message', 'createdAt'])
+        && request.resource.data.keys().hasAll(['spotId', 'uid', 'email', 'message', 'createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.email == request.auth.token.email
+        && id == request.resource.data.spotId + '_' + request.auth.uid
+        && text(request.resource.data.message, 1000) && request.resource.data.message.size() > 0
+        && request.resource.data.createdAt == request.time
+        && get(/databases/$(database)/documents/spots/$(request.resource.data.spotId)).data.ownerUid == null;
+    }
+
+    // Admins läggs in med scripts/make-admin.mjs, aldrig från webbläsaren.
+    match /admins/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+    }
+  }
+}

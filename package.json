@@ -1,0 +1,14 @@
+{
+  "name": "fishspots",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check-data": "node scripts/add-spots.mjs --check",
+    "geocode": "node scripts/geocode.mjs",
+    "import": "node scripts/add-spots.mjs",
+    "check-rules": "node scripts/check-rules.mjs"
+  },
+  "devDependencies": {
+    "firebase-admin": "^14.5.1"
+  }
+}

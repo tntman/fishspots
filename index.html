@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fiskeställen: sjöar med boende och båt i Sverige</title>
+  <meta name="description" content="Hitta fiskeställen vid svenska sjöar där du kan bo och hyra båt. Jämför ställen på kartan och planera nästa fiskeresa.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3d47'/%3E%3Cpath d='M16 4v6M16 25v4' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M8 17a8 8 0 0 1 16 0z' fill='%23dd3b1f'/%3E%3Cpath d='M8 17a8 8 0 0 0 16 0z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg hidden>
+  <symbol id="i-cabin" viewBox="0 0 24 24"><path d="M3.5 11.5 12 5l8.5 6.5M6 9.8V19h12V9.8M10 19v-5h4v5"/></symbol>
+  <symbol id="i-boat" viewBox="0 0 24 24"><path d="M3 14h18l-2.3 4.3a1.5 1.5 0 0 1-1.3.7H6.6a1.5 1.5 0 0 1-1.3-.7zM12 4v10M12 5.5l5 5.5h-5"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M9 7h8v8M17 7 7 17"/></symbol>
+</svg>
+
+<header class="top">
+  <a class="brand" href="#/">
+    <svg viewBox="0 0 24 32" aria-hidden="true"><path class="stem" d="M12 2v7M12 25v5"/><path class="cap" d="M4 16a8 8 0 0 1 16 0z"/><path class="body" d="M4 16a8 8 0 0 0 16 0z"/></svg>
+    <span>Fiskeställen</span>
+  </a>
+  <p class="tagline">Sjöar med boende och båt i Sverige</p>
+  <nav class="account" aria-label="Konto">
+    <span id="user-name"></span>
+    <button id="add-btn" class="btn solid" type="button">Lägg till ditt ställe</button>
+    <button id="auth-btn" class="btn quiet" type="button">Logga in</button>
+  </nav>
+</header>
+
+<main class="app" data-pane="list">
+  <section class="side" aria-label="Fiskeställen">
+
+    <div id="browse">
+      <form id="filters" autocomplete="off">
+        <fieldset id="views" class="views" hidden>
+          <legend class="sr">Visa</legend>
+          <label><input type="radio" name="view" value="all" checked><span>Alla ställen</span></label>
+          <label><input type="radio" name="view" value="mine"><span>Mina ställen</span></label>
+          <label id="view-review" hidden><input type="radio" name="view" value="review"><span>Granska <b id="review-count"></b></span></label>
+        </fieldset>
+
+        <label class="search">
+          <span class="sr">Sök på namn, sjö eller ort</span>
+          <input type="search" name="q" placeholder="Sök på namn, sjö eller ort">
+        </label>
+
+        <div class="selects">
+          <label><span class="sr">Län</span>
+            <select name="county"><option value="">Alla län</option></select>
+          </label>
+          <label><span class="sr">Art</span>
+            <select name="species"><option value="">Alla arter</option></select>
+          </label>
+        </div>
+
+        <div class="toggles">
+          <label class="chip"><input type="checkbox" name="acc"><svg class="icon" aria-hidden="true"><use href="#i-cabin"/></svg><span>Har boende</span></label>
+          <label class="chip"><input type="checkbox" name="boat"><svg class="icon" aria-hidden="true"><use href="#i-boat"/></svg><span>Har båt</span></label>
+        </div>
+
+        <p class="summary"><span id="count" aria-live="polite"></span> <button type="reset" class="link">Rensa filter</button></p>
+      </form>
+
+      <section id="claims" class="claims" hidden>
+        <h2>Vill ta över ett ställe</h2>
+        <ul id="claims-list"></ul>
+      </section>
+
+      <p id="list-status" class="status" role="status"></p>
+      <ol id="list" class="list"></ol>
+
+      <footer class="foot">
+        <p>Uppgifterna kan vara inaktuella. Kontrollera alltid pris och tillgång med anläggningen.</p>
+        <p>När du loggar in sparas ditt Google-konto-id och din e-postadress, så att dina ställen kan kopplas till dig. Kartan kommer från OpenStreetMap.</p>
+      </footer>
+    </div>
+
+    <article id="detail" class="detail" hidden>
+      <a class="back" href="#/"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg>Alla ställen</a>
+      <img id="d-img" alt="" hidden loading="lazy" referrerpolicy="no-referrer">
+      <h1 id="d-name" tabindex="-1"></h1>
+      <p id="d-where" class="where"></p>
+      <p id="d-badge" class="badge"></p>
+      <p id="d-desc" class="desc"></p>
+
+      <dl class="facts">
+        <div data-row="acc"><dt><svg class="icon" aria-hidden="true"><use href="#i-cabin"/></svg>Boende</dt><dd></dd></div>
+        <div data-row="boat"><dt><svg class="icon" aria-hidden="true"><use href="#i-boat"/></svg>Båtar</dt><dd></dd></div>
+        <div data-row="species"><dt>Arter</dt><dd></dd></div>
+        <div data-row="price"><dt>Pris</dt><dd></dd></div>
+        <div data-row="license"><dt>Fiskekort</dt><dd></dd></div>
+        <div data-row="contact"><dt>Kontakt</dt>
+          <dd class="contact">
+            <a id="d-web" target="_blank" rel="noopener nofollow"><span></span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+            <a id="d-phone"></a>
+            <a id="d-mail"></a>
+          </dd>
+        </div>
+      </dl>
+
+      <p id="d-source" class="source"><span></span> <a target="_blank" rel="noopener nofollow">Visa källan</a></p>
+
+      <div class="actions">
+        <button id="d-approve" class="btn solid" type="button">Godkänn och publicera</button>
+        <button id="d-edit" class="btn line" type="button">Ändra</button>
+        <button id="d-delete" class="btn line danger" type="button">Ta bort</button>
+        <button id="d-claim" class="btn line" type="button">Är det här ditt ställe?</button>
+      </div>
+    </article>
+
+  </section>
+
+  <div id="map" role="region" aria-label="Karta över fiskeställen"></div>
+  <button id="pane-toggle" class="pane-toggle" type="button">Visa karta</button>
+</main>
+
+<dialog id="edit" aria-labelledby="form-title">
+  <form id="spot-form">
+    <h2 id="form-title">Lägg till ditt ställe</h2>
+    <p id="form-note" class="note">Stället visas publikt när det har granskats.</p>
+
+    <label class="field"><span>Anläggningens namn</span><input name="name" required maxlength="100"></label>
+    <div class="pair">
+      <label class="field"><span>Sjö</span><input name="lake" required maxlength="100"></label>
+      <label class="field"><span>Närmaste ort</span><input name="place" maxlength="100"></label>
+    </div>
+    <label class="field"><span>Län</span><select name="county" required><option value="">Välj län</option></select></label>
+
+    <fieldset class="group">
+      <legend>Läge</legend>
+      <p class="hint">Klicka på kartan där stället ligger, eller skriv in koordinaterna.</p>
+      <div id="form-map"></div>
+      <div class="pair">
+        <label class="field"><span>Latitud</span><input name="lat" type="number" step="any" min="55" max="69.5" required inputmode="decimal"></label>
+        <label class="field"><span>Longitud</span><input name="lng" type="number" step="any" min="10.5" max="24.5" required inputmode="decimal"></label>
+      </div>
+    </fieldset>
+
+    <label class="field"><span>Beskrivning</span><textarea name="description" rows="4" maxlength="3000"></textarea></label>
+
+    <fieldset class="group">
+      <legend>Boende</legend>
+      <label class="check"><input type="checkbox" name="hasAccommodation"><span>Vi erbjuder boende</span></label>
+      <label class="field"><span>Typ av boende, antal stugor och bäddar</span><textarea name="accommodationInfo" rows="2" maxlength="1000"></textarea></label>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>Båtar</legend>
+      <label class="check"><input type="checkbox" name="hasBoats"><span>Vi hyr ut båt eller båt ingår</span></label>
+      <label class="field"><span>Antal båtar, motor eller roddbåt</span><textarea name="boatInfo" rows="2" maxlength="1000"></textarea></label>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>Arter i sjön</legend>
+      <div id="form-species" class="checks"></div>
+    </fieldset>
+
+    <div class="pair">
+      <label class="field"><span>Pris</span><input name="price" maxlength="300" placeholder="Stuga från 5 500 kr/vecka"></label>
+      <label class="field"><span>Fiskekort</span><input name="fishingLicense" maxlength="300"></label>
+    </div>
+    <label class="field"><span>Webbplats</span><input name="website" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>Adressen måste börja med https://</small></label>
+    <div class="pair">
+      <label class="field"><span>Telefon</span><input name="phone" type="tel" maxlength="30"></label>
+      <label class="field"><span>E-post</span><input name="email" type="email" maxlength="100"></label>
+    </div>
+    <label class="field"><span>Länk till en bild</span><input name="imageUrl" type="url" pattern="https://.+" maxlength="300" placeholder="https://"><small>En bild som redan ligger på er egen webbplats.</small></label>
+
+    <div class="dialog-actions">
+      <button class="btn line" type="button" data-close>Avbryt</button>
+      <button class="btn solid" type="submit">Spara</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="claim" aria-labelledby="claim-title">
+  <form id="claim-form">
+    <h2 id="claim-title">Är det här ditt ställe?</h2>
+    <p class="note">Berätta hur du hör ihop med <b id="claim-name"></b>. När vi har godkänt kan du uppdatera uppgifterna själv.</p>
+    <label class="field"><span>Meddelande</span><textarea name="message" rows="4" required maxlength="1000" placeholder="Till exempel din roll och en e-postadress eller ett telefonnummer som står på er webbplats."></textarea></label>
+    <div class="dialog-actions">
+      <button class="btn line" type="button" data-close>Avbryt</button>
+      <button class="btn solid" type="submit">Skicka</button>
+    </div>
+  </form>
+</dialog>
+
+<p id="toast" class="toast" role="status"></p>
+
+<template id="row-tpl">
+  <li>
+    <a class="row">
+      <span class="row-name"></span>
+      <span class="badge"></span>
+      <span class="row-where"></span>
+      <span class="row-facts">
+        <span class="row-acc"><svg class="icon" aria-hidden="true"><use href="#i-cabin"/></svg>Boende</span>
+        <span class="row-boat"><svg class="icon" aria-hidden="true"><use href="#i-boat"/></svg>Båt</span>
+        <span class="row-species"></span>
+      </span>
+    </a>
+  </li>
+</template>
+
+<template id="claim-tpl">
+  <li>
+    <p><a class="claim-spot"></a> <span class="claim-who"></span></p>
+    <p class="claim-msg"></p>
+    <p class="claim-actions">
+      <button class="btn solid claim-yes" type="button">Godkänn</button>
+      <button class="btn line claim-no" type="button">Avslå</button>
+    </p>
+  </li>
+</template>
+
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
