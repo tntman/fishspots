@@ -1716,7 +1716,7 @@
     "place": "Järvsö",
     "description": "Enkel fiskestuga för upp till sex personer vid Stora Kölsjön, en kort promenad från parkeringen. Plastbåt med åror ligger vid sjön och ingår i hyran. Stugan har vedspis men inget rinnande vatten.",
     "hasAccommodation": true,
-    "accommodationInfo": "Fiskestuga för upp till 6 personer med vedspis",
+    "accommodationInfo": "Stuga vid Stora Kölsjön med två våningssängar och en bäddsoffa, plats för högst 6 personer. Cirka fem minuters promenad från parkeringen.",
     "hasBoats": true,
     "boatInfo": "Plastbåt med åror ingår i hyran",
     "species": [
@@ -1729,8 +1729,8 @@
     "sourceUrl": "https://jarvsofvo.se/hyr-stuga",
     "beds": 6,
     "boatCount": 1,
-    "lat": 61.65,
-    "lng": 15.76667,
+    "lat": 61.6492,
+    "lng": 15.77959,
     "phone": "070-630 80 99",
     "licenseRequired": true,
     "fishingLicenseUrl": "https://www.fiskekort.se/app/index.php?page=cards&shop=428"

@@ -47,6 +47,9 @@ function mapCoords(html) {
     [/!2d(-?\d+\.\d{3,})!3d(-?\d+\.\d{3,})/g, (m) => [m[2], m[1]], 'inbäddad Google-karta'],
     [/[?&](?:q|ll|query|center|daddr|destination)=(-?\d+\.\d{3,}),\s*(-?\d+\.\d{3,})/g, (m) => [m[1], m[2]], 'koordinater i kartlänk'],
     [/data-lat(?:itude)?=["'](-?\d+\.\d{3,})["'][^>]*data-(?:lng|lon|longitude)=["'](-?\d+\.\d{3,})/g, (m) => [m[1], m[2]], 'karta på sidan'],
+    // Karta som ritas med kod på sidan, t.ex. new google.maps.LatLng(61.64920, 15.77959) (jarvsofvo.se).
+    [/LatLng\(\s*(-?\d+\.\d{3,})\s*,\s*(-?\d+\.\d{3,})\s*\)/g, (m) => [m[1], m[2]], 'karta på sidan (kod)'],
+    [/maps\/dir\/(-?\d+\.\d{3,}),(-?\d+\.\d{3,})/g, (m) => [m[1], m[2]], 'vägbeskrivning i kartlänk'],
   ];
   for (const [re, pick, kind] of forms) {
     for (const m of t.matchAll(re)) {
