@@ -1733,8 +1733,11 @@
     "fishingLicense": "Fiskekort via iFiske.se",
     "website": "https://rudagard.se/",
     "sourceUrl": "https://rudagard.se/stugor/sjostugan/",
-    "lat": 59.02162,
-    "lng": 16.05715
+    "lat": 58.98136,
+    "lng": 15.86395,
+    "address": "Ruda Gård 1, 643 94 Vingåker",
+    "phone": "+46 70-362 02 08",
+    "email": "bokning@rudagard.se"
   },
   {
     "name": "Österby Camping",

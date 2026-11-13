@@ -415,7 +415,6 @@ function route() {
   $('#d-address').textContent = s.address || '';
   $('#d-address').hidden = !s.address;
   const any = [
-    Boolean(s.address),
     link($('#d-web'), web, web && new URL(web).hostname.replace(/^www\./, '')),
     link($('#d-phone'), s.phone && `tel:${s.phone.replace(/[^\d+]/g, '')}`, s.phone),
     link($('#d-mail'), s.email && `mailto:${s.email}`, s.email),

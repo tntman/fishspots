@@ -221,6 +221,8 @@ label.empty { opacity: .45; }
   border-radius: 999px; color: var(--lake); transition: background-color .2s var(--ease);
 }
 .map-link:hover { background: var(--tint); }
+/* Adressen som stället själv anger, direkt under platsraden. */
+.address { margin-top: .2rem; font-weight: 600; color: var(--ink); overflow-wrap: anywhere; }
 .map-link .icon { width: 1.2em; height: 1.2em; }
 .detail .badge { display: inline-block; margin-top: .75rem; }
 .desc { margin-top: 1rem; max-width: 68ch; white-space: pre-line; overflow-wrap: anywhere; }
