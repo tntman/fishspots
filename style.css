@@ -101,14 +101,68 @@ textarea { resize: vertical; line-height: 1.45; }
 input::placeholder, textarea::placeholder { color: #5d747c; }
 input:hover, select:hover, textarea:hover { border-color: var(--lake); }
 input:focus-visible, select:focus-visible, textarea:focus-visible { outline: none; border-color: var(--lake); box-shadow: 0 0 0 3px rgb(12 74 87 / .22); }
-.selects { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
-.toggles { display: flex; flex-wrap: wrap; gap: .5rem; }
+.searchbar { display: grid; grid-template-columns: 1fr auto; gap: .5rem; }
+.search { position: relative; display: block; }
+.search .icon { position: absolute; left: .7rem; top: 50%; translate: 0 -50%; color: var(--ink-2); pointer-events: none; }
+.search input { padding-left: 2.25rem; }
+.filter-btn { min-height: 2.5rem; }
+.count-badge { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: 999px; background: var(--lake); color: #fff; font-size: .75rem; font-variant-numeric: tabular-nums; }
+.count-badge:empty { display: none; }
+.quick { display: flex; flex-wrap: wrap; gap: .5rem; }
+.active-filters { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.active-filters:empty { display: none; }
+.active-chip {
+  display: inline-flex; align-items: center; gap: .3rem; min-height: 1.9rem; padding: 0 .5rem 0 .7rem;
+  border: 0; border-radius: 999px; background: var(--lake); color: #fff; font-size: .8125rem; font-weight: 600; cursor: pointer;
+  transition: background-color .2s var(--ease);
+}
+.active-chip:hover { background: var(--lake-deep); }
+.active-chip .icon { width: .95em; height: .95em; stroke-width: 2.25; }
+.sort { display: inline-flex; align-items: center; gap: .4rem; }
+.sort select { width: auto; min-height: 2rem; padding: .2rem .5rem; font-size: .875rem; }
+
+/* Filterpanel: glider in från vänster över listan, helskärm på mobil. */
+.drawer {
+  width: min(28.5rem, 100%); max-width: 100%; height: 100dvh; max-height: 100dvh; margin: 0; padding: 0;
+  border-radius: 0; display: none; flex-direction: column;
+}
+.drawer[open] { display: flex; animation: slide .35s var(--ease); }
+@keyframes slide { from { transform: translateX(-24px); opacity: 0; } }
+.drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
+.drawer-head h2 { font-size: 1.25rem; }
+.drawer-body { flex: 1; overflow-y: auto; scrollbar-width: thin; padding: 0 1.25rem; }
+.drawer-foot { display: flex; justify-content: space-between; gap: .75rem; padding: .875rem 1.25rem; border-top: 1px solid var(--line); background: var(--surface); }
+.drawer-foot .solid { flex: 1; }
+.fgroup { display: grid; gap: .75rem; padding: 1.25rem 0; }
+.fgroup + .fgroup { border-top: 1px solid var(--line); }
+.fgroup legend { float: left; width: 100%; font-weight: 650; font-size: 1rem; }
+.fgroup legend + * { clear: both; }
+.opts { display: flex; flex-wrap: wrap; gap: .5rem; }
+.opts.list { display: grid; grid-template-columns: 1fr 1fr; gap: .1rem 1rem; }
+.opt { display: flex; align-items: center; gap: .5rem; min-height: 2.25rem; cursor: pointer; }
+.opt input { flex: none; }
+.n { color: var(--ink-2); font-size: .8125rem; font-variant-numeric: tabular-nums; }
+.opt .n { margin-left: auto; }
+.chip .n:not(:empty)::before { content: "· "; }
+.chip:has(:checked) .n { color: #cfe3e5; }
+label.empty { opacity: .45; }
+.stepper { display: flex; align-items: center; gap: .5rem; }
+.stepper span { margin-right: auto; }
+.stepper input { width: 4.5rem; text-align: center; font-variant-numeric: tabular-nums; -moz-appearance: textfield; }
+.stepper input::-webkit-inner-spin-button { -webkit-appearance: none; }
+.icon-btn {
+  display: inline-grid; place-items: center; width: 2.375rem; height: 2.375rem; padding: 0;
+  border: 1px solid transparent; border-radius: 8px; background: transparent; color: var(--ink); cursor: pointer; font-size: 1.25rem; line-height: 1;
+}
+.icon-btn:hover { background: var(--tint); }
+.icon-btn.line { border-color: #a9bcba; border-radius: 999px; }
+.icon-btn.line:hover { border-color: var(--lake); }
 .chip { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.25rem; padding: 0 .8rem; border: 1px solid #a9bcba; border-radius: 999px; cursor: pointer; user-select: none; transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease); }
 .chip input { position: absolute; opacity: 0; pointer-events: none; }
 .chip:hover { border-color: var(--lake); }
 .chip:has(:checked) { background: var(--lake); border-color: var(--lake); color: #fff; }
 .chip:has(:focus-visible) { outline: 2px solid var(--bob); outline-offset: 2px; }
-.summary { display: flex; justify-content: space-between; align-items: baseline; color: var(--ink-2); font-size: .875rem; }
+.summary { display: flex; justify-content: space-between; align-items: center; color: var(--ink-2); font-size: .875rem; }
 #count { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
 
 .views { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; padding: 3px; background: var(--tint); border-radius: 9px; }
@@ -217,10 +271,9 @@ input[type=file]::file-selector-button {
   font: inherit; font-weight: 600; cursor: pointer;
 }
 input[type=file]::file-selector-button:hover { border-color: var(--lake); background: var(--tint); }
-.beds-filter { display: inline-flex; align-items: center; gap: .4rem; font-size: .875rem; color: var(--ink-2); }
-.beds-filter input { width: 5.5rem; min-height: 2.25rem; }
-#form-map { height: 15rem; border: 1px solid #a9bcba; border-radius: 8px; cursor: crosshair; }
-.dialog-actions { display: flex; justify-content: flex-end; gap: .5rem; padding-top: 1rem; border-top: 1px solid var(--line); position: sticky; bottom: 0; margin: 0 -1.5rem -1.5rem; padding: 1rem 1.5rem; background: var(--surface); }
+/* Leaflet ger kartans lager z-index upp till 1000; en egen stapel håller dem under knapparna. */
+#form-map { position: relative; z-index: 0; height: 15rem; border: 1px solid #a9bcba; border-radius: 8px; cursor: crosshair; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: .5rem; padding-top: 1rem; border-top: 1px solid var(--line); position: sticky; bottom: 0; z-index: 1; margin: 0 -1.5rem -1.5rem; padding: 1rem 1.5rem; background: var(--surface); }
 
 .toast { position: fixed; left: 50%; bottom: 1.25rem; translate: -50% 0; z-index: 2000; max-width: calc(100% - 2rem); padding: .7rem 1rem; border-radius: 10px; background: var(--lake-deep); color: #fff; font-weight: 600; box-shadow: var(--shadow); }
 .toast:empty { display: none; }

@@ -112,19 +112,116 @@ async function refresh() {
 }
 
 // ---------- Lista ----------
-function visible() {
-  const f = new FormData(filters);
-  const q = f.get('q').trim().toLowerCase();
-  const view = f.get('view');
-  return [...state.spots.values()]
-    .filter((s) => (view === 'mine' ? mine(s) : view === 'review' ? s.status === 'pending' : s.status === 'published'))
-    .filter((s) => !q || [s.name, s.lake, s.place, s.county, s.description].join(' ').toLowerCase().includes(q))
-    .filter((s) => !f.get('county') || s.county === f.get('county'))
-    .filter((s) => !f.get('species') || (s.species || []).includes(f.get('species')))
-    .filter((s) => !f.has('acc') || s.hasAccommodation)
-    .filter((s) => !f.has('boat') || s.hasBoats)
-    .filter((s) => !Number(f.get('beds')) || (s.hasAccommodation && s.beds >= Number(f.get('beds'))))
-    .sort((a, b) => a.name.localeCompare(b.name, 'sv'));
+// Filtren läses som en vanlig struktur, så att antalet per alternativ kan räknas med ett alternativ ändrat.
+function readFilters(fd = new FormData(filters)) {
+  return {
+    view: fd.get('view'),
+    q: (fd.get('q') || '').trim().toLowerCase(),
+    counties: fd.getAll('county'),
+    species: fd.getAll('species'),
+    acc: fd.has('acc'),
+    beds: Number(fd.get('beds')) || 0,
+    boat: fd.has('boat'),
+    petrol: fd.has('petrol'),
+    electric: fd.has('electric'),
+    owner: fd.has('owner'),
+    license: fd.has('license'),
+    sort: fd.get('sort') || 'name',
+  };
+}
+
+function inView(s, v) {
+  return v.view === 'mine' ? mine(s) : v.view === 'review' ? s.status === 'pending' : s.status === 'published';
+}
+
+function matches(s, v) {
+  return inView(s, v)
+    && (!v.q || [s.name, s.lake, s.place, s.county, s.address, s.description].join(' ').toLowerCase().includes(v.q))
+    && (!v.counties.length || v.counties.includes(s.county))
+    && v.species.every((x) => (s.species || []).includes(x))
+    && (!v.acc || s.hasAccommodation)
+    && (!v.beds || (s.hasAccommodation && s.beds >= v.beds))
+    && (!v.boat || s.hasBoats)
+    && (!v.petrol || (s.hasBoats && s.petrolMotor))
+    && (!v.electric || (s.hasBoats && s.electricMotor))
+    && (!v.owner || Boolean(s.ownerUid))
+    && (!v.license || Boolean(https(s.fishingLicenseUrl)));
+}
+
+const SORTS = {
+  name: (a, b) => a.name.localeCompare(b.name, 'sv'),
+  beds: (a, b) => (b.beds || 0) - (a.beds || 0) || SORTS.name(a, b),
+  updated: (a, b) => (b.updatedAt?.seconds || 0) - (a.updatedAt?.seconds || 0) || SORTS.name(a, b),
+};
+
+function visible(v = readFilters()) {
+  return [...state.spots.values()].filter((s) => matches(s, v)).sort(SORTS[v.sort] || SORTS.name);
+}
+
+const countText = (n) => `${n} ${n === 1 ? 'ställe' : 'ställen'}`;
+
+// Antal i varje alternativ: vad listan skulle visa om just det alternativet valdes.
+function renderFacets(v) {
+  const spots = [...state.spots.values()];
+  const count = (change) => spots.filter((s) => matches(s, { ...v, ...change })).length;
+  for (const input of filters.querySelectorAll('.drawer input[type=checkbox]')) {
+    const { name, value } = input;
+    const n = name === 'county' ? count({ counties: [value] })
+      : name === 'species' ? count({ species: [...new Set([...v.species, value])] })
+      : count({ [name]: true });
+    const label = input.closest('label');
+    $('.n', label).textContent = n;
+    label.classList.toggle('empty', !n && !input.checked);
+  }
+}
+
+// Valda filter som chips under sökfältet, var och en med ett kryss.
+function renderActive(v) {
+  const chips = [
+    ...(v.q ? [[`”${v.q}”`, () => { filters.elements.q.value = ''; }]] : []),
+    ...v.species.map((x) => [cap(x), () => uncheck('species', x)]),
+    ...v.counties.map((c) => [c, () => uncheck('county', c)]),
+    ...(v.acc ? [['Har boende', () => uncheck('acc')]] : []),
+    ...(v.beds ? [[`Minst ${v.beds} sängplatser`, () => { filters.elements.beds.value = 0; }]] : []),
+    ...(v.boat ? [['Har båt', () => uncheck('boat')]] : []),
+    ...(v.petrol ? [['Bensinmotor', () => uncheck('petrol')]] : []),
+    ...(v.electric ? [['Elmotor', () => uncheck('electric')]] : []),
+    ...(v.owner ? [['Bekräftat av ägaren', () => uncheck('owner')]] : []),
+    ...(v.license ? [['Fiskekort online', () => uncheck('license')]] : []),
+  ];
+  const items = chips.map(([text, clear]) => {
+    const li = document.createElement('li');
+    const btn = Object.assign(document.createElement('button'), { type: 'button', className: 'active-chip' });
+    btn.setAttribute('aria-label', `Ta bort filtret ${text}`);
+    btn.append(text, Object.assign(document.createElementNS('http://www.w3.org/2000/svg', 'svg'), { innerHTML: '<use href="#i-x"/>' }));
+    btn.lastChild.setAttribute('class', 'icon');
+    btn.onclick = () => { clear(); render(); };
+    li.append(btn);
+    return li;
+  });
+  if (chips.length > 1) {
+    const li = document.createElement('li');
+    const btn = Object.assign(document.createElement('button'), { type: 'button', className: 'link', textContent: 'Rensa alla' });
+    btn.onclick = clearFilters;
+    li.append(btn);
+    items.push(li);
+  }
+  $('#active-filters').replaceChildren(...items);
+  // Sökordet räknas inte på Filter-knappen, det syns redan i sökfältet.
+  const n = chips.length - (v.q ? 1 : 0);
+  $('#filter-count').textContent = n || '';
+  $('#filter-open').setAttribute('aria-label', n ? `Filter, ${n} valda` : 'Filter');
+}
+
+function uncheck(name, value) {
+  for (const el of filters.querySelectorAll(`input[name=${name}]`)) if (value === undefined || el.value === value) el.checked = false;
+}
+
+function clearFilters() {
+  for (const el of filters.querySelectorAll('.drawer input[type=checkbox], .quick input')) el.checked = false;
+  filters.elements.beds.value = 0;
+  filters.elements.q.value = '';
+  render();
 }
 
 function setBadge(el, s, always = false) {
@@ -172,8 +269,12 @@ function renderClaims(show) {
 }
 
 function render() {
-  const list = visible();
-  const view = new FormData(filters).get('view');
+  const v = readFilters();
+  const list = visible(v);
+  const { view } = v;
+  renderFacets(v);
+  renderActive(v);
+  $('#filter-show').textContent = list.length ? `Visa ${countText(list.length)}` : 'Inga ställen matchar';
   const pending = [...state.spots.values()].filter((s) => s.status === 'pending').length + state.claims.length;
 
   $('#auth-btn').textContent = state.user ? 'Logga ut' : 'Logga in';
@@ -183,12 +284,12 @@ function render() {
   $('#view-review').hidden = !state.admin;
   $('#review-count').textContent = pending || '';
 
-  $('#count').textContent = `${list.length} ${list.length === 1 ? 'ställe' : 'ställen'}`;
+  $('#count').textContent = countText(list.length);
   $('#list').replaceChildren(...list.map(row));
   $('#list-status').textContent = state.status || (list.length ? ''
     : view === 'mine' ? 'Du har inte lagt till något ställe än.'
     : view === 'review' ? 'Inga ställen väntar på granskning.'
-    : state.spots.size ? 'Inga ställen matchar. Prova att rensa filtren.'
+    : state.spots.size ? 'Inga ställen matchar. Ta bort ett filter eller rensa alla.'
     : live ? 'Här finns inga ställen än.' : 'Förhandsvisning utan databas. Inga ställen är inlästa än.');
   renderClaims(view === 'review');
   renderPins(list);
@@ -548,12 +649,25 @@ claimForm.addEventListener('submit', async (e) => {
 });
 
 // ---------- Händelser ----------
-filters.addEventListener('input', render);
-filters.addEventListener('submit', (e) => e.preventDefault());
-filters.addEventListener('reset', () => {
-  const view = filters.elements.view.value;
-  setTimeout(() => { filters.elements.view.value = view; render(); });
+filters.addEventListener('input', (e) => {
+  // Boende och Båt finns både som snabbfilter och i panelen: håll dem lika.
+  if (e.target.name === 'acc' || e.target.name === 'boat') {
+    for (const el of filters.querySelectorAll(`input[name=${e.target.name}]`)) el.checked = e.target.checked;
+  }
+  render();
 });
+filters.addEventListener('submit', (e) => e.preventDefault());
+$('#filter-open').onclick = () => $('#filter-panel').showModal();
+$('#filter-clear').onclick = clearFilters;
+for (const btn of filters.querySelectorAll('[data-step]')) {
+  btn.onclick = () => {
+    const input = filters.elements.beds;
+    input.value = Math.max(0, (Number(input.value) || 0) + Number(btn.dataset.step) * (Number(input.value) >= 10 ? 2 : 1));
+    render();
+  };
+}
+// Klick på mörkret utanför panelen stänger den, som på de flesta sidor.
+$('#filter-panel').addEventListener('click', (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
 window.addEventListener('hashchange', route);
 
 $('#auth-btn').onclick = () => (state.user ? fb.signOut(fb.auth) : login());
@@ -595,7 +709,18 @@ $('#pane-toggle').onclick = () => {
 
 // ---------- Start ----------
 for (const sel of document.querySelectorAll('select[name=county]')) sel.append(...COUNTIES.map((c) => new Option(c)));
-filters.elements.species.append(...SPECIES.map((s) => new Option(cap(s), s)));
+const option = (name, value, text, className) => {
+  const label = document.createElement('label');
+  label.className = className;
+  label.append(
+    Object.assign(document.createElement('input'), { type: 'checkbox', name, value }),
+    Object.assign(document.createElement('span'), { textContent: text }),
+    Object.assign(document.createElement('span'), { className: 'n' }),
+  );
+  return label;
+};
+$('#f-species').append(...SPECIES.map((s) => option('species', s, cap(s), 'chip')));
+$('#f-county').append(...COUNTIES.map((c) => option('county', c, c, 'opt')));
 $('#form-species').append(...SPECIES.map((s) => {
   const label = document.createElement('label');
   const box = Object.assign(document.createElement('input'), { type: 'checkbox', name: 'species', value: s });
