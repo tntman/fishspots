@@ -251,6 +251,8 @@ function row(s) {
   $('.row-where', li).textContent = whereText(s) + away;
   $('.row-acc', li).hidden = !s.hasAccommodation;
   $('.row-boat', li).hidden = !s.hasBoats;
+  if (s.beds) $('.row-acc .t', li).textContent = `${s.beds} sängplatser`;
+  if (s.boatCount) $('.row-boat .t', li).textContent = `${s.boatCount} ${s.boatCount === 1 ? 'båt' : 'båtar'}`;
   $('.row-species', li).textContent = (s.species || []).map(cap).join(', ');
   setBadge($('.badge', li), s);
   a.addEventListener('pointerenter', () => highlight(s.id));
