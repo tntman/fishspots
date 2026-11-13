@@ -19,7 +19,8 @@
     "price": "",
     "fishingLicense": "Fiskekort via iFiske.se",
     "website": "https://www.langasjonas.com",
-    "sourceUrl": "https://www.visitblekinge.se/en/langasjonas-camping-stugby"
+    "sourceUrl": "https://www.visitblekinge.se/en/langasjonas-camping-stugby",
+    "licenseRequired": true
   },
   {
     "name": "Bengts och Tyttbo fiskecamp",
@@ -41,7 +42,9 @@
     "price": "",
     "fishingLicense": "Tyttbo är catch and release",
     "website": "https://www.bengtsgard.com",
-    "sourceUrl": "https://www.bengtsgard.com"
+    "sourceUrl": "https://www.bengtsgard.com",
+    "beds": 14,
+    "petrolMotor": true
   },
   {
     "name": "Särna Camping",
@@ -83,7 +86,9 @@
     "price": "",
     "fishingLicense": "Fiskekort via ifiske.se",
     "website": "https://norra-dellen-camping.se/en/startseite-english",
-    "sourceUrl": "https://norra-dellen-camping.se/en/startseite-english/"
+    "sourceUrl": "https://norra-dellen-camping.se/en/startseite-english/",
+    "beds": 21,
+    "licenseRequired": true
   },
   {
     "name": "Alvhaga Vildmark",
@@ -101,7 +106,8 @@
     "price": "",
     "fishingLicense": "Fiskekort för området säljs på plats",
     "website": "https://www.fegen.nu",
-    "sourceUrl": "https://www.naturkartan.se/en/hallands-lan/alvhaga-vildmark"
+    "sourceUrl": "https://www.naturkartan.se/en/hallands-lan/alvhaga-vildmark",
+    "licenseRequired": true
   },
   {
     "name": "Ätrans Fritidsanläggning",
@@ -123,7 +129,8 @@
     "price": "",
     "fishingLicense": "",
     "website": "https://atransturist.se",
-    "sourceUrl": "https://atransturist.se/"
+    "sourceUrl": "https://atransturist.se/",
+    "beds": 42
   },
   {
     "name": "Jormvattnets Fiskecamp",
@@ -144,7 +151,8 @@
     "price": "",
     "fishingLicense": "Fiskekort och regler fås av lägret före vistelsen",
     "website": "https://jormvattnetsfiskecamp.se",
-    "sourceUrl": "https://jormvattnetsfiskecamp.se/wordpress/index.php"
+    "sourceUrl": "https://jormvattnetsfiskecamp.se/wordpress/index.php",
+    "licenseRequired": true
   },
   {
     "name": "Sjougdas Jakt & Fiskecamp",
@@ -205,7 +213,9 @@
     "price": "Båt 400 kr per 4 timmar enligt Naturkartan",
     "fishingLicense": "Fiskekort för Södra Wixens fiskevårdsområde (iFiske)",
     "website": "https://www.ullinge.se",
-    "sourceUrl": "https://www.naturkartan.se/en/jonkopings-lan/batuthyrning-sodra-wixen"
+    "sourceUrl": "https://www.naturkartan.se/en/jonkopings-lan/batuthyrning-sodra-wixen",
+    "boatCount": 2,
+    "licenseRequired": true
   },
   {
     "name": "Hyltena Stugby",
@@ -223,7 +233,9 @@
     "price": "Båt 50 kr/timme, minst 2 timmar",
     "fishingLicense": "Fiskekort för Lovsjön köps i appen iFiske",
     "website": "https://hyltenastugby.se",
-    "sourceUrl": "https://hyltenastugby.se/boka-bat/"
+    "sourceUrl": "https://hyltenastugby.se/boka-bat/",
+    "boatCount": 2,
+    "licenseRequired": true
   },
   {
     "name": "Paradis Fiskecamp",
@@ -245,7 +257,8 @@
     "price": "",
     "fishingLicense": "Fiskekort för Södra Wixens fiskevårdsområde (iFiske)",
     "website": "https://paradisfiskecamp.se",
-    "sourceUrl": "https://www.naturkartan.se/en/jonkopings-lan/batuthyrning-sodra-wixen"
+    "sourceUrl": "https://www.naturkartan.se/en/jonkopings-lan/batuthyrning-sodra-wixen",
+    "licenseRequired": true
   },
   {
     "name": "Långsjön Stugor & Camping",
@@ -285,7 +298,8 @@
     "price": "",
     "fishingLicense": "",
     "website": "https://www.odevata.se",
-    "sourceUrl": "https://www.visitsmaland.se/en/to-do/odevata-gardshotell/"
+    "sourceUrl": "https://www.visitsmaland.se/en/to-do/odevata-gardshotell/",
+    "electricMotor": true
   },
   {
     "name": "Getnö Gård – Lake Åsnen Resort",
@@ -306,7 +320,11 @@
     "price": "",
     "fishingLicense": "Fiskekort för Åsnen krävs",
     "website": "https://www.getnogard.se",
-    "sourceUrl": "https://www.visittingsryd.se/en/canoe-rental-getno-lake-asnen-resort"
+    "sourceUrl": "https://www.visittingsryd.se/en/canoe-rental-getno-lake-asnen-resort",
+    "boatCount": 20,
+    "petrolMotor": true,
+    "electricMotor": true,
+    "licenseRequired": true
   },
   {
     "name": "Hallsjö Vildmarkscamping",
@@ -350,7 +368,8 @@
     "price": "",
     "fishingLicense": "Fiskekort för Tiken säljs på resorten",
     "website": "https://www.tingsrydresort.se",
-    "sourceUrl": "https://www.tingsrydresort.se/aktiviteter"
+    "sourceUrl": "https://www.tingsrydresort.se/aktiviteter",
+    "licenseRequired": true
   },
   {
     "name": "Urshult Camping",
@@ -389,7 +408,8 @@
     "price": "",
     "fishingLicense": "Byakort gäller Yraft, Laddve, Mittisjön och Lomtjärn; statens fiskekort för övriga vatten",
     "website": "https://www.adolfstrom.com",
-    "sourceUrl": "https://www.adolfstrom.com/fiske-i-laisdalen"
+    "sourceUrl": "https://www.adolfstrom.com/fiske-i-laisdalen",
+    "licenseRequired": true
   },
   {
     "name": "Allsåklubbens Camping",
@@ -455,7 +475,8 @@
     "price": "",
     "fishingLicense": "Fiskekort köps online via natureIT",
     "website": "https://arrenjarka.se",
-    "sourceUrl": "https://arrenjarka.se/aktiviteter/"
+    "sourceUrl": "https://arrenjarka.se/aktiviteter/",
+    "licenseRequired": true
   },
   {
     "name": "Ivö Camping",
@@ -549,7 +570,8 @@
     "price": "",
     "fishingLicense": "Fiskekort för Ränkens FVOF krävs",
     "website": "https://www.hallefishingcamp.com",
-    "sourceUrl": "https://www.campcation.com/en/campsite/halle-fishing-camp/"
+    "sourceUrl": "https://www.campcation.com/en/campsite/halle-fishing-camp/",
+    "licenseRequired": true
   },
   {
     "name": "Ingestrands Camping",
@@ -570,7 +592,9 @@
     "price": "",
     "fishingLicense": "Fiskekort krävs för Glafsfjorden",
     "website": "",
-    "sourceUrl": "https://visitvarmland.com/arvika/en/activities/fishing/fishing-package-ingestrands-camping"
+    "sourceUrl": "https://visitvarmland.com/arvika/en/activities/fishing/fishing-package-ingestrands-camping",
+    "petrolMotor": true,
+    "licenseRequired": true
   },
   {
     "name": "Lake Foxen Fishing & Cottages",
@@ -591,7 +615,9 @@
     "price": "Extra båt 250–390 EUR/vecka (2025)",
     "fishingLicense": "Fiskekort köps online via lakefoxen.se eller fiskekort.se",
     "website": "https://lakefoxen.se",
-    "sourceUrl": "https://lakefoxen.se"
+    "sourceUrl": "https://lakefoxen.se",
+    "licenseRequired": true,
+    "fishingLicenseUrl": "https://lakefoxen.se"
   },
   {
     "name": "Scandifishing, Långban",
@@ -609,7 +635,8 @@
     "price": "Huset från 90 EUR/dygn, minst 3 dygn",
     "fishingLicense": "",
     "website": "https://scandifishing.com",
-    "sourceUrl": "https://scandifishing.com/"
+    "sourceUrl": "https://scandifishing.com/",
+    "electricMotor": true
   },
   {
     "name": "Kolgårdens Stugby & Camping",
@@ -657,7 +684,8 @@
     "price": "Stugor från 390 kr, båt från 990 kr per dygn",
     "fishingLicense": "",
     "website": "https://saiva.se",
-    "sourceUrl": "https://saiva.se/batuthyrning/"
+    "sourceUrl": "https://saiva.se/batuthyrning/",
+    "petrolMotor": true
   },
   {
     "name": "Virisen Lappland",
@@ -678,7 +706,9 @@
     "price": "Båt med motor 400 kr/dygn, utan motor 240 kr/dygn; stuga 4-6 bäddar från ca 4 000 kr (säsongspris, 2026)",
     "fishingLicense": "Fiskekort krävs, information om hur man köper finns på webbplatsen",
     "website": "https://www.virisen.se",
-    "sourceUrl": "https://boka.hemavan.nu/en/virisen-0"
+    "sourceUrl": "https://boka.hemavan.nu/en/virisen-0",
+    "boatCount": 10,
+    "licenseRequired": true
   },
   {
     "name": "Dalslands Stugbåt",
@@ -696,7 +726,9 @@
     "price": "",
     "fishingLicense": "",
     "website": "https://stugbaat.se",
-    "sourceUrl": "https://www.vastsverige.com/bengtsfors/produkter/dalslands-stugbaat/"
+    "sourceUrl": "https://www.vastsverige.com/bengtsfors/produkter/dalslands-stugbaat/",
+    "boatCount": 1,
+    "petrolMotor": true
   },
   {
     "name": "Laxsjöns Camping & Friluftsgård",
@@ -732,7 +764,9 @@
     "price": "Lillstugan 1 000 kr, Toppstugan 2 000 kr, Villan 3 000 kr per dygn",
     "fishingLicense": "Fiskekort krävs i Lillsjön",
     "website": "https://www.lillesjo-stuguthyrning.se",
-    "sourceUrl": "https://www.vastsverige.com/bengtsfors/produkter/lillesjo-stuguthyrning-i-backefors/"
+    "sourceUrl": "https://www.vastsverige.com/bengtsfors/produkter/lillesjo-stuguthyrning-i-backefors/",
+    "beds": 24,
+    "licenseRequired": true
   },
   {
     "name": "Rolfskärrs Stugby",
@@ -768,7 +802,8 @@
     "price": "",
     "fishingLicense": "",
     "website": "https://www.tbif.se",
-    "sourceUrl": "https://www.vastsverige.com/mariestad/produkter/torso-camping/"
+    "sourceUrl": "https://www.vastsverige.com/mariestad/produkter/torso-camping/",
+    "beds": 30
   },
   {
     "name": "Vänerfiske Båtcharter & Boende",
@@ -786,7 +821,8 @@
     "price": "",
     "fishingLicense": "",
     "website": "https://vanerfiske.com",
-    "sourceUrl": "https://vastsverige.com/en/trollhattan-vanersborg/produkter/vanerfiske-fishing-boat-charter-and-accommodation"
+    "sourceUrl": "https://vastsverige.com/en/trollhattan-vanersborg/produkter/vanerfiske-fishing-boat-charter-and-accommodation",
+    "beds": 12
   },
   {
     "name": "Nordic Discovery",
@@ -809,7 +845,9 @@
     "price": "Roddbåt 900 kr per dygn eller 5 400 kr per vecka. Semesterhus 3 000 kr per natt",
     "fishingLicense": "Fiskekort via iFiske, 80 kr per dag eller 500 kr per år",
     "website": "https://nordicdiscovery.se",
-    "sourceUrl": "https://nordicdiscovery.se/rowboat-rental/"
+    "sourceUrl": "https://nordicdiscovery.se/rowboat-rental/",
+    "boatCount": 3,
+    "licenseRequired": true
   },
   {
     "name": "Malexander Camping",
@@ -827,7 +865,8 @@
     "price": "Stuga 800 kr/natt, 5 000 kr/vecka (2026)",
     "fishingLicense": "Fiskekort säljs på campingen",
     "website": "https://malexandercamping.se",
-    "sourceUrl": "https://www.malexandercamping.se"
+    "sourceUrl": "https://www.malexandercamping.se",
+    "licenseRequired": true
   },
   {
     "name": "Ryda Gård",
@@ -848,6 +887,9 @@
     "price": "",
     "fishingLicense": "Fiskekort för Åsunden, se iFiske",
     "website": "https://ryda.se",
-    "sourceUrl": "https://ryda.se/batar-fisketurer"
+    "sourceUrl": "https://ryda.se/batar-fisketurer",
+    "boatCount": 12,
+    "petrolMotor": true,
+    "licenseRequired": true
   }
 ]
