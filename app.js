@@ -368,10 +368,13 @@ function route() {
   showImage(s);
 
   const motors = [s.petrolMotor && 'bensinmotor', s.electricMotor && 'elmotor'].filter(Boolean).join(' och ');
-  fact('acc', s.hasAccommodation ? join(s.beds && `${s.beds} sängplatser`, s.accommodationInfo) || 'Ja' : '');
+  // Boende och båtar visas alltid, så att det syns tydligt när de saknas.
+  fact('acc', s.hasAccommodation ? join(s.beds && `${s.beds} sängplatser`, s.accommodationInfo) || 'Ja' : 'Erbjuds inte');
   fact('boat', s.hasBoats
     ? join(s.boatCount && `${s.boatCount} ${s.boatCount === 1 ? 'båt' : 'båtar'}`, motors && cap(motors), s.boatInfo) || 'Ja'
-    : '');
+    : 'Hyrs inte ut');
+  $('[data-row=acc]').classList.toggle('none', !s.hasAccommodation);
+  $('[data-row=boat]').classList.toggle('none', !s.hasBoats);
   fact('species', (s.species || []).map(cap).join(', '));
   fact('price', s.price);
   const licenseUrl = https(s.fishingLicenseUrl);

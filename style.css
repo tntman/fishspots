@@ -222,6 +222,13 @@ label.empty { opacity: .45; }
 .facts > div { display: grid; grid-template-columns: 7.5rem 1fr; gap: .75rem; padding: .7rem 0; border-bottom: 1px solid var(--line); }
 .facts dt { display: flex; align-items: center; gap: .4rem; align-self: start; font-weight: 600; }
 .facts dd { white-space: pre-line; overflow-wrap: anywhere; }
+/* Saknas: grått, med ett kryss före texten. */
+.facts > .none dt, .facts > .none dd { color: var(--ink-2); }
+.facts > .none dd { display: flex; align-items: center; gap: .35rem; }
+.facts > .none dd::before {
+  content: ""; width: .95em; height: .95em; flex: none; background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.25' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center / contain no-repeat;
+}
 .contact { display: grid; gap: .2rem; justify-items: start; }
 .contact a { display: inline-flex; align-items: center; gap: .25rem; }
 .source { margin-top: 1rem; padding: .7rem .85rem; background: var(--tint); border-radius: 8px; color: var(--ink-2); font-size: .875rem; }
