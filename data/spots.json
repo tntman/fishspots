@@ -468,7 +468,7 @@
     "lng": 14.69443,
     "description": "Gård och resort vid Åsnen, en av Smålands stora sjöar med över tusen öar. Här bor man i fristående stugor eller på campingen och kan hyra allt från roddbåtar till motorbåtar och kanoter. Anläggningen arrangerar också guidade fisketurer med gäddsafari och göstrolling.",
     "hasAccommodation": true,
-    "accommodationInfo": "12 fritidsstugor och 4 sommartorp för 2–12 personer, samt naturcamping. Stugorna är öppna året runt.",
+    "accommodationInfo": "12 fritidsstugor och 4 sommartorp för 2–12 personer, samt naturcamping. Stugorna är öppna året runt. Stugorna på webbplatsen har sammanlagt 58 bäddar inklusive extrasängar, till exempel Rättarebostaden (12), Hönshuset (6) och fem stugor för 4 personer.",
     "hasBoats": true,
     "boatInfo": "Cirka 20 båtar i plast och aluminium hyrs ut, med 4 hk fyrtaktsmotor eller elmotor, plus kanoter och kajaker; gäster på resorten prioriteras. Deposition 1 500 kr för motorbåtar. Större specialbåtar finns för trollingfiske med guide.",
     "species": [
@@ -490,9 +490,10 @@
     "address": "Getnö Gård, 362 96 Ryd",
     "boatCountEstimate": true,
     "descriptionEn": "Farm and resort at Åsnen, one of Småland's large lakes with over a thousand islands. Here you stay in detached cabins or at the campsite and can rent everything from rowing boats to motorboats and canoes. The resort also arranges guided fishing trips with pike safari and zander trolling.",
-    "accommodationInfoEn": "12 holiday cabins and 4 summer cottages for 2–12 people, plus nature camping. The cabins are open all year round.",
+    "accommodationInfoEn": "12 holiday cabins and 4 summer cottages for 2–12 people, plus nature camping. The cabins are open all year round. The cabins listed on the website have 58 beds in total including extra beds, for example Rättarebostaden (12), Hönshuset (6) and five cabins for 4 people.",
     "boatInfoEn": "About 20 boats in plastic and aluminium are rented out, with a 4 hp four-stroke motor or electric motor, plus canoes and kayaks; resort guests are given priority. Deposit SEK 1,500 for motorboats. Larger specialist boats are available for trolling fishing with a guide.",
-    "fishingLicenseEn": "A fishing license for Åsnen is required and is sold by approved retailers, at the reception or on iFiske. Day license SEK 150, weekly license SEK 500, monthly license SEK 750, annual license SEK 1,500 (whole lake, year not stated)."
+    "fishingLicenseEn": "A fishing license for Åsnen is required and is sold by approved retailers, at the reception or on iFiske. Day license SEK 150, weekly license SEK 500, monthly license SEK 750, annual license SEK 1,500 (whole lake, year not stated).",
+    "beds": 58
   },
   {
     "name": "Hallsjö Vildmarkscamping",
