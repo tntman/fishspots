@@ -17,3 +17,4 @@ function stamp(file, asset) {
 stamp('app.js', 'config.js');
 stamp('index.html', 'app.js');
 stamp('index.html', 'style.css');
+stamp('index.html', 'img/logo.png');
