@@ -29,6 +29,7 @@ function check(s) {
   if (s.boatCount != null && !(Number.isInteger(s.boatCount) && s.boatCount >= 1 && s.boatCount <= 500)) bad.push(`boatCount ogiltigt: ${s.boatCount}`);
   for (const k of ['petrolMotor', 'electricMotor', 'licenseRequired']) if (s[k] != null && typeof s[k] !== 'boolean') bad.push(`${k} är inte true/false`);
   if (s.fishingLicenseUrl && !/^https:\/\/.+/.test(s.fishingLicenseUrl)) bad.push('fishingLicenseUrl är inte https');
+  if (s.address != null && !(typeof s.address === 'string' && s.address.length <= 200)) bad.push('address är inte text på högst 200 tecken');
   return bad;
 }
 
@@ -69,8 +70,8 @@ for (const [i, s] of spots.entries()) {
     species: s.species ?? [],
     ...Object.fromEntries(TEXT.map((k) => [k, (s[k] ?? '').trim()])),
     // Valfria fält skrivs bara när källan anger dem.
-    ...Object.fromEntries(['beds', 'boatCount', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl']
-      .filter((k) => s[k] != null && s[k] !== '').map((k) => [k, s[k]])),
+    ...Object.fromEntries(['address', 'beds', 'boatCount', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl']
+      .filter((k) => s[k] != null && s[k] !== '').map((k) => [k, typeof s[k] === 'string' ? s[k].trim() : s[k]])),
     ownerUid: null,
     source: 'ai',
     sourceUrl: s.sourceUrl,
