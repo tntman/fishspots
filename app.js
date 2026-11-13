@@ -664,9 +664,27 @@ claimForm.addEventListener('submit', async (e) => {
 // ---------- Händelser ----------
 filters.addEventListener('input', render);
 
+// Din position på kartan: en prick med lugna ringar som växer ut från den.
+const hereIcon = L.divIcon({
+  className: 'here',
+  iconSize: [140, 140],
+  iconAnchor: [70, 70],
+  html: '<span class="here-ring"></span><span class="here-ring"></span><span class="here-ring"></span><span class="here-dot"></span>',
+});
+let hereMarker;
+
+function showHere() {
+  hereMarker?.remove();
+  hereMarker = L.marker(state.here, { icon: hereIcon, interactive: false, keyboard: false, zIndexOffset: -1000 }).addTo(map);
+  // Visa positionen tillsammans med de tre närmaste ställena.
+  const nearest = visible().filter((s) => Number.isFinite(s.lat)).slice(0, 3).map((s) => [s.lat, s.lng]);
+  if (map.getSize().x) map.flyToBounds(L.latLngBounds([state.here, ...nearest]).pad(0.35), { maxZoom: 10, duration: 1.4 });
+}
+
 // Positionen frågas bara när man väljer "Närmast mig", och används bara här i webbläsaren.
 filters.elements.sort.addEventListener('change', (e) => {
-  if (e.target.value !== 'near' || state.here) return;
+  if (e.target.value !== 'near') { hereMarker?.remove(); hereMarker = null; return; }
+  if (state.here) { showHere(); return; }
   if (!navigator.geolocation) {
     toast('Webbläsaren kan inte ta reda på din position.', true);
     e.target.value = 'name';
@@ -674,7 +692,11 @@ filters.elements.sort.addEventListener('change', (e) => {
     return;
   }
   navigator.geolocation.getCurrentPosition(
-    (pos) => { state.here = { lat: pos.coords.latitude, lng: pos.coords.longitude }; render(); },
+    (pos) => {
+      state.here = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      render();
+      showHere();
+    },
     (err) => {
       toast(err.code === err.PERMISSION_DENIED
         ? 'Du har inte gett sidan tillgång till din position. Tillåt det i webbläsaren och försök igen.'
