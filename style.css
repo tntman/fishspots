@@ -86,7 +86,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 /* ---------- Layout ---------- */
 .app { display: grid; grid-template-columns: minmax(22rem, 28.5rem) minmax(0, 1fr); min-height: 0; position: relative; }
-.side { overflow-y: auto; scrollbar-width: thin; background: var(--surface); border-right: 1px solid var(--line); }
+.side { overflow-y: auto; scrollbar-width: thin; scrollbar-gutter: stable; background: var(--surface); border-right: 1px solid var(--line); }
 #map { min-height: 0; background: #dfe9e8; z-index: 0; }
 .pane-toggle { display: none; }
 
@@ -107,7 +107,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: non
 .search input { padding-left: 2.25rem; }
 .filter-btn { min-height: 2.5rem; }
 .count-badge { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: 999px; background: var(--lake); color: #fff; font-size: .75rem; font-variant-numeric: tabular-nums; }
-.count-badge:empty { display: none; }
+/* Platsen finns kvar när siffran saknas, så att knappen och sökfältet inte ändrar bredd. */
+.count-badge:empty { visibility: hidden; }
 .active-filters { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
 .active-filters:empty { display: none; }
 .active-chip {
@@ -129,7 +130,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: non
 @keyframes slide { from { transform: translateX(-24px); opacity: 0; } }
 .drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
 .drawer-head h2 { font-size: 1.25rem; }
-.drawer-body { flex: 1; overflow-y: auto; scrollbar-width: thin; padding: 0 1.25rem; }
+.drawer-body { flex: 1; overflow-y: auto; scrollbar-width: thin; scrollbar-gutter: stable; padding: 0 1.25rem; }
 .drawer-foot { display: flex; justify-content: space-between; gap: .75rem; padding: .875rem 1.25rem; border-top: 1px solid var(--line); background: var(--surface); }
 .drawer-foot .solid { flex: 1; }
 .fgroup { display: grid; gap: .75rem; padding: 1.25rem 0; }
@@ -140,9 +141,11 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: non
 .opts.list { display: grid; grid-template-columns: 1fr 1fr; gap: .1rem 1rem; }
 .opt { display: flex; align-items: center; gap: .5rem; min-height: 2.25rem; cursor: pointer; }
 .opt input { flex: none; }
-.n { color: var(--ink-2); font-size: .8125rem; font-variant-numeric: tabular-nums; }
-.opt .n { margin-left: auto; }
-.chip .n:not(:empty)::before { content: "· "; }
+/* Antalen har fast bredd (upp till tre siffror), så att chips och rader inte byter storlek när siffrorna ändras. */
+.n { display: inline-block; color: var(--ink-2); font-size: .8125rem; font-variant-numeric: tabular-nums; }
+.opt .n { margin-left: auto; min-width: 3ch; text-align: right; }
+.chip .n { min-width: 4.2ch; text-align: left; }
+.chip .n::before { content: "· "; }
 .chip:has(:checked) .n { color: #cfe3e5; }
 label.empty { opacity: .45; }
 .stepper { display: flex; align-items: center; gap: .5rem; }
@@ -242,7 +245,7 @@ label.empty { opacity: .45; }
 .leaflet-tooltip::before { display: none; }
 
 /* ---------- Dialoger ---------- */
-dialog { width: min(40rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); padding: 0; border: 0; border-radius: 14px; background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+dialog { width: min(40rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); scrollbar-gutter: stable; padding: 0; border: 0; border-radius: 14px; background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
 dialog::backdrop { background: rgb(11 61 71 / .55); }
 dialog[open] { animation: rise .35s var(--ease); }
 @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
