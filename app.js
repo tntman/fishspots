@@ -54,13 +54,14 @@ function scalePins() {
   const scale = z <= 4 ? 0.4 : z === 5 ? 0.5 : z === 6 ? 0.65 : z === 7 ? 0.82 : 1;
   map.getContainer().style.setProperty('--pin-scale', scale);
 }
-map.on('zoomend', scalePins);
+map.on('zoom zoomend', scalePins);
 scalePins();
 const markers = new Map();
 let pinned = '';
 
 function highlight(id) {
   for (const [key, m] of markers) m.getElement()?.classList.toggle('is-active', key === id);
+  map.getContainer().classList.toggle('has-open', Boolean(openId));
 }
 
 // ponytail: alla nålar ritas var för sig. Lägg till klustring om det blir fler än några hundra.
