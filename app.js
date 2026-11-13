@@ -204,6 +204,8 @@ function visible(v = readFilters()) {
   return [...state.spots.values()].filter((s) => matches(s, v)).sort(SORTS[v.sort] || SORTS.name);
 }
 
+// Uppskattat antal (räknat ur uppräknade båtar i texten) visas som ett minimum.
+const boatsText = (s) => `${s.boatCountEstimate ? 'minst ' : ''}${s.boatCount} ${s.boatCount === 1 ? 'båt' : 'båtar'}`;
 const countText = (n) => `${n} ${n === 1 ? 'spot' : 'spots'}`;
 
 // Antal i varje alternativ: vad listan skulle visa om just det alternativet valdes.
@@ -288,7 +290,7 @@ function row(s) {
   $('.row-acc', li).hidden = !s.hasAccommodation;
   $('.row-boat', li).hidden = !s.hasBoats;
   if (s.beds) $('.row-acc .t', li).textContent = `${s.beds} sängplatser`;
-  if (s.boatCount) $('.row-boat .t', li).textContent = `${s.boatCount} ${s.boatCount === 1 ? 'båt' : 'båtar'}`;
+  if (s.boatCount) $('.row-boat .t', li).textContent = boatsText(s);
   $('.row-species', li).textContent = (s.species || []).map(cap).join(', ');
   setBadge($('.badge', li), s);
   a.addEventListener('pointerenter', () => highlight(s.id));
@@ -402,7 +404,7 @@ function route() {
   // Boende och båtar visas alltid, så att det syns tydligt när de saknas.
   fact('acc', s.hasAccommodation ? join(s.beds && `${s.beds} sängplatser`, s.accommodationInfo) || 'Ja' : 'Erbjuds inte');
   fact('boat', s.hasBoats
-    ? join(s.boatCount && `${s.boatCount} ${s.boatCount === 1 ? 'båt' : 'båtar'}`, motors && cap(motors), s.boatInfo) || 'Ja'
+    ? join(s.boatCount && boatsText(s), motors && cap(motors), s.boatInfo) || 'Ja'
     : 'Hyrs inte ut');
   $('[data-row=acc]').classList.toggle('none', !s.hasAccommodation);
   $('[data-row=boat]').classList.toggle('none', !s.hasBoats);
@@ -660,6 +662,8 @@ form.addEventListener('submit', async (e) => {
     beds: opt(int('beds')),
     hasBoats: f.has('hasBoats'),
     boatCount: opt(int('boatCount')),
+    // Ägarens antal är exakt; en tidigare uppskattning tas bort.
+    boatCountEstimate: editing ? fb.deleteField() : undefined,
     petrolMotor: f.has('petrolMotor'),
     electricMotor: f.has('electricMotor'),
     licenseRequired: f.has('licenseRequired'),

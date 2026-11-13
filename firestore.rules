@@ -29,7 +29,7 @@ service cloud.firestore {
 
     // Valfria fält: finns bara när de är ifyllda.
     function optionalKeys() {
-      return ['address', 'beds', 'boatCount', 'petrolMotor', 'electricMotor',
+      return ['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor',
         'licenseRequired', 'fishingLicenseUrl'];
     }
 
@@ -37,6 +37,7 @@ service cloud.firestore {
       return (!('address' in d) || text(d.address, 200))
         && (!('beds' in d) || (d.beds is int && d.beds >= 1 && d.beds <= 2000))
         && (!('boatCount' in d) || (d.boatCount is int && d.boatCount >= 1 && d.boatCount <= 500))
+        && (!('boatCountEstimate' in d) || d.boatCountEstimate is bool)
         && (!('petrolMotor' in d) || d.petrolMotor is bool)
         && (!('electricMotor' in d) || d.electricMotor is bool)
         && (!('licenseRequired' in d) || d.licenseRequired is bool)
