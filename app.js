@@ -6,6 +6,10 @@ const $ = (sel, root = document) => root.querySelector(sel);
 const live = Boolean(firebaseConfig.apiKey);
 const state = { spots: new Map(), claims: [], user: null, admin: false, favorites: new Set(), status: 'Laddar spots…' };
 
+// Ögonblicksbild av publicerade spots (skrivs av build-pages.mjs). Hämtas parallellt med Firebase och visas
+// direkt, sedan ersätter Firestore den. Utan den syns ingenting förrän Firestore svarat.
+const snapshot = live ? fetch('data/published.json').then((r) => (r.ok ? r.json() : null)).catch(() => null) : null;
+
 // Firebase laddas bara när config.js är ifylld. Utan den visas data/spots.json skrivskyddat.
 let fb = null;
 if (live) {
@@ -385,6 +389,7 @@ function render() {
 
   $('#count').textContent = countText(list.length);
   $('#list').replaceChildren(...list.map(row));
+  $('#list-status').classList.toggle('loading', state.status === 'Laddar spots…');
   $('#list-status').textContent = t(state.status || (list.length ? ''
     : view === 'saved' ? 'Du har inte sparat några spots än. Tryck på stjärnan vid en spot för att spara den.'
     : view === 'mine' ? 'Du har inte lagt till någon spot än.'
@@ -921,6 +926,12 @@ for (const btn of document.querySelectorAll('[data-lang]')) {
 applyLang();
 
 if (live) {
+  snapshot.then((rows) => {
+    if (!rows || state.spots.size) return; // Firestore hann först
+    state.spots = new Map(rows.map((s) => [s.id, { ...s, updatedAt: s.updatedAt && { toDate: () => new Date(s.updatedAt) } }]));
+    state.status = '';
+    render();
+  });
   fb.onAuthStateChanged(fb.auth, async (user) => {
     state.user = user;
     state.admin = false;

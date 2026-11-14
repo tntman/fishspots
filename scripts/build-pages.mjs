@@ -143,4 +143,6 @@ writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 ${urls.map(([p, d]) => `  <url><loc>${BASE}${p}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `);
-console.log(`${spots.length} spotsidor, spot/index.html och sitemap.xml skrivna.`);
+// Ögonblicksbild som appen visar direkt medan Firestore laddar.
+writeFileSync('data/published.json', JSON.stringify(spots.map((s) => ({ ...s, updatedAt: s.updatedAt?.toDate?.().toISOString() }))));
+console.log(`${spots.length} spotsidor, spot/index.html, sitemap.xml och data/published.json skrivna.`);
