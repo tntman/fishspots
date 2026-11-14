@@ -36,6 +36,11 @@ function check(s) {
   if (s.bedsEstimate && !s.beds) bad.push('bedsEstimate utan beds');
   if (s.fishingLicenseUrl && !/^https:\/\/.+/.test(s.fishingLicenseUrl)) bad.push('fishingLicenseUrl är inte https');
   if (s.address != null && !(typeof s.address === 'string' && s.address.length <= 200)) bad.push('address är inte text på högst 200 tecken');
+  if (s.lakeName != null && !(typeof s.lakeName === 'string' && s.lakeName.length <= 100)) bad.push('lakeName ogiltigt');
+  for (const [k, lo, hi] of [['lakeArea', 0, 10000], ['lakeDepth', 0, 500], ['lakeElevation', -50, 2500]]) {
+    if (s[k] != null && !(typeof s[k] === 'number' && s[k] > lo && s[k] < hi)) bad.push(`${k} ogiltigt: ${s[k]}`);
+  }
+  if (s.lakeWikidata != null && !/^Q\d+$/.test(s.lakeWikidata)) bad.push(`lakeWikidata ogiltigt: ${s.lakeWikidata}`);
   for (const k of EN) {
     const max = k === 'descriptionEn' ? 3000 : 1000;
     if (s[k] != null && !(typeof s[k] === 'string' && s[k].length <= max)) bad.push(`${k} är inte text på högst ${max} tecken`);
@@ -80,7 +85,8 @@ for (const [i, s] of spots.entries()) {
     species: s.species ?? [],
     ...Object.fromEntries(TEXT.map((k) => [k, (s[k] ?? '').trim()])),
     // Valfria fält skrivs bara när källan anger dem.
-    ...Object.fromEntries(['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl', 'units', 'unitsEstimate', 'bedsEstimate', ...EN]
+    ...Object.fromEntries(['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor', 'licenseRequired', 'fishingLicenseUrl', 'units', 'unitsEstimate', 'bedsEstimate', ...EN,
+      'lakeName', 'lakeArea', 'lakeDepth', 'lakeElevation', 'lakeWikidata']
       .filter((k) => s[k] != null && s[k] !== '').map((k) => [k, typeof s[k] === 'string' ? s[k].trim() : s[k]])),
     ownerUid: null,
     source: 'ai',

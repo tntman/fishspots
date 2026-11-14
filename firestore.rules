@@ -31,7 +31,8 @@ service cloud.firestore {
     function optionalKeys() {
       return ['address', 'beds', 'boatCount', 'boatCountEstimate', 'petrolMotor', 'electricMotor',
         'licenseRequired', 'fishingLicenseUrl', 'units', 'unitsEstimate', 'bedsEstimate',
-        'descriptionEn', 'accommodationInfoEn', 'boatInfoEn', 'priceEn', 'fishingLicenseEn'];
+        'descriptionEn', 'accommodationInfoEn', 'boatInfoEn', 'priceEn', 'fishingLicenseEn',
+        'lakeName', 'lakeArea', 'lakeDepth', 'lakeElevation', 'lakeWikidata'];
     }
 
     function validOptional(d) {
@@ -52,7 +53,13 @@ service cloud.firestore {
         && (!('accommodationInfoEn' in d) || text(d.accommodationInfoEn, 1000))
         && (!('boatInfoEn' in d) || text(d.boatInfoEn, 1000))
         && (!('priceEn' in d) || text(d.priceEn, 1000))
-        && (!('fishingLicenseEn' in d) || text(d.fishingLicenseEn, 1000));
+        && (!('fishingLicenseEn' in d) || text(d.fishingLicenseEn, 1000))
+        // Fakta om sjön från Wikidata (scripts/lake-facts.mjs).
+        && (!('lakeName' in d) || text(d.lakeName, 100))
+        && (!('lakeArea' in d) || (d.lakeArea is number && d.lakeArea > 0 && d.lakeArea < 10000))
+        && (!('lakeDepth' in d) || (d.lakeDepth is number && d.lakeDepth > 0 && d.lakeDepth < 500))
+        && (!('lakeElevation' in d) || (d.lakeElevation is number && d.lakeElevation > -50 && d.lakeElevation < 2500))
+        && (!('lakeWikidata' in d) || (d.lakeWikidata is string && d.lakeWikidata.matches('Q[0-9]+')));
     }
 
     // Samma listor som i config.js.

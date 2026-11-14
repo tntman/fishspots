@@ -1,5 +1,5 @@
 import { firebaseConfig, COUNTIES, SPECIES, slug } from './config.js?v=773da992';
-import { t, lang, setLang, countyName, speciesName } from './i18n.js?v=99802423';
+import { t, lang, setLang, countyName, speciesName } from './i18n.js?v=077ce503';
 
 const FB = 'https://www.gstatic.com/firebasejs/13.3.0';
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -461,6 +461,15 @@ function route() {
     : t('Hyrs inte ut'));
   $('[data-row=acc]').classList.toggle('none', !s.hasAccommodation);
   $('[data-row=boat]').classList.toggle('none', !s.hasBoats);
+  // Fakta om sjön från Wikidata (scripts/lake-facts.mjs).
+  const num = (v) => v.toLocaleString(lang, { maximumFractionDigits: v < 1 ? 2 : 1 });
+  const lake = [
+    s.lakeArea && `${num(s.lakeArea)} km²`,
+    s.lakeDepth && t('största djup {n} m', { n: num(s.lakeDepth) }),
+    s.lakeElevation != null && t('{n} m över havet', { n: num(s.lakeElevation) }),
+  ].filter(Boolean).join(' · ');
+  fact('lake', lake && `${s.lakeName}: ${lake}`);
+  link($('#d-lake-link'), lake && s.lakeWikidata && `https://www.wikidata.org/wiki/${s.lakeWikidata}`, t('Källa: Wikidata'));
   fact('species', (s.species || []).map(speciesName).join(', '));
   fact('price', tx(s, 'price'));
   const licenseUrl = https(s.fishingLicenseUrl);
