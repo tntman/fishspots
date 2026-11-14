@@ -11343,6 +11343,8 @@
     "description": "Camp- och paddelanläggning vid Agunnarydsjön i Agunnaryd med boende och uthyrning av kanoter, kajaker och en större båt. Sjön hör till Helge Ås vattensystem med fiske efter gädda, abborre och öring.",
     "hasAccommodation": true,
     "accommodationInfo": "Sex boenden: Lake Cottage (6-8 personer, eget badrum), Garden Cottage (2-4 personer), Hut (2 personer), Tree Tent med sjöutsikt (2 personer), Boathouse (2-4 personer) och Village House (6-8 personer, eget badrum). Flera delar gemensamt badrum.",
+    "units": 5,
+    "beds": 26,
     "hasBoats": true,
     "boatInfo": "Kanoter, kajaker (bl.a. extra stabil enkelkajak lämplig för fiske), roddbåt och större båt för upp till 6 vuxna som kan rodas eller köras med tillval motor. Pris enligt prislista 2025.",
     "species": [
