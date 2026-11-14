@@ -13107,7 +13107,7 @@
     "place": "Sjöbo",
     "description": "Destination Snogeholm hyr ut stugor och lägergårdar i Snogeholms strövområde vid Snogeholmssjön, samt båtar och kanoter vid sjön. Fiskekort säljs via iFiske.",
     "hasAccommodation": true,
-    "accommodationInfo": "4 stugor och 2 lägergårdar. Fiskestugan (4 bäddar) ligger vid sjöns strand med fullt utrustat kök, dusch och kamin; även Jocksborg (6 bäddar), Raftarp (8 bäddar) och Orehus (12 bäddar) samt lägergårdarna Sjögården och Gydarp. Camping (Bokerastens camping) med 19 platser, ej förbokningsbar.",
+    "accommodationInfo": "4 stugor och 2 lägergårdar. Fiskestugan (4 bäddar) ligger vid sjöns strand med fullt utrustat kök, dusch och kamin; även Jocksborg (6 bäddar), Raftarp (8 bäddar) och Orehus (12 bäddar) samt lägergårdarna Sjögården (25 sovplatser) och Gydarp (43 bäddar). Camping (Bokerastens camping) med 19 platser, ej förbokningsbar.",
     "hasBoats": true,
     "boatInfo": "Båtar och kanoter hyrs ut från båthuset nedanför huvudparkeringen. Endast elmotor är tillåten på sjön.",
     "species": [
@@ -13128,7 +13128,7 @@
     "fishingLicenseUrl": "https://www.ifiske.se/fiskekort-snogeholmssjon.htm",
     "units": 6,
     "descriptionEn": "Destination Snogeholm rents out cabins and group farms in the Snogeholm recreation area by Lake Snogeholmssjön, plus boats and canoes on the lake. Fishing permits are sold via iFiske.",
-    "accommodationInfoEn": "4 cabins and 2 camp farms. Fiskestugan (4 beds) is on the lake shore with a fully equipped kitchen, shower and wood stove; also Jocksborg (6 beds), Raftarp (8 beds) and Orehus (12 beds) plus the camp farms Sjögården and Gydarp. Camping (Bokerastens camping) with 19 pitches, cannot be pre-booked.",
+    "accommodationInfoEn": "4 cabins and 2 camp farms. Fiskestugan (4 beds) is on the lake shore with a fully equipped kitchen, shower and wood stove; also Jocksborg (6 beds), Raftarp (8 beds) and Orehus (12 beds) plus the camp farms Sjögården (25 beds) and Gydarp (43 beds). Camping (Bokerastens camping) with 19 pitches, cannot be pre-booked.",
     "boatInfoEn": "Boats and canoes are rented from the boathouse below the main car park. Only electric motors are allowed on the lake.",
     "priceEn": "Fiskestugan from SEK 1,060/night (final cleaning SEK 1,120).",
     "fishingLicenseEn": "Fishing permits are bought via iFiske: day pass SEK 120, youth 15-19 years SEK 60, children under 15 fish free. Boat pass SEK 120.",
@@ -13138,7 +13138,8 @@
     "lakeArea": 2.47,
     "lakeDepth": 8.5,
     "lakeElevation": 36,
-    "lakeWikidata": "Q18177670"
+    "lakeWikidata": "Q18177670",
+    "beds": 98
   },
   {
     "name": "Hjorthålans camping & stugby",
