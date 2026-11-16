@@ -85,7 +85,13 @@ const page = ({ title, description, path, body, ld = '' }) => `<!doctype html>
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${BASE}${path}">
+  <meta property="og:image" content="${BASE}img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="sv_SE">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="${BASE}img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="${BASE}img/apple-touch-icon.png">
   ${ld && `<script type="application/ld+json">${ld}</script>`}
   <style>${STYLE}</style>
 </head>
