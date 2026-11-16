@@ -1,5 +1,5 @@
 import { firebaseConfig, COUNTIES, SPECIES, slug } from './config.js?v=773da992';
-import { t, lang, setLang, countyName, speciesName } from './i18n.js?v=077ce503';
+import { t, lang, setLang, countyName, speciesName } from './i18n.js?v=8c85d151';
 
 const FB = 'https://www.gstatic.com/firebasejs/13.3.0';
 const $ = (sel, root = document) => root.querySelector(sel);
