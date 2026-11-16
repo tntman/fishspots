@@ -73,7 +73,7 @@ dt{font-weight:600}dd{margin:0}
 ul{padding-left:1.1rem}li{margin:.2rem 0}
 @media (max-width:30rem){dl div{grid-template-columns:1fr;gap:.15rem}}`;
 
-const page = ({ title, description, path, body, ld = '' }) => `<!doctype html>
+const page = ({ title, description, path, body, ld = '', foot = true }) => `<!doctype html>
 <html lang="sv">
 <head>
   <meta charset="utf-8">
@@ -99,7 +99,7 @@ const page = ({ title, description, path, body, ld = '' }) => `<!doctype html>
 <header class="top"><a href="${BASE}"><img src="${BASE}img/logo.png" alt="Fiskespots" width="154" height="40"></a></header>
 <main>
 ${body}
-</main>
+${foot ? `  <p class="source"><a href="${BASE}kontakt/">Kontakt</a></p>\n` : ''}</main>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3405e237919146b480c6778801de6245"}'></script>
 </body>
 </html>
@@ -144,7 +144,35 @@ ${list.map((s) => `    <li><a href="${BASE}spot/${s.id}/">${esc(s.name)}</a> · 
   </ul>`).join('\n')}`,
 }));
 
-const urls = [['', null], ['spot/', null], ...spots.map((s) => [`spot/${s.id}/`, date(s)])];
+const CONTACT = 'fishspots.contact@gmail.com';
+mkdirSync('kontakt', { recursive: true });
+writeFileSync('kontakt/index.html', page({
+  title: 'Kontakt | Fiskespots',
+  description: 'Kontakta Fiskespots om felaktiga uppgifter, om du vill ta över din spot eller har frågor om sidan.',
+  path: 'kontakt/',
+  foot: false,
+  body: `  <h1>Kontakt</h1>
+  <p class="where">Hör av dig om du hittar fel, saknar en spot eller har frågor om sidan.</p>
+  <p><a class="map" href="mailto:${CONTACT}">${CONTACT}</a></p>
+  <h2>Äger du en spot?</h2>
+  <p>Logga in på <a href="${BASE}">kartan</a>, öppna din spot och välj "Är det här din spot?". Då kan du själv rätta och uppdatera uppgifterna när vi har godkänt det. Du kan också lägga till en ny spot.</p>
+  <h2>Fel uppgifter?</h2>
+  <p>Många spots är insamlade automatiskt från anläggningarnas egna webbplatser. Mejla oss vilken spot det gäller och vad som är fel, så rättar vi det.</p>`,
+}));
+
+// GitHub Pages visar 404.html för adresser som inte finns, oavsett sökväg, så alla länkar är absoluta.
+writeFileSync('404.html', page({
+  title: 'Sidan finns inte | Fiskespots',
+  description: 'Sidan du letade efter finns inte.',
+  path: '404.html',
+  foot: false,
+  body: `  <h1>Sidan finns inte</h1>
+  <p class="where">Adressen kan vara felstavad, eller så har spoten tagits bort.</p>
+  <a class="map" href="${BASE}">Till kartan</a>
+  <p><a href="${BASE}spot/">Alla spots, län för län</a> · <a href="${BASE}kontakt/">Kontakt</a></p>`,
+}).replace('<head>', '<head>\n  <meta name="robots" content="noindex">'));
+
+const urls = [['', null], ['spot/', null], ['kontakt/', null], ...spots.map((s) => [`spot/${s.id}/`, date(s)])];
 writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(([p, d]) => `  <url><loc>${BASE}${p}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}</url>`).join('\n')}

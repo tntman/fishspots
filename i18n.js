@@ -94,6 +94,7 @@ const EN = {
   '{d} km bort': '{d} km away',
   Sjön: 'The lake',
   'Alla spots som lista': 'All spots as a list',
+  Kontakt: 'Contact',
   'största djup {n} m': 'max depth {n} m',
   '{n} m över havet': '{n} m above sea level',
   'Källa: Wikidata': 'Source: Wikidata',
