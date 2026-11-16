@@ -5,7 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
 
-const BASE = 'https://tntman.github.io/fishspots/';
+const BASE = 'https://fiskespots.se/';
 
 initializeApp({ credential: cert(JSON.parse(readFileSync('serviceAccount.json', 'utf8'))) });
 const snap = await getFirestore().collection('spots').where('status', '==', 'published').get();
