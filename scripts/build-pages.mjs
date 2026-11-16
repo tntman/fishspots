@@ -94,6 +94,7 @@ const page = ({ title, description, path, body, ld = '' }) => `<!doctype html>
 <main>
 ${body}
 </main>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3405e237919146b480c6778801de6245"}'></script>
 </body>
 </html>
 `;
