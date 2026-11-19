@@ -90,6 +90,8 @@ const page = ({ title, description, path, body, ld = '', foot = true }) => `<!do
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="sv_SE">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="${BASE}favicon.ico" sizes="48x48">
+  <link rel="icon" href="${BASE}img/icon-192.png" sizes="192x192" type="image/png">
   <link rel="icon" href="${BASE}img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="${BASE}img/apple-touch-icon.png">
   ${ld && `<script type="application/ld+json">${ld}</script>`}
