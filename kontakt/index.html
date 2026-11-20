@@ -22,7 +22,8 @@
   <style>:root{--ink:#0f2a30;--ink-2:#47606a;--ground:#eef3f2;--line:#d3dedc;--lake:#0c4a57;--lake-deep:#0b3d47;--bob:#dd3b1f;font-family:"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--ground);font-size:.9375rem;line-height:1.55}
 a{color:var(--lake);text-underline-offset:.18em}
-.top{padding:.625rem 1.25rem;background:var(--lake-deep)}.top img{display:block}
+.top{display:flex;align-items:center;justify-content:space-between;padding:.625rem 1.25rem;background:var(--lake-deep)}.top img{display:block}
+.lang{display:inline-flex;padding:2px;border:1px solid rgb(255 255 255 / .28);border-radius:8px}.lang button{min-width:2.25rem;min-height:2rem;padding:0 .4rem;border:0;border-radius:6px;background:transparent;color:#b9d3d6;font-family:inherit;font-size:.8125rem;font-weight:700;letter-spacing:.04em;cursor:pointer}.lang button:hover{color:#fff}.lang button[aria-pressed=true]{background:#fff;color:var(--lake-deep)}
 main{max-width:44rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
 h1{margin:.25rem 0 0;font-size:1.9rem;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
 h2{margin:2rem 0 .5rem;font-size:1.1rem}
@@ -35,8 +36,24 @@ ul{padding-left:1.1rem}li{margin:.2rem 0}
 @media (max-width:30rem){dl div{grid-template-columns:1fr;gap:.15rem}}</style>
 </head>
 <body>
-<header class="top"><a href="https://fiskespots.se/"><img src="https://fiskespots.se/img/logo.png" alt="Fiskespots" width="154" height="40"></a></header>
+<header class="top"><a href="https://fiskespots.se/"><img src="https://fiskespots.se/img/logo.png" alt="Fiskespots" width="154" height="40"></a><span class="lang" role="group" aria-label="Språk"><button type="button" data-lang="sv" lang="sv" aria-label="Svenska">SV</button><button type="button" data-lang="en" lang="en" aria-label="English">EN</button></span>
+<script>
+(() => {
+  let l; try { l = localStorage.getItem('lang'); } catch {}
+  if (l !== 'sv' && l !== 'en') l = /^sv\b/i.test(navigator.language || '') ? 'sv' : 'en';
+  const set = (v, save) => {
+    document.documentElement.lang = v;
+    document.querySelectorAll('[data-text]').forEach((el) => { el.hidden = el.dataset.text !== v; });
+    document.querySelectorAll('.lang button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.lang === v));
+    document.title = document.querySelector('[data-title-' + v + ']')?.getAttribute('data-title-' + v) || document.title;
+    if (save) try { localStorage.setItem('lang', v); } catch {}
+  };
+  document.querySelectorAll('.lang button').forEach((b) => b.addEventListener('click', () => set(b.dataset.lang, true)));
+  set(l);
+})();
+</script></header>
 <main>
+  <div data-text="sv" data-title-sv="Kontakt | Fiskespots">
   <h1>Kontakt</h1>
   <p class="where">Hör av dig om du hittar fel, saknar en spot eller har frågor om sidan.</p>
   <p><a class="map" href="mailto:fishspots.contact@gmail.com">fishspots.contact@gmail.com</a></p>
@@ -44,6 +61,16 @@ ul{padding-left:1.1rem}li{margin:.2rem 0}
   <p>Logga in på <a href="https://fiskespots.se/">kartan</a>, öppna din spot och välj "Är det här din spot?". Då kan du själv rätta och uppdatera uppgifterna när vi har godkänt det. Du kan också lägga till en ny spot.</p>
   <h2>Fel uppgifter?</h2>
   <p>Många spots är insamlade automatiskt från anläggningarnas egna webbplatser. Mejla oss vilken spot det gäller och vad som är fel, så rättar vi det.</p>
+  </div>
+  <div data-text="en" data-title-en="Contact | Fiskespots" hidden>
+  <h1>Contact</h1>
+  <p class="where">Get in touch if you find an error, miss a spot or have questions about the site.</p>
+  <p><a class="map" href="mailto:fishspots.contact@gmail.com">fishspots.contact@gmail.com</a></p>
+  <h2>Do you own a spot?</h2>
+  <p>Sign in on <a href="https://fiskespots.se/">the map</a>, open your spot and choose "Is this your spot?". Once we have approved it, you can correct and update the details yourself. You can also add a new spot.</p>
+  <h2>Wrong details?</h2>
+  <p>Many spots are collected automatically from the businesses' own websites. Email us which spot it is and what is wrong, and we will fix it.</p>
+  </div>
 </main>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3405e237919146b480c6778801de6245"}'></script>
 </body>

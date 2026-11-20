@@ -68,7 +68,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   transition: background-color .2s var(--ease), color .2s var(--ease);
 }
 .lang-switch button:hover { color: #fff; }
-.lang-switch [aria-pressed=true] { background: #fff; color: var(--lake-deep); }
+.lang-switch button[aria-pressed=true] { background: #fff; color: var(--lake-deep); }
 .nav-link { color: #d6e6e8; font-size: .875rem; text-decoration: none; padding: .25rem .2rem; }
 .nav-link:hover { color: #fff; text-decoration: underline; }
 #user-name { color: #b9d3d6; font-size: .875rem; max-width: 16ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
